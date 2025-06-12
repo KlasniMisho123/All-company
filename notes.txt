@@ -1,0 +1,43 @@
+🎨 Primary Colors (from the logo)
+Color Role	Hex Code	Usage
+Deep Red	#D32F2F	Logo accents, buttons, CTAs
+Dark Burgundy	#A10000	Hover states, highlights
+Feather Red Tint	#F44336	Subtle gradients, alerts
+
+🧼 Supporting Colors (for backgrounds, text, and contrast)
+Color Role	Hex Code	Usage
+Off White	#FAFAFA	Background
+Light Gray	#EEEEEE	Sections, cards, footer bg
+Medium Gray	#9E9E9E	Secondary text, icons
+Charcoal	#212121	Main text, strong contrast
+
+🌟 Optional Accent Colors
+These can be used sparingly to complement your red primary:
+
+Color Role	Hex Code	Usage
+Warm Gold	#FFD54F	Highlights or badges
+Cool Blue Gray	#607D8B	Neutral accent
+
+💡 Sample Theme Usage
+Navbar / Footer: Deep Red background (#D32F2F) with white or light gray text.
+
+Hero Section: Off-white background with bold headline text in Charcoal, button in Deep Red.
+
+Cards / Boxes: Light Gray background, border on hover in Feather Red Tint.
+
+Buttons:
+
+Primary: Red with white text
+
+Secondary: White with red border and red text
+
+🖼 Fonts
+To match the professional and modern feel:
+
+Headers: Poppins, Urbanist, or Montserrat
+
+Body: Inter or Roboto
+
+🧪 Accessibility Tip
+Make sure there's enough contrast between your red tones and the background, especially for text and buttons (WCAG AA/AAA compliance). Tools like contrast checker can help.
+
