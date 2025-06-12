@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 
 
 export default function Logo() {
   return (
-    <div className='flex items-center '>
+    <Link className='flex items-center '
+    href={"/"}
+    >
             {/* <i className="fa-solid fa-feather-pointed "></i>
             <i className="fa-solid fa-feather-pointed rotate-290 -ml-1 "></i>
             <span className=''>A</span>
@@ -16,6 +19,6 @@ export default function Logo() {
             width={120}
             height={60}         
             />
-    </div>
+    </Link>
   )
 }
