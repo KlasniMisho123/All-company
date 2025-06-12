@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
   title: "NightFall Webworks",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 const header = (
