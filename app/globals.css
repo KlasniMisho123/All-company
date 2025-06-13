@@ -4,3 +4,33 @@ body {
   scroll-behavior: smooth;
 }
  
+.menu-line-1 { 
+  animation: menu-line-1-animation 1s forwards ease-in-out;
+}
+
+@keyframes menu-line-1-animation  {
+  to{
+    transform: translateY(6px) rotate(-55deg);
+  }
+}
+
+.menu-line-2 { 
+  opacity: 1;
+  animation: menu-line-2-animation 1s forwards ease-in-out;
+}
+
+@keyframes menu-line-2-animation { 
+  to{
+    opacity: 0;
+  }
+}
+
+.menu-line-3 { 
+  animation: menu-line-3-animation 1s forwards ease-in-out;
+}
+
+@keyframes menu-line-3-animation { 
+to{
+    transform: translateY(-6px) rotate(55deg);
+  }
+}
