@@ -17,7 +17,7 @@ export default function Header() {
     },1000)
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(()=>{
       setAniEnabled(true)
     },1000)
