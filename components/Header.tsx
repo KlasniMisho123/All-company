@@ -58,18 +58,52 @@ export default function Header() {
       {isMenuActive && (
        <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-[#FFF5F5] 
            border-b-2 border-b-[#D32F2F] rounded  ${isSideNavActive? ' drop-down-navbar -mt-2 ' : ' rev-drop-down-navbar ' }`}>
-             <div className="flex flex-col p-4 pt-6 text-gray-800 font-medium">
-                <Link className="flex gap-2 items-center text-blue-400 hover:text-blue-500 relative group cursor-pointer font-medium border-b border-gray-700 p-4"
-                  href='/'
-                  onClick={() => {handleSelectedNav('/home')}}>
-                  <i className="fa-solid fa-moon text-sky-400"></i>
+             <div className="flex flex-col p-4 pt-6 text-gray-700 font-medium space-y-1">
+                <Link
+                  href="/"
+                  onClick={() => setSelectedNav('/')}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-md transition-colors duration-300 ${
+                    selectedNav === '/' 
+                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
+                      : 'hover:bg-gray-100 hover:text-[#D32F2F]'
+                  }`}
+                >
+                  <i className="fa-solid fa-house text-[#D32F2F]"></i>
                   Home
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 opacity-0 group-hover:w-full group-hover:opacity-100 transition-all duration-300"></span>
                 </Link>
-                <div className="hover:text-[#D32F2F] transition-colors duration-300 cursor-pointer">2</div>
-                <div className="hover:text-[#D32F2F] transition-colors duration-300 cursor-pointer">3</div>
-                <div className="hover:text-[#D32F2F] transition-colors duration-300 cursor-pointer">Login</div>
+
+                <Link
+                  href="/services"
+                  onClick={() => setSelectedNav('/services')}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-md transition-colors duration-300 ${
+                    selectedNav === '/services' 
+                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
+                      : 'hover:bg-gray-100 hover:text-[#D32F2F]'
+                  }`}
+                >
+                  <i className="fa-solid fa-gear text-[#D32F2F]"></i>
+                  Services
+                </Link>
+
+                <Link
+                  href="/aboutus"
+                  onClick={() => setSelectedNav('/aboutus')}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-md transition-colors duration-300 ${
+                    selectedNav === '/aboutus' 
+                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
+                      : 'hover:bg-gray-100 hover:text-[#D32F2F]'
+                  }`}
+                >
+                  <i className="fa-solid fa-users text-[#D32F2F]"></i>
+                  About Us
+                </Link>
+
+                <div className="flex items-center gap-2 px-4 py-3 rounded-md transition-colors duration-300 hover:bg-gray-100 hover:text-[#D32F2F] cursor-pointer">
+                  <i className="fa-solid fa-right-to-bracket text-[#D32F2F]"></i>
+                  Login
+                </div>
               </div>
+
         </div>
 
        )}
