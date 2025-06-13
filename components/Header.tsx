@@ -12,6 +12,7 @@ export default function Header() {
 
   function handleSideNav():void {
     setIsSideNavActive(!isSideNavActive)
+    setAniEnabled(true)
     if (isMenuActive == true) {
       setTimeout(()=>{
         setIsMenuActive(!isMenuActive)
@@ -21,11 +22,11 @@ export default function Header() {
     }
   }
 
-  useEffect(() => {
-    setTimeout(()=>{
-      setAniEnabled(true)
-    },1000)
-  },[])
+  // useEffect(() => {
+  //   setTimeout(()=>{
+  //     setAniEnabled(true)
+  //   },1000)
+  // },[])
 
   return (
     <div className='flex flex-col'>
