@@ -1,6 +1,7 @@
+'use client'
 import React, { useState } from 'react'
 import Logo from './Logo'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Navbar from './Navbar'
 
 export default function Header() {
@@ -11,6 +12,9 @@ export default function Header() {
   // [#F44336] 
   // fixed / absolute / middle outer-w transparent?
 
+  function handleSideNav():void {
+    setIsSideNavActive(!isSideNavActive)
+  }
 
   return (
     <div>
@@ -28,18 +32,23 @@ export default function Header() {
         </div> */}
 
         {/* <div className='flex sm:hidden'> */}
+
         <div className='flex'>
-          <div className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '>
+          <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '
+          onClick={handleSideNav}
+          >
                <i className="fa-solid fa-minus text-lg -mt-2"></i>
                <i className="fa-solid fa-minus text-lg -mt-3"></i>
                <i className="fa-solid fa-minus text-lg -mt-3"></i>
-          </div>
+          </button>
         </div>
 
       </div>
       {/* Dropdown Navbar  */}
-      <div className='bg-green-500'>
-      </div>
+      
+      {isSideNavActive? <div className='bg-green-500 min-h-[100px] '>
+        
+      </div> : null}
     </div>
   )
 }
