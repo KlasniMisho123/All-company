@@ -7,8 +7,10 @@ import Navbar from './Navbar'
 export default function Header() {
 
   const [isSideNavActive, setIsSideNavActive ] = useState(false)
+  const [isMenuActive, setIsMenuActive ] = useState(false)
 
   function handleSideNav():void {
+    setIsMenuActive(!isMenuActive)
     setTimeout(()=>{
       setIsSideNavActive(!isSideNavActive)
     },1000)
@@ -33,9 +35,9 @@ export default function Header() {
         <div className='flex'>
           <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate group '
           onClick={handleSideNav}>
-               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isSideNavActive ? "menu-line-1 " : " ")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isSideNavActive ? "menu-line-2 " : " ")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isSideNavActive ? "menu-line-3 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isMenuActive ? " menu-line-1 " : " rev-menu-line-1 ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isMenuActive ? " menu-line-2 " : " rev-menu-line-2 ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 group-hover:opacity-90 " + (isMenuActive ? " menu-line-3 " : " rev-menu-line-3 ")}></i>
           </button>
         </div>
 
