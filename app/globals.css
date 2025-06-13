@@ -72,16 +72,25 @@ from{
 }
 
 .drop-down-navbar {
-  animation: menu-line-3-animation 1s forwards ease-in-out;
+  animation: down-navbar-animation 2s forwards ease-in-out;
 }
 
 @keyframes drop-down-navbar-animation {
-  
+  from{
+    max-height: 0;
+  } to {
+    max-height: 600px;
+  }
 }
+
 .rev-drop-down-navbar {
-  animation: rev-menu-line-3-animation 1s forwards ease-in-out;
+  animation: rev-drop-down-navbar-animation 2s forwards ease-in-out;
 }
 
-@keyframes drop-down-navbar-animation {
-  
+@keyframes rev-drop-down-navbar-animation {
+ from{
+    max-height: 600px;
+  } to {
+    max-height: 0;
+  }
 }

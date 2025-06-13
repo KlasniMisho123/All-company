@@ -42,9 +42,11 @@ export default function Header() {
           </div>
         </div>
 
-        <div className='flex items-center sm:hidden sm:items-start '>
-          <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold tuncate hover:opacity-90 '
-          onClick={handleSideNav}>
+        <div className='flex items-center sm:hidden sm:items-start cursor-pointer bg-black px-1 '
+        onClick={handleSideNav}
+        >
+          <button className='flex flex-col items-center  transition-all duration-300 hover:backdrop-blur-3xl font-semibold tuncate hover:opacity-90  '
+          >
                <i className={"fa-solid fa-minus text-lg " + ( aniEnabled ? isSideNavActive ? "menu-line-1 " : "rev-menu-line-1 " : " ")}></i>
                <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isSideNavActive ? "menu-line-2 " : "rev-menu-line-2 " : " ")}></i>
                <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isSideNavActive ? "menu-line-3 " : "rev-menu-line-3 " : " ")}></i>
@@ -54,8 +56,8 @@ export default function Header() {
       </div>
       {isMenuActive?
 
-       <div className={`transition-all duration-500 ease-in-out overflow-hidden bg-gray-300 
-           border-b-2 border-b-[#D32F2F] rounded -mt-2 pt-6 p-4 ${isSideNavActive? ' drop-down-navbar ' : ' rev-drop-down-navbar ' }`}>
+       <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-gray-300 
+           border-b-2 border-b-[#D32F2F] rounded ${isSideNavActive? ' drop-down-navbar -mt-2 pt-6 p-4 ' : ' rev-drop-down-navbar py-0' }`}>
           <div>1</div>
           <div>2</div>
           <div>3</div>
