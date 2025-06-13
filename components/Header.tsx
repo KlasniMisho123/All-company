@@ -13,7 +13,9 @@ export default function Header() {
   // fixed / absolute / middle outer-w transparent?
 
   function handleSideNav():void {
-    setIsSideNavActive(!isSideNavActive)
+    setTimeout(()=>{
+      setIsSideNavActive(!isSideNavActive)
+    },1000)
   }
 
   return (
