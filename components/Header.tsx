@@ -57,7 +57,7 @@ export default function Header() {
       {isMenuActive?
 
        <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-gray-300 
-           border-b-2 border-b-[#D32F2F] rounded ${isSideNavActive? ' drop-down-navbar -mt-2 pt-6 p-4 ' : ' rev-drop-down-navbar py-0' }`}>
+           border-b-2 border-b-[#D32F2F] rounded p-4  ${isSideNavActive? ' drop-down-navbar -mt-2 pt-6 ' : ' rev-drop-down-navbar py-0' }`}>
           <div>1</div>
           <div>2</div>
           <div>3</div>
