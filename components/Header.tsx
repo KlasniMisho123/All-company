@@ -6,13 +6,14 @@ import Link from 'next/link'
 
 export default function Header() {
   const [selectedNav, setSelectedNav ] = useState("")
-  const [isSideNavActive, setIsSideNavActive ] = useState(true)
-  const [isMenuActive, setIsMenuActive ] = useState(true)
+  const [isSideNavActive, setIsSideNavActive ] = useState(false)
+  const [isMenuActive, setIsMenuActive ] = useState(false)
   const [aniEnabled, setAniEnabled] = useState(false)
 
   
   function handleSelectedNav(nav:string):void {
-    setSelectedNav(nav)
+    setSelectedNav(nav);
+    handleSideNav();
   }
 
   function handleSideNav():void {
@@ -61,7 +62,7 @@ export default function Header() {
              <div className="flex flex-col p-4 pt-6 text-gray-700 font-medium space-y-1">
                 <Link
                   href="/"
-                  onClick={() => setSelectedNav('/')}
+                  onClick={() => handleSelectedNav('/')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3  ${
                     selectedNav === '/' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 
@@ -74,7 +75,7 @@ export default function Header() {
 
                 <Link
                   href="/services"
-                  onClick={() => setSelectedNav('/services')}
+                  onClick={() => handleSelectedNav('/services')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 group hover:translate-x-3 ${
                     selectedNav === '/services' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 
@@ -87,7 +88,7 @@ export default function Header() {
 
                 <Link
                   href="/aboutus"
-                  onClick={() => setSelectedNav('/aboutus')}
+                  onClick={() => handleSelectedNav('/aboutus')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3 ${
                     selectedNav === '/aboutus' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 
