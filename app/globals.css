@@ -88,9 +88,14 @@ from{
 }
 
 @keyframes rev-drop-down-navbar-animation {
- from{
+ 0%{
     max-height: 600px;
-  } to {
+  } 
+  95%{
+    border-bottom: solid #D32F2F 2px;
+  }
+  100% {
     max-height: 0;
+    border-bottom: none;
   }
 }

@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
+type NavbarProps = {
+  selectedNav: string;
+  setSelectedNav: React.Dispatch<React.SetStateAction<string>>;
+  handleSelectedNav: (nav: string) => void;
+};
 
-export default function Navbar() {
-  const [aselectedNav, setSelectedNav ] = useState("")
-
-  function handleSelectedNav(nav:string):void {
-    setSelectedNav(nav)
-  }
+export default function Navbar(props:NavbarProps) {
+  const {selectedNav, setSelectedNav, handleSelectedNav } = props
   
   useEffect(() => {
     const path = window.location.pathname
@@ -21,7 +22,7 @@ export default function Navbar() {
         onClick={() => handleSelectedNav("/")}
         className={`flex gap-2 items-center cursor-pointer rounded-full px-4 py-2 shadow-md transition-all duration-300 ease-in-out 
           hover:scale-105 hover:bg-red-600 hover:text-white 
-          ${aselectedNav === "/" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
+          ${selectedNav === "/" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
         `}
       >
         <i className="fa-solid fa-house"></i>
@@ -33,7 +34,7 @@ export default function Navbar() {
         onClick={() => handleSelectedNav("/services")}
         className={`flex gap-2 items-center cursor-pointer rounded-full px-4 py-2 shadow-md transition-all duration-300 ease-in-out 
           hover:scale-105 hover:bg-red-600 hover:text-white 
-          ${aselectedNav === "/services" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
+          ${selectedNav === "/services" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
         `}
       >
         <span>Services</span>
@@ -44,7 +45,7 @@ export default function Navbar() {
         onClick={() => handleSelectedNav("/aboutus")}
         className={`flex gap-2 items-center cursor-pointer rounded-full px-4 py-2 shadow-md transition-all duration-300 ease-in-out truncate
           hover:scale-105 hover:bg-red-600 hover:text-white 
-          ${aselectedNav === "/aboutus" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
+          ${selectedNav === "/aboutus" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
         `}
       >
         <span>About us</span>
