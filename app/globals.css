@@ -72,5 +72,16 @@ from{
 }
 
 .drop-down-navbar {
+  animation: menu-line-3-animation 1s forwards ease-in-out;
+}
+
+@keyframes drop-down-navbar-animation {
+  
+}
+.rev-drop-down-navbar {
+  animation: rev-menu-line-3-animation 1s forwards ease-in-out;
+}
+
+@keyframes drop-down-navbar-animation {
   
 }
