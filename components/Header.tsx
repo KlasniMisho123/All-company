@@ -58,11 +58,13 @@ export default function Header() {
       {isMenuActive?
 
        <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-gray-300 
-           border-b-2 border-b-[#D32F2F] rounded p-4  ${isSideNavActive? ' drop-down-navbar -mt-2 pt-6 ' : ' rev-drop-down-navbar py-0' }`}>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>Login</div>
+           border-b-2 border-b-[#D32F2F] rounded -mt-2 ${isSideNavActive? ' drop-down-navbar  ' : ' rev-drop-down-navbar ' }`}>
+          <div className='flex flex-col p-4 pt-6'>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>Login</div>
+          </div>
         </div>
 
        : null}
