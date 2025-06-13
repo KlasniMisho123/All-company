@@ -6,15 +6,19 @@ import Navbar from './Navbar'
 export default function Header() {
 
   // const [isSideNavActive, setIsSideNavActive ] = useState(false)
-  const [isSideNavActive, setIsSideNavActive ] = useState(true)
+  const [isSideNavActive, setIsSideNavActive ] = useState(false)
   const [isMenuActive, setIsMenuActive ] = useState(false)
   const [aniEnabled, setAniEnabled] = useState(false)
 
   function handleSideNav():void {
-    setIsMenuActive(!isMenuActive)
-    setTimeout(()=>{
-      setIsSideNavActive(!isSideNavActive)
-    },2000)
+    setIsSideNavActive(!isSideNavActive)
+    if (isMenuActive == true) {
+      setTimeout(()=>{
+        setIsMenuActive(!isMenuActive)
+      }, 2000)
+    } else {
+      setIsMenuActive(!isMenuActive)
+    }
   }
 
   useEffect(() => {
@@ -41,9 +45,9 @@ export default function Header() {
         <div className='flex items-center sm:hidden sm:items-start '>
           <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold tuncate hover:opacity-90 '
           onClick={handleSideNav}>
-               <i className={"fa-solid fa-minus text-lg " + ( aniEnabled ? isMenuActive ? "menu-line-1 " : " " : " rev-menu-line-1")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isMenuActive ? "menu-line-2 " : "rev-menu-line-2 " : " ")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isMenuActive ? "menu-line-3 " : "rev-menu-line-3 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg " + ( aniEnabled ? isSideNavActive ? "menu-line-1 " : "rev-menu-line-1 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isSideNavActive ? "menu-line-2 " : "rev-menu-line-2 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isSideNavActive ? "menu-line-3 " : "rev-menu-line-3 " : " ")}></i>
           </button>
         </div>
 
@@ -51,7 +55,7 @@ export default function Header() {
       {isMenuActive?
 
        <div className={`transition-all duration-500 ease-in-out overflow-hidden bg-gray-300 
-           border-b-2 border-b-[#D32F2F] rounded drop-down-navbar ${isSideNavActive? ' max-h-[500px] opacity-100 ' : ' max-h-0 opacity-0 ' }`}>
+           border-b-2 border-b-[#D32F2F] rounded -mt-2 pt-6 p-4 ${isSideNavActive? ' drop-down-navbar ' : ' rev-drop-down-navbar ' }`}>
           <div>1</div>
           <div>2</div>
           <div>3</div>
