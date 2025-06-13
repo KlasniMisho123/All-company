@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
-// import Link from 'next/link'
 import Navbar from './Navbar'
 
 export default function Header() {
@@ -20,7 +19,7 @@ export default function Header() {
   useEffect(() => {
     setTimeout(()=>{
       setAniEnabled(true)
-    },1000)
+    },3000)
   },[])
 
   return (
@@ -48,11 +47,10 @@ export default function Header() {
         </div>
 
       </div>
-      {/* Dropdown Navbar  */}
-      
-      {isSideNavActive? <div className='bg-green-500 min-h-[100px] '>
-        
-      </div> : null}
+      {isSideNavActive?
+       <div className='bg-green-500 transition-all duration-500 min-h-[100px] '>DropDownNav</div>
+       : null}
+
     </div>
   )
 }
