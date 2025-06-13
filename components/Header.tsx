@@ -5,7 +5,6 @@ import Navbar from './Navbar'
 
 export default function Header() {
 
-  // const [isSideNavActive, setIsSideNavActive ] = useState(false)
   const [isSideNavActive, setIsSideNavActive ] = useState(false)
   const [isMenuActive, setIsMenuActive ] = useState(false)
   const [aniEnabled, setAniEnabled] = useState(false)
@@ -16,7 +15,7 @@ export default function Header() {
     if (isMenuActive == true) {
       setTimeout(()=>{
         setIsMenuActive(!isMenuActive)
-      }, 2000)
+      }, 1500)
     } else {
       setIsMenuActive(!isMenuActive)
     }
@@ -52,7 +51,7 @@ export default function Header() {
       </div>
       {isMenuActive && (
        <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-gray-300 
-           border-b-2 border-b-[#D32F2F] rounded -mt-2 ${isSideNavActive? ' drop-down-navbar  ' : ' rev-drop-down-navbar ' }`}>
+           border-b-2 border-b-[#D32F2F] rounded -mt-2 ${isSideNavActive? ' drop-down-navbar ' : ' rev-drop-down-navbar ' }`}>
           <div className='flex flex-col p-4 pt-6'>
               <div>1</div>
               <div>2</div>
