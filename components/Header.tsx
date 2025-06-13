@@ -14,7 +14,7 @@ export default function Header() {
             <Link className='flex gap-2 items-center cursor-pointer transition-all duration-300  border-1 rounded-full px-4 py-2 shadow-md hover:shadow-none hover:bg-[#D32F2F] hover:text-white'
             href={'/'}>
               <i className="fa-solid fa-house"></i>
-              <span className=''> Home </span>
+              <span> Home </span>
             </Link>
             <Link className='flex gap-2 items-center cursor-pointer transition-all duration-300  border-1 rounded-full px-4 py-2 shadow-md hover:shadow-none hover:bg-[#D32F2F] hover:text-white'
             href={'/services'}>
