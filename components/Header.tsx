@@ -25,22 +25,20 @@ export default function Header() {
 
   return (
     <div>
-      <div className='flex items-center justify-between p-2 sm:py-4 sm:px-6 absolute z-100 bg-[#FAFAFA] text-[#D32F2F] rounded-b-lg w-full border-b-2 border-b-[#D32F2F] '> 
+      <div className='flex items-center justify-between gap-2 p-2 sm:py-4 sm:px-6 absolute z-100 bg-[#FAFAFA] text-[#D32F2F] rounded-b-lg w-full border-b-2 border-b-[#D32F2F] min-w-fit '> 
         <Logo />
         <div className='hidden sm:flex'>
           <Navbar />
         </div>
 
-        {/* <div className='hidden sm:flex'>
+        <div className='hidden sm:flex'>
           <div className='flex items-center gap-2 cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '>
             <span> Login </span>
             < i className="fa-solid fa-right-to-bracket transition-all duration-300 group-hover:translate-x-1 "/>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className='flex sm:hidden'> */}
-
-        <div className='flex items-center '>
+        <div className='flex items-center sm:hidden sm:items-start '>
           <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold tuncate hover:opacity-90 '
           onClick={handleSideNav}>
                <i className={"fa-solid fa-minus text-lg " + (isMenuActive && aniEnabled ? "menu-line-1 " : "rev-menu-line-1 ")}></i>
