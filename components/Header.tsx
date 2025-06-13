@@ -19,7 +19,7 @@ export default function Header() {
   useEffect(() => {
     setTimeout(()=>{
       setAniEnabled(true)
-    },3000)
+    },1000)
   },[])
 
   return (
@@ -40,9 +40,10 @@ export default function Header() {
         <div className='flex items-center sm:hidden sm:items-start '>
           <button className='flex flex-col items-center cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold tuncate hover:opacity-90 '
           onClick={handleSideNav}>
-               <i className={"fa-solid fa-minus text-lg " + (isMenuActive && aniEnabled ? "menu-line-1 " : "rev-menu-line-1 ")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 " + (isMenuActive && aniEnabled ? "menu-line-2 " : "rev-menu-line-2 ")}></i>
-               <i className={"fa-solid fa-minus text-lg -mt-3 " + (isMenuActive && aniEnabled ? "menu-line-3 " : "rev-menu-line-3 ")}></i>
+               {/* <i className={"fa-solid fa-minus text-lg " + (isMenuActive && aniEnabled ? "menu-line-1 " : "rev-menu-line-1 ")}></i> */}
+               <i className={"fa-solid fa-minus text-lg " + ( aniEnabled ? isMenuActive ? "menu-line-1 " : "rev-menu-line-1 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isMenuActive ? "menu-line-2 " : "rev-menu-line-2 " : " ")}></i>
+               <i className={"fa-solid fa-minus text-lg -mt-3 " + ( aniEnabled ? isMenuActive ? "menu-line-3 " : "rev-menu-line-3 " : " ")}></i>
           </button>
         </div>
 
