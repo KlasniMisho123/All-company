@@ -72,7 +72,7 @@ from{
 }
 
 .drop-down-navbar {
-  animation: drop-down-navbar-animatio 2s forwards ease-in-out;
+  animation: down-navbar-animation 2s forwards ease-in-out;
 }
 
 @keyframes drop-down-navbar-animation {

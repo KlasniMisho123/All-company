@@ -22,11 +22,6 @@ export default function Header() {
     }
   }
 
-  // useEffect(() => {
-  //   setTimeout(()=>{
-  //     setAniEnabled(true)
-  //   },1000)
-  // },[])
 
   return (
     <div className='flex flex-col'>
@@ -55,8 +50,7 @@ export default function Header() {
         </div>
 
       </div>
-      {isMenuActive?
-
+      {isMenuActive && (
        <div className={`transition-all duration-2000 ease-in-out overflow-hidden bg-gray-300 
            border-b-2 border-b-[#D32F2F] rounded -mt-2 ${isSideNavActive? ' drop-down-navbar  ' : ' rev-drop-down-navbar ' }`}>
           <div className='flex flex-col p-4 pt-6'>
@@ -67,7 +61,7 @@ export default function Header() {
           </div>
         </div>
 
-       : null}
+       )}
 
     </div>
   )
