@@ -13,6 +13,9 @@ export default function Header() {
   
   function handleSelectedNav(nav:string):void {
     setSelectedNav(nav);
+  }
+  function handleSelectedSideNav(nav:string):void {
+    setSelectedNav(nav);
     handleSideNav();
   }
 
@@ -62,7 +65,7 @@ export default function Header() {
              <div className="flex flex-col p-4 pt-6 text-gray-700 font-medium space-y-1">
                 <Link
                   href="/"
-                  onClick={() => handleSelectedNav('/')}
+                  onClick={() => handleSelectedSideNav('/')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3  ${
                     selectedNav === '/' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 
@@ -75,7 +78,7 @@ export default function Header() {
 
                 <Link
                   href="/services"
-                  onClick={() => handleSelectedNav('/services')}
+                  onClick={() => handleSelectedSideNav('/services')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 group hover:translate-x-3 ${
                     selectedNav === '/services' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 
@@ -88,7 +91,7 @@ export default function Header() {
 
                 <Link
                   href="/aboutus"
-                  onClick={() => handleSelectedNav('/aboutus')}
+                  onClick={() => handleSelectedSideNav('/aboutus')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3 ${
                     selectedNav === '/aboutus' 
                       ? 'bg-red-100 text-[#D32F2F] font-semibold' 

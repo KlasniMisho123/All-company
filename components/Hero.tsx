@@ -1,7 +1,10 @@
+import Footer from "@/components/Footer";
 import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='h-[200vh]'>Hero</div>
+    <div className='h-[200vh]'>Hero
+      <Footer />
+    </div>
   )
 }
