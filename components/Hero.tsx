@@ -3,8 +3,6 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='h-[200vh]'>Hero
-      <Footer />
-    </div>
+    <div className='h-[100vh]'>Hero</div>
   )
 }

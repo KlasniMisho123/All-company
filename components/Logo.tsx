@@ -3,15 +3,14 @@ import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 
-type NavbarProps = {
-  selectedNav: string;
-  setSelectedNav: React.Dispatch<React.SetStateAction<string>>;
-  handleSelectedNav: (nav: string) => void;
-};
 
-export default function Logo(props:NavbarProps) {
-    const {selectedNav, setSelectedNav, handleSelectedNav } = props
-    
+export default function Logo() {
+  const [selectedNav, setSelectedNav ] = useState("")
+
+  function handleSelectedNav(nav:string):void {
+    setSelectedNav(nav);
+  }
+  
   return (
     <Link className='flex items-center '
     href={"/"}
