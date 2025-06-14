@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
+import Link from 'next/link'
 
 export default function Footer() {
   {/* Use Auth -> so it shows Active Nav */}
@@ -32,24 +33,30 @@ export default function Footer() {
         </div>
         <div className='border-b-1 border-gray-400 pb-4 '></div>
         <div className='py-4 flex justify-between'>
+          <span>
           {currentYear !=0 && (
             <span>© 2021–{currentYear} AllDesign. All rights reserved.</span>
           )}
-          <div className='flex gap-4 items-center '>
-            <div>
-               <i className="fa-brands fa-instagram text-xl"></i>
-            </div>
+          </span>
+          <div className='flex gap-4 items-center self-end '>
+            <Link className=' transition-all duration-300 group px-2 py-1 rounded-full hover:bg-orange-400 '
+            href={'https://www.instagram.com/alldesign.ge/'}
+            >
+               <i className="fa-brands fa-instagram text-2xl transition-all duration-300 cursor-pointer "></i>
+            </Link>
 
-            <div>
-               <i className="fa-brands fa-facebook-f text-xl"></i>
-            </div>
+            <Link className=' transition-all duration-300 group px-[10px] py-[5px] rounded-full hover:bg-blue-500 '
+            href={"https://www.facebook.com/musagajievi/"}
+            >
+               <i className="fa-brands fa-facebook-f text-xl transition-all duration-300 cursor-pointer "></i>
 
-            <div
+            </Link>
+
+            <div className=' transition-all duration-300 group px-2 py-1 rounded-full hover:bg-red-500 '
             title='alldesign.ge@gmail.com'
             >
-               <i className="fa-solid fa-envelope text-xl"></i>
+               <i className="fa-solid fa-envelope text-xl transition-all duration-300 cursor-pointer "></i>
             </div>
-            
           </div>
         </div>
       </div>
