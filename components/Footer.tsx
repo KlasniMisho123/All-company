@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
+import { Exo_2 } from 'next/font/google';
+
+const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Footer() {
   {/* Use Auth -> so it shows Active Nav */}
@@ -21,16 +24,28 @@ export default function Footer() {
   return (
     <div className='px-2 pt-6 pb-4 border-t-2 rounded-t-lg bg-black text-white '>
       <div className='mx-18'>
-        <div className='flex justify-between '>
-          <div>About</div>
-          <div>Services</div>
-          <div className='flex gap-2 items-center group'>
-            <Logo selectedNav={selectedNav} setSelectedNav={setSelectedNav} handleSelectedNav={handleSelectedNav} />
-            <span className='transition-all duration-300 group-hover:scale-125'> Design </span>
+       <div className="flex justify-between gap-6 text-lg font-medium text-gray-400 ">
+          <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}
+            href={'/aboutus'}
+          > About</Link>
+          <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}
+          href={'/services'} >Services</Link>
+
+          <div className="flex gap-2 items-center cursor-pointer text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-3">
+            <Logo
+              selectedNav={selectedNav}
+              setSelectedNav={setSelectedNav}
+              handleSelectedNav={handleSelectedNav}
+            />
+            <span className="transition-all duration-300 ">Design</span>
           </div>
-          <div>Careers</div>
-          <div>Team</div>
-        </div>
+
+          <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}
+          href={''} >Careers</Link>
+          <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}
+          href={''} >Team</Link>
+       </div>
+
         <div className='border-b-1 border-gray-400 pb-4 '></div>
         <div className='py-4 flex justify-between'>
           <span>
