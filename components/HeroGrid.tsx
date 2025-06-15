@@ -11,7 +11,11 @@ export default function HeroGrid() {
         <div className='bg-red-500 w-full h-full'>
             Projects Completed Element
         </div>
-        <div className='bg-red-500 w-full h-full'></div>
+        <div
+        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl cofeeLogo cursor-pointer '
+        style={{ backgroundImage: "url('/coffeeLogo.jpg')" }}
+        ></div>
+
         <div className='bg-red-500 w-full h-full'></div>
 
         {/* Image cell */}

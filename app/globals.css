@@ -117,11 +117,25 @@ from{
    }
 }
 
+/* Hero ClipPath Starts */
+
 .nenescircle {
-  clip-path: circle(90px at top right);
+  clip-path: circle(180px at right  bottom);
   transition: clip-path 0.5s ease;
 }
 
 .nenescircle:hover {
   clip-path: circle(150px at center);
 }
+
+.cofeeLogo {
+  clip-path: polygon(
+    50% 0%, 
+    93% 25%, 
+    93% 75%, 
+    50% 100%, 
+    7% 75%, 
+    7% 25%
+  );
+}
+/* Hero ClipPath Ends */
