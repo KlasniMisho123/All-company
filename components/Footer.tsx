@@ -22,7 +22,7 @@ export default function Footer() {
   },[])
 
   return (
-    <div className='px-2 pt-6 pb-2 border-t-2 rounded-t-lg bg-black text-white '>
+    <div className='px-2 pt-6 pb-2 border-t-1 rounded-t-lg bg-black text-white border-[var(--error-color)] '>
       <div className='mx-18'>
        <div className="flex justify-between gap-6 text-lg font-medium text-gray-400 ">
           <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}

@@ -2,8 +2,15 @@
 
 body {
   scroll-behavior: smooth;
+  
 }
- 
+/* Dark Theme/ White Theme ? */
+
+:root {
+  --primary-color: #FAFAFA;
+  --error-color: #D32F2F;
+} 
+
 .menu-line-1 { 
   animation: menu-line-1-animation 1s forwards ease-in-out;
 }
