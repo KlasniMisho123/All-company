@@ -106,3 +106,13 @@ from{
     border-bottom: none;
   }
 }
+
+.forging {
+  animation: forging-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes forging-animation {
+  50% {
+    transform: rotate(45deg);
+   }
+}
