@@ -1,5 +1,6 @@
 import { Inter, Urbanist } from 'next/font/google';
 import React from 'react'
+import HeroGrid from './HeroGrid';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
@@ -29,7 +30,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        
+        {/* Clippath Displayed pictures */}
+        <HeroGrid />
       </section>
 
     </div>
@@ -37,6 +39,3 @@ export default function Hero() {
 }
 
 
-{/* <div className="flex-1 bg-green-200">
-  Grid
-</div> */}

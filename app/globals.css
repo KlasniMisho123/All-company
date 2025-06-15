@@ -116,3 +116,7 @@ from{
     transform: rotate(45deg);
    }
 }
+
+.circle {
+  clip-path: circle(50px at 10px 10px);
+}
