@@ -118,5 +118,5 @@ from{
 }
 
 .circle {
-  clip-path: circle(50px at 10px 10px);
+  clip-path: circle(90px at 1px 1px);
 }
