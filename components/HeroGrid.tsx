@@ -8,7 +8,7 @@ export default function HeroGrid() {
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
 
-        <div className='bg-red-500 w-full h-full'>
+        <div className='bg-red-500 w-full h-full '>
             Projects Completed Element
         </div>
         <div
@@ -16,15 +16,21 @@ export default function HeroGrid() {
         style={{ backgroundImage: "url('/coffeeLogo.jpg')" }}
         ></div>
 
-        <div className='bg-red-500 w-full h-full'></div>
+        <div
+        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl r-circle cursor-pointer '
+        style={{ backgroundImage: "url('/naturaleza.jpg')" }}
+        ></div>
 
         {/* Image cell */}
         <div
             className='bg-center bg-cover bg-no-repeat w-full h-full'
             style={{ backgroundImage: "url('/star.png')" }}
         ></div>
-
-        <div className='bg-red-500 w-full h-full'></div>
+      <div
+        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl l-circle cursor-pointer '
+        style={{ backgroundImage: "url('/shawrma.jpg')" }}
+        ></div>
+        
         <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl tr-circle cursor-pointer '
         style={{ backgroundImage: "url('/fight-club.jpg')" }}
@@ -32,7 +38,7 @@ export default function HeroGrid() {
         <div className='bg-red-500 w-full h-full'></div>
         <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl tl-circle cursor-pointer '
-        style={{ backgroundImage: "url('/naturaleza.jpg')" }}
+        style={{ backgroundImage: "url('/t-shirts.jpg')" }}
         ></div>
     </div>
   )
