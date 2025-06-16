@@ -1,5 +1,4 @@
 'use client'
-import React, { useEffect, useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -10,7 +9,7 @@ type NavbarProps = {
 };
 
 export default function Logo(props:NavbarProps) {
-    const {selectedNav, setSelectedNav, handleSelectedNav } = props
+    const {handleSelectedNav } = props
     
   return (
     <Link className='flex items-center '
