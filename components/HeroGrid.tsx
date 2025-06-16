@@ -7,7 +7,7 @@ export default function HeroGrid() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimated(true);
-    }, 3000);
+    }, 2000);
     // ✅ cleanup on unmount
     return () => clearTimeout(timer); 
   }, []);
@@ -30,7 +30,7 @@ export default function HeroGrid() {
         ></div>
 
         <div
-        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl r-circle cursor-pointer '
+        className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'r-circle' : ' r-circle-start '}`}
         style={{ backgroundImage: "url('/naturaleza.jpg')" }}
         ></div>
         
@@ -40,7 +40,7 @@ export default function HeroGrid() {
         ></div>
 
       <div
-        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl l-circle cursor-pointer '
+        className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'l-circle' : "l-circle-start" }`}
         style={{ backgroundImage: "url('/shawrma.jpg')" }}
         ></div>
         

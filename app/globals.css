@@ -231,15 +231,15 @@ from{
 }
 
 .r-circle-start{
-  clip-path: circle(90% at right);
-  transition: clip-path 0.75s ease;
-}
-
-.r-circle{
   clip-path: circle(0% at top left);
   animation: r-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
   animation-delay: 1.80s;
+}
+
+.r-circle{
+  clip-path: circle(90% at right);
+  transition: clip-path 0.75s ease;
 }
 
 .r-circle:hover {
@@ -254,17 +254,16 @@ from{
   }
 }
 
-
 .l-circle-start {
-  clip-path: circle(90% at left);
-  transition: clip-path 0.75s ease;
-}
-
-.l-circle {
   clip-path: circle(0% at top left);
   animation: l-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
   animation-delay: 1.20s;
+}
+
+.l-circle {
+  clip-path: circle(90% at left);
+  transition: clip-path 0.75s ease;
 }
 
 .l-circle:hover {
