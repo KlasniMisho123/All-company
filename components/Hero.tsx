@@ -3,7 +3,6 @@ import React from 'react'
 import HeroGrid from './HeroGrid';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
-const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Hero() {
   return (

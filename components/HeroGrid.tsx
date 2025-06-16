@@ -1,5 +1,8 @@
 'use client'
+import { Inter, Urbanist } from 'next/font/google';
 import React, { useEffect, useState } from 'react'
+
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function HeroGrid() {
   const [animated, setAnimated] = useState(false)
@@ -13,17 +16,17 @@ export default function HeroGrid() {
   }, []);
 
   return (
-    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px] bg-blue-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-red-500 ">
+    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px] ">
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'rb-circle' : ' rb-circle-start'}`}
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
-        
+
         <div
-          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle' : 't-circle-start'}`}
+          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle ' : 't-circle-start '} ` + urbanist.className }
           style={{ backgroundImage: "url('projects-bg.avif')" }}
         >
-          <span className="text-sm sm:text-base tracking-wide text-white md:text-lg  ">Designs Completed</span>
+          <span className="text-sm sm:text-base tracking-wide text-white ">Designs Completed</span>
           <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">50+</span>
           <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
           <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
@@ -57,10 +60,10 @@ export default function HeroGrid() {
         ></div>
 
         <div
-          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 'b-circle' : 'b-circle-start'}`}
+          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 'b-circle ' : 'b-circle-start '}` + urbanist.className }
           style={{ backgroundImage: "url('projects-bg.avif')" }}
         >
-          <span className="text-sm sm:text-base tracking-wide text-white md:text-lg ">Years of Service</span>
+          <span className="text-sm sm:text-base tracking-wide text-white ">Years of Service</span>
           <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">4+</span>
           <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
           <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
