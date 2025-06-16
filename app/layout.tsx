@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Exo_2, Inter, Poppins, Space_Mono, Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
