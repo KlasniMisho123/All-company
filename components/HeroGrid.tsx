@@ -20,7 +20,7 @@ export default function HeroGrid() {
         ></div>
 
         {/* Rectangle full-width stat */}
-        <div className="bg-gray-900 text-white w-full grid-t-element rounded-xl flex items-center justify-center text-lg ">
+        <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg ${animated? 't-circle':' t-circle-start'}`}>
           Projects Completed Element 0.90s delay + 0.15 per shift
         </div>
 

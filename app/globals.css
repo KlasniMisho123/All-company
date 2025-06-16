@@ -278,21 +278,41 @@ from{
   }
 }
 
-.grid-t-element {
+.t-circle-start {
+  clip-path: circle(0% at  left);
+  animation: t-circle-animation 0.75s  forwards ease-in-out;
+  transition: clip-path 0.75s ease;
+  animation-delay: 0.90s;
+}
+
+.t-circle {
   clip-path: circle(95% at bottom center );
   transition: clip-path 0.75s ease;
 }
 
-.grid-t-element:hover {
+.t-circle:hover {
   clip-path: circle(90% at bottom center );
 }
 
-.grid-b-element {
+@keyframes t-circle-animation {
+  from{
+    clip-path: circle(0% at  bottom);
+  } to {
+    clip-path: circle(95% at bottom center );
+  }
+}
+
+.b-circle {
   clip-path: circle(95% at top center );
   transition: clip-path 0.75s ease;
 }
 
-.grid-b-element:hover {
+.b-circle {
+  clip-path: circle(95% at top center );
+  transition: clip-path 0.75s ease;
+}
+
+.b-circlet:hover {
   clip-path: circle(90% at top center );
 }
 
