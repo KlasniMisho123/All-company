@@ -4,13 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-
-// const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
-// const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
-// const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
-// const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
-// const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
-
 export const metadata: Metadata = {
   title: "NightFall Webworks",
   icons: {

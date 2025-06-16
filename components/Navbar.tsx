@@ -13,7 +13,7 @@ export default function Navbar(props:NavbarProps) {
   useEffect(() => {
     const path = window.location.pathname
     setSelectedNav(path)
-  },[])
+  },[setSelectedNav])
 
   return (
     <div className="flex gap-4 font-semibold ">
