@@ -119,16 +119,43 @@ from{
 
 /* Hero ClipPath Starts */
 
-.nenescircle {
-  clip-path: circle(180px at right  bottom);
-  transition: clip-path 0.5s ease;
+.rb-circle {
+  clip-path: circle(75% at right  bottom);
+  transition: clip-path 0.75s ease;
 }
 
-.nenescircle:hover {
-  clip-path: circle(150px at center);
+.rb-circle:hover {
+  clip-path: circle(100% at center);
 }
 
-.cofeeLogo {
+.lb-circle{
+  clip-path: circle(75% at left  bottom);
+  transition: clip-path 0.75s ease;
+}
+
+.lb-circle:hover {
+  clip-path: circle(100%  at center);
+}
+
+.tr-circle{
+  clip-path: circle(75% at left  bottom);
+  transition: clip-path 0.75s ease;
+}
+
+.tr-circle:hover {
+  clip-path: circle(100%  at center);
+}
+
+.tl-circle{
+  clip-path: circle(75% at left  bottom);
+  transition: clip-path 0.75s ease;
+}
+
+.tl-circle:hover {
+  clip-path: circle(100%  at center);
+}
+
+/* .cofeeLogo {
   clip-path: polygon(
     50% 0%, 
     93% 25%, 
@@ -137,5 +164,5 @@ from{
     7% 75%, 
     7% 25%
   );
-}
+} */
 /* Hero ClipPath Ends */
