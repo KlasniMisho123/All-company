@@ -174,15 +174,21 @@ from{
 }
 
 .grid-t-element {
-  clip-path: circle(50% at right bottom );
+  clip-path: circle(95% at bottom center );
   transition: clip-path 0.75s ease;
-  /* clip-path: circle(50% at top right); */
 }
 
 .grid-t-element:hover {
-  clip-path: circle(50% at center right );
-  
-  /* clip-path: circle(50% at top right); */
+  clip-path: circle(85% at bottom center );
+}
+
+.grid-b-element {
+  clip-path: circle(95% at top center );
+  transition: clip-path 0.75s ease;
+}
+
+.grid-b-element:hover {
+  clip-path: circle(85% at top center );
 }
 
 /* .cofeeLogo {
