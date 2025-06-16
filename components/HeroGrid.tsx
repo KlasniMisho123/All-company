@@ -1,6 +1,18 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 
 export default function HeroGrid() {
+  const [animated, setAnimated] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimated(true);
+    }, 3000);
+    
+    // ✅ cleanup on unmount
+    return () => clearTimeout(timer); 
+  }, []);
+
   return (
     <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px]">
         <div
