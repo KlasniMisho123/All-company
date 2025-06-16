@@ -120,6 +120,7 @@ from{
 /* Hero ClipPath Starts */
 
 .c-circle {
+  clip-path: circle(0% at center);
   animation: c-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
 }
@@ -133,8 +134,10 @@ from{
 }
 
 .rb-circle {
-  animation: rb-circle-animation 1s forwards ease-in-out;
+  clip-path: circle(0% at right bottom);
+  animation: rb-circle-animation 0.75s forwards ease-in-out;
   transition: clip-path 0.75s ease;
+  animation-delay: 0.75s ;
 }
 
 .rb-circle:hover {
@@ -143,14 +146,16 @@ from{
 
 @keyframes rb-circle-animation {
   from{
-    clip-path: circle(0% at center);
+    clip-path: circle(0% at right bottom);
   } to {
     clip-path: circle(75% at right bottom);
   }
 }
 
 .lb-circle{
-  animation: lb-circle-animation 1s forwards ease-in-out;
+  clip-path: circle(0% at left bottom);
+  animation: lb-circle-animation 0.75s  forwards ease-in-out;
+  animation-delay: 0.75s;
   transition: clip-path 0.75s ease;
 }
 
@@ -160,14 +165,16 @@ from{
 
 @keyframes lb-circle-animation {
   from{
-    clip-path: circle(0% at center);
+    clip-path: circle(0% at left bottom);
   } to {
     clip-path: circle(75% at left bottom);
   }
 }
 
 .tr-circle{
-  animation: tr-circle-animation 1s forwards ease-in-out;
+  clip-path: circle(0% at top right);
+  animation: tr-circle-animation 0.75s  forwards ease-in-out;
+  animation-delay: 0.75s;
   transition: clip-path 0.75s ease;
 }
 
@@ -177,15 +184,17 @@ from{
 
 @keyframes tr-circle-animation {
   from{
-    clip-path: circle(0% at center);
+    clip-path: circle(0% at top right);
   } to {
     clip-path: circle(75% at top right);
   }
 }
 
 .tl-circle{
-  animation: tl-circle-animation 1s forwards ease-in-out;
+  clip-path: circle(0% at top left);
+  animation: tl-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
+  animation-delay: 0.75s;
 }
 
 .tl-circle:hover {
@@ -194,7 +203,7 @@ from{
 
 @keyframes tl-circle-animation {
   from{
-    clip-path: circle(0% at center);
+    clip-path: circle(0% at top left);
   } to {
     clip-path: circle(75% at top left);
   }
