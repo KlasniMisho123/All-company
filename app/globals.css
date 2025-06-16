@@ -154,8 +154,8 @@ from{
 
 .lb-circle{
   clip-path: circle(0% at left bottom);
-  animation: lb-circle-animation 0.75s  forwards ease-in-out;
-  animation-delay: 0.75s;
+  animation: lb-circle-animation 1s  forwards ease-in-out;
+  animation-delay: 1s;
   transition: clip-path 0.75s ease;
 }
 
@@ -174,7 +174,7 @@ from{
 .tr-circle{
   clip-path: circle(0% at top right);
   animation: tr-circle-animation 0.75s  forwards ease-in-out;
-  animation-delay: 0.75s;
+  animation-delay: 1.5s;
   transition: clip-path 0.75s ease;
 }
 
@@ -194,7 +194,7 @@ from{
   clip-path: circle(0% at top left);
   animation: tl-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
-  animation-delay: 0.75s;
+  animation-delay: 1.25s;
 }
 
 .tl-circle:hover {
