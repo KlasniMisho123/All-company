@@ -173,6 +173,10 @@ from{
   clip-path: circle(100%  at center);
 }
 
+.grid-t-element {
+  clip-path: circle(50% at right bottom );
+  /* clip-path: circle(50% at top right); */
+}
 
 /* .cofeeLogo {
   clip-path: polygon(
