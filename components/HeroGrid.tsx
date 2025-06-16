@@ -10,7 +10,7 @@ export default function HeroGrid() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimated(true);
-    }, 2000);
+    }, 2600);
     // ✅ cleanup on unmount
     return () => clearTimeout(timer); 
   }, []);
