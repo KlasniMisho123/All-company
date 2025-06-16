@@ -7,7 +7,7 @@ export default function HeroGrid() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimated(true);
-    }, 2000);
+    }, 3000);
     // ✅ cleanup on unmount
     return () => clearTimeout(timer); 
   }, []);
@@ -21,7 +21,7 @@ export default function HeroGrid() {
 
         {/* Rectangle full-width stat */}
         <div className="bg-gray-900 text-white w-full grid-t-element rounded-xl flex items-center justify-center text-lg ">
-          Projects Completed Element
+          Projects Completed Element 0.90s delay + 0.15 per shift
         </div>
 
         <div
@@ -50,7 +50,7 @@ export default function HeroGrid() {
         ></div>
 
         <div className="bg-gray-900 text-white w-full grid-b-element rounded-xl flex items-center justify-center text-lg ">
-          Projects Completed Element
+          Projects Completed Element 1.50s delay + 0.15 per shift
         </div>
 
         <div
