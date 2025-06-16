@@ -8,7 +8,6 @@ export default function HeroGrid() {
     const timer = setTimeout(() => {
       setAnimated(true);
     }, 3000);
-    
     // ✅ cleanup on unmount
     return () => clearTimeout(timer); 
   }, []);
@@ -16,7 +15,7 @@ export default function HeroGrid() {
   return (
     <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px]">
         <div
-        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl rb-circle cursor-pointer '
+        className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'rb-circle' : ' rb-circle-ani'}`}
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
 

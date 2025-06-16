@@ -133,28 +133,26 @@ from{
   }
 }
 
-
-
-.rb-circle {
+.rb-circle-ani {
   clip-path: circle(0% at right bottom);
-  animation: rb-circle-load 0.75s ease-in-out forwards;
-  animation-delay: 0.75s;
+  animation: rb-circle-animation 0.75s forwards ease-in-out;
+  transition: clip-path 0.75s ease;
+  animation-delay: 0.75s ;
+}
+.rb-circle {
+  clip-path: circle(75% at right bottom);
+  transition: clip-path 0.75s ease;
+  animation-delay: 0.75s ;
 }
 
-.rb-circle.animated {
-  clip-path: circle(75% at right bottom); 
-  transition: clip-path 0.5s ease-in-out;
-}
-
-.rb-circle.animated:hover {
+.rb-circle:hover {
   clip-path: circle(100% at center);
 }
 
-@keyframes rb-circle-load {
-  from {
+@keyframes rb-circle-animation {
+  from{
     clip-path: circle(0% at right bottom);
-  }
-  to {
+  } to {
     clip-path: circle(75% at right bottom);
   }
 }
