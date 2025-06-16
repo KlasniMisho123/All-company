@@ -133,16 +133,16 @@ from{
   }
 }
 
-.rb-circle-ani {
+.rb-circle-start {
   clip-path: circle(0% at right bottom);
   animation: rb-circle-animation 0.75s forwards ease-in-out;
   transition: clip-path 0.75s ease;
   animation-delay: 0.75s ;
 }
+
 .rb-circle {
   clip-path: circle(75% at right bottom);
   transition: clip-path 0.75s ease;
-  animation-delay: 0.75s ;
 }
 
 .rb-circle:hover {
@@ -158,10 +158,15 @@ from{
 }
 
 
-.lb-circle{
+.lb-circle-start {
   clip-path: circle(0% at left bottom);
   animation: lb-circle-animation 1s  forwards ease-in-out;
   animation-delay: 1s;
+  transition: clip-path 0.75s ease;
+}
+
+.lb-circle {
+  clip-path: circle(75% at left bottom);
   transition: clip-path 0.75s ease;
 }
 
@@ -177,10 +182,15 @@ from{
   }
 }
 
-.tr-circle{
+.tr-circle-start{
   clip-path: circle(0% at top right);
   animation: tr-circle-animation 0.75s  forwards ease-in-out;
   animation-delay: 1.5s;
+  transition: clip-path 0.75s ease;
+}
+
+.tr-circle {
+  clip-path: circle(75% at top right);
   transition: clip-path 0.75s ease;
 }
 
@@ -196,11 +206,16 @@ from{
   }
 }
 
-.tl-circle{
+.tl-circle-start {
   clip-path: circle(0% at top left);
   animation: tl-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
   animation-delay: 1.25s;
+}
+
+.tl-circle {
+  clip-path: circle(75% at top left);
+  transition: clip-path 0.75s ease;
 }
 
 .tl-circle:hover {
