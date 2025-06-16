@@ -24,7 +24,7 @@ export default function HeroGrid() {
         ></div>
 
         <div
-            className='bg-center bg-cover bg-no-repeat w-full h-full'
+            className='bg-center  bg-cover bg-no-repeat br-red-500 w-full h-full c-circle '
             style={{ backgroundImage: "url('/star.png')" }}
         ></div>
       <div

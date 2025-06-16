@@ -119,6 +119,11 @@ from{
 
 /* Hero ClipPath Starts */
 
+.c-circle {
+  clip-path: circle(25% at center);
+  transition: clip-path 0.75s ease;
+}
+
 .rb-circle {
   clip-path: circle(75% at right bottom);
   transition: clip-path 0.75s ease;
@@ -179,7 +184,7 @@ from{
 }
 
 .grid-t-element:hover {
-  clip-path: circle(85% at bottom center );
+  clip-path: circle(90% at bottom center );
 }
 
 .grid-b-element {
@@ -188,7 +193,7 @@ from{
 }
 
 .grid-b-element:hover {
-  clip-path: circle(85% at top center );
+  clip-path: circle(90% at top center );
 }
 
 /* .cofeeLogo {
