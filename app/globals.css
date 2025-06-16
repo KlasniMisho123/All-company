@@ -230,22 +230,53 @@ from{
   }
 }
 
-.l-circle{
+.r-circle-start{
   clip-path: circle(90% at right);
   transition: clip-path 0.75s ease;
+}
+
+.r-circle{
+  clip-path: circle(0% at top left);
+  animation: r-circle-animation 0.75s  forwards ease-in-out;
+  transition: clip-path 0.75s ease;
+  animation-delay: 1.25s;
+}
+
+.r-circle:hover {
+  clip-path: circle(100%  at center);
+}
+
+@keyframes r-circle-animation {
+  from{
+    clip-path: circle(0% at  right);
+  } to {
+    clip-path: circle(90% at right);
+  }
+}
+
+
+.l-circle-start {
+  clip-path: circle(90% at left);
+  transition: clip-path 0.75s ease;
+}
+
+.l-circle {
+  clip-path: circle(0% at top left);
+  animation: l-circle-animation 0.75s  forwards ease-in-out;
+  transition: clip-path 0.75s ease;
+  animation-delay: 1.25s;
 }
 
 .l-circle:hover {
   clip-path: circle(100%  at center);
 }
 
-.r-circle{
-  clip-path: circle(90% at left);
-  transition: clip-path 0.75s ease;
-}
-
-.r-circle:hover {
-  clip-path: circle(100%  at center);
+@keyframes l-circle-animation {
+  from{
+    clip-path: circle(0% at  left);
+  } to {
+    clip-path: circle(90% at left);
+  }
 }
 
 .grid-t-element {

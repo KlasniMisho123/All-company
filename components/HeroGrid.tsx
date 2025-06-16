@@ -30,7 +30,7 @@ export default function HeroGrid() {
         ></div>
 
         <div
-        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl l-circle cursor-pointer '
+        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl r-circle cursor-pointer '
         style={{ backgroundImage: "url('/naturaleza.jpg')" }}
         ></div>
         
@@ -40,7 +40,7 @@ export default function HeroGrid() {
         ></div>
 
       <div
-        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl r-circle cursor-pointer '
+        className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl l-circle cursor-pointer '
         style={{ backgroundImage: "url('/shawrma.jpg')" }}
         ></div>
         
