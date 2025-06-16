@@ -27,12 +27,12 @@ export default function HeroGrid() {
         <div className='bg-red-500 w-full h-full'></div>
         <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl tr-circle cursor-pointer '
-        style={{ backgroundImage: "url('/coffeeLogo.jpg')" }}
+        style={{ backgroundImage: "url('/fight-club.jpg')" }}
         ></div>
         <div className='bg-red-500 w-full h-full'></div>
         <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl tl-circle cursor-pointer '
-        style={{ backgroundImage: "url('/nenesProject.jpg')" }}
+        style={{ backgroundImage: "url('/naturaleza.jpg')" }}
         ></div>
     </div>
   )

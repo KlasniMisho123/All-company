@@ -120,7 +120,7 @@ from{
 /* Hero ClipPath Starts */
 
 .rb-circle {
-  clip-path: circle(75% at right  bottom);
+  clip-path: circle(75% at right bottom);
   transition: clip-path 0.75s ease;
 }
 
@@ -129,7 +129,7 @@ from{
 }
 
 .lb-circle{
-  clip-path: circle(75% at left  bottom);
+  clip-path: circle(75% at left bottom);
   transition: clip-path 0.75s ease;
 }
 
@@ -138,7 +138,7 @@ from{
 }
 
 .tr-circle{
-  clip-path: circle(75% at left  bottom);
+  clip-path: circle(75% at top right);
   transition: clip-path 0.75s ease;
 }
 
@@ -147,7 +147,7 @@ from{
 }
 
 .tl-circle{
-  clip-path: circle(75% at left  bottom);
+  clip-path: circle(75% at top left);
   transition: clip-path 0.75s ease;
 }
 
