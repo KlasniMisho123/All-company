@@ -13,15 +13,27 @@ export default function HeroGrid() {
   }, []);
 
   return (
-    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px]">
+    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px] bg-blue-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-red-500 ">
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'rb-circle' : ' rb-circle-start'}`}
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
 
-        {/* Rectangle full-width stat */}
-        <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg ${animated? 't-circle':' t-circle-start'}`}>
-          Projects Completed Element 0.90s delay + 0.15 per shift
+        {/* <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg cursor-pointer  ${animated? 't-circle':' t-circle-start'}`}>
+          <span className='text-lg '>Projects Completed</span>
+        </div> */}
+        {/*  style={{ backgroundImage: "url('https://i.pinimg.com/736x/6b/8e/97/6b8e974572105a1e4096c1a8e2b6a7bc.jpg')" }} */}
+
+        <div
+          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle' : 't-circle-start'}`}
+          style={{ backgroundImage: "url('projects-bg.avif')" }}
+        >
+          <span className="text-sm sm:text-base tracking-wide text-white md:text-lg  ">Designs Completed</span>
+          <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">50+</span>
+          <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
+          <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
+            Purposeful work for real people and bold ideas.
+          </span>
         </div>
 
         <div
@@ -49,9 +61,19 @@ export default function HeroGrid() {
         style={{ backgroundImage: "url('/fight-club.jpg')" }}
         ></div>
 
-        <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg cursor-pointer ${animated? 'b-circle' : 'b-circle-start ' }`}>
-          Projects Completed Element 1.50s delay + 0.15 per shift
+        <div
+          className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 'b-circle' : 'b-circle-start'}`}
+          style={{ backgroundImage: "url('projects-bg.avif')" }}
+        >
+          <span className="text-sm sm:text-base tracking-wide text-white md:text-lg ">Years of Service</span>
+          <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">4+</span>
+          <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
+          <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
+            Consistent quality, built on trust and creativity.
+          </span>
         </div>
+
+        
 
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'tl-circle ' : ' tl-circle-start '}`}
