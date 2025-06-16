@@ -8,9 +8,30 @@ export default function HeroGrid() {
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
 
-        <div className='bg-black text-white w-full h-full grid-t-element'>
-            Projects Completed Element
-        </div>
+        <div className="flex flex-col items-start gap-6 p-4">
+  {/* Rectangle full-width stat */}
+  <div className="bg-black text-white w-full h-[120px] grid-t-element rounded-xl flex items-center justify-center text-lg font-medium">
+    Projects Completed Element
+  </div>
+
+  {/* Circle with square corner stat */}
+  <div className="relative w-[200px] h-[200px] bg-black rounded-full overflow-hidden">
+    {/* Square bottom-right corner overlay */}
+    <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-black"></div>
+
+    {/* Text content */}
+    <div className="absolute top-6 left-6 text-white space-y-1">
+      <p className="text-sm">Active</p>
+      <p className="text-sm">Professionals</p>
+    </div>
+
+    <div className="absolute bottom-4 right-4 text-white text-xl font-bold">
+      13,422
+    </div>
+  </div>
+</div>
+
+
         <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl lb-circle cursor-pointer '
         style={{ backgroundImage: "url('/coffeeLogo.jpg')" }}

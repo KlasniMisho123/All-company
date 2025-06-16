@@ -175,6 +175,13 @@ from{
 
 .grid-t-element {
   clip-path: circle(50% at right bottom );
+  transition: clip-path 0.75s ease;
+  /* clip-path: circle(50% at top right); */
+}
+
+.grid-t-element:hover {
+  clip-path: circle(50% at center right );
+  
   /* clip-path: circle(50% at top right); */
 }
 
