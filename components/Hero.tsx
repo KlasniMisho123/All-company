@@ -1,4 +1,4 @@
-import { Inter, Urbanist } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import React from 'react'
 import HeroGrid from './HeroGrid';
 

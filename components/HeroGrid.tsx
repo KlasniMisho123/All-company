@@ -1,5 +1,5 @@
 'use client'
-import { Inter, Urbanist } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import React, { useEffect, useState } from 'react'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });

@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import Navbar from './Navbar'
 import Link from 'next/link'
