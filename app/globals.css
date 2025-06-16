@@ -302,9 +302,11 @@ from{
   }
 }
 
-.b-circle {
-  clip-path: circle(95% at top center );
+.b-circle-start {
+  clip-path: circle(0% at  top);
+  animation: b-circle-animation 0.75s  forwards ease-in-out;
   transition: clip-path 0.75s ease;
+  animation-delay: 1.50s;
 }
 
 .b-circle {
@@ -312,8 +314,16 @@ from{
   transition: clip-path 0.75s ease;
 }
 
-.b-circlet:hover {
+.b-circle:hover {
   clip-path: circle(90% at top center );
+}
+
+@keyframes b-circle-animation {
+  from{
+    clip-path: circle(0% at  top);
+  } to {
+    clip-path: circle(95% at top center );
+  }
 }
 
 /* .cofeeLogo {

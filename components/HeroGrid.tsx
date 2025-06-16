@@ -49,7 +49,7 @@ export default function HeroGrid() {
         style={{ backgroundImage: "url('/fight-club.jpg')" }}
         ></div>
 
-        <div className="bg-gray-900 text-white w-full grid-b-element rounded-xl flex items-center justify-center text-lg ">
+        <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg ${animated? 'b-circle' : 'b-circle-start ' }`}>
           Projects Completed Element 1.50s delay + 0.15 per shift
         </div>
 
