@@ -230,21 +230,21 @@ from{
   }
 }
 
-.r-circle{
+.l-circle{
   clip-path: circle(90% at right);
   transition: clip-path 0.75s ease;
 }
 
-.r-circle:hover {
+.l-circle:hover {
   clip-path: circle(100%  at center);
 }
 
-.l-circle{
+.r-circle{
   clip-path: circle(90% at left);
   transition: clip-path 0.75s ease;
 }
 
-.l-circle:hover {
+.r-circle:hover {
   clip-path: circle(100%  at center);
 }
 
