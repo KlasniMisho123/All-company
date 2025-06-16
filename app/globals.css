@@ -120,7 +120,7 @@ from{
 /* Hero ClipPath Starts */
 
 .c-circle {
-  clip-path: circle(25% at center);
+  clip-path: circle(75% at center);
   transition: clip-path 0.75s ease;
 }
 
