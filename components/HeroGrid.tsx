@@ -18,12 +18,7 @@ export default function HeroGrid() {
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'rb-circle' : ' rb-circle-start'}`}
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}
         ></div>
-
-        {/* <div className={`bg-gray-900 text-white w-full rounded-xl flex items-center justify-center text-lg cursor-pointer  ${animated? 't-circle':' t-circle-start'}`}>
-          <span className='text-lg '>Projects Completed</span>
-        </div> */}
-        {/*  style={{ backgroundImage: "url('https://i.pinimg.com/736x/6b/8e/97/6b8e974572105a1e4096c1a8e2b6a7bc.jpg')" }} */}
-
+        
         <div
           className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle' : 't-circle-start'}`}
           style={{ backgroundImage: "url('projects-bg.avif')" }}

@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Hero() {
   return (
-    <div className='h-[100vh]'>
-      <section className="mx-30 my-12 flex gap-2 ">
+    <div className=''>
+      <section className="mx-30 my-12 flex flex-col md:flex-row  gap-2 ">
         <div className="flex-1 flex flex-col gap-4">
           <h4 className="text-lg text-[var(--error-color)] font-semibold ">Designs That Speak for You</h4>
           <h2 className={"text-6xl max-w-[600px] font-semibold leading-tight "  + urbanist.className}>
