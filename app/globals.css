@@ -133,7 +133,7 @@ from{
 }
 
 .rb-circle {
-  clip-path: circle(75% at right bottom);
+  animation: rb-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
 }
 
@@ -141,8 +141,16 @@ from{
   clip-path: circle(100% at center);
 }
 
+@keyframes rb-circle-animation {
+  from{
+    clip-path: circle(0% at center);
+  } to {
+    clip-path: circle(75% at right bottom);
+  }
+}
+
 .lb-circle{
-  clip-path: circle(75% at left bottom);
+  animation: lb-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
 }
 
@@ -150,8 +158,16 @@ from{
   clip-path: circle(100%  at center);
 }
 
+@keyframes lb-circle-animation {
+  from{
+    clip-path: circle(0% at center);
+  } to {
+    clip-path: circle(75% at left bottom);
+  }
+}
+
 .tr-circle{
-  clip-path: circle(75% at top right);
+  animation: tr-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
 }
 
@@ -159,13 +175,29 @@ from{
   clip-path: circle(100%  at center);
 }
 
+@keyframes tr-circle-animation {
+  from{
+    clip-path: circle(0% at center);
+  } to {
+    clip-path: circle(75% at top right);
+  }
+}
+
 .tl-circle{
-  clip-path: circle(75% at top left);
+  animation: tl-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
 }
 
 .tl-circle:hover {
   clip-path: circle(100%  at center);
+}
+
+@keyframes tl-circle-animation {
+  from{
+    clip-path: circle(0% at center);
+  } to {
+    clip-path: circle(75% at top left);
+  }
 }
 
 .r-circle{
