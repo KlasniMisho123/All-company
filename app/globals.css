@@ -120,8 +120,16 @@ from{
 /* Hero ClipPath Starts */
 
 .c-circle {
-  clip-path: circle(75% at center);
+  animation: c-circle-animation 1s forwards ease-in-out;
   transition: clip-path 0.75s ease;
+}
+
+@keyframes c-circle-animation {
+  from{
+    clip-path: circle(0% at center);
+  } to {
+    clip-path: circle(75% at center);
+  }
 }
 
 .rb-circle {

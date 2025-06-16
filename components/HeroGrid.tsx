@@ -22,11 +22,12 @@ export default function HeroGrid() {
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl r-circle cursor-pointer '
         style={{ backgroundImage: "url('/naturaleza.jpg')" }}
         ></div>
-
+        
         <div
-            className='bg-center bg-cover bg-no-repeat br-red-500 w-full h-full c-circle '
-            style={{ backgroundImage: "url('/alllogo.jpg)" }}
+        className="bg-center bg-cover bg-no-repeat border-2 border-red-500 w-full h-full overflow-hidden rounded-2xl c-circle"
+        style={{ backgroundImage: "url('/alllogo.jpg')" }}
         ></div>
+
       <div
         className='bg-cover relative w-full h-full bg-blue-300 rounded-3xl l-circle cursor-pointer '
         style={{ backgroundImage: "url('/shawrma.jpg')" }}
