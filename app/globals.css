@@ -339,7 +339,22 @@ from{
 } */
 /* Hero ClipPath Ends */
 
-.services-card {
-  clip-path: circle(70px at 0% 0%);
-  /* Adjust `70px` to control the hole size */
+.card-cutout {
+  clip-path: inset(0 round 16px 16px 16px 16px);
+  /* Top-left cutout */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 12px;
+    transform: rotate(0deg);
+  }
+}
+
+.card-cutout:hover::before {
+  transition: transform 0.3s ease;
 }

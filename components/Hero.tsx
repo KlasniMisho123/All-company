@@ -37,24 +37,26 @@ export default function Hero() {
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)] '> What We Offer </h2> 
 
         <div className='flex mt-8 gap-6 '>
-          <div className="relative h-[200px] w-[200px] bg-gray-100 shadow-xl rounded-2xl overflow-hidden">
-            {/* Background layer (visible through the clipped hole) */}
-            <div className="absolute inset-0 bg-red-300"></div>
+          <div className="relative h-[280px] w-[240px] 0 shadow-xl rounded-2xl overflow-hidden bg-red-300 ">
+            {/* Background layer (visible through cutout) */}
+            <div className="absolute inset-0 "></div>
 
-            {/* Foreground card (with clipped circle) */}
-            <div 
-              className="absolute inset-0 bg-white services-card p-4"
-            >
+            {/* Foreground card with rounded rectangular cutout */}
+            <div className="absolute inset-0 p-1 card-cutout ">
               {/* Icon */}
-              <div className="bg-green-300 rounded-full h-10 w-10 flex items-center justify-center">
-                Icon
+              <div className="absolute bg-green-300 z-100 rounded-full h-10 w-10 flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 001.415 0 3 3 0 014.242 0 1 1 0 001.415-1.415 5 5 0 00-7.072 0 1 1 0 000 1.415z" clipRule="evenodd" />
+                </svg>
               </div>
 
               {/* Text */}
-              <div className="mt-6">
-                <h3 className="font-bold">Title Goes Here</h3>
-                <p className="text-sm mt-1">Tailored to meet individual needs...</p>
-                <a href="#" className="text-xs mt-2 block font-semibold">Read more →</a>
+              <div className="space-y-2">
+                <h3 className="font-bold text-lg">Title Goes Here</h3>
+                <p className="text-gray-600 text-sm">Tailored to meet individual needs perfectly balanced.</p>
+                <a href="#" className="inline-block text-red-500 font-medium text-sm mt-3 hover:underline">
+                  Read more →
+                </a>
               </div>
             </div>
           </div>
