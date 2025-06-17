@@ -37,8 +37,26 @@ export default function Hero() {
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)] '> What We Offer </h2> 
 
         <div className='flex mt-8 gap-6 '>
-          <div className='bg-red-300 h-[200px] w-[200px] shadow-2xl rounded-2xl services-card '> 
+          <div className="relative h-[200px] w-[200px] bg-gray-100 shadow-xl rounded-2xl overflow-hidden">
+            {/* Background layer (visible through the clipped hole) */}
+            <div className="absolute inset-0 bg-red-300"></div>
 
+            {/* Foreground card (with clipped circle) */}
+            <div 
+              className="absolute inset-0 bg-white services-card p-4"
+            >
+              {/* Icon */}
+              <div className="bg-green-300 rounded-full h-10 w-10 flex items-center justify-center">
+                Icon
+              </div>
+
+              {/* Text */}
+              <div className="mt-6">
+                <h3 className="font-bold">Title Goes Here</h3>
+                <p className="text-sm mt-1">Tailored to meet individual needs...</p>
+                <a href="#" className="text-xs mt-2 block font-semibold">Read more →</a>
+              </div>
+            </div>
           </div>
 
           <div> Card 2</div>

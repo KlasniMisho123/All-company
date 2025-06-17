@@ -340,5 +340,6 @@ from{
 /* Hero ClipPath Ends */
 
 .services-card {
-  clip-path: circle(20% at top left);
+  clip-path: circle(70px at 0% 0%);
+  /* Adjust `70px` to control the hole size */
 }
