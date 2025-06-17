@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "NightFall Webworks",
   icons: {
-    icon: "/logo.jpg",
+    icon: "/alllogo.jpg",
   },
 };
 
