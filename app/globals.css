@@ -9,6 +9,7 @@ body {
 :root {
   --primary-color: #FAFAFA;
   --error-color: #D32F2F;
+  --dark-red-color: #e94343;
 } 
 
 .menu-line-1 { 
