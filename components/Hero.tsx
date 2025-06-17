@@ -36,8 +36,8 @@ export default function Hero() {
       <section className='mx-30 my-20'> 
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)] '> What We Offer </h2> 
 
-        <div className='flex mt-8'>
-          <div className='bg-red-300 h-[200px] w-[200px] '> 
+        <div className='flex mt-8 gap-6 '>
+          <div className='bg-red-300 h-[200px] w-[200px] shadow-2xl rounded-2xl services-card '> 
 
           </div>
 

@@ -338,3 +338,7 @@ from{
   );
 } */
 /* Hero ClipPath Ends */
+
+.services-card {
+  clip-path: circle(20% at top left);
+}
