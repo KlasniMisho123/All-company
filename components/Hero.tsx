@@ -38,12 +38,10 @@ export default function Hero() {
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)]  '> What We Offer </h2> 
 
         <div className='flex mt-8 justify-evenly '>
-
           <ServicesCard color={"red"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"/services"} />
-          {/* <ServicesCard />
-          <ServicesCard />
-          <ServicesCard /> */}
-
+          <ServicesCard color={"blue"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"/services"} />
+          <ServicesCard color={"blue"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"/services"} />
+          <ServicesCard color={"blue"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"/services"} />
         </div>
 
       </section>

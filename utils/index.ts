@@ -1,0 +1,51 @@
+export const colorClassMap = {
+  indigo: {
+    bg: 'bg-indigo-500',
+    borderBase: 'border-indigo-500',
+    border: 'hover:border-indigo-500',
+    text: 'text-indigo-500',
+    decoration: 'decoration-indigo-500',
+  },
+  blue: {
+    bg: 'bg-blue-500',
+    borderBase: 'border-blue-500',
+    border: 'hover:border-blue-500',
+    text: 'text-blue-500',
+    decoration: 'decoration-blue-500',
+  },
+  red: {
+    bg: 'bg-red-500',
+    borderBase: 'border-red-500',
+    border: 'hover:border-red-500',
+    text: 'text-red-500',
+    decoration: 'decoration-red-500',
+  },
+  green: {
+    bg: 'bg-green-500',
+    borderBase: 'border-green-500',
+    border: 'hover:border-green-500',
+    text: 'text-green-500',
+    decoration: 'decoration-green-500',
+  },
+  yellow: {
+    bg: 'bg-yellow-500',
+    borderBase: 'border-yellow-500',
+    border: 'hover:border-yellow-500',
+    text: 'text-yellow-500',
+    decoration: 'decoration-yellow-500',
+  },
+  pink: {
+    bg: 'bg-pink-500',
+    borderBase: 'border-pink-500',
+    border: 'hover:border-pink-500',
+    text: 'text-pink-500',
+    decoration: 'decoration-pink-500',
+  }, 
+  purple: {
+    bg: 'bg-purple-500',
+    borderBase: 'border-purple-500',
+    border: 'hover:border-purple-500',
+    text: 'text-purple-500',
+    decoration: 'decoration-purple-500',
+  }
+};
