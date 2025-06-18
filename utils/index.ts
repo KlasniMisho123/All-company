@@ -61,5 +61,22 @@ export const colorClassMap = {
     'lc-text': 'bg-purple-200',
     text: 'text-purple-500',
     decoration: 'decoration-purple-500',
+  },sky: {
+    bg: 'bg-sky-500',
+    borderBase: 'border-sky-500',
+    border: 'hover:border-sky-500',
+    'hc-text': 'text-sky-600',
+    'lc-text': 'bg-sky-200',
+    text: 'text-sky-500',
+    decoration: 'decoration-sky-500'
+  },
+  slate: {
+    bg: 'bg-slate-700',
+    borderBase: 'border-slate-700',
+    border: 'hover:border-slate-700',
+    'hc-text': 'text-slate-800',
+    'lc-text': 'bg-slate-400',
+    text: 'text-slate-600',
+    decoration: 'decoration-slate-700'
   }
 }

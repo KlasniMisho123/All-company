@@ -18,8 +18,6 @@ export default function ServicesCard(props: serviceProps) {
 
   const selectedColor = colorClassMap[color]
 
-  console.log("SelectedColor: " + selectedColor)
-
   return (
     <div className='flex mt-8 justify-evenly'>
       <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-white p-5">
