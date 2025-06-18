@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className='flex mt-8 justify-evenly '>
 
-          <ServicesCard color={"red"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"linkSrc"} />
+          <ServicesCard color={"red"} icon={"fa-solid fa-chart-pie"} title={"title"} paragraph={"paragraph"} linkSrc={"/services"} />
           {/* <ServicesCard />
           <ServicesCard />
           <ServicesCard /> */}
