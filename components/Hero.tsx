@@ -33,47 +33,41 @@ export default function Hero() {
         </div>
         <HeroGrid />
       </section>
-      {/* Page padding Can be Set on parent component aswell */}
-      <section className='mx-30 my-20 bg-gray-200 p-4 '> 
+      <section className='mx-30 my-10 bg-gray-100 rounded-xl  p-4 py-10 '> 
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)]  '> What We Offer </h2> 
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-      {/* 1. Primary Service - Red for impact */}
-      <ServicesCard 
-        color="red" 
-        icon="fa-solid fa-brush" 
-        title="Brand Design"
-        paragraph="Crafting bold visual identities that stand out in your market"
-        linkSrc="/services/brand-design"
-      />
+          <ServicesCard 
+            color="red" 
+            icon="fa-solid fa-compass-drafting" 
+            title="Brand Identity"
+            paragraph="Complete visual systems from logos to style guides"
+            linkSrc="/services/branding"
+          />
 
-      {/* 2. Core Service - Deep blue for trust */}
-      <ServicesCard 
-        color="blue" 
-        icon="fa-solid fa-object-group" 
-        title="UI/UX Systems"
-        paragraph="Building intuitive interfaces with proven design patterns"
-        linkSrc="/services/ui-ux"
-      />
+          <ServicesCard 
+            color="blue" 
+            icon="fa-solid fa-pen-fancy" 
+            title="Print Design"
+            paragraph="Stunning business cards, letterheads & packaging"
+            linkSrc="/services/print"
+          />
 
-      {/* 3. Technical Service - Light blue for clarity */}
-      <ServicesCard 
-        color="sky" 
-        icon="fa-solid fa-code" 
-        title="Web Development"
-        paragraph="Clean, efficient code that brings designs to life"
-        linkSrc="/services/development"
-      />
+          <ServicesCard 
+            color="sky" 
+            icon="fa-solid fa-bullhorn" 
+            title="Advertising"
+            paragraph="Eye-catching campaigns for print and digital"
+            linkSrc="/services/advertising"
+          />
 
-      {/* 4. Premium Service - Dark for sophistication */}
-      <ServicesCard 
-        color="slate" 
-        icon="fa-solid fa-chart-pie" 
-        title="Data Visualization"
-        paragraph="Transforming complex data into compelling stories"
-        linkSrc="/services/data-viz"
-      />
-    </div>
+          <ServicesCard 
+            color="pink"
+            icon="fa-solid fa-champagne-glasses" 
+            title="Event Branding"
+            paragraph="Memorable visuals for exhibitions and launches"
+            linkSrc="/services/events"
+          />
+        </div>
 
       </section>
     </div>
