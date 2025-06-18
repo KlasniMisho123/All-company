@@ -1,6 +1,17 @@
 import React from 'react'
 
-export default function ServicesCard() {
+type serviceProps = {
+  color: string;
+  icon: string;
+  title: string;
+  paragraph: string;
+  linkSrc:string;
+}
+
+export default function ServicesCard(props: serviceProps) {
+
+  const {color, icon, title, paragraph, linkSrc} = props
+
   return (
     <div className='flex mt-8 justify-evenly'>
       <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-white p-5">

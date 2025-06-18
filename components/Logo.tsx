@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from 'next/link';
 
 type NavbarProps = {
-  selectedNav: string;
-  setSelectedNav: React.Dispatch<React.SetStateAction<string>>;
   handleSelectedNav: (nav: string) => void;
 };
 
