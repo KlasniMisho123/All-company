@@ -33,14 +33,26 @@ export default function Hero() {
         <HeroGrid />
       </section>
       {/* Page padding Can be Set on parent component aswell */}
-      <section className='mx-30 my-20'> 
-        <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)] '> What We Offer </h2> 
+      <section className='mx-30 my-20 bg-gray-200 p-4 '> 
+        <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)]  '> What We Offer </h2> 
 
-        <div className='flex mt-8 gap-6 '>
-          <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-red-300 ">
-            <div className='absolute z-10 insert-0 -top-2 -left-2 bg-white h-[80px] w-[80px] rounded-2xl '>
-              <div className='absolute z-10 insert-0 -top-2 -left-2 bg-green-300  h-[75px] w-[75px] rounded-2xl '>
-                <i className="fa-solid fa-chart-pie"></i>
+        <div className='flex mt-8 justify-evenly '>
+          <div className='flex mt-8 justify-evenly'>
+            <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-white p-5">
+              {/* Corner element */}
+              <div className='absolute -top-1 -left-1 bg-gray-200 h-[85px] w-[85px] rounded-br-2xl overflow-hidden'>
+                <div className='absolute top-[4px] left-[4px] bg-red-200 h-[75px] w-[75px] rounded-br-2xl flex justify-center items-center'>
+                  <i className="fa-solid fa-chart-pie text-red-600 text-3xl"></i>
+                </div>
+              </div>
+              
+              {/* Content - positioned normally (not absolute) */}
+              <div className="pt-20"> {/* Add padding to avoid overlap */}
+                <h3 className="font-bold text-lg">Title Goes Here</h3>
+                <p className="text-gray-600 text-sm mt-2">Tailored to meet individual needs perfectly balanced.</p>
+                <a href="#" className="inline-block text-red-500 font-medium text-sm mt-3 hover:underline">
+                  Read more →
+                </a>
               </div>
             </div>
           </div>
