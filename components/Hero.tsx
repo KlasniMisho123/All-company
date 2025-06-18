@@ -1,6 +1,7 @@
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 import HeroGrid from './HeroGrid';
+import ServicesCard from './ServicesCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -37,49 +38,10 @@ export default function Hero() {
         <h2 className='text-center text-4xl font-bold text-[var(--dark-red-color)]  '> What We Offer </h2> 
 
         <div className='flex mt-8 justify-evenly '>
-          <div className='flex mt-8 justify-evenly'>
-            <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-white p-5">
-              {/* Corner element */}
-              <div className='absolute -top-1 -left-1 bg-gray-200 h-[85px] w-[85px] rounded-br-2xl overflow-hidden'>
-                <div className='absolute top-[4px] left-[4px] bg-red-200 h-[75px] w-[75px] rounded-br-2xl flex justify-center items-center'>
-                  <i className="fa-solid fa-chart-pie text-red-600 text-3xl"></i>
-                </div>
-              </div>
-              
-              {/* Content - positioned normally (not absolute) */}
-              <div className="pt-20"> {/* Add padding to avoid overlap */}
-                <h3 className="font-bold text-lg">Title Goes Here</h3>
-                <p className="text-gray-600 text-sm mt-2">Tailored to meet individual needs perfectly balanced.</p>
-                <a href="#" className="inline-block text-red-500 font-medium text-sm mt-3 hover:underline">
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="relative h-[280px] w-[240px] 0 shadow-xl rounded-2xl overflow-hidden bg-red-300 ">
-            <div className="absolute inset-0 "></div>
-
-            <div className="absolute inset-0 p-1 card-cutout ">
-              <div className="absolute bg-green-300 z-100 rounded-full h-10 w-10 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 001.415 0 3 3 0 014.242 0 1 1 0 001.415-1.415 5 5 0 00-7.072 0 1 1 0 000 1.415z" clipRule="evenodd" />
-                </svg>
-              </div>
-
-              <div className="space-y-2">
-                <h3 className="font-bold text-lg">Title Goes Here</h3>
-                <p className="text-gray-600 text-sm">Tailored to meet individual needs perfectly balanced.</p>
-                <a href="#" className="inline-block text-red-500 font-medium text-sm mt-3 hover:underline">
-                  Read more →
-                </a>
-              </div>
-            </div>
-          </div> */}
-
-          <div> Card 2</div>
-          <div> Card 3</div>
-          <div> Card 4</div>
+          <ServicesCard />
+          <ServicesCard />
+          <ServicesCard />
+          <ServicesCard />
         </div>
 
       </section>
