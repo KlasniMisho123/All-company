@@ -2,13 +2,14 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: #FAFAFA;
-  
+  background-color: #1F2937;
+  color: var(--primary-color);
 }
 /* Dark Theme/ White Theme ? */
 
 :root {
   --primary-color: #FAFAFA;
+  --primaty-dark: #1F2937;
   --error-color: #D32F2F;
   --dark-red-color: #e94343;
 } 
