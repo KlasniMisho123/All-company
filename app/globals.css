@@ -360,3 +360,13 @@ from{
 .card-cutout:hover::before {
   transition: transform 0.3s ease;
 }
+
+.plane-flight:hover > i{
+  animation: plane-flight-animation 0.75s  forwards ease-in-out;
+}
+
+@keyframes plane-flight-animation {
+  to {
+    transform: translate(80%, -200%);
+  }
+}
