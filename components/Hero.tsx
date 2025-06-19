@@ -116,6 +116,9 @@ export default function Hero() {
           />
         </div>
       </section>
+      <section className='mx-30 my-10 rounded-xl  p-4 py-10 '>
+        <h1> Working <span className='text-[var(--error-color)]'> Stages </span> </h1>
+      </section>
       {/*Highlighted Cleint Logo Infinite Scroll */}
       {/*String Sides/Advantages Infinite Scroll */}
     </div>
