@@ -131,14 +131,59 @@ export default function Hero() {
             <div>03.Stage</div>
           </div>
           {/* Connected Lines? */}
-          <div className='flex-1 grid grid-cols-2 gap-8 mt-4 '>
-            <div>
-              01.Card
+          <div className='flex-1 grid grid-cols-2 gap-8 mt-4'>
+            
+            <div className='flex flex-col w-full bg-white h-[350px] rounded-xl shadow-lg duration-300 transition-all overflow-hidden hover:border-yellow-400 border-3 group relative'>
+              <div className='flex-1 flex items-center'>
+                <i className="fa-solid fa-lightbulb text-8xl text-yellow-400/60 ml-4 fa-bounce"></i>
+                <h1 className='absolute ml-10 text-black text-3xl '>DISCOVERY</h1>
+              </div>
+              <div className='flex-1 p-4 pt-0 text-gray-700 group-hover:text-yellow-400 transition-all'>
+                We decode your brand DNA through research, moodboards, and strategy sessions.
+              </div>
+              <div className='absolute bottom-4 right-4 text-yellow-400 opacity-0 group-hover:opacity-100 duration-300 transition-all'>
+                01
+              </div>
+            </div>
+
+            <div className='flex flex-col w-full bg-white h-[350px] rounded-xl shadow-lg duration-300 transition-all overflow-hidden hover:border-blue-400 border-3 group relative'>
+              <div className='flex-1 flex items-center'>
+                <i className="fa-solid fa-pen-fancy text-8xl text-blue-400/60 ml-4 group-hover:rotate-12 transition-transform"></i>
+                <h1 className='absolute ml-10 text-black text-3xl '>CONCEPT</h1>
+              </div>
+              <div className='flex-1 p-4 pt-0 text-gray-700 group-hover:text-blue-400 transition-all'>
+                Transforming insights into 3 distinct visual directions for your brand.
+              </div>
+              <div className='absolute bottom-4 right-4 text-blue-400 opacity-0 group-hover:opacity-100 duration-300 transition-all'>
+                02
+              </div>
             </div>
             
-            <div className='mt-5'>02.Card</div>
-            <div>03.Card</div>
-            <div className='mt-5'>04.Card</div>
+            <div className='flex flex-col w-full bg-white h-[350px] rounded-xl shadow-lg duration-300 transition-all overflow-hidden hover:border-red-400 border-3 group relative'>
+              <div className='flex-1 flex items-center'>
+                <i className="fa-solid fa-magnifying-glass text-8xl text-red-400/60 ml-4 group-hover:scale-110 transition-transform"></i>
+                <h1 className='absolute ml-10 text-black text-3xl '>REFINEMENT</h1>
+              </div>
+              <div className='flex-1 p-4 pt-0 text-gray-700 group-hover:text-red-400 transition-all'>
+                Perfecting every detail from kerning to responsive logo behaviors.
+              </div>
+              <div className='absolute bottom-4 right-4 text-red-400 opacity-0 group-hover:opacity-100 duration-300 transition-all'>
+                03
+              </div>
+            </div>
+
+            <div className='flex flex-col w-full bg-white h-[350px] rounded-xl shadow-lg duration-300 transition-all overflow-hidden hover:border-green-400 border-3 group relative'>
+              <div className='flex-1 flex items-center'>
+                <i className="fa-solid fa-box-open text-8xl text-green-400/60 ml-4 group-hover:animate-bounce"></i>
+                <h1 className='absolute ml-10 text-black text-3xl '>DELIVERY</h1>
+              </div>
+              <div className='flex-1 p-4 pt-0 text-gray-700 group-hover:text-green-400 transition-all'>
+                Complete brand packages with guidelines and implementation support.
+              </div>
+              <div className='absolute bottom-4 right-4 text-green-400 opacity-0 group-hover:opacity-100 duration-300 transition-all'>
+                04
+              </div>
+            </div>
           </div>
         </div>
       </section>
