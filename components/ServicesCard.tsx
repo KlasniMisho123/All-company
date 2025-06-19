@@ -21,8 +21,8 @@ export default function ServicesCard(props: serviceProps) {
   return (
     <div className='flex mt-8 justify-evenly cursor-pointer transition-all duration-300 hover:-translate-y-2 '>
       <div className="relative h-[280px] w-[240px] shadow-xl rounded-2xl overflow-hidden bg-white p-5">
-       <div className='absolute -top-1 -left-1 bg-gray-100 h-[85px] w-[85px] rounded-br-2xl overflow-hidden'>
-          <div className={`absolute top-[4px] left-[4px] ${selectedColor?.['lc-text']} h-[75px] w-[75px] rounded-br-2xl flex justify-center items-center`}>
+       <div className='absolute -top-1 -left-1 bg-[var(--primary-dark)] h-[85px] w-[85px] rounded-br-2xl overflow-hidden'>
+          <div className={`absolute top-[4px] left-[4px] ${selectedColor?.['lc-text']} h-[75px] w-[75px] rounded-br-xl flex justify-center items-center`}>
             <i className={`${icon} ${selectedColor?.['hc-text']} text-3xl`}></i>
           </div>
         </div>
