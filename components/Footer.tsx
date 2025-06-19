@@ -8,12 +8,7 @@ const exo2 = Exo_2({subsets: ["latin"],weight: ["400", "700"]});
 
 export default function Footer() {
   {/* Use Auth -> so it shows Active Nav */}
-  const [selectedNav, setSelectedNav ] = useState("")
   const [currentYear, setCurrentYear ] = useState(0)
-
-   function handleSelectedNav(nav:string):void {
-    setSelectedNav(nav);
-  }
 
   useEffect(()=>{
     const d = new Date();
@@ -32,11 +27,15 @@ export default function Footer() {
           href={'/services'} >Services</Link>
 
           <div className="flex gap-2 items-center cursor-pointer text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-3">
-            <Logo
-              selectedNav={selectedNav}
-              setSelectedNav={setSelectedNav}
-              handleSelectedNav={handleSelectedNav}
-            />
+           <div className='flex items-center '>
+                <img
+                className='rounded-full min-h-11 min-w-11 h-11 w-11 object-cover border-2 transition-all duration-300 border-[#D32F2F] '
+                src="/alllogo.jpg"
+                alt="Company Logo"
+                width={120}
+                height={60}         
+                />
+            </div>
             <span className="transition-all duration-300 ">Design</span>
           </div>
 

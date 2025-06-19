@@ -11,10 +11,10 @@ export default function Hero() {
     <div className='pb-12'>
       {/* Dark Background */}
       <section
-        // Color Version
+        // Color Version, projects-bg.avif -> HeroGrid Stats
         className="px-30 py-12 flex flex-col md:flex-row gap-2 bg-no-repeat w-full h-full " 
-        // className="relative px-8 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-cover bg-center overflow-hidden"
-        // style={{ backgroundImage: "url(https://i.pinimg.com/736x/35/4f/ae/354fae3e4cfbfce294dea9fa6f53f8bd.jpg)" }}
+        // className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
+        // style={{ backgroundImage: "url(projects-bg.avif)" }}
       >
         <div className="flex-1 flex flex-col gap-4">
           <h4 className="text-lg font-semibold ">Designs That Speak for You</h4>
@@ -26,7 +26,7 @@ export default function Hero() {
           <h4 className="text-lg font-semibold "> <i className="fa-solid fa-hammer text-[var(--error-color)] forging "></i> Crafted <span className="text-[var(--error-color)] "> Uniquely </span> . Designed Just for You.</h4>
           <div className="pt-4">
             <button className="text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm">
-              Order Now
+              Services
             </button>
             <div className="text-gray-300 mt-2">
               Already have an account?&nbsp;
@@ -115,8 +115,9 @@ export default function Hero() {
             linkSrc="/services/events"
           />
         </div>
-
       </section>
+      {/*Highlighted Cleint Logo Infinite Scroll */}
+      {/*String Sides/Advantages Infinite Scroll */}
     </div>
   )
 }
