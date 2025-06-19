@@ -117,7 +117,26 @@ export default function Hero() {
         </div>
       </section>
       <section className='mx-30 my-10 rounded-xl  p-4 py-10 '>
-        <h1> Working <span className='text-[var(--error-color)]'> Stages </span> </h1>
+        <h4 className='text-2xl'> Work Process </h4>
+        <div className='flex justify-between mt-2 gap-4 '>
+          <div className='flex-1 flex flex-col gap-8 mt-4 '>
+            <h2 className='text-4xl font-semibold '> Our business   <span className='text-[var(--error-color)]'> Process Road </span> </h2>
+            <p className='text-gray-100 mt-2 max-w-[80%]'>
+              <span className='text-lg'> 🎨 </span> From the first pencil sketch to the final brand guidelines, our design process transforms raw ideas into iconic visual identities. 
+              Each phase blends strategic thinking with artistic mastery—keeping you engaged at every turn, while crafting results that don&apos;t just meet briefs,
+              but redefine categories.
+            </p>
+            <div>01.Stage</div>
+            <div>02.Stage</div>
+            <div>03.Stage</div>
+          </div>
+          {/* Connected Lines? */}
+          <div className='flex-1 grid grid-cols-2 gap-8 mt-4 '>
+            <div>01.Card</div>
+            <div className='mt-5'>02.Card</div>
+            <div>03.Card</div>
+          </div>
+        </div>
       </section>
       {/*Highlighted Cleint Logo Infinite Scroll */}
       {/*String Sides/Advantages Infinite Scroll */}
