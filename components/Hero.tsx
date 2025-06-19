@@ -39,7 +39,7 @@ export default function Hero() {
         <HeroGrid />
       </section>
 
-      <section className='mx-30 my-10 px-20 py-10 w-[90%] h-[300px] shadow-sm rounded bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
+      <section className='mx-30 my-10 px-20 py-10 w-[90%] h-[400px] shadow-sm rounded bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
         <div className='flex flex-col gap-4  '>
           <div className="relative inline-block group ">
             <h1 className="text-3xl md:text-4xl font-bold ">
@@ -51,10 +51,19 @@ export default function Hero() {
             Where creativity meets strategy—explore our comprehensive design solutions. <br />
             See how we transform visions into brands
           </p>
-          <div className='flex gap-4'>
-            <div><i className='fa-solid fa-bullseye text-4xl '></i></div>
-            <div><i className='fa-solid fa-bullseye text-4xl '></i></div>
-            <div><i className='fa-solid fa-bullseye text-4xl '></i></div>
+          <div className='flex flex-col gap-4'>
+            <div className='flex items-center gap-2 group '>
+              <i className='fa-solid fa-lightbulb text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-yellow-400  group-hover:bg-white group-hover:text-yellow-400 shadow-sm '></i>
+              <span>Client&apos;s Vision</span>
+            </div>
+            <div className='flex items-center gap-4 text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-yellow-400  group-hover:bg-white group-hover:text-yellow-400 shadow-sm '>
+              <i className='fa-solid fa-cubes text-2xl '></i>
+              <span>Quality Product</span>
+            </div>
+            <div className='flex items-center gap-4 text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-yellow-400  group-hover:bg-white group-hover:text-yellow-400 shadow-sm '>
+              <i className='fa-solid fa-handshake text-2xl'></i>
+              <span>Trusted Partnership</span>
+            </div>
           </div>
         </div>
         <div className=''>
