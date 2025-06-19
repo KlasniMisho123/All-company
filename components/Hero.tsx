@@ -40,7 +40,7 @@ export default function Hero() {
         <HeroGrid />
       </section>
 
-      <section className='mx-30 my-10 px-20 py-10 w-[90%] h-[400px] shadow-sm rounded bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
+      <section className='mx-30 my-10 px-20 py-10 w-[80%] h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
         <div className=''>
           <div className="relative inline-block group mt-2 ">
             <h1 className="text-3xl md:text-4xl font-bold ">
