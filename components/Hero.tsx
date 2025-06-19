@@ -132,9 +132,13 @@ export default function Hero() {
           </div>
           {/* Connected Lines? */}
           <div className='flex-1 grid grid-cols-2 gap-8 mt-4 '>
-            <div>01.Card</div>
+            <div>
+              01.Card
+            </div>
+            
             <div className='mt-5'>02.Card</div>
             <div>03.Card</div>
+            <div className='mt-5'>04.Card</div>
           </div>
         </div>
       </section>
