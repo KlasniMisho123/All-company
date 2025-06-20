@@ -7,105 +7,36 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function StrongSidesScroll() {
   return (
-    <section className='flex items-center my-10 bg-gradient-to-r from-slate-900 to-slate-800 py-4 px-2 overflow-hidden strong-sides w-full relative'>
-  <div className='strong-sides-track'>
-    {/* Original Items */}
-    <div className='flex gap-2 items-center border-2 px-4 p-1 rounded-full border-red-400 truncate'>
-      <i className='fa-solid fa-bullseye text-red-400'></i>
-      <span className={exo2.className}>Client Targeted</span>
-    </div>
+    <section className='flex items-center justify-evenly my-10 bg-gradient-to-r from-slate-900 to-slate-800 py-4 px-2 flex overflow-hidden strong-sides w-full '>
+            <div className='flex gap-2 items-center border-2 px-4 p-1 rounded-full '>
+                <i className='fa-solid fa-bullseye text-red-400 '> </i>
+                <span className={` ` + exo2.className}> Client Targeted </span>
+            </div>
 
-    <div className='flex gap-2 items-center border-2 border-blue-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-flask text-blue-400"></i>
-      <span className={inter.className}>Brand Alchemists</span>
-    </div>
+            <div className='flex gap-2 items-center border-2 border-white px-4 p-1 rounded-full'>
+                <i className="fa-solid fa-flask text-blue-400"></i>
+                <span className={inter.className}>Brand Alchemists</span>
+            </div>
 
-    <div className='flex gap-2 items-center border-2 border-teal-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-gauge-high text-teal-400"></i>
-      <span className={inter.className}>Turbo Workflow</span>
-    </div>
-    
-    <div className='flex gap-2 items-center border-2 border-pink-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-user text-pink-400"></i>
-      <span className={inter.className}>Dedicated Designers</span>
-    </div>
+            <div className='flex gap-2 items-center border-2 border-white px-4 p-1 rounded-full '>
+                <i className="fa-solid fa-gauge-high text-teal-400 "></i>
+                <span className={` ` + inter.className}> Turbo Workflow  </span>
+            </div>
+            
+            <div className='flex gap-2 items-center border-2 border-white px-4 p-1 rounded-full '>
+                <i className="fa-solid fa-user text-pink-400"></i>
+                <span className={` ` + inter.className}> Dedicated Designers </span>
+            </div>
 
-    <div className='flex gap-2 items-center border-2 border-cyan-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-fingerprint text-cyan-400"></i>
-      <span className={inter.className}>Unique Designs</span>
-    </div>
+            <div className='flex gap-2 items-center border-2 border-white px-4 p-1 rounded-full '>
+                <i className="fa-solid fa-fingerprint text-cyan-400"></i>
+                <span className={` ` + inter.className}> Unique Designs </span>
+            </div>
 
-    <div className='flex gap-2 items-center border-2 border-yellow-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-medal text-yellow-400"></i>
-      <span className={inter.className}>Quality</span>
-    </div>
-
-    {/* Duplicates */}
-    <div className='flex gap-2 items-center border-2 px-4 p-1 rounded-full truncate'>
-      <i className='fa-solid fa-bullseye text-red-400'></i>
-      <span className={exo2.className}>Client Targeted</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-blue-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-flask text-blue-400"></i>
-      <span className={inter.className}>Brand Alchemists</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-teal-400 px-4 p-1 border-red-400 rounded-full truncate'>
-      <i className="fa-solid fa-gauge-high text-teal-400"></i>
-      <span className={inter.className}>Turbo Workflow</span>
-    </div>
-
-     
-    <div className='flex gap-2 items-center border-2 border-pink-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-user text-pink-400"></i>
-      <span className={inter.className}>Dedicated Designers</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-cyan-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-fingerprint text-cyan-400"></i>
-      <span className={inter.className}>Unique Designs</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-yellow-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-medal text-yellow-400"></i>
-      <span className={inter.className}>Quality</span>
-    </div>
-
-    {/* Duplicates */}
-    <div className='flex gap-2 items-center border-2 px-4 p-1 rounded-full truncate'>
-      <i className='fa-solid fa-bullseye text-red-400'></i>
-      <span className={exo2.className}>Client Targeted</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-blue-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-flask text-blue-400"></i>
-      <span className={inter.className}>Brand Alchemists</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-teal-400 px-4 p-1 border-red-400 rounded-full truncate'>
-      <i className="fa-solid fa-gauge-high text-teal-400"></i>
-      <span className={inter.className}>Turbo Workflow</span>
-    </div>
-
-     
-    <div className='flex gap-2 items-center border-2 border-pink-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-user text-pink-400"></i>
-      <span className={inter.className}>Dedicated Designers</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-cyan-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-fingerprint text-cyan-400"></i>
-      <span className={inter.className}>Unique Designs</span>
-    </div>
-
-    <div className='flex gap-2 items-center border-2 border-yellow-400 px-4 p-1 rounded-full truncate'>
-      <i className="fa-solid fa-medal text-yellow-400"></i>
-      <span className={inter.className}>Quality</span>
-    </div>
-
-
-  </div>
-</section>
+            <div className='flex gap-2 items-center border-2 border-white px-4 p-1 rounded-full '>
+                <i className="fa-solid fa-medal text-yellow-400"></i>
+                <span className={` ` + inter.className}> Quality </span>
+            </div>
+    </section>
   )
 }

@@ -371,29 +371,12 @@ from{
   }
 }
 
-.strong-sides {
-  overflow: hidden;
-  position: relative;
+.strong-sides > div{
+  animation: strong-sides-animation 5s  infinite linear;
 }
 
-.strong-sides-track {
-  display: flex;
-  gap: 1rem; /* Adjust spacing between items */
-  width: max-content;
-  animation: scroll-horizontal 10s linear infinite;
-  padding: 0.5rem 0;
-}
-
-@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0);
+@keyframes strong-sides-animation {
+  to {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Optional: Pause animation on hover */
-.strong-sides-track:hover {
-  animation-play-state: paused;
 }
