@@ -48,7 +48,7 @@ export default function WorkStages() {
               <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>01. IDEA</h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-yellow-500 transition-all duration-300'>
-              We begin by understanding the client's vision, exploring possibilities, 
+              <span className='text-yellow-500 text-base '> Define Your Goals </span> We begin by understanding the client's vision, exploring possibilities, 
               and generating innovative ideas that align with their goals.
             </p>
           </div>
@@ -61,7 +61,7 @@ export default function WorkStages() {
               <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>03. DEMO & TESTING</h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
-               Through interactive demos and rigorous testing, we ensure functionality, 
+               <span className='text-purple-500 text-base '> Assign Stakeholders </span> Through interactive demos and rigorous testing, we ensure functionality, 
                 performance, and usability across all major platforms and devices.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function WorkStages() {
               <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>02. WEB DESIGN</h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-blue-500 transition-all duration-300'>
-               We translate concepts into clean, responsive, and visually engaging 
+              <span className='text-blue-500 text-base '> Plan Your Process </span> We translate concepts into clean, responsive, and visually engaging 
                designs that reflect the brand’s identity and enhance user experience.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function WorkStages() {
               <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. IDEA</h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
-               After final review, we launch the product smoothly, configure hosting,
+               <span className='text-red-500 text-base '> Process Implement </span> After final review, we launch the product smoothly, configure hosting,
               and set up maintenance tools to ensure long-term success.
             </p>
           </div>
