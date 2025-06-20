@@ -4,6 +4,7 @@ import HeroGrid from './HeroGrid';
 import ServicesCard from './ServicesCard';
 import Link from 'next/link';
 import WorkStages from './WorkingStagesCard';
+import StrongSidesScroll from './StrongSidesScroll';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -40,8 +41,8 @@ export default function Hero() {
         </div>
         <HeroGrid />
       </section>
-
-      <section className='mx-30 my-10 px-20 py-10 w-[80%] h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
+      <StrongSidesScroll />
+      <section className='mx-30 px-20 py-10 w-[80%] h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
         <div className=''>
           <div className="relative inline-block group mt-2 ">
             <h1 className="text-3xl md:text-4xl font-bold ">
@@ -120,7 +121,6 @@ export default function Hero() {
       <WorkStages />
      
       {/*Highlighted Cleint Logo Infinite Scroll */}
-      {/*String Sides/Advantages Infinite Scroll */}
     </div>
   )
 }
