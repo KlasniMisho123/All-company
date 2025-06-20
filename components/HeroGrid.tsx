@@ -24,13 +24,13 @@ export default function HeroGrid() {
 
         <div
           className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle ' : 't-circle-start '} ` + urbanist.className }
-          style={{ backgroundImage: "url('projects-bg.avif')" }}
-          // style={{ backgroundImage: "url('https://i.pinimg.com/736x/8b/00/39/8b00398a68622fc3411eb141eb5b345e.jpg')" }} For white bg?
+          // style={{ backgroundImage: "url('projects-bg.avif')" }}
+          style={{ backgroundImage: "url('https://i.pinimg.com/736x/8b/00/39/8b00398a68622fc3411eb141eb5b345e.jpg')" }} 
         >
           <span className="text-sm sm:text-base tracking-wide text-white ">Designs Completed</span>
           <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">50+</span>
           <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
-          <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
+          <span className="text-xs sm:text-sm text-black mt-1 text-center">
             Purposeful work for real people and bold ideas.
           </span>
         </div>
@@ -62,12 +62,13 @@ export default function HeroGrid() {
 
         <div
           className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 'b-circle ' : 'b-circle-start '}` + urbanist.className }
-          style={{ backgroundImage: "url('projects-bg.avif')" }}
+          // style={{ backgroundImage: "url('projects-bg.avif')" }}
+          style={{ backgroundImage: "url('https://i.pinimg.com/736x/8b/00/39/8b00398a68622fc3411eb141eb5b345e.jpg')" }} 
         >
           <span className="text-sm sm:text-base tracking-wide text-white ">Years of Service</span>
           <span className="text-2xl sm:text-3xl font-extrabold text-blue-500">4+</span>
           <span className="h-1 rounded-full mt-1 bg-blue-500 w-10 sm:w-12"></span>
-          <span className="text-xs sm:text-sm text-gray-400 mt-1 text-center">
+          <span className="text-xs sm:text-sm text-black mt-1 text-center">
             Consistent quality, built on trust and creativity.
           </span>
         </div>

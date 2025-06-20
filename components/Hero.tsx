@@ -13,9 +13,9 @@ export default function Hero() {
       {/* Dark Background */}
       <section
         // Color Version, projects-bg.avif -> HeroGrid Stats
-        className="px-30 py-12 flex flex-col md:flex-row gap-2 bg-no-repeat w-full h-full " 
-        // className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
-        // style={{ backgroundImage: "url(projects-bg.avif)" }}
+        // className="px-30 py-12 flex flex-col md:flex-row gap-2 bg-no-repeat w-full h-full " 
+        className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
+        style={{ backgroundImage: "url(projects-bg.avif)" }}
       >
         <div className="flex-1 flex flex-col gap-4">
           <h4 className="text-lg font-semibold ">Designs That Speak for You</h4>
