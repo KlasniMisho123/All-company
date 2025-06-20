@@ -370,3 +370,30 @@ from{
     transform: translate(80%, -200%);
   }
 }
+
+.strong-sides {
+  overflow: hidden;
+  position: relative;
+}
+
+.strong-sides-track {
+  display: flex;
+  gap: 1rem; /* Adjust spacing between items */
+  width: max-content;
+  animation: scroll-horizontal 10s linear infinite;
+  padding: 0.5rem 0;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Pause animation on hover */
+.strong-sides-track:hover {
+  animation-play-state: paused;
+}
