@@ -371,9 +371,17 @@ from{
   }
 }
 
-.strong-sides > div{
-  animation: strong-sides-animation 5s  infinite linear;
+.strong-sides {
+  /* animation: strong-sides-animation 5s  infinite linear; */
 }
+
+.animation-track {
+  animation: strong-sides-animation 10s infinite linear;
+}
+
+/* .animation-track:hover {
+  animation: 
+} */
 
 @keyframes strong-sides-animation {
   to {
