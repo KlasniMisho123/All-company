@@ -388,3 +388,20 @@ from{
     transform: translateX(100%);
   }
 }
+
+.button-clipath > div {
+  clip-path: circle(100% at center);
+  transition: all 0.3s linear;
+}
+.button-clipath > span {
+  transition: all 0.3s linear;
+  color: white;
+}
+
+.button-clipath:hover > div {
+  clip-path: circle(0% at center);
+}
+
+.button-clipath:hover > span {
+  color: var(--error-color);
+}

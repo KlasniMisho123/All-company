@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <div className='relative w-full z-50 '>
       <div className='relative flex items-center justify-between gap-2 p-2 sm:py-4 sm:px-6 z-100 bg-[#FAFAFA] text-[#D32F2F] rounded-b-lg w-full border-b-2 border-b-[#D32F2F] min-w-fit '> 
-        <Logo selectedNav={selectedNav} setSelectedNav={setSelectedNav} handleSelectedNav={handleSelectedNav} />
+        <Logo handleSelectedNav={handleSelectedNav} />
         <div className='hidden sm:flex'>
           <Navbar selectedNav={selectedNav} setSelectedNav={setSelectedNav} handleSelectedNav={handleSelectedNav} />
         </div>
