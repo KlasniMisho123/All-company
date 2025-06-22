@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Button() {
+  // Props
+  // Title/ Color /href
   return (
     <Link className="relative self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white "
     href={"/projects"}>
