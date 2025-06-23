@@ -13,7 +13,7 @@ export default function Button(props:buttonProps) {
   // Props
   // Title / Color /href / Aditional classnames
   return (
-    <Link className="relative self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white "
+    <Link className="relative flex justify-center self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white min-w-[130px] "
     href={linkSrc}>
         <div className=" absolute inset-0 bg-[var(--error-color)] "></div>
         <span className="relative z-10 font-semibold ">{title}</span>

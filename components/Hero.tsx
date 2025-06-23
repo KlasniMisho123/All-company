@@ -27,16 +27,15 @@ export default function Hero() {
             Branding, Events, and More
           </h2>
           <h4 className="text-lg font-semibold "> <i className="fa-solid fa-hammer text-[var(--error-color)] forging "></i> Crafted <span className="text-[var(--error-color)] "> Uniquely </span> . Designed Just for You.</h4>
-          <div className="pt-4">
+            <Button
+              title={"Services"}
+              linkSrc={"/Services"}
+              icon={<></>}
+              customClassName={""}
+              />
             {/* <button className="text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm">
               Services
-            </button> */}
-            <Button
-            title={"Services"}
-            linkSrc={"/Services"}
-            icon={<></>}
-            customClassName={""}
-            />
+              </button> */}
 
             <div className="text-gray-300 mt-2">
               Already have an account?&nbsp;
@@ -44,7 +43,6 @@ export default function Hero() {
                 <span className="transition-all duration-500 group-hover:text-[var(--error-color)]">Log In</span>
                 <span className="absolute left-0 -bottom-0.5 h-[2px] w-full origin-left scale-x-0 bg-[var(--error-color)] transition-transform duration-500 group-hover:scale-x-100"></span>
               </span>
-            </div>
           </div>
         </div>
         <HeroGrid />
