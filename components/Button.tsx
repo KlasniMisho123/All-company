@@ -9,9 +9,7 @@ type buttonProps = {
 }
 
 export default function Button(props:buttonProps) {
-  const {title, linkSrc, icon, customClassName} = props
-  // Props
-  // Title / Color /href / Aditional classnames
+  const {title, linkSrc } = props
   return (
     <Link className="relative flex justify-center self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white min-w-[130px] "
     href={linkSrc}>
