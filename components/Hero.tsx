@@ -5,6 +5,7 @@ import ServicesCard from './ServicesCard';
 import Link from 'next/link';
 import WorkStages from './WorkingStagesCard';
 import StrongSidesScroll from './StrongSidesScroll';
+import Button from './Button';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -27,9 +28,16 @@ export default function Hero() {
           </h2>
           <h4 className="text-lg font-semibold "> <i className="fa-solid fa-hammer text-[var(--error-color)] forging "></i> Crafted <span className="text-[var(--error-color)] "> Uniquely </span> . Designed Just for You.</h4>
           <div className="pt-4">
-            <button className="text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm">
+            {/* <button className="text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm">
               Services
-            </button>
+            </button> */}
+            <Button
+            title={"Services"}
+            linkSrc={"/Services"}
+            icon={<></>}
+            customClassName={""}
+            />
+
             <div className="text-gray-300 mt-2">
               Already have an account?&nbsp;
               <span className="relative group font-bold cursor-pointer inline-block">

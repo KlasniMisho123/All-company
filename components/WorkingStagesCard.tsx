@@ -39,8 +39,8 @@ export default function WorkStages() {
         <Button
           title={"Check Out Our Projects"}
           linkSrc={"/projects"}
-          icon={""}
-          addClassnames={""}
+          icon={<></>}
+          customClassName={""}
         />
         
       </div>
