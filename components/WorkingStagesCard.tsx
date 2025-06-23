@@ -36,7 +36,12 @@ export default function WorkStages() {
             <h4> Finalized web application ready for deployment </h4> 
           </div>
         </div>
-        <Button />
+        <Button
+          title={"Check Out Our Projects"}
+          linkSrc={"/projects"}
+          icon={""}
+          addClassnames={""}
+        />
         
       </div>
       <div className='flex flex-col items-center h-full gap-4 justify-start py-8 px-0 xl:px-8 md:justify-center md:gap-8 sm:flex-row sm:items-start text-black '>

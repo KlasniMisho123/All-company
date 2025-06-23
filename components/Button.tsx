@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
-export default function Button() {
+export default function Button(props) {
+  const {title, linkSrc, icon, addClassnames} = props
   // Props
-  // Title/ Color /href
+  // Title / Color /href / Aditional classnames
   return (
     <Link className="relative self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white "
     href={"/projects"}>
