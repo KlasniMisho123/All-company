@@ -376,6 +376,11 @@ from{
   will-change: transform;
 }
 
+.animate-infinite-scroll:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
 @keyframes animate-infinite-scroll-animation {
   0% {
     transform: translateX(0);
