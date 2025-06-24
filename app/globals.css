@@ -371,22 +371,18 @@ from{
   }
 }
 
-.strong-sides {
-  /* animation: strong-sides-animation 5s  infinite linear; */
+.animate-infinite-scroll {
+  animation: animate-infinite-scroll-animation 10s infinite linear;
 }
 
-.animation-track {
-  animation: strong-sides-animation 10s infinite linear;
-}
 
-/* .animation-track:hover {
-  animation: 
-} */
-
-@keyframes strong-sides-animation {
-  to {
+@keyframes animate-infinite-scroll-animation {
+  /* to {
+    transform: translateX(calc(-50%, 20px));
+  } */
+  /* to {
     transform: translateX(100%);
-  }
+  } */
 }
 
 .button-clipath > div {

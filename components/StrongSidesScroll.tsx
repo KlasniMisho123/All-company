@@ -8,9 +8,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 export default function StrongSidesScroll() {
   return (
     <section className=' my-10 bg-gradient-to-r from-slate-900 to-slate-800 py-4 px-2  overflow-hidden strong-sides w-full '>
-        {/* <div className='flex items-center gap-8  w-full animation-track'> */}
-        {/* Scroll Animation */}
-        <div className='flex items-center justify-evenly w-full '>
+        <div className='flex items-center justify-evenly w-full animate-infinite-scroll '>
             <div className='flex gap-2 items-center border-2 px-4 p-1 rounded-full truncate'>
                 <i className='fa-solid fa-bullseye text-red-400 '> </i>
                 <span className={` ` + exo2.className}> Client Targeted </span>
