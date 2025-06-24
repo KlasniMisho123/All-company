@@ -1,11 +1,11 @@
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 import HeroGrid from './HeroGrid';
-import ServicesCard from './ServicesCard';
 import Link from 'next/link';
 import WorkStages from './WorkingStagesCard';
 import StrongSidesScroll from './StrongSidesScroll';
 import Button from './Button';
+import Services from './Services';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -77,7 +77,7 @@ export default function Hero() {
         </div>
         <div className='self-center '>
           <Link
-           className="flex items-center gap-2 text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] 
+           className="flex items-center gap-2 text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] truncate
            font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm overflow-hidden plane-flight  "
            href={'/aboutus'}
            >
@@ -86,47 +86,10 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className='mx-30 my-10 rounded-xl  p-4 py-10 '> 
-        <h2 className={'text-center text-4xl font-bold ' + urbanist.className}> Our <span className='text-3xl bg-gradient-to-r from-[var(--error-color)] to-[#1F2937] tracking-widest font-semibold px-1 '> Services </span> </h2> 
-        <p className={`text-center bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent font-medium text-lg md:text-xl max-w-2xl mx-auto ${urbanist.className}`}>
-           We deliver innovative, client-focused services designed to solve real challenges and drive sustainable growth. </p> 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-          <ServicesCard 
-            color="red" 
-            icon="fa-solid fa-compass-drafting" 
-            title="Brand Identity"
-            paragraph="Complete visual systems from logos to style guides"
-            linkSrc="/services/branding"
-          />
-
-          <ServicesCard 
-            color="blue" 
-            icon="fa-solid fa-pen-fancy" 
-            title="Print Design"
-            paragraph="Stunning business cards, letterheads & packaging"
-            linkSrc="/services/print"
-          />
-
-          <ServicesCard 
-            color="sky" 
-            icon="fa-solid fa-bullhorn" 
-            title="Advertising"
-            paragraph="Eye-catching campaigns for print and digital"
-            linkSrc="/services/advertising"
-          />
-
-          <ServicesCard 
-            color="pink"
-            icon="fa-solid fa-champagne-glasses" 
-            title="Event Branding"
-            paragraph="Memorable visuals for exhibitions and launches"
-            linkSrc="/services/events"
-          />
-        </div>
-      </section>
+      <Services />
       <WorkStages />
      
-      {/*Highlighted Cleint Logo Infinite Scroll */}
+      {/*Highlighted Cleint Logo Infinite Scroll, Reveal from bottom? */}
     </div>
   )
 }
