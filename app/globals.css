@@ -372,17 +372,16 @@ from{
 }
 
 .animate-infinite-scroll {
-  animation: animate-infinite-scroll-animation 10s infinite linear;
+  animation: animate-infinite-scroll-animation 10s linear infinite;
 }
 
-
 @keyframes animate-infinite-scroll-animation {
-  /* to {
-    transform: translateX(calc(-50%, 20px));
-  } */
-  /* to {
-    transform: translateX(100%);
-  } */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .button-clipath > div {
