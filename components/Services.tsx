@@ -42,71 +42,80 @@ export default function Services() {
           ></button>
         </div>
 
-        <div className="overflow-x-hidden w-full max-w-screen-xl mx-auto">
-            <div className='flex gap-20 w-max '>
-                <ServicesCard 
-                color="red" 
-                icon="fa-solid fa-compass-drafting" 
-                title="Brand Identity"
-                paragraph="Complete visual systems from logos to style guides"
-                linkSrc="/services/branding"
-                />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        {pageIndex == 0 &&
+          (
+             <>
+          <ServicesCard 
+            color="red" 
+            icon="fa-solid fa-compass-drafting" 
+            title="Brand Identity"
+            paragraph="Complete visual systems from logos to style guides"
+            linkSrc="/services/branding"
+          />
 
-                <ServicesCard 
-                color="blue" 
-                icon="fa-solid fa-pen-fancy" 
-                title="Print Design"
-                paragraph="Stunning business cards, letterheads & packaging"
-                linkSrc="/services/print"
-                />
+          <ServicesCard 
+            color="blue" 
+            icon="fa-solid fa-pen-fancy" 
+            title="Print Design"
+            paragraph="Stunning business cards, letterheads & packaging"
+            linkSrc="/services/print"
+          />
 
-                <ServicesCard 
-                color="sky" 
-                icon="fa-solid fa-bullhorn" 
-                title="Advertising"
-                paragraph="Eye-catching campaigns for print and digital"
-                linkSrc="/services/advertising"
-                />
+          <ServicesCard 
+            color="sky" 
+            icon="fa-solid fa-bullhorn" 
+            title="Advertising"
+            paragraph="Eye-catching campaigns for print and digital"
+            linkSrc="/services/advertising"
+          />
 
-                <ServicesCard 
-                color="pink"
-                icon="fa-solid fa-champagne-glasses" 
-                title="Event Branding"
-                paragraph="Memorable visuals for exhibitions and launches"
-                linkSrc="/services/events"
-                />
-                <ServicesCard 
-                color="red" 
-                icon="fa-solid fa-compass-drafting" 
-                title="Brand Identity"
-                paragraph="Complete visual systems from logos to style guides"
-                linkSrc="/services/branding"
-                />
+          <ServicesCard 
+            color="pink"
+            icon="fa-solid fa-champagne-glasses" 
+            title="Event Branding"
+            paragraph="Memorable visuals for exhibitions and launches"
+            linkSrc="/services/events"
+          />
+          </>
+          )}
+          {/* pages */}
+        {pageIndex == 1 &&
+          (
+             <>
+          <ServicesCard 
+            color="red" 
+            icon="fa-solid fa-compass-drafting" 
+            title="Brand Identity"
+            paragraph="xsxsxss"
+            linkSrc="/services/branding"
+          />
 
-                <ServicesCard 
-                color="blue" 
-                icon="fa-solid fa-pen-fancy" 
-                title="Print Design"
-                paragraph="Stunning business cards, letterheads & packaging"
-                linkSrc="/services/print"
-                />
+          <ServicesCard 
+            color="blue" 
+            icon="fa-solid fa-pen-fancy" 
+            title="Print Design"
+            paragraph="Stunning business cards, letterheads & packaging"
+            linkSrc="/services/print"
+          />
 
-                <ServicesCard 
-                color="sky" 
-                icon="fa-solid fa-bullhorn" 
-                title="Advertising"
-                paragraph="Eye-catching campaigns for print and digital"
-                linkSrc="/services/advertising"
-                />
+          <ServicesCard 
+            color="sky" 
+            icon="fa-solid fa-bullhorn" 
+            title="Advertising"
+            paragraph="Eye-catching campaigns for print and digital"
+            linkSrc="/services/advertising"
+          />
 
-                <ServicesCard 
-                color="pink"
-                icon="fa-solid fa-champagne-glasses" 
-                title="Event Branding"
-                paragraph="Memorable visuals for exhibitions and launches"
-                linkSrc="/services/events"
-                />
-            </div>
+          <ServicesCard 
+            color="pink"
+            icon="fa-solid fa-champagne-glasses" 
+            title="Event Branding"
+            paragraph="Memorable visuals for exhibitions and launches"
+            linkSrc="/services/events"
+          />
+          </>
+          )}
         </div>
       </section>
   )
