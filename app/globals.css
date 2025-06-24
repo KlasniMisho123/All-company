@@ -373,6 +373,7 @@ from{
 
 .animate-infinite-scroll {
   animation: animate-infinite-scroll-animation 10s linear infinite;
+  will-change: transform;
 }
 
 @keyframes animate-infinite-scroll-animation {
