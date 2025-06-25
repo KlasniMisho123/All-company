@@ -1,3 +1,5 @@
+import { serviceProps } from "@/types/types"
+
 export const colorClassMap = {
   indigo: {
     bg: 'bg-indigo-500',
@@ -97,3 +99,62 @@ violet: {
   decoration: 'decoration-violet-500'
 }
 }
+
+export const serviceCards:serviceProps[] = [
+  {
+    title:"Brand Identity",
+    icon:"fa-solid fa-compass-drafting" ,
+    color:"red",
+    paragraph:"Complete visual systems from logos to style guides",
+    linkSrc:"services/branding",
+  },
+  {
+    title:"Print Design",
+    icon:"fa-solid fa-pen-fancy",
+    color:"blue",
+    paragraph:"Stunning business cards, letterheads & packaging",
+    linkSrc:"services/print",
+  },
+  {
+    title:"Advertising",
+    icon:"fa-solid fa-bullhorn" ,
+    color:"sky",
+    paragraph:"Eye-catching campaigns for print and digital",
+    linkSrc:"services/branding",
+  },
+  {
+    title:"Event Branding",
+    icon:"fa-solid fa-champagne-glasses" ,
+    color:"pink",
+    paragraph:"Memorable visuals for exhibitions and launches",
+    linkSrc:"/services/events",
+  },
+    {
+    title: "Web Design",
+    icon: "fa-solid fa-display",
+    color: "indigo",
+    paragraph: "Modern, responsive websites tailored to your brand",
+    linkSrc: "/services/web-design",
+  },
+  {
+    title: "UX/UI Design",
+    icon: "fa-solid fa-cubes",
+    color: "violet",
+    paragraph: "Intuitive interfaces and seamless user experiences",
+    linkSrc: "/services/ux-ui",
+  },
+  {
+    title: "Packaging Design",
+    icon: "fa-solid fa-box-open",
+    color: "amber",
+    paragraph: "Visually appealing packaging that sells your product on sight",
+    linkSrc: "/services/packaging",
+  },
+  {
+    title: "Merch Design",
+    icon: "fa-solid fa-shirt",
+    color: "green",
+    paragraph: "Branded apparel, accessories, and swag your audience will love",
+    linkSrc: "/services/merch",
+  }
+]
