@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Logo from './Logo'
+import Image from "next/image"
 import Link from 'next/link'
 import { Exo_2 } from 'next/font/google';
 
@@ -28,7 +28,7 @@ export default function Footer() {
 
           <div className="flex gap-2 items-center cursor-pointer text-gray-400 hover:text-white transition-all duration-300 hover:translate-x-3">
            <div className='flex items-center '>
-                <img
+                <Image
                 className='rounded-full min-h-11 min-w-11 h-11 w-11 object-cover border-2 transition-all duration-300 border-[#D32F2F] '
                 src="/alllogo.jpg"
                 alt="Company Logo"

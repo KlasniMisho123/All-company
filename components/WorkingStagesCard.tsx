@@ -56,7 +56,7 @@ export default function WorkStages() {
               <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>01. IDEA</h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-yellow-500 transition-all duration-300'>
-              <span className='text-yellow-500 text-base '> Define Your Goals </span> We begin by understanding the client's vision, exploring possibilities, 
+              <span className='text-yellow-500 text-base '> Define Your Goals </span> We begin by understanding the client&apos;s vision, exploring possibilities, 
               and generating innovative ideas that align with their goals.
             </p>
           </div>
