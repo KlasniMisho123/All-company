@@ -6,12 +6,13 @@ import WorkStages from './WorkingStagesCard';
 import StrongSidesScroll from './StrongSidesScroll';
 import Button from './Button';
 import Services from './Services';
+import ClientCompanies from './ClientCompanies';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Hero() {
   return (
-    <div className='pb-12'>
+    <div className=''>
       {/* Dark Background */}
       <section
         // Color Version, projects-bg.avif -> HeroGrid Stats
@@ -88,8 +89,8 @@ export default function Hero() {
 
       <Services />
       <WorkStages />
-     
-      {/*Highlighted Cleint Logo Infinite Scroll, Reveal from bottom? */}
+      <ClientCompanies />
+      {/*Highlighted Cleint Cards, Reveal from bottom? */}
     </div>
   )
 }
