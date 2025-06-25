@@ -98,14 +98,14 @@ export default function Services() {
            {pageIndex} We deliver innovative, client-focused services designed to solve real challenges and drive sustainable growth. </p> 
         <div className='flex px-4 justify-between text-2xl w-full '>
           {/* Conditions: move left/right, not allowed-style */}
-          <button className="fa-solid fa-chevron-left cursor-pointer tranition-all duration-300 hover:text-red-500 hover:scale-110" 
+          <button className={"fa-solid fa-chevron-left tranition-all duration-300 cursor-pointer " + (currentCards[0] <= 0 ? "text-gray-600" : "hover:scale-110 hover:text-red-500 ")  }
             onClick={()=>{
                 handleServicesScroll("left")
             }}
           >
           </button>
 
-          <button className={"fa-solid fa-chevron-right cursor-pointer tranition-all duration-300 hover:text-red-500 hover:scale-110 " + (pageIndex == 0 ? "" : "") }
+          <button className={"fa-solid fa-chevron-right tranition-all duration-300 cursor-pointer " + (currentCards[1] >= serviceCards.length ? "text-gray-600" : "hover:scale-110 hover:text-red-500 ") }
           onClick={()=>{
                 handleServicesScroll("right")
             }}
