@@ -13,24 +13,24 @@ export default function ClientCompanies() {
         <div className='max-w-[20%] h-[90px] transition-all duration-300 grayscale-100 hover:grayscale-0 hover:scale-110 '>
             <img
             src={"/companies/adBlueVega.jpg"}
-            className='object-cover w-full h-full min-w-[125px] '
+            className='object-fit w-full h-full min-w-[125px] '
             />
         </div>
         <div className='max-w-[20%] h-[90px] transition-all duration-300 grayscale-100 hover:grayscale-0 hover:scale-110 '>
             <img
-            src={"/companies/sura.jpg"}
+            src={"/companies/sulfix.jpg"}
             className='object-cover w-full h-full min-w-[125px]'
             />
         </div>
         <div className='max-w-[20%] h-[90px] transition-all duration-300 grayscale-100 hover:grayscale-0 hover:scale-110 '>
             <img
-            src={"/companies/sura.jpg"}
+            src={"/companies/clinton.png"}
             className='object-cover w-full h-full min-w-[125px]'
             />
         </div>
         <div className='max-w-[20%] h-[90px] transition-all duration-300 grayscale-100 hover:grayscale-0 hover:scale-110 '>
             <img
-            src={"/companies/sura.jpg"}
+            src={"/companies/ramires.png"}
             className='object-cover w-full h-full min-w-[125px]'
             />
         </div>
