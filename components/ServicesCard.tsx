@@ -1,16 +1,7 @@
 import { colorClassMap } from '@/utils';
 import Link from 'next/link';
 import React from 'react'
-
-type ColorVariant = keyof typeof colorClassMap;
-
-type serviceProps = {
-  color: ColorVariant;
-  icon: string;
-  title: string;
-  paragraph: string;
-  linkSrc:string;
-}
+import { serviceProps } from '@/types/types';
 
 export default function ServicesCard(props: serviceProps) {
 

@@ -2,9 +2,42 @@
 import React, { useState } from 'react'
 import ServicesCard from './ServicesCard';
 import { Urbanist } from 'next/font/google';
+import { serviceProps } from '@/types/types';
 
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+
+
+const serviceCards:serviceProps[] = [
+  {
+    title:"Brand Identity",
+    icon:"fa-solid fa-compass-drafting" ,
+    color:"red",
+    paragraph:"Complete visual systems from logos to style guides",
+    linkSrc:"services/branding",
+  },
+  {
+    title:"Print Design",
+    icon:"fa-solid fa-pen-fancy",
+    color:"blue",
+    paragraph:"Stunning business cards, letterheads & packaging",
+    linkSrc:"services/print",
+  },
+  {
+    title:"Advertising",
+    icon:"fa-solid fa-bullhorn" ,
+    color:"sky",
+    paragraph:"Eye-catching campaigns for print and digital",
+    linkSrc:"services/branding",
+  },
+  {
+    title:"Event Branding",
+    icon:"fa-solid fa-champagne-glasses" ,
+    color:"pink",
+    paragraph:"Memorable visuals for exhibitions and launches",
+    linkSrc:"/services/events",
+  }
+]
 
 export default function Services() {
     const [pageIndex, setPageIndex ] = useState(0)
@@ -45,15 +78,20 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
         {pageIndex == 0 &&
           (
-             <>
-          <ServicesCard 
-            color="red" 
-            icon="fa-solid fa-compass-drafting" 
-            title="Brand Identity"
-            paragraph="Complete visual systems from logos to style guides"
-            linkSrc="/services/branding"
-          />
-
+          <>
+          {serviceCards.map(card => {
+            return(
+               <ServicesCard
+                  color={card.color}
+                  icon={card.icon}
+                  title={card.title}
+                  paragraph={card.paragraph}
+                  linkSrc={card.linkSrc}
+                />
+            )
+          })
+          }
+          
           <ServicesCard 
             color="blue" 
             icon="fa-solid fa-pen-fancy" 
