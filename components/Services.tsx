@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ServicesCard from './ServicesCard';
 import { Urbanist } from 'next/font/google';
 import { serviceProps } from '@/types/types';
@@ -47,7 +47,7 @@ const serviceCards:serviceProps[] = [
   {
     title: "UX/UI Design",
     icon: "fa-solid fa-cubes",
-    color: "amber",
+    color: "violet",
     paragraph: "Intuitive interfaces and seamless user experiences",
     linkSrc: "/services/ux-ui",
   },
@@ -61,7 +61,7 @@ const serviceCards:serviceProps[] = [
   {
     title: "Merch Design",
     icon: "fa-solid fa-shirt",
-    color: "yellow",
+    color: "green",
     paragraph: "Branded apparel, accessories, and swag your audience will love",
     linkSrc: "/services/merch",
   }
@@ -69,10 +69,16 @@ const serviceCards:serviceProps[] = [
 
 export default function Services() {
   const [pageIndex, setPageIndex ] = useState(0)
+  const [currentCards, setCurrentCards ] = useState([0,4])
   
     function handleServicesScroll(side:string) {
       if(side == "right") {
-        setPageIndex(prev => prev + 1);
+        if(currentCards[1] >= serviceCards.length )
+           {
+            return
+          } else{
+            setPageIndex(prev => prev + 1);
+          }
         } else {
           if(pageIndex == 0) {
               return
@@ -81,6 +87,9 @@ export default function Services() {
             }
           }
         }
+      useEffect(() => {
+        setCurrentCards([pageIndex*4, pageIndex*4 + 4])
+      },[pageIndex])
 
   return (
     <section className='mx-30 my-10 rounded-xl  p-4 py-10 '> 
@@ -96,7 +105,7 @@ export default function Services() {
           >
           </button>
 
-          <button className="fa-solid fa-chevron-right cursor-pointer tranition-all duration-300 hover:text-red-500 hover:scale-110 "
+          <button className={"fa-solid fa-chevron-right cursor-pointer tranition-all duration-300 hover:text-red-500 hover:scale-110 " + (pageIndex == 0 ? "" : "") }
           onClick={()=>{
                 handleServicesScroll("right")
             }}
@@ -106,7 +115,7 @@ export default function Services() {
         {pageIndex == 0 &&
           (
           <>
-          {serviceCards.slice(0, 4).map((card, index)=>{
+          {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
             return(
                <ServicesCard
                   key={index}
@@ -123,7 +132,7 @@ export default function Services() {
         {pageIndex == 1 &&
           (
             <>
-            {serviceCards.slice(4, serviceCards.length).map((card, index)=>{
+            {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
               return (
                 <ServicesCard
                   key={index}
