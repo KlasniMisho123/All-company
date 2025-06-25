@@ -36,23 +36,51 @@ const serviceCards:serviceProps[] = [
     color:"pink",
     paragraph:"Memorable visuals for exhibitions and launches",
     linkSrc:"/services/events",
+  },
+    {
+    title: "Web Design",
+    icon: "fa-solid fa-display",
+    color: "indigo",
+    paragraph: "Modern, responsive websites tailored to your brand",
+    linkSrc: "/services/web-design",
+  },
+  {
+    title: "UX/UI Design",
+    icon: "fa-solid fa-cubes",
+    color: "amber",
+    paragraph: "Intuitive interfaces and seamless user experiences",
+    linkSrc: "/services/ux-ui",
+  },
+  {
+    title: "Packaging Design",
+    icon: "fa-solid fa-box-open",
+    color: "amber",
+    paragraph: "Visually appealing packaging that sells your product on sight",
+    linkSrc: "/services/packaging",
+  },
+  {
+    title: "Merch Design",
+    icon: "fa-solid fa-shirt",
+    color: "yellow",
+    paragraph: "Branded apparel, accessories, and swag your audience will love",
+    linkSrc: "/services/merch",
   }
 ]
 
 export default function Services() {
-    const [pageIndex, setPageIndex ] = useState(0)
-
+  const [pageIndex, setPageIndex ] = useState(0)
+  
     function handleServicesScroll(side:string) {
-        if(side == "right") {
-            setPageIndex(prev => prev + 1);
+      if(side == "right") {
+        setPageIndex(prev => prev + 1);
         } else {
-            if(pageIndex == 0) {
-                return
+          if(pageIndex == 0) {
+              return
             } else {
-                setPageIndex(prev => prev - 1);
+              setPageIndex(prev => prev - 1);
             }
+          }
         }
-    }
 
   return (
     <section className='mx-30 my-10 rounded-xl  p-4 py-10 '> 
@@ -73,86 +101,41 @@ export default function Services() {
                 handleServicesScroll("right")
             }}
           ></button>
-        </div>
-
+        </div>        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
         {pageIndex == 0 &&
           (
           <>
-          {serviceCards.map(card => {
+          {serviceCards.slice(0, 4).map((card, index)=>{
             return(
                <ServicesCard
+                  key={index}
                   color={card.color}
                   icon={card.icon}
                   title={card.title}
                   paragraph={card.paragraph}
                   linkSrc={card.linkSrc}
                 />
-            )
-          })
-          }
-          
-          <ServicesCard 
-            color="blue" 
-            icon="fa-solid fa-pen-fancy" 
-            title="Print Design"
-            paragraph="Stunning business cards, letterheads & packaging"
-            linkSrc="/services/print"
-          />
-
-          <ServicesCard 
-            color="sky" 
-            icon="fa-solid fa-bullhorn" 
-            title="Advertising"
-            paragraph="Eye-catching campaigns for print and digital"
-            linkSrc="/services/advertising"
-          />
-
-          <ServicesCard 
-            color="pink"
-            icon="fa-solid fa-champagne-glasses" 
-            title="Event Branding"
-            paragraph="Memorable visuals for exhibitions and launches"
-            linkSrc="/services/events"
-          />
+              )
+          })}
           </>
           )}
-          {/* pages */}
         {pageIndex == 1 &&
           (
-             <>
-          <ServicesCard 
-            color="red" 
-            icon="fa-solid fa-compass-drafting" 
-            title="Brand Identity"
-            paragraph="xsxsxss"
-            linkSrc="/services/branding"
-          />
-
-          <ServicesCard 
-            color="blue" 
-            icon="fa-solid fa-pen-fancy" 
-            title="Print Design"
-            paragraph="Stunning business cards, letterheads & packaging"
-            linkSrc="/services/print"
-          />
-
-          <ServicesCard 
-            color="sky" 
-            icon="fa-solid fa-bullhorn" 
-            title="Advertising"
-            paragraph="Eye-catching campaigns for print and digital"
-            linkSrc="/services/advertising"
-          />
-
-          <ServicesCard 
-            color="pink"
-            icon="fa-solid fa-champagne-glasses" 
-            title="Event Branding"
-            paragraph="Memorable visuals for exhibitions and launches"
-            linkSrc="/services/events"
-          />
-          </>
+            <>
+            {serviceCards.slice(4, serviceCards.length).map((card, index)=>{
+              return (
+                <ServicesCard
+                  key={index}
+                  color={card.color}
+                  icon={card.icon}
+                  title={card.title}
+                  paragraph={card.paragraph}
+                  linkSrc={card.linkSrc}
+                />
+              )
+            })}
+            </>
           )}
         </div>
       </section>
