@@ -407,3 +407,8 @@ from{
 .button-clipath:hover > span {
   color: var(--error-color);
 }
+
+.custom-selection-bg::selection {
+  background-color: #e41638;
+  color: white;
+}
