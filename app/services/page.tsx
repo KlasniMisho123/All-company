@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function page() {
 
-  const { userinfo } = useAuth()
+  const { userData } = useAuth()
   
   return (
-    <div>{userinfo.value.userData}</div>
+    <div>{userData}</div>
   )
 }
