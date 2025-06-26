@@ -1,10 +1,10 @@
 "use client"
 import React, {useContext, createContext, useState} from 'react'
 
-// any is not suggested
+// !type --> any is not suggested
 export const AuthContext = createContext<any>(undefined)
 
-// any is not suggested
+// !type --> any is not suggested
 export function useAuth() {
   return useContext(AuthContext)
 }
@@ -17,8 +17,8 @@ export default function AuthProvider({ children }:any) {
   }
 
   return (
-    <AuthProvider>
+    <AuthContext.Provider value={value}>
       {children}
-    </AuthProvider>
+    </AuthContext.Provider>
   )
 }
