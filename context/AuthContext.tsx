@@ -1,7 +1,24 @@
-import React from 'react'
+"use client"
+import React, {useContext, createContext, useState} from 'react'
 
-export default function AuthContext() {
+// any is not suggested
+export const AuthContext = createContext<any>(undefined)
+
+// any is not suggested
+export function useAuth() {
+  return useContext(AuthContext)
+}
+
+export default function AuthProvider({ children }:any) {
+  const [userData, setUserData] = useState("USEEER")
+
+  const value = {
+      userData
+  }
+
   return (
-    <div>AuthContext</div>
+    <AuthProvider>
+      {children}
+    </AuthProvider>
   )
 }
