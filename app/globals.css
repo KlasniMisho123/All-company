@@ -4,8 +4,17 @@ body {
   scroll-behavior: smooth;
   background-color: #1F2937;
   color: var(--primary-color);
-  
 }
+
+body::selection {
+  background-color: #e41638;
+  color: white;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
 /* Dark Theme/ White Theme ? */
 
 :root {
@@ -406,9 +415,4 @@ from{
 
 .button-clipath:hover > span {
   color: var(--error-color);
-}
-
-.custom-selection-bg::selection {
-  background-color: #e41638;
-  color: white;
 }
