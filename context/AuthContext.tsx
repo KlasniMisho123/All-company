@@ -10,10 +10,10 @@ export function useAuth() {
 }
 
 export default function AuthProvider({ children }:any) {
-  const [userData, setUserData] = useState("USEEER")
+  // const [userData, setUserData] = useState("USEEER")
 
   const value = {
-      userData
+      // userData
   }
 
   return (
