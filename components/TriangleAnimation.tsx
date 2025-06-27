@@ -1,18 +1,22 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 
 export default function TriangleAnimation() {
+    const [randomNumbers, setRandomNumbers ] = useState([])
+
+    function generateRandNumber() {
+        const randomNum = Math.random() * 10 
+
+        console.log("randomNum: ", randomNum)
+    }
+
+    useEffect(() => {
+        generateRandNumber()
+    },[])
+
   return (
-    <div className='flex flex-col px-4 gap-2 py-4'>
-        <div className='flex-1 flex flex-col '>
-            <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-            </div>
+    <div className='flex flex-col items-center px-4 gap-2 py-4'>
+        <div className='flex-1 flex flex-col ml-6'>
             <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
@@ -48,40 +52,38 @@ export default function TriangleAnimation() {
             </div>
         </div>
 
-        <div className='flex-1 flex self-end '>
-            <div>
+         <div className='flex-1 flex flex-col-reverse mr-6'>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-            </div>
-            <div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
             </div>
-            <div>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
             </div>
-            <div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
             </div>
-            <div>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+            </div>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+            </div>
+            <div className='flex justify-center gap-0.5'>
                 <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
             </div>
         </div>
