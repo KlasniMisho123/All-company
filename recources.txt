@@ -6,3 +6,4 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 const mono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] })
 
+<i class="fa-solid fa-walkie-talkie"></i> - contact us 

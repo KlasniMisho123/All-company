@@ -22,6 +22,7 @@ img::selection {
   --primary-dark: #1F2937;
   --error-color: #D32F2F;
   --dark-red-color: #e94343;
+  --light-red: #e41638;;
 } 
 
 .menu-line-1 { 
