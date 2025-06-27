@@ -41,9 +41,12 @@ export default function page() {
               <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
                 Pricing
               </p>
-              <button className='relative flex items-center justify-center  w-full border-2 py-1 mt-1 transiiton-all duration-200 cursor-pointer group hover:bg-[var(--light-red)]  '>
-               <label className=' visible group-hover:invisible'> Order Now  </label> 
-               <div className='absolute text-ccenter invisible group-hover:visible '> Excelent Choice <i className="fa-regular fa-gem"></i> </div>
+              <button className='relative flex items-center justify-center w-full border-2 py-1 mt-1 rounded transition-all duration-300 cursor-pointer group overflow-hidden border-slate-800 text-white '>
+                <span className='transition-opacity duration-300 group-hover:opacity-0'>Order Now</span>
+                <span className="absolute z-0 h-full w-full origin-left scale-x-0 bg-[var(--error-color)] transition-transform duration-500 group-hover:scale-x-100"></span>
+                <div className='absolute z-10 inset-x-0 text-center opacity-0 transition-all duration-300 group-hover:opacity-100'>
+                  Excellent Choice <i className="fa-regular fa-gem"></i>
+                </div>
               </button>
           </div>
 
