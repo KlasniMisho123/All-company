@@ -417,3 +417,26 @@ from{
 .button-clipath:hover > span {
   color: var(--error-color);
 }
+
+
+.top-square {
+  transform: translateY(110%);
+}
+
+@keyframes top-square-animation {
+  0% {
+    transform: translateX(0%);
+  } 25% {
+    transform: translateX(260%) translateY();
+  } 50% {
+
+  } 75% {
+
+  } 100% {
+
+  }
+}
+
+.bot-square {
+  transform: translateX(-260%);
+}

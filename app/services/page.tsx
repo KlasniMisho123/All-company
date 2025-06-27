@@ -31,7 +31,7 @@ export default function page() {
         <div className='flex gap-10 w-[60%] '>
           <div className={'mt-8 flex-1 relative flex flex-col items-center gap-2 h-[50vh] p-4 rounded-lg bg-gradient-to-b from-slate-500 to-slate-400  shadow-2xl text-black ' + urbanist.className }>
               <h5 className='text-xl '> Logo design </h5>
-              <div className='h-[50%] w-full bg-blue-300'> 
+              <div className='h-[50%] w-full bg-blue-300 overflow-hidden '> 
                 <SquareAnimation />
               </div>
               <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] ">
