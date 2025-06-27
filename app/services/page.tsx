@@ -1,9 +1,12 @@
 'use client'
 
+import { Urbanist } from 'next/font/google';
 import React from 'react'
 
-export default function page() {
 
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
+
+export default function page() {
   return (
     <div>
       <div className='h-[50vh] -mt-1 bg-cover bg-center flex items-center justify-center'
@@ -16,12 +19,43 @@ export default function page() {
         </div>
 
       </div>
-      <div className='flex flex-col items-center justify-center my-12 gap-2 '>
-        <h5 className='text-gray-300 text-lg '>What Can We Do?</h5>
-        <h2 className='text-5xl '>OUR SERVICES <span className='text-red-500'> OVERVIEW </span> </h2>
-        <p className='text-gray-300 max-w-[40%] text-center text-xl mt-4'> A factory, manufacturing plant or a production plant is an industrial site,
-          usually consisting of buildings and machinery </p>
-      </div>
+      <section className='flex flex-col items-center pb-[350px]'>
+        <div className='flex flex-col items-center justify-center my-12 gap-2 '>
+          <h5 className='text-gray-300 text-lg '>What Can We Do?</h5>
+          <h2 className='text-5xl '>OUR SERVICES <span className='text-red-500'> OVERVIEW </span> </h2>
+          <p className='text-gray-300 max-w-[40%] text-center text-xl mt-4'> A factory, manufacturing plant or a production plant is an industrial site,
+            usually consisting of buildings and machinery </p>
+        </div>
+
+        <div className='flex gap-10 w-[60%] '>
+          <div className={'flex-1 flex- flex-col justify-center h-[40vh] p-4 rounded-lg bg-red-300 shadow-2xl ' + urbanist.className }>
+              <h5 className='text-xl '> Logo design </h5>
+              <div> Card ANIMATION </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Crafting impactful and memorable logo designs that capture your brand's identity and leave a lasting impression.
+              </p>
+              <button> Order Now</button>
+          </div>
+
+          <div className='flex-1 h-[40vh] p-4 rounded-lg bg-red-300 '>
+            wedding decorations
+          </div>
+
+          <div className='flex-1 h-[40vh] p-4 rounded-lg bg-red-300 '>
+            Product Design
+          </div>
+
+          {/* <div>
+            Addvertisement board Design
+          </div>
+
+          <div>
+            Web Design
+          </div> */}
+        </div>
+
+      </section>
+
     </div>
   )
 }
