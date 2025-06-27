@@ -29,15 +29,19 @@ export default function page() {
         </div>
 
         <div className='flex gap-10 w-[60%] '>
-          <div className={'mt-8 flex-1 relative flex flex-col items-center gap-2 h-[50vh] p-4 rounded-lg bg-gradient-to-b from-slate-500 to-slate-400  shadow-2xl text-black ' + urbanist.className }>
+          <div className={'mt-8 flex-1 relative flex flex-col items-center gap-2 h-[53vh] p-4 rounded-lg bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300  shadow-2xl text-black ' + urbanist.className }>
               <h5 className='text-xl '> Logo design </h5>
-              <div className='h-[50%] w-full bg-blue-300 overflow-hidden '> 
+              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-red-300 to-gray-300 shadow-lg'> 
                 <SquareAnimation />
               </div>
-              <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] ">
+              <p className="text-gray-800 text-sm leading-relaxed ">
                 Crafting impactful and memorable logo designs that capture your brand's identity and leave a lasting impression.
               </p>
-              <button> Order Now</button>
+
+              <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
+                Pricing
+              </p>
+              <button className='w-full border-2 py-1 mt-1 transiiton-all duration-200 cursor-pointer hover:bg-[var(--light-red)] '> Order Now </button>
           </div>
 
           <div className='mt-0 flex-1 p-4 rounded-lg bg-red-300 '>
