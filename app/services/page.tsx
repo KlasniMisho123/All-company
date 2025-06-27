@@ -82,7 +82,7 @@ export default function page() {
               <h5 className='text-xl '> Product Design </h5>
               {/* <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-purple-300 to-purple-500 shadow-lg'> */}
               {/* <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl blur-lg bg-red-100 opacity-40 shadow-lg'></div> */}
-              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl shadow-lg'>
+              <div className='h-[50%] w-full  bg-white overflow-hidden border-2 border-slate-400 rounded-xl shadow-lg'>
                   <TriangleAnimation />
               </div>
               <p className="text-gray-800 text-sm leading-relaxed ">
