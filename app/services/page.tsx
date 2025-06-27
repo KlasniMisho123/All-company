@@ -1,6 +1,7 @@
 'use client'
 
 import SquareAnimation from '@/components/SquareAnimation';
+import TriangleAnimation from '@/components/TriangleAnimation';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 
@@ -51,7 +52,7 @@ export default function page() {
               </button>
           </div>
 
-          <div className={'mt-0 flex-1 relative flex flex-col items-center bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300 gap-2 p-4 rounded-lg shadow-2xl text-black overflow-hidden bg-cover bg-center ' + urbanist.className}
+          <div className={'mt-0 flex-1 relative flex flex-col items-center bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300 gap-2 p-4 rounded-xl shadow-2xl text-black overflow-hidden bg-cover bg-center ' + urbanist.className}
            style={{ backgroundImage: "url(/wedding-service.jpg)"}}
           >
               <h5 className='text-xl '> Wedding Decor </h5>
@@ -79,8 +80,10 @@ export default function page() {
            style={{ backgroundImage: "url(https://i.pinimg.com/736x/81/28/ed/8128ed536bfd70b30687386fa45beacf.jpg)"}}
           >
               <h5 className='text-xl '> Product Design </h5>
-              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl shadow-lg'> 
-                  <SquareAnimation />
+              {/* <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-purple-300 to-purple-500 shadow-lg'> */}
+              {/* <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl blur-lg bg-red-100 opacity-40 shadow-lg'></div> */}
+              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl shadow-lg'>
+                  <TriangleAnimation />
               </div>
               <p className="text-gray-800 text-sm leading-relaxed ">
                 Your product’s look and feel matters — we craft designs that reflect your brand and connect with customers.
