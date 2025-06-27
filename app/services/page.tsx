@@ -28,20 +28,20 @@ export default function page() {
         </div>
 
         <div className='flex gap-10 w-[60%] '>
-          <div className={'flex-1 flex- flex-col justify-center h-[40vh] p-4 rounded-lg bg-red-300 shadow-2xl ' + urbanist.className }>
+          <div className={'mt-8 flex-1 relative flex flex-col items-center gap-2 h-[50vh] p-4 rounded-lg bg-red-300 shadow-2xl ' + urbanist.className }>
               <h5 className='text-xl '> Logo design </h5>
-              <div> Card ANIMATION </div>
+              <div className='h-[50%] bg-blue-300'> Card ANIMATION </div>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Crafting impactful and memorable logo designs that capture your brand's identity and leave a lasting impression.
               </p>
               <button> Order Now</button>
           </div>
 
-          <div className='flex-1 h-[40vh] p-4 rounded-lg bg-red-300 '>
+          <div className='mt-0 flex-1 p-4 rounded-lg bg-red-300 '>
             wedding decorations
           </div>
 
-          <div className='flex-1 h-[40vh] p-4 rounded-lg bg-red-300 '>
+          <div className='mt-4  flex-1 p-4 rounded-lg bg-red-300 '>
             Product Design
           </div>
 
