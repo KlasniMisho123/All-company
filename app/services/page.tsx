@@ -41,7 +41,10 @@ export default function page() {
               <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
                 Pricing
               </p>
-              <button className='w-full border-2 py-1 mt-1 transiiton-all duration-200 cursor-pointer hover:bg-[var(--light-red)] '> Order Now </button>
+              <button className='relative flex items-center justify-center  w-full border-2 py-1 mt-1 transiiton-all duration-200 cursor-pointer group hover:bg-[var(--light-red)]  '>
+               <label className=' visible group-hover:invisible'> Order Now  </label> 
+               <div className='absolute text-ccenter invisible group-hover:visible '> Excelent Choice <i className="fa-regular fa-gem"></i> </div>
+              </button>
           </div>
 
           <div className='mt-0 flex-1 p-4 rounded-lg bg-red-300 '>
