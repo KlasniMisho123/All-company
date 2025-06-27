@@ -51,22 +51,19 @@ export default function page() {
               </button>
           </div>
 
-          <div className={'mt-0 flex-1 relative flex flex-col items-center gap-2 p-4 rounded-lg bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300  shadow-2xl text-black ' + urbanist.className }>
+          <div className={'mt-0 flex-1 relative flex flex-col items-center bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300 gap-2 p-4 rounded-lg shadow-2xl text-black overflow-hidden bg-cover bg-center ' + urbanist.className}
+           style={{
+                  backgroundImage: "url(/wedding-service.jpg)",
+                }}
+          >
+            {/* Background image layer */}
+
               {/* Event Styling  */}
               <h5 className='text-xl '> Wedding Decor </h5>
-              <div className='relative h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-red-300 to-gray-300 shadow-lg'> 
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url(https://cdn.dribbble.com/userupload/42288052/file/original-3f804cd692ca27e522f492531eee05b4.jpg?resize=1000x750&vertical=center)",
-                  }}
-                ></div>
+              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl shadow-lg'> 
 
-                {/* Opacity layer */}
-                <div className="absolute inset-0 bg-black opacity-20"></div>
-                {/*  */}
               </div>
-              <p className="text-gray-800 text-sm leading-relaxed ">
+              <p className="text-gray-900 text-sm leading-relaxed ">
                 Elegant, personalized designs that bring your wedding vision to life — from florals to lighting and beyond.
               </p>
 
