@@ -38,14 +38,15 @@ export default function page() {
                 Crafting impactful and memorable logo designs that capture your brand's identity and leave a lasting impression.
               </p>
 
-              <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
+              {/* <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
                 Pricing
-              </p>
-              <button className='relative flex items-center justify-center w-full border-2 py-1 mt-1 rounded transition-all duration-300 cursor-pointer group overflow-hidden border-slate-800 text-white '>
+              </p> */}
+              <button className='relative flex items-center justify-center w-full border-1 py-1 rounded transition-all duration-300 cursor-pointer group overflow-hidden font-semibold
+              border-slate-800 hover:border-[var(--error-color)] bg-slate-800 text-white '>
                 <span className='transition-opacity duration-300 group-hover:opacity-0'>Order Now</span>
-                <span className="absolute z-0 h-full w-full origin-left scale-x-0 bg-[var(--error-color)] transition-transform duration-500 group-hover:scale-x-100"></span>
-                <div className='absolute z-10 inset-x-0 text-center opacity-0 transition-all duration-300 group-hover:opacity-100'>
-                  Excellent Choice <i className="fa-regular fa-gem"></i>
+                <span className="absolute z-0 h-[110%] w-full origin-left scale-x-0 bg-[var(--error-color)] transition-transform duration-500 group-hover:scale-x-100"></span>
+                <div className='absolute flex items-center gap-1 justify-center z-10 inset-x-0 text-center opacity-0 transition-all duration-300 group-hover:opacity-100'>
+                  <span> Excellent Choice </span><i className="fa-regular fa-gem text-lg text-blue-500 "></i>
                 </div>
               </button>
           </div>
