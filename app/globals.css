@@ -458,7 +458,7 @@ from{
 }
 
 .triangle-circle {
-  animation: triangle-circle-animation 31.5s ease forwards;
+  animation: triangle-circle-animation 1.5s ease forwards;
 }
 
 /* horisontally - 256%  113%- vertically */

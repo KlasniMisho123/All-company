@@ -32,7 +32,7 @@ export default function page() {
         <div className='flex gap-10 w-[60%] '>
           <div className={'mt-8 flex-1 relative flex flex-col items-center gap-2 h-[53vh] p-4 rounded-lg bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300  shadow-2xl text-black ' + urbanist.className }>
               <h5 className='text-xl '> Logo Design </h5>
-              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-red-300 to-gray-300 shadow-lg'> 
+              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-red-300 to-red-100 shadow-lg'> 
                 <SquareAnimation />
               </div>
               <p className="text-gray-800 text-sm leading-relaxed ">
