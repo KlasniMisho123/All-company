@@ -47,4 +47,6 @@ Make sure there's enough contrast between your red tones and the background, esp
 -- Service Page --
 // triangle Animation animation -> sync/not sync
 
-// newsletter?
+// newsletter -> functionality 
+
+// Average Rateing Stat/ Input
