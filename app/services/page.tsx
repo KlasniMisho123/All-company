@@ -2,6 +2,7 @@
 
 import SquareAnimation from '@/components/SquareAnimation';
 import TriangleAnimation from '@/components/TriangleAnimation';
+import WorkStages from '@/components/WorkStages';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 
@@ -21,7 +22,7 @@ export default function page() {
         </div>
 
       </div>
-      <section className='flex flex-col items-center pb-[350px]'>
+      <section className='flex flex-col items-center '>
         <div className='flex flex-col items-center justify-center my-12 gap-2 '>
           <h5 className='text-gray-300 text-lg '>What Can We Do?</h5>
           <h2 className='text-5xl '>OUR SERVICES <span className='bg-[var(--light-red)] text-white px-1'> OVERVIEW </span> </h2>
@@ -104,12 +105,10 @@ export default function page() {
               </button>
             </div>
           </div>
-
-        
         </div>
-
       </section>
-
+      {/* Contact us Link element? */}
+      <WorkStages/>
     </div>
   )
 }

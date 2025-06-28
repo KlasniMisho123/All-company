@@ -2,7 +2,7 @@ import { Urbanist } from 'next/font/google';
 import React from 'react'
 import HeroGrid from './HeroGrid';
 import Link from 'next/link';
-import WorkStages from './WorkingStagesCard';
+import WorkStages from './WorkStages';
 import StrongSidesScroll from './StrongSidesScroll';
 import Button from './Button';
 import Services from './Services';

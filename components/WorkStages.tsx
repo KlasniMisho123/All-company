@@ -95,11 +95,11 @@ export default function WorkStages() {
            hover:border-red-700 group overflow-hidden group'>
             <div className='relative pt-8'> 
               <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
-              <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. IDEA</h1> 
+              <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. LAUNCH </h1> 
             </div>
             <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
-               <span className='text-red-500 text-base '> Process Implement </span> After final review, we launch the product smoothly, configure hosting,
-              and set up maintenance tools to ensure long-term success.
+               <span className='text-red-500 text-base '>Go Live </span> We deliver the final product, configure hosting, and ensure a smooth 
+               launch with ongoing support for your continued success.
             </p>
           </div>
 
