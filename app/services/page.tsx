@@ -86,7 +86,7 @@ export default function page() {
                   <TriangleAnimation />
               </div>
               <p className="text-gray-900 text-sm leading-relaxed ">
-                Your product’s look and feel matters — we craft designs that reflect your brand and connect with customers.
+                Your product&apos;s look and feel matters — we craft designs that reflect your brand and connect with customers.
               </p>
 
               <p className="text-white text-sm leading-relaxed bg-[var(--light-red)] px-1 ">
