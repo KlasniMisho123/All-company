@@ -13,10 +13,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 export default function Hero() {
   return (
     <div className=''>
-      {/* Dark Background */}
       <section
-        // Color Version, projects-bg.avif -> HeroGrid Stats
-        // className="px-30 py-12 flex flex-col md:flex-row gap-2 bg-no-repeat w-full h-full " 
+      
         className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
         style={{ backgroundImage: "url(projects-bg.avif)" }}
       >
@@ -34,10 +32,7 @@ export default function Hero() {
               icon={<></>}
               customClassName={""}
               />
-            {/* <button className="text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm">
-              Services
-              </button> */}
-
+            
             <div className="text-gray-300 mt-2">
               Already have an account?&nbsp;
               <span className="relative group font-bold cursor-pointer inline-block">
@@ -54,7 +49,7 @@ export default function Hero() {
           <div className="relative inline-block group mt-2 ">
             <h1 className="text-3xl md:text-4xl font-bold ">
               All Design
-              <div className="h-1 w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></div>
+              <div className="h-1 w-0 bg-[var(--error-color)] transition-all duration-500 group-hover:w-full"></div>
             </h1>
           </div>
           <p className="text-gray-200 max-w-2xl text-center md:text-left text-lg leading-relaxed mt-4">
@@ -88,6 +83,37 @@ export default function Hero() {
       </section>
 
       <Services />
+      <section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] ">
+          <div className="bg-white mx-2  my-6 py-6 text-black rounded md:py-8 lg:py-10 md:mx-4 lg:mx-8 md:my-12">
+              <div className="flex justify-center items-center overflow-hidden">
+                <div className="flex flex-row justify-center items-center px-2 gap-2 sm:gap-4 sm:px-4 md:gap-10 lg:gap-20  ">
+                  <div className='flex justify-center items-center p-8 border-2 border-gray-100 rounded w-20 h-20 cursor-pointer 
+                  transition-all transition-duration-600 shadow-md  hover:shadow-none bg-[var(--error-color)] hover:bg-transparent group  hover:border-[var(--error-color)] '>
+                    <i className="fa-brands fa-rocketchat text-4xl text-gray-100 group-hover:text-[var(--error-color)] "></i>
+                  </div>
+                  <div className="space-y-0 sm:space-y-4">
+                    <h1 className={" font-bold text-gray-800 text-lg sm:text-xl lg:text-2xl " + urbanist.className}>
+                      Need a Customer Service?
+                    </h1>
+                    <p className="text-gray-600 overflow-hidden text-ellipsis hidden sm:inline sm:appear sm:text-sm md:text-base">
+                      Our team is ready to assist you with any issues or questions you may have.
+                    </p>
+                  </div>
+
+                <div className="flex my-6 gap-[20%] sm:gap-[10%]  ">
+                  <Link className="flex-1 max-w-40 border-2 py-3 px-6 rounded-lg text-white bg-[var(--error-color)] border-[var(--error-color)] hover:border-white hover:brightness-90 text-center
+                  transition-all duration-300 cursor-pointer shadow-sm whitespace-nowrap"
+                  href={'/support'}
+                  // onClick={() => {handleSelectedNavSection('support')}}
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
       <WorkStages />
       <ClientCompanies />
       {/*Highlighted Cleint Cards, Reveal from bottom? */}
