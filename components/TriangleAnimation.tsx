@@ -24,7 +24,10 @@ export default function TriangleAnimation() {
         const randomNum = [
             Math.floor(Math.random() * 20 ),
             Math.floor(Math.random() * 20 ),
-            Math.floor(Math.random() * 20 )
+            Math.floor(Math.random() * 20 ),
+            Math.floor(Math.random() * 20 ),
+            Math.floor(Math.random() * 20 ),
+            Math.floor(Math.random() * 20 ),
         ]
         console.log("randomNum: ", randomNum)
         return(randomNum)
@@ -42,58 +45,55 @@ export default function TriangleAnimation() {
         const interval = setInterval(()=>{
             setTopRandomNumbers(generateRandNumber)
             setBotRandomNumbers(generateRandNumber)
-        }, 4000)
+        }, 1500)
 
         return() => clearInterval(interval)
     },[])
 
+    // Consider Different Animation => not in sync // not same dots?
 
   return (
     <div className='flex flex-col items-center px-4 gap-2 py-4'>
-        <div className='flex flex-col gap-2'>
-            <span> topRandomNumbers:{topRandomNumbers} </span>
-            <span> botRandomNumbers:{botRandomNumbers}</span>
-        </div>
         <div className='flex-1 flex flex-col ml-6'>
              <div className='flex justify-center gap-0.5'>
                 {topBars.slice(0, 6).map((index)=>{
                     return(
-                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " animate-pulse " : " ")}></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(6, 11).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(11, 15).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(15, 18).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(18, 20).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(20, 21).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
@@ -102,42 +102,42 @@ export default function TriangleAnimation() {
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(0, 6).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(6, 11).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(11, 15).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(15, 18).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(18, 20).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(20, 21).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full ' + (botRandomNumbers.includes(index)? " triangle-circle " : " ")}></div>
                     )
                 })}
             </div>
