@@ -40,7 +40,7 @@ export default function page() {
                 <SquareAnimation />
               </div>
               <p className="text-sm leading-relaxed">
-                Crafting impactful and memorable logo designs that capture your brand's identity and leave a lasting impression.
+                Crafting impactful and memorable logo designs that capture your brand&apos;s identity and leave a lasting impression.
               </p>
               <p className="text-sm leading-relaxed text-[var(--error-color)] font-semibold">Pricing</p>
               <button className='relative flex items-center justify-center w-full border py-1 rounded transition-all duration-300 cursor-pointer group overflow-hidden font-semibold border-slate-800 hover:border-[var(--error-color)] bg-slate-800 text-white'>
@@ -89,7 +89,7 @@ export default function page() {
               </div>
 
               <p className="text-sm leading-relaxed">
-                Your product's look and feel matters — we craft designs that reflect your brand and connect with customers.
+                Your product&apos;s look and feel matters — we craft designs that reflect your brand and connect with customers.
               </p>
 
               <p className="text-sm leading-relaxed text-[var(--error-color)] font-semibold">
