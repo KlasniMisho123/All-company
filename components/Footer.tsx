@@ -55,12 +55,14 @@ export default function Footer() {
           <div className='flex gap-4 items-center self-end '>
             <Link className=' transition-all duration-300 group px-2 py-1 rounded-full hover:bg-orange-400 '
             href={'https://www.instagram.com/alldesign.ge/'}
+            target="_blank"
             >
                <i className="fa-brands fa-instagram text-2xl transition-all duration-300 cursor-pointer "></i>
             </Link>
 
             <Link className=' transition-all duration-300 group px-[10px] py-[5px] rounded-full hover:bg-blue-500 '
             href={"https://www.facebook.com/musagajievi/"}
+            target="_blank"
             >
                <i className="fa-brands fa-facebook-f text-xl transition-all duration-300 cursor-pointer "></i>
 

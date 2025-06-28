@@ -29,8 +29,8 @@ export default function Hero() {
           </h2>
           <h4 className="text-lg font-semibold "> <i className="fa-solid fa-hammer text-[var(--error-color)] forging "></i> Crafted <span className="text-[var(--error-color)] "> Uniquely </span> . Designed Just for You.</h4>
             <Button
-              title={"Services"}
-              linkSrc={"/Services"}
+              title={"Order Design"}
+              linkSrc={"/contactus"}
               icon={<></>}
               customClassName={""}
               />
