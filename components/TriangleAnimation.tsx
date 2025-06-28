@@ -34,7 +34,6 @@ export default function TriangleAnimation() {
     <div className='flex flex-col items-center px-4 gap-2 py-4'>
         <div className='flex-1 flex flex-col ml-6'>
              <div className='flex justify-center gap-0.5'>
-                 
                 {topBars.slice(0, 6).map((index)=>{
                     return(
                         <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
@@ -75,10 +74,8 @@ export default function TriangleAnimation() {
                         <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
                     )
                 })}
-                {/* <div key={20} className='p-1.5 bg-black h-0.5 rounded-full '></div> */}
             </div>
         </div>
-            
           <div className='flex-1 flex flex-col-reverse mr-6'>
             <div className='flex justify-center gap-0.5'>
                 {botBars.slice(0, 6).map((index)=>{
