@@ -5,9 +5,13 @@ export default function TriangleAnimation() {
     const [randomNumbers, setRandomNumbers ] = useState<number[]>([])
 
     const topBars = []
+    const botBars = []
 
     for(let i=0; i<=20; i++) {
         topBars.push(
+            i
+        )
+        botBars.push(
             i
         )
     }
@@ -36,12 +40,6 @@ export default function TriangleAnimation() {
                         <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
                     )
                 })}
-                {/* <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-black h-0.5 rounded-full '></div> */}
             </div>
             <div className='flex justify-center gap-0.5'>
                 {topBars.slice(6, 11).map((index)=>{
@@ -80,42 +78,51 @@ export default function TriangleAnimation() {
                 {/* <div key={20} className='p-1.5 bg-black h-0.5 rounded-full '></div> */}
             </div>
         </div>
-
-         {/* <div className='flex-1 flex flex-col-reverse mr-6'>
+            
+          <div className='flex-1 flex flex-col-reverse mr-6'>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(0, 6).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(6, 11).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(11, 15).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(15, 18).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(18, 20).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
             <div className='flex justify-center gap-0.5'>
-                <div className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                {botBars.slice(20, 21).map((index)=>{
+                    return(
+                        <div key={index} className='p-1.5 bg-[var(--error-color)]  h-0.5 rounded-full '></div>
+                    )
+                })}
             </div>
-        </div> */}
+        </div> 
     </div>
   )
 }
