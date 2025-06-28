@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react'
 
 export default function TriangleAnimation() {
-    const [randomNumbers, setRandomNumbers ] = useState<number[]>([])
+    const [topRandomNumbers, setTopRandomNumbers ] = useState<number[]>([])
+    const [botRandomNumbers, setBotRandomNumbers ] = useState<number[]>([])
+
+    // let topRandomNumbers:number[]
+    // let botRandomNumbers:number[]
 
     const topBars = []
     const botBars = []
@@ -23,20 +27,38 @@ export default function TriangleAnimation() {
             Math.floor(Math.random() * 20 )
         ]
         console.log("randomNum: ", randomNum)
-        setRandomNumbers(randomNum)
+        return(randomNum)
     }
 
+
     useEffect(() => {
-        generateRandNumber()
+        // topRandomNumbers = generateRandNumber()
+        // botRandomNumbers = generateRandNumber()
+        // console.log("topRandomNumbers: ",topRandomNumbers)
+        // console.log("botRandomNumbers: ",botRandomNumbers)
+
+        setTopRandomNumbers(generateRandNumber)
+        setBotRandomNumbers(generateRandNumber)
+        const interval = setInterval(()=>{
+            setTopRandomNumbers(generateRandNumber)
+            setBotRandomNumbers(generateRandNumber)
+        }, 4000)
+
+        return() => clearInterval(interval)
     },[])
-// do elements in html part. just numbers in arrays?
+
+
   return (
     <div className='flex flex-col items-center px-4 gap-2 py-4'>
+        <div className='flex flex-col gap-2'>
+            <span> topRandomNumbers:{topRandomNumbers} </span>
+            <span> botRandomNumbers:{botRandomNumbers}</span>
+        </div>
         <div className='flex-1 flex flex-col ml-6'>
              <div className='flex justify-center gap-0.5'>
                 {topBars.slice(0, 6).map((index)=>{
                     return(
-                        <div key={index} className='p-1.5 bg-black h-0.5 rounded-full '></div>
+                        <div key={index} className={'p-1.5 bg-black h-0.5 rounded-full ' + (topRandomNumbers.includes(index)? " animate-pulse " : " ")}></div>
                     )
                 })}
             </div>
