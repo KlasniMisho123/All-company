@@ -1,5 +1,6 @@
 'use client'
 
+import ContactUsElement from '@/components/ContactUsElement';
 import SquareAnimation from '@/components/SquareAnimation';
 import TriangleAnimation from '@/components/TriangleAnimation';
 import WorkStages from '@/components/WorkStages';
@@ -108,6 +109,8 @@ export default function page() {
         </div>
       </section>
       {/* Contact us Link element? */}
+      {/* Customer Qoute Rateing Element*/}
+      <ContactUsElement/>
       <WorkStages/>
     </div>
   )
