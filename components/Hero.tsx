@@ -7,6 +7,7 @@ import StrongSidesScroll from './StrongSidesScroll';
 import Button from './Button';
 import Services from './Services';
 import ClientCompanies from './ClientCompanies';
+import ContactUsElement from './ContactUsElement';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -83,7 +84,7 @@ export default function Hero() {
       </section>
 
       <Services />
-      
+      <ContactUsElement />
       <WorkStages />
       <ClientCompanies />
       {/*Highlighted Cleint Cards, Reveal from bottom? */}
