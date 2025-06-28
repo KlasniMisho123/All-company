@@ -41,3 +41,8 @@ Body: Inter or Roboto
 🧪 Accessibility Tip
 Make sure there's enough contrast between your red tones and the background, especially for text and buttons (WCAG AA/AAA compliance). Tools like contrast checker can help.
 
+-- Home Page --
+// Services scroll animation
+
+-- Service Page --
+// triangle Animation animation -> sync/not sync

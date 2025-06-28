@@ -37,7 +37,7 @@ export default function HeroGrid() {
 
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'lb-circle' : ' lb-circle-start '}`}
-        style={{ backgroundImage: "url('/coffeeLogo.jpg')" }}
+        style={{ backgroundImage: "url('/CoffeeLogo.jpg')" }}
         ></div>
 
         <div
