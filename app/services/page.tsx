@@ -6,6 +6,7 @@ import TriangleAnimation from '@/components/TriangleAnimation';
 import WorkStages from '@/components/WorkStages';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
+import Link from 'next/link';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -118,10 +119,17 @@ export default function page() {
             </p>
           </div>
          <ul className='flex flex-col p-4 space-y-2 w-[60%]'>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3'>
-            <i className='fas fa-paint-brush text-yellow-400'></i>
-            <span className='text-lg font-semibold group-hover:text-yellow-400'>Adobe Photoshop</span>
-            <span className='text-slate-300'> - Image editing & retouching</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-paint-brush text-yellow-400'></i>
+              <span className='text-lg font-semibold group-hover:text-yellow-400'>Adobe Photoshop</span>
+              <span className='text-slate-300'> - Image editing & retouching</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
           <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3'>
             <i className='fas fa-vector-square text-red-600'></i>
