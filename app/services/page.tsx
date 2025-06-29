@@ -110,6 +110,24 @@ export default function page() {
       </section>
       {/* Contact us Link element? */}
       {/* Customer Qoute Rateing Element*/}
+      {/* Our Service Description? what we do? */}
+      <div className='flex flex-col gap-8 mx-auto w-[95%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
+          <div className={'flex item-center gap-2 justify-center text-xl ' + urbanist.className} > 
+            <i className="fa-solid fa-lightbulb text-[var(--shiny-yellow)] animate-bounce text-3xl"></i>
+            <p>
+              We combine industry-leading tools with a human-centered approach to design that inspires and connects:
+            </p>
+          </div>
+         <ul className='p-4 list-disc list-inside space-y-2'>
+            <li>Adobe Photoshop - Image editing & retouching</li>
+            <li>Adobe Illustrator - Vector graphics & logo design</li>
+            <li>Figma - Collaborative UI/UX design</li>
+            <li>After Effects - Motion graphics & animation</li>
+            <li>Lightroom - Photo color correction & enhancement</li>
+            <li>Blender - 3D modeling & product visualization</li>
+          </ul>
+          <div className='border-t-2 pt-8 '> DisplayFlex </div>
+      </div>
       <ContactUsElement/>
       <WorkStages/>
     </div>
