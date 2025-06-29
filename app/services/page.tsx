@@ -193,29 +193,29 @@ export default function page() {
           </li>
         </ul>
         <div className='border-t-2 pt-8 grid grid-cols-6 gap-4'> 
-            <div className='h-[180px] bg-center bg-cover bg-no-repeat bg-transparent rounded-lg '
+            <div className='h-[180px] bg-center bg-cover bg-no-repeat bg-transparent rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"}}
             title='Adobe Photoshop'
             ></div>   
-            <div className='h-[180px] bg-center bg-cover rounded-lg'
+            <div className='h-[180px] bg-center bg-cover rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png)"}}
-            title='Adobe Photoshop'
+            title='Adobe Illustrator'
             ></div>   
-            <div className='h-[180px] bg-center bg-contain bg-no-repeat bg-slate-800 rounded-lg'
+            <div className='h-[180px] bg-center bg-contain bg-no-repeat bg-slate-800 rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png)"}}
-            title='Adobe Photoshop'
+            title='Figma'
             ></div>   
-            <div className='h-[180px] bg-center bg-cover rounded-lg'
+            <div className='h-[180px] bg-center bg-cover rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/2101px-Adobe_After_Effects_CC_icon.svg.png)"}}
-            title='Adobe Photoshop'
+            title='After Effects'
             ></div>   
-            <div className='h-[180px] bg-center bg-cover rounded-lg'
+            <div className='h-[180px] bg-center bg-cover rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Adobe_Photoshop_Lightroom_Classic_CC_icon.svg/2101px-Adobe_Photoshop_Lightroom_Classic_CC_icon.svg.png)"}}
-            title='Adobe Photoshop'
+            title='Lightroom'
             ></div>   
-            <div className='h-[180px] bg-center bg-contain bg-no-repeat bg-[#1e1e1e] rounded-lg'
+            <div className='h-[180px] bg-center bg-contain bg-no-repeat bg-[#1e1e1e] rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/587px-Blender_logo_no_text.svg.png)"}}
-            title='Adobe Photoshop'
+            title='Blender'
             ></div>   
         </div>
       </section>
