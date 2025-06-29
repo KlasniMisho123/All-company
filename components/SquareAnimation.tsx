@@ -43,39 +43,39 @@ export default function SquareAnimation() {
 
         <div className='flex-1 flex self-end bot-square'>
             <div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
             </div>
             <div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
             </div>
             <div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
             </div>
             <div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
             </div>
             <div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
-                <div className='p-1.5 bg-[#ffc50c]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
+                <div className='p-1.5 bg-[var(--shiny-yellow)]  h-0.5 rounded-full '></div>
             </div>
         </div>
     </div>

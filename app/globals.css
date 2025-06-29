@@ -22,7 +22,9 @@ img::selection {
   --primary-dark: #1F2937;
   --error-color: #D32F2F;
   --dark-red-color: #e94343;
-  --light-red: #e41638;;
+  --light-red: #e41638;
+  --light-yellow: #c99700;
+  --shiny-yellow: #ffc50c;
 } 
 
 .menu-line-1 { 
