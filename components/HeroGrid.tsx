@@ -10,7 +10,7 @@ export default function HeroGrid() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimated(true);
-    }, 2000);
+    }, 2600);
     // ✅ cleanup on unmount
     return () => clearTimeout(timer); 
   }, []);
@@ -72,9 +72,6 @@ export default function HeroGrid() {
             Consistent quality, built on trust and creativity.
           </span>
         </div>
-
-        
-
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'tl-circle ' : ' tl-circle-start '}`}
         style={{ backgroundImage: "url('/t-shirts.jpg')" }}

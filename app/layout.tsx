@@ -6,7 +6,7 @@ import AuthProvider from "@/context/AuthContext"
 
 
 export const metadata: Metadata = {
-  title: "NightFall Webworks",
+  title: "All Designs",
   icons: {
     icon: "/alllogo.jpg",
   },
