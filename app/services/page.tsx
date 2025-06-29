@@ -192,7 +192,7 @@ export default function page() {
             >Learn More</Link>
           </li>
         </ul>
-        <div className='border-t-2 pt-8 grid grid-cols-6 gap-4'> 
+        <div className='border-t-2 py-6 grid grid-cols-6 gap-4 px-2 '> 
             <div className='h-[180px] bg-center bg-cover bg-no-repeat bg-transparent rounded-lg transition-all duration-300 grayscale-50 hover:grayscale-0 hover:scale-105'
             style={{backgroundImage:"url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"}}
             title='Adobe Photoshop'
