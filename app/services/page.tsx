@@ -110,47 +110,47 @@ export default function page() {
       {/* Contact us Link element? */}
       {/* Customer Qoute Rateing Element*/}
       {/* Our Service Description? what we do? */}
-      <div className='flex flex-col gap-8 mx-auto w-[95%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
+      <section className='flex flex-col gap-8 mx-auto w-[95%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
           <div className={'flex item-center gap-2 justify-center text-xl ' + urbanist.className} > 
             <i className="fa-solid fa-lightbulb text-[var(--shiny-yellow)] animate-bounce text-3xl"></i>
             <p>
               We combine industry-leading tools with a human-centered approach to design that inspires and connects:
             </p>
           </div>
-         <ul className='flex flex-col p-4 space-y-2'>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3'>
+         <ul className='flex flex-col p-4 space-y-2 w-[60%]'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3'>
             <i className='fas fa-paint-brush text-yellow-400'></i>
             <span className='text-lg font-semibold group-hover:text-yellow-400'>Adobe Photoshop</span>
             <span className='text-slate-300'> - Image editing & retouching</span>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3'>
             <i className='fas fa-vector-square text-red-600'></i>
             <span className='text-lg font-semibold group-hover:text-red-600'>Adobe Illustrator</span>
             <span className='text-slate-300 '> - Vector graphics & logo design</span>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-pink-600 hover:translate-x-3'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-pink-600 hover:translate-x-3'>
             <i className='fas fa-cubes text-pink-500'></i>
             <span className='text-lg font-semibold group-hover:text-pink-500'>Figma</span>
             <span className='text-slate-300'> - Collaborative UI/UX design</span>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-purple-600 hover:translate-x-3'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-purple-600 hover:translate-x-3'>
             <i className='fas fa-film text-purple-600'></i>
             <span className='text-lg font-semibold group-hover:text-purple-600'>After Effects</span>
             <span className='text-slate-300'> - Motion graphics & animation</span>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-teal-600 hover:translate-x-3'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-teal-600 hover:translate-x-3'>
             <i className='fas fa-camera-retro text-teal-500'></i>
             <span className='text-lg font-semibold group-hover:text-teal-500'>Lightroom</span>
             <span className='text-slate-300'> - Photo color correction & enhancement</span>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-blue-600 hover:translate-x-3'>
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-blue-600 hover:translate-x-3'>
             <i className='fas fa-fingerprint text-blue-600'></i>
             <span className='text-lg font-semibold group-hover:text-blue-600'>Blender</span>
             <span className='text-slate-300'> - 3D modeling & product visualization</span>
           </li>
         </ul>
         <div className='border-t-2 pt-8 '> DisplayFlex </div>
-      </div>
+      </section>
       <ContactUsElement/>
       <WorkStages/>
     </div>
