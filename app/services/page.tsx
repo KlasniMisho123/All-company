@@ -127,7 +127,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.adobe.com/products/photoshop.html"}
               target='_blank'
             >Learn More</Link>
           </li>
@@ -139,7 +139,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.adobe.com/products/illustrator.html"}
               target='_blank'
             >Learn More</Link>
           </li>
@@ -151,7 +151,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.figma.com/"}
               target='_blank'
             >Learn More</Link>
           </li>
@@ -163,7 +163,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.adobe.com/products/aftereffects.html"}
               target='_blank'
             >Learn More</Link>
           </li>
@@ -175,7 +175,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.adobe.com/products/photoshop-lightroom.html"}
               target='_blank'
             >Learn More</Link>
           </li>
@@ -187,7 +187,7 @@ export default function page() {
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
-              href={"/"}
+              href={"https://www.blender.org/"}
               target='_blank'
             >Learn More</Link>
           </li>
