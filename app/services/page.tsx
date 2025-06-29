@@ -118,26 +118,38 @@ export default function page() {
             </p>
           </div>
          <ul className='p-4 space-y-2'>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-paint-brush text-yellow-400'></i> Adobe Photoshop – Image editing & retouching
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3'>
+            <i className='fas fa-paint-brush text-yellow-400'></i>
+            <span className='text-lg font-semibold group-hover:text-yellow-400'>Adobe Photoshop</span>
+            <span className='text-slate-300'> - Image editing & retouching</span>
           </li>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-vector-square text-red-600'></i> Adobe Illustrator – Vector graphics & logo design
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-5'>
+            <i className='fas fa-vector-square text-red-600'></i>
+            <span className='text-lg font-semibold group-hover:text-red-600'>Adobe Illustrator</span>
+            <span className='text-slate-300 '> - Vector graphics & logo design</span>
           </li>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-cubes text-pink-500'></i> Figma – Collaborative UI/UX design
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-5'>
+            <i className='fas fa-cubes text-pink-500'></i>
+            <span className='text-lg font-semibold text-pink-500'>Figma</span>
+            <span className='text-slate-300'> - Collaborative UI/UX design</span>
           </li>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-film text-purple-600'></i> After Effects – Motion graphics & animation
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-5'>
+            <i className='fas fa-film text-purple-600'></i>
+            <span className='text-lg font-semibold text-purple-600'>After Effects</span>
+            <span className='text-slate-300'> - Motion graphics & animation</span>
           </li>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-camera-retro text-teal-500'></i> Lightroom – Photo color correction & enhancement
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-5'>
+            <i className='fas fa-camera-retro text-teal-500'></i>
+            <span className='text-lg font-semibold text-teal-500'>Lightroom</span>
+            <span className='text-slate-300'> - Photo color correction & enhancement</span>
           </li>
-          <li className='flex items-center gap-2'>
-            <i className='fas fa-fingerprint text-blue-600'></i> Blender – 3D modeling & product visualization
+          <li className='flex items-center gap-3 py-2 px-6 border-2 w-max rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-5'>
+            <i className='fas fa-fingerprint text-blue-600'></i>
+            <span className='text-lg font-semibold text-blue-600'>Blender</span>
+            <span className='text-slate-300'> - 3D modeling & product visualization</span>
           </li>
         </ul>
-          <div className='border-t-2 pt-8 '> DisplayFlex </div>
+        <div className='border-t-2 pt-8 '> DisplayFlex </div>
       </div>
       <ContactUsElement/>
       <WorkStages/>
