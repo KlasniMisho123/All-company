@@ -131,30 +131,65 @@ export default function page() {
               target='_blank'
             >Learn More</Link>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3'>
-            <i className='fas fa-vector-square text-red-600'></i>
-            <span className='text-lg font-semibold group-hover:text-red-600'>Adobe Illustrator</span>
-            <span className='text-slate-300 '> - Vector graphics & logo design</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-vector-square text-red-600'></i>
+              <span className='text-lg font-semibold group-hover:text-red-600'>Adobe Illustrator</span>
+              <span className='text-slate-300 '> - Vector graphics & logo design</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-pink-600 hover:translate-x-3'>
-            <i className='fas fa-cubes text-pink-500'></i>
-            <span className='text-lg font-semibold group-hover:text-pink-500'>Figma</span>
-            <span className='text-slate-300'> - Collaborative UI/UX design</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-pink-600 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-cubes text-pink-500'></i>
+              <span className='text-lg font-semibold group-hover:text-pink-500'>Figma</span>
+              <span className='text-slate-300'> - Collaborative UI/UX design</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-purple-600 hover:translate-x-3'>
-            <i className='fas fa-film text-purple-600'></i>
-            <span className='text-lg font-semibold group-hover:text-purple-600'>After Effects</span>
-            <span className='text-slate-300'> - Motion graphics & animation</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-purple-600 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-film text-purple-600'></i>
+              <span className='text-lg font-semibold group-hover:text-purple-600'>After Effects</span>
+              <span className='text-slate-300'> - Motion graphics & animation</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-teal-600 hover:translate-x-3'>
-            <i className='fas fa-camera-retro text-teal-500'></i>
-            <span className='text-lg font-semibold group-hover:text-teal-500'>Lightroom</span>
-            <span className='text-slate-300'> - Photo color correction & enhancement</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-teal-600 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-camera-retro text-teal-500'></i>
+              <span className='text-lg font-semibold group-hover:text-teal-500'>Lightroom</span>
+              <span className='text-slate-300'> - Photo color correction & enhancement</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
-          <li className='flex items-center gap-3 py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-blue-600 hover:translate-x-3'>
-            <i className='fas fa-fingerprint text-blue-600'></i>
-            <span className='text-lg font-semibold group-hover:text-blue-600'>Blender</span>
-            <span className='text-slate-300'> - 3D modeling & product visualization</span>
+          <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-blue-600 hover:translate-x-3'>
+            <div className='flex items-center gap-3'>
+              <i className='fas fa-fingerprint text-blue-600'></i>
+              <span className='text-lg font-semibold group-hover:text-blue-600'>Blender</span>
+              <span className='text-slate-300'> - 3D modeling & product visualization</span>
+            </div>
+            <Link 
+              className='text-gray-500 transition-all duration-300 hover:text-white'
+              href={"/"}
+              target='_blank'
+            >Learn More</Link>
           </li>
         </ul>
         <div className='border-t-2 pt-8 '> DisplayFlex </div>
