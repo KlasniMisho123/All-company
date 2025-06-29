@@ -24,7 +24,6 @@ export default function HeroGrid() {
 
         <div
           className={`bg-cover overflow-hidden bg-gray-900/90 text-white w-full rounded-xl flex flex-col items-center justify-center gap-1 p-4 text-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300 ${animated ? 't-circle ' : 't-circle-start '} ` + urbanist.className }
-          // style={{ backgroundImage: "url('projects-bg.avif')" }}
           style={{ backgroundImage: "url('https://i.pinimg.com/736x/8b/00/39/8b00398a68622fc3411eb141eb5b345e.jpg')" }} 
         >
           <span className="text-sm sm:text-base tracking-wide text-white ">Designs Completed</span>

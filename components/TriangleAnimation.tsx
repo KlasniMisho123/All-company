@@ -53,7 +53,7 @@ export default function TriangleAnimation() {
     // Consider Different Animation => not in sync // not same dots?
 
   return (
-    <div className='flex flex-col items-center px-4 gap-2 py-4 bg-gradient-to-b from-purple-300 to-purple-100'>
+    <div className='flex flex-col items-center px-4 gap-2 py-4 bg-gradient-to-b from-purple-300 to-transparent'>
         <div className='flex-1 flex flex-col ml-6'>
              <div className='flex justify-center gap-0.5'>
                 {topBars.slice(0, 6).map((index)=>{

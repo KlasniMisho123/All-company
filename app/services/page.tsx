@@ -37,7 +37,7 @@ export default function page() {
             <div className="absolute inset-0 bg-black/30"></div>
             <div className='relative z-10 flex flex-col gap-3 w-full p-4 bg-black/60 rounded-xl'>
               <h5 className='text-2xl font-bold'>Logo Design</h5>
-              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-red-300 to-red-100 hover:bg-transparent shadow-lg'>
+              <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-[#ffc50c] to-transparent hover:bg-transparent shadow-lg'>
                 <SquareAnimation />
               </div>
               <p className="text-sm leading-relaxed">
