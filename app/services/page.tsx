@@ -7,7 +7,6 @@ import WorkStages from '@/components/WorkStages';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
 
-
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function page() {
@@ -118,14 +117,26 @@ export default function page() {
               We combine industry-leading tools with a human-centered approach to design that inspires and connects:
             </p>
           </div>
-         <ul className='p-4 list-disc list-inside space-y-2'>
-            <li>Adobe Photoshop - Image editing & retouching</li>
-            <li>Adobe Illustrator - Vector graphics & logo design</li>
-            <li>Figma - Collaborative UI/UX design</li>
-            <li>After Effects - Motion graphics & animation</li>
-            <li>Lightroom - Photo color correction & enhancement</li>
-            <li>Blender - 3D modeling & product visualization</li>
-          </ul>
+         <ul className='p-4 space-y-2'>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-paint-brush text-yellow-400'></i> Adobe Photoshop – Image editing & retouching
+          </li>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-vector-square text-red-600'></i> Adobe Illustrator – Vector graphics & logo design
+          </li>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-cubes text-pink-500'></i> Figma – Collaborative UI/UX design
+          </li>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-film text-purple-600'></i> After Effects – Motion graphics & animation
+          </li>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-camera-retro text-teal-500'></i> Lightroom – Photo color correction & enhancement
+          </li>
+          <li className='flex items-center gap-2'>
+            <i className='fas fa-fingerprint text-blue-600'></i> Blender – 3D modeling & product visualization
+          </li>
+        </ul>
           <div className='border-t-2 pt-8 '> DisplayFlex </div>
       </div>
       <ContactUsElement/>
