@@ -1,6 +1,7 @@
 'use client'
 
 import ContactUsElement from '@/components/ContactUsElement';
+import RateingElement from '@/components/RateingElement';
 import SquareAnimation from '@/components/SquareAnimation';
 import TechUIElement from '@/components/TechUIElement';
 import TriangleAnimation from '@/components/TriangleAnimation';
@@ -113,6 +114,7 @@ export default function page() {
       {/* Customer Qoute Rateing Element*/}
       <TechUIElement/>
       <ContactUsElement/>
+      <RateingElement />
       <WorkStages/>
     </div>
   )

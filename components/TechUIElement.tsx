@@ -6,7 +6,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function TechUIElement() {
   return (
-    <section className='flex flex-col gap-8 mx-auto w-[95%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
+    <section className='flex flex-col gap-8 mx-auto w-[80%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
           <div className={'flex item-center gap-2 justify-center text-xl ' + urbanist.className} > 
             <i className="fa-solid fa-lightbulb text-[var(--shiny-yellow)] animate-bounce text-3xl"></i>
             <p>
