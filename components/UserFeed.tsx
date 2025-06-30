@@ -22,7 +22,6 @@ export default function UserFeed() {
        </div>
        <div className='grid grid-cols-3 justify-evenly gap-4 '>
             <UserFeedCard
-                doubledSpan={false}
                 stats={totalYears}
                 icon={"fa-solid fa-clock"}
                 color={'blue'}
@@ -31,8 +30,8 @@ export default function UserFeed() {
                 p={'Delivering quality, trust, and innovation since day one.'}
                 linkHref={"/aboutus"}
             />
+            <div className='row-span-2 border-1 border-pink-500 p-4 rounded-lg '>Happy Clients</div>
             <UserFeedCard
-                doubledSpan={true}
                 stats={150}
                 icon={"fa-solid fa-cube"}
                 color={'indigo'}
@@ -43,18 +42,6 @@ export default function UserFeed() {
             /> 
 
             <UserFeedCard
-                doubledSpan={false}
-                stats={150}
-                icon={"fa-solid fa-cube"}
-                color={'indigo'}
-                title={'Product Designs Created'}
-                subTitle={'Across Diverse Industries'}
-                p={'Crafting unique, impactful products tailored to client needs.'}
-                linkHref={'/aboutus'}
-            /> 
-
-            <UserFeedCard
-                doubledSpan={false}
                 stats={15}
                 icon={"fa-solid fa-champagne-glasses"}
                 color={'pink'}
@@ -65,7 +52,6 @@ export default function UserFeed() {
             />
 
             <UserFeedCard
-                doubledSpan={false}
                 stats={15}
                 icon={"fa-solid fa-shapes"}
                 color={'red'}

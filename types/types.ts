@@ -11,7 +11,6 @@ export type serviceProps = {
 };
 
 export type userFeedCardType = {
-    doubledSpan: boolean,
     stats: number,
     color: ColorVariant,
     icon: string,

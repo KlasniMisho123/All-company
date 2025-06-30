@@ -8,13 +8,12 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 
 export default function UserFeedCard(props:userFeedCardType) {
-    const {doubledSpan, stats, color, icon, title, subTitle, p, linkHref} = props
-
+    const {stats, color, icon, title, subTitle, p, linkHref} = props
 
     const selectedColor = colorClassMap[color]
 
   return (
-        <div className={`flex flex-col  gap-4 border ${selectedColor.borderBase} p-6 rounded-xl min-h-[200px] bg-slate-700/30 shadow-md ` + (doubledSpan? " row-span-2 " : " row-span-1 ")}>
+        <div className={`flex flex-col gap-4 border ${selectedColor.borderBase} p-6 rounded-xl min-h-[200px] bg-slate-700/30 shadow-md`}>
             <div className={`${selectedColor.bg} p-5 rounded-full shadow-inner self-start`}>
                 <i className={`${icon} text-4xl text-white`}></i>
             </div>
