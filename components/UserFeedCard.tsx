@@ -1,21 +1,17 @@
 import React from 'react'
 import Link from "next/link"
 import { Urbanist } from 'next/font/google';
+import { colorClassMap } from '../utils';
+import { userFeedCardType } from '@/types/types';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
-type userFeedCardType = {
-    stats: number
-    color: string,
-    icon: string,
-    title: string,
-    subTitle: string,
-    p: string,
-    linkHref: string
-}
 
 export default function UserFeedCard(props:userFeedCardType) {
     const {stats, color, icon, title, subTitle, p, linkHref} = props
+
+    const selectedColor = colorClassMap[color]
+
   return (
     <div>
         <div className='flex flex-col gap-4 border border-blue-500 p-6 rounded-xl min-h-[200px] bg-slate-800 shadow-md'>

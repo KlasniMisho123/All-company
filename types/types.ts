@@ -9,3 +9,13 @@ export type serviceProps = {
   paragraph: string;
   linkSrc: string;
 };
+
+export type userFeedCardType = {
+    stats: number
+    color: ColorVariant,
+    icon: string,
+    title: string,
+    subTitle: string,
+    p: string,
+    linkHref: string
+}

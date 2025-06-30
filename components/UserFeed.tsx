@@ -36,6 +36,7 @@ export default function UserFeed() {
 
             <div className='row-span-2 border-1 border-pink-500 p-4 rounded-lg '>Happy Clients</div>
             <div className='border-1 border-pink-500 p-4 rounded-lg min-h-[200px] '>Product Designs Created</div>
+            
             <div className='flex flex-col gap-4 border border-pink-500 p-6 rounded-xl min-h-[200px] bg-slate-800 shadow-md'>
                 <div className='bg-pink-500 p-5 rounded-full shadow-inner self-start'>
                     <i className='fa-solid fa-champagne-glasses text-4xl text-white'></i>
