@@ -1,10 +1,10 @@
 'use client'
 
 import ContactUsElement from '@/components/ContactUsElement';
-import RateingElement from '@/components/RateingElement';
 import SquareAnimation from '@/components/SquareAnimation';
 import TechUIElement from '@/components/TechUIElement';
 import TriangleAnimation from '@/components/TriangleAnimation';
+import UserFeed from '@/components/UserFeed';
 import WorkStages from '@/components/WorkStages';
 import { Urbanist } from 'next/font/google';
 import React from 'react'
@@ -114,7 +114,7 @@ export default function page() {
       {/* Customer Qoute Rateing Element*/}
       <TechUIElement/>
       <ContactUsElement/>
-      <RateingElement />
+      <UserFeed />
       <WorkStages/>
     </div>
   )
