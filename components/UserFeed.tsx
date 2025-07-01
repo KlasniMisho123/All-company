@@ -11,6 +11,17 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 export default function UserFeed() {
     const [totalYears,SetTotalYears] = useState(Number)
     
+    // Smiles
+    const moodSmiles = [
+        <i className="fa-solid fa-face-smile-beam"></i>,
+        <i className="fa-solid fa-face-smile-beam"></i>,
+        <i className="fa-solid fa-face-smile-beam"></i>,
+        <i className="fa-solid fa-face-smile-beam"></i>,
+        <i className="fa-solid fa-face-smile-beam"></i>
+    ]
+
+
+
     {/*Dummy Stats */}
     const avgRateing = 4.8
     const data = [
@@ -21,6 +32,7 @@ export default function UserFeed() {
         { name: '1 Star', value: 1 }
     ];
 
+    
     const COLORS = ['#0ea476', '#34d399', '#fbbf24', '#f97316', '#ef4444'];
 
     useEffect(()=> {
@@ -49,7 +61,7 @@ export default function UserFeed() {
                             <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
                         </div>
                     </div>
-                    <div className="max-w-xs text-sm italic text-gray-300">
+                    <div className="max-w-xs p-4 bg-slate-800 rounded-lg text-sm italic text-gray-300">
                         “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
                     </div>
             </div>
@@ -70,7 +82,7 @@ export default function UserFeed() {
                             <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
                         </div>
                     </div>
-                    <div className="max-w-xs text-sm italic text-gray-300">
+                    <div className="max-w-xs  p-4 bg-slate-800 rounded-lg text-sm italic text-gray-300">
                         “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
                     </div>
             </div>
@@ -91,7 +103,7 @@ export default function UserFeed() {
                             <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
                         </div>
                     </div>
-                    <div className="max-w-xs text-sm italic text-gray-300">
+                    <div className="max-w-xs  p-4 bg-slate-800 rounded-lg text-sm italic text-gray-300">
                         “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
                     </div>
             </div>
