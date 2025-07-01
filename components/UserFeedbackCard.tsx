@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 
 type userFeedbackInfo = {
     userImage: string,
@@ -11,6 +12,11 @@ type userFeedbackInfo = {
 export default function UserFeedbackCard(props:userFeedbackInfo) {
     const {userImage, user, rateing, userFeedback, icon} = props
     
+    // for(rateing)
+    useEffect(()=>{
+
+    },[])
+
   return (
     <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
         <div className="flex justify-between items-center">
@@ -21,13 +27,13 @@ export default function UserFeedbackCard(props:userFeedbackInfo) {
             ></div>
             <span className="text-xs text-gray-400">{user}</span>
             </div>
-
-            <div className="flex gap-1 text-[var(--shiny-yellow)]">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
+    {/*  text-[var(--shiny-yellow)] */}
+            <div className="flex gap-1">
+                <i className={`fa-solid fa-star ` + (rateing > 0? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
+                <i className={`fa-solid fa-star ` + (rateing > 1? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
+                <i className={`fa-solid fa-star ` + (rateing > 2? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
+                <i className={`fa-solid fa-star ` + (rateing > 3? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
+                <i className={`fa-solid fa-star ` + (rateing > 4? "text-[var(--shiny-yellow)]" : "text-white ")}></i>
             </div>
         </div>
 
