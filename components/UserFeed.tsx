@@ -12,13 +12,17 @@ export default function UserFeed() {
     const [totalYears,SetTotalYears] = useState(Number)
     
     // Smiles
-    const moodFaces = [
-        <i className="fa-solid fa-face-angry text-red-500 "></i>,            // 1 - Angry
-        <i className="fa-solid fa-face-frown text-orange-400"></i>,         // 2 - Unsatisfied
-        <i className="fa-solid fa-face-meh text-yellow-400"></i>,           // 3 - Neutral
-        <i className="fa-solid fa-face-smile text-green-400"></i>,          // 4 - Good
-        <i className="fa-solid fa-face-grin-beam text-green-500"></i>            // 5 - Excellent
+    const moodData = [
+        { key: "angry", icon: "fa-face-angry", color: "text-red-500" },
+        { key: "frown", icon: "fa-face-frown", color: "text-orange-400" },
+        { key: "meh", icon: "fa-face-meh", color: "text-yellow-400" },
+        { key: "smile", icon: "fa-face-smile", color: "text-green-400" },
+        { key: "grin", icon: "fa-face-grin-beam", color: "text-green-500" },   
     ];
+
+    const moodFaces = moodData.map((mood)=>{
+        <i key={mood.key} className={`fa-solid ${mood.icon} ${mood.color} `} ></i>
+    })
 
     {/*Dummy Stats */}
     const avgRateing = 4.8
@@ -40,7 +44,6 @@ export default function UserFeed() {
 
     return (
     <div className='flex flex-col w-[80%] mx-auto bg-gradient-to-l from-slate-800/60 to-slate-900 gap-8 rounded-xl shadow-lg py-2 px-2 '>
-        {/* Highlighted Feedback From useres */}
         <div className='flex justify-evenly gap-2 '>
             <div className='flex flex-col py-4 gap-2 p-4 bg-slate-800 rounded-lg shadow text-sm italic text-gray-300 '> 
                     <div className='flex gap-12 items-center'>
@@ -88,9 +91,7 @@ export default function UserFeed() {
                     </div>
             </div>
             <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
-                {/* Header: User info + stars */}
                 <div className="flex justify-between items-center">
-                    {/* User avatar and email */}
                     <div className="flex items-center gap-3">
                     <div
                         className="h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover"
@@ -99,7 +100,6 @@ export default function UserFeed() {
                     <span className="text-xs text-gray-400">userexample@gmail.com</span>
                     </div>
 
-                    {/* Star rating */}
                     <div className="flex gap-1 text-[var(--shiny-yellow)]">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
@@ -109,7 +109,6 @@ export default function UserFeed() {
                     </div>
                 </div>
 
-                {/* Mood + Quote */}
                 <div className="bg-slate-700 p-3 rounded-md italic text-sm text-gray-300 leading-relaxed max-w-md">
                 “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
                 I highly recommend them.”
@@ -117,7 +116,6 @@ export default function UserFeed() {
                 <span className="text-xl">{moodFaces[4]}</span>
             </div>
         </div>
-        {/*Dummy Stats */}
        <div className='grid grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>
             <UserFeedCard
                 stats={totalYears}
