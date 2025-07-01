@@ -47,29 +47,27 @@ export default function UserFeed() {
     <div className='flex flex-col w-[80%] mx-auto bg-gradient-to-l from-slate-800/60 to-slate-900 gap-8 rounded-xl shadow-lg py-4 px-2 '>
         <div className='flex justify-evenly gap-2 '>
            <UserFeedbackCard 
-                userImage={"url(/zoe-kravitz.jpg)"}
-                user={"userexample@gmail.com"}
+                userImage={"/zoe-kravitz.jpg"}
+                user={"zoe@gmail.com"}
                 rateing={5}
                 userFeedback={`This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
                 I highly recommend them.`}
                 icon={moodFaces[4]}
            />   
+            <UserFeedbackCard 
+                userImage={"https://media.themoviedb.org/t/p/w600_and_h900_bestv2/6Sjz9teWjrMY9lF2o9FCo4XmoRh.jpg"}
+                user={"florence@example.com"}
+                rateing={4}
+                userFeedback={`They delivered solid results and were very responsive. Would definitely work with them again.`}
+                icon={moodFaces[3]}
+            />  
            <UserFeedbackCard 
-                userImage={"url(/zoe-kravitz.jpg)"}
-                user={"userexample@gmail.com"}
+                userImage={"https://cdn.britannica.com/28/215028-050-94E9EA1E/American-actor-Chris-Evans-2019.jpg"}
+                user={"chris@example.com"}
                 rateing={5}
-                userFeedback={`This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
-                I highly recommend them.`}
+                userFeedback={`Exceptional service from start to finish. Their attention to detail and creativity exceeded our expectations.`}
                 icon={moodFaces[4]}
-           />   
-           <UserFeedbackCard 
-                userImage={"url(/zoe-kravitz.jpg)"}
-                user={"userexample@gmail.com"}
-                rateing={5}
-                userFeedback={`This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
-                I highly recommend them.`}
-                icon={moodFaces[4]}
-           />   
+            />   
         </div>
         {/*Dummy Stats */}
        <div className='grid grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>

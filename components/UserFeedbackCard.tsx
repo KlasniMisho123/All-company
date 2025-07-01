@@ -21,7 +21,7 @@ export default function UserFeedbackCard(props:userFeedbackInfo) {
             <div className="flex items-center gap-3">
             <div
                 className="h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover"
-                style={{ backgroundImage: userImage }}
+                style={{ backgroundImage: `url(${userImage})` }}
             ></div>
             <span className="text-xs text-gray-400">{user}</span>
             </div>
