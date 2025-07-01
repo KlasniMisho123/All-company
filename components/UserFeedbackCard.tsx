@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default function UserFeedbackCard() {
+type userFeedbackInfo = {
+    userImage: string,
+    user: string,
+    rateing: number,
+    userFeedback: string,
+    icon: React.ReactElement,
+}
+
+export default function UserFeedbackCard(props:userFeedbackInfo) {
+    const {userImage, user, rateing,userFeedback, icon} = props
+    
   return (
     <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
         <div className="flex justify-between items-center">
@@ -13,11 +23,11 @@ export default function UserFeedbackCard() {
             </div>
 
             <div className="flex gap-1 text-[var(--shiny-yellow)]">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
             </div>
         </div>
 
