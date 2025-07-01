@@ -12,13 +12,17 @@ export default function UserFeed() {
     const [totalYears,SetTotalYears] = useState(Number)
     
     // Smiles
-    const moodFaces = [
-        <i className="fa-solid fa-face-angry text-red-500 "></i>,
-        <i className="fa-solid fa-face-frown text-orange-400"></i>,
-        <i className="fa-solid fa-face-meh text-yellow-400"></i>,
-        <i className="fa-solid fa-face-smile text-green-400"></i>,
-        <i className="fa-solid fa-face-grin-beam text-green-500"></i>   
+    const moodData = [
+        { key: "angry", icon: "fa-face-angry", color: "text-red-500" },
+        { key: "frown", icon: "fa-face-frown", color: "text-orange-400" },
+        { key: "meh", icon: "fa-face-meh", color: "text-yellow-400" },
+        { key: "smile", icon: "fa-face-smile", color: "text-green-400" },
+        { key: "grin", icon: "fa-face-grin-beam", color: "text-green-500" },
     ];
+
+    const moodFaces = moodData.map((mood) => (
+        <i key={mood.key} className={`fa-solid ${mood.icon} ${mood.color}`}></i>
+    ));
 
     {/*Dummy Stats */}
     const avgRateing = 4.8
@@ -41,50 +45,55 @@ export default function UserFeed() {
     return (
     <div className='flex flex-col w-[80%] mx-auto bg-gradient-to-l from-slate-800/60 to-slate-900 gap-8 rounded-xl shadow-lg py-2 px-2 '>
         <div className='flex justify-evenly gap-2 '>
-            <div className='flex flex-col py-4 gap-2 p-4 bg-slate-800 rounded-lg shadow text-sm italic text-gray-300 '> 
-                    <div className='flex gap-12 items-center'>
-                        <div className='flex items-center gap-1'>
-                            <div className='h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover '
-                                style={{backgroundImage: "url(/zoe-kravitz.jpg)"}}
-                            >
-                            </div>
-                            <div>userexample@gmail.com</div>
-                        </div>
-                        <div className='flex gap-1'>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)] "></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                        </div>
+           <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
+                <div className="flex justify-between items-center">
+                    <div className="flex items-center gap-3">
+                    <div
+                        className="h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover"
+                        style={{ backgroundImage: "url(/zoe-kravitz.jpg)" }}
+                    ></div>
+                    <span className="text-xs text-gray-400">userexample@gmail.com</span>
                     </div>
-                    <div className="max-w-xs p-4 bg-slate-800 rounded-lg text-sm italic text-gray-300">
-                        “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
+
+                    <div className="flex gap-1 text-[var(--shiny-yellow)]">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
                     </div>
+                </div>
+
+                <div className="bg-slate-700 p-3 rounded-md italic text-sm text-gray-300 leading-relaxed max-w-md">
+                “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
+                I highly recommend them.”
+                </div>
+                <span className="text-xl">{moodFaces[4]}</span>
             </div>
-            <div className='flex flex-col py-4 gap-2 p-4 bg-slate-800 rounded-lg shadow text-sm italic text-gray-300 '> 
-                    <div className='flex gap-12 items-center'>
-                        <div className='flex items-center gap-1'>
-                            <div className='h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover '
-                                style={{backgroundImage: "url(/zoe-kravitz.jpg)"}}
-                            >
-                            </div>
-                            <div>userexample@gmail.com</div>
-                        </div>
-                        <div className='flex gap-1'>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)] "></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                            <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
-                        </div>
+            <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
+                <div className="flex justify-between items-center">
+                    <div className="flex items-center gap-3">
+                    <div
+                        className="h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover"
+                        style={{ backgroundImage: "url(/zoe-kravitz.jpg)" }}
+                    ></div>
+                    <span className="text-xs text-gray-400">userexample@gmail.com</span>
                     </div>
-                    <div>
-                        <span className=''> {moodFaces[0]} </span>
-                        <div className="max-w-xs p-4 bg-slate-800 rounded-lg text-sm italic text-gray-300">
-                            “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
-                        </div>
+
+                    <div className="flex gap-1 text-[var(--shiny-yellow)]">
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
                     </div>
+                </div>
+
+                <div className="bg-slate-700 p-3 rounded-md italic text-sm text-gray-300 leading-relaxed max-w-md">
+                “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
+                I highly recommend them.”
+                </div>
+                <span className="text-xl">{moodFaces[4]}</span>
             </div>
             <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
                 <div className="flex justify-between items-center">
