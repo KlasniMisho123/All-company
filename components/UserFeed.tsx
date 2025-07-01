@@ -12,17 +12,13 @@ export default function UserFeed() {
     const [totalYears,SetTotalYears] = useState(Number)
     
     // Smiles
-    const moodData = [
-        { key: "angry", icon: "fa-face-angry", color: "text-red-500" },
-        { key: "frown", icon: "fa-face-frown", color: "text-orange-400" },
-        { key: "meh", icon: "fa-face-meh", color: "text-yellow-400" },
-        { key: "smile", icon: "fa-face-smile", color: "text-green-400" },
-        { key: "grin", icon: "fa-face-grin-beam", color: "text-green-500" },   
+    const moodFaces = [
+        <i className="fa-solid fa-face-angry text-red-500 "></i>,
+        <i className="fa-solid fa-face-frown text-orange-400"></i>,
+        <i className="fa-solid fa-face-meh text-yellow-400"></i>,
+        <i className="fa-solid fa-face-smile text-green-400"></i>,
+        <i className="fa-solid fa-face-grin-beam text-green-500"></i>   
     ];
-
-    const moodFaces = moodData.map((mood)=>{
-        <i key={mood.key} className={`fa-solid ${mood.icon} ${mood.color} `} ></i>
-    })
 
     {/*Dummy Stats */}
     const avgRateing = 4.8
@@ -116,6 +112,7 @@ export default function UserFeed() {
                 <span className="text-xl">{moodFaces[4]}</span>
             </div>
         </div>
+        {/*Dummy Stats */}
        <div className='grid grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>
             <UserFeedCard
                 stats={totalYears}
