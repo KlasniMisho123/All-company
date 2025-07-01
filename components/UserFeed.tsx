@@ -55,15 +55,15 @@ export default function UserFeed() {
                 icon={moodFaces[4]}
            />   
             <UserFeedbackCard 
-                userImage={"https://media.themoviedb.org/t/p/w600_and_h900_bestv2/6Sjz9teWjrMY9lF2o9FCo4XmoRh.jpg"}
-                user={"florence@example.com"}
-                rateing={4}
+                userImage={"https://i.pinimg.com/736x/c4/c0/4b/c4c04b38b44d03a864e59a9231733be3.jpg"}
+                user={"emilli@example.com"}
+                rateing={5}
                 userFeedback={`They delivered solid results and were very responsive. Would definitely work with them again.`}
-                icon={moodFaces[3]}
+                icon={moodFaces[4]}
             />  
            <UserFeedbackCard 
-                userImage={"https://cdn.britannica.com/28/215028-050-94E9EA1E/American-actor-Chris-Evans-2019.jpg"}
-                user={"chris@example.com"}
+                userImage={"https://i.pinimg.com/736x/d9/a8/f9/d9a8f90d1b450e0f8c14181116673108.jpg"}
+                user={"jennifer@example.com"}
                 rateing={5}
                 userFeedback={`Exceptional service from start to finish. Their attention to detail and creativity exceeded our expectations.`}
                 icon={moodFaces[4]}

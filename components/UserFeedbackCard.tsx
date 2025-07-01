@@ -38,7 +38,7 @@ export default function UserFeedbackCard(props:userFeedbackInfo) {
         <div className="bg-slate-700 p-3 rounded-md italic text-sm text-gray-300 leading-relaxed max-w-md">
         “{userFeedback}”
         </div>
-        <span className="text-xl">{icon}</span>
+        <span className="text-xl items-end">{icon}</span>
     </div>
   )
 }
