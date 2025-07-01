@@ -10,7 +10,9 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function UserFeed() {
     const [totalYears,SetTotalYears] = useState(Number)
-
+    
+    {/*Dummy Stats */}
+    const avgRateing = 4.8
     const data = [
         { name: '5 Stars', value: 80 },
         { name: '4 Stars', value: 15 },
@@ -55,7 +57,7 @@ export default function UserFeed() {
                 </div>
                 <div className='mt-2 '> 
                     <h3 className="mb-4 text-center text-emerald-500 text-xl font-semibold tracking-wide">
-                        4.8 Average Rating
+                        {avgRateing} Average Rating
                     </h3>
                     <div className='w-full h-64'>
                         <ResponsiveContainer>
