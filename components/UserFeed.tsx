@@ -57,10 +57,10 @@ export default function UserFeed() {
            <UserFeedbackCard 
                 userImage={"url(/zoe-kravitz.jpg)"}
                 user={"userexample@gmail.com"}
-                rateing={4}
+                rateing={5}
                 userFeedback={`This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.”
                 I highly recommend them.`}
-                icon={moodFaces[3]}
+                icon={moodFaces[4]}
            />   
            <UserFeedbackCard 
                 userImage={"url(/zoe-kravitz.jpg)"}

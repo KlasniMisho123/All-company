@@ -1,6 +1,3 @@
-'use client'
-import React, { useEffect } from 'react'
-
 type userFeedbackInfo = {
     userImage: string,
     user: string,
@@ -12,10 +9,11 @@ type userFeedbackInfo = {
 export default function UserFeedbackCard(props:userFeedbackInfo) {
     const {userImage, user, rateing, userFeedback, icon} = props
     
+    const rateingStars = []
     // for(rateing)
-    useEffect(()=>{
-
-    },[])
+    for(let i=0; i<5; i++) {
+        rateingStars.push(i)
+    }
 
   return (
     <div className="flex flex-col gap-4 p-4 bg-slate-800 rounded-lg shadow text-sm text-gray-300">
@@ -27,13 +25,13 @@ export default function UserFeedbackCard(props:userFeedbackInfo) {
             ></div>
             <span className="text-xs text-gray-400">{user}</span>
             </div>
-    {/*  text-[var(--shiny-yellow)] */}
+
             <div className="flex gap-1">
-                <i className={`fa-solid fa-star ` + (rateing > 0? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
-                <i className={`fa-solid fa-star ` + (rateing > 1? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
-                <i className={`fa-solid fa-star ` + (rateing > 2? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
-                <i className={`fa-solid fa-star ` + (rateing > 3? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
-                <i className={`fa-solid fa-star ` + (rateing > 4? "text-[var(--shiny-yellow)]" : "text-white ")}></i>
+                {rateingStars.map((index)=>{
+                    return(
+                        <i key={index} className={`fa-solid fa-star ` + (rateing > index? "text-[var(--shiny-yellow)] " : "text-white ")}></i>
+                    );
+                })}
             </div>
         </div>
 
