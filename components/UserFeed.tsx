@@ -31,23 +31,26 @@ export default function UserFeed() {
     return (
     <div className='flex flex-col w-[80%] mx-auto bg-gradient-to-l from-slate-800/60 to-slate-900 gap-8 rounded-xl shadow-lg p-4 '>
         {/* Highlighted Feedback From useres */}
-       <div className='flex flex-col py-4 '> 
+       <div className='flex flex-col py-4 gap-2 '> 
             <div className='flex gap-12 items-center'>
                 <div className='flex items-center gap-1'>
-                    <div className='h-16 w-16 border-2 border-black bg-slate-600 rounded-full '>
-                        
+                    <div className='h-16 w-16 border-2 border-slate-600 rounded-full bg-center bg-cover '
+                        style={{backgroundImage: "url(/zoe-kravitz.jpg)"}}
+                    >
                     </div>
                     <div>userexample@gmail.com</div>
                 </div>
                 <div className='flex gap-1'>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star text-[var(--shiny-yellow)] "></i>
+                    <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
+                    <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
+                    <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
+                    <i className="fa-solid fa-star text-[var(--shiny-yellow)]"></i>
                 </div>
             </div>
-            <div> desc Text </div>
+            <div className="max-w-sm p-4 bg-slate-800 rounded-lg shadow text-sm italic text-gray-300">
+                “This team truly understood our vision and brought it to life with care and creativity. I highly recommend them.  I highly recommend them.”
+            </div>
        </div>
         {/*Dummy Stats */}
        <div className='grid grid-cols-3 justify-evenly gap-4 border-t-2 pt-4'>
