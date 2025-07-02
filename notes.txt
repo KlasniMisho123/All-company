@@ -1,45 +1,44 @@
-🎨 Primary Colors (from the logo)
-Color Role	Hex Code	Usage
-Deep Red	#D32F2F	Logo accents, buttons, CTAs
-Dark Burgundy	#A10000	Hover states, highlights
-Feather Red Tint	#F44336	Subtle gradients, alerts
 
-🧼 Supporting Colors (for backgrounds, text, and contrast)
-Color Role	Hex Code	Usage
-Off White	#FAFAFA	Background
-Light Gray	#EEEEEE	Sections, cards, footer bg
-Medium Gray	#9E9E9E	Secondary text, icons
-Charcoal	#212121	Main text, strong contrast
+--Recent Projects Blog --
+es — perfect idea.
 
-🌟 Optional Accent Colors
-These can be used sparingly to complement your red primary:
+Placing a “Recent Projects” section right before the client logos is strategically smart:
 
-Color Role	Hex Code	Usage
-Warm Gold	#FFD54F	Highlights or badges
-Cool Blue Gray	#607D8B	Neutral accent
+✅ Leads naturally from “Here’s what we do” → “Here’s what we’ve done”
 
-💡 Sample Theme Usage
-Navbar / Footer: Deep Red background (#D32F2F) with white or light gray text.
+✅ Creates a nice scroll climax before wrapping with social proof (client logos)
 
-Hero Section: Off-white background with bold headline text in Charcoal, button in Deep Red.
+✅ Feels like a mini-portfolio or blog highlight
 
-Cards / Boxes: Light Gray background, border on hover in Feather Red Tint.
+✅ Keeps homepage dynamic without stealing focus from your full “Work” page
 
-Buttons:
+💡 Section Title Ideas
+Instead of just "Recent Projects", go with something a bit more stylish or branded:
 
-Primary: Red with white text
+Recent Work
 
-Secondary: White with red border and red text
+Selected Projects
 
-🖼 Fonts
-To match the professional and modern feel:
+Our Latest Creations
 
-Headers: Poppins, Urbanist, or Montserrat
+Fresh from the Studio
 
-Body: Inter or Roboto
+Designs We're Proud Of
 
-🧪 Accessibility Tip
-Make sure there's enough contrast between your red tones and the background, especially for text and buttons (WCAG AA/AAA compliance). Tools like contrast checker can help.
+🎨 Layout (3 Project Cards)
+Each card could include:
+
+Thumbnail (image)
+
+Project title
+
+Category / tags (e.g., Branding, UI/UX)
+
+Short one-line description
+
+Optional hover effect or "View Case" button
+
+
 
 -- Home Page --
 // Services scroll animation

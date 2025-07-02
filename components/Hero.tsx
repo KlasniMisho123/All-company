@@ -86,6 +86,21 @@ export default function Hero() {
       <Services />
       <ContactUsElement />
       <WorkStages />
+      {/* Bloglike -> Recent Projects */}
+      <section className='flex flex-col items-center gap-6 my-6 bg-gradient-to-r from-slate-900 to-slate-800 p-8'>
+        <h3 className={`text-2xl ` + urbanist.className }> Recent Projects </h3>
+        <div className='my-4 flex items-center justify-evenly'>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <Link
+        className=' text-center ' 
+        href={"/aboutus"}
+        >
+        See All Projects
+        </Link>
+      </section>
       <ClientCompanies />
       {/*Highlighted Cleint Cards, Reveal from bottom? */}
     </div>
