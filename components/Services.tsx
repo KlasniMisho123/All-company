@@ -32,7 +32,7 @@ export default function Services() {
 
   return (
     <section className='mx-30 my-10 rounded-xl  p-4 py-10 '> 
-        <h2 className={'text-center text-4xl font-bold ' + urbanist.className}> Our <span className='text-3xl bg-gradient-to-r from-[var(--error-color)] to-[#1F2937] tracking-widest font-semibold px-1 '> Services </span> </h2> 
+        <h2 className={'text-center text-4xl font-bold ' + urbanist.className}> Our <span className='text-3xl bg-gradient-to-r from-[var(--error-color)] to-transparent tracking-widest font-semibold px-2 '> Services </span> </h2> 
         <p className={`text-center bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent font-medium text-lg md:text-xl max-w-2xl mx-auto ${urbanist.className}`}>
           We deliver innovative, client-focused services designed to solve real challenges and drive sustainable growth. </p> 
         <div className='flex px-4 justify-between text-2xl w-full '>
