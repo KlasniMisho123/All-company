@@ -93,33 +93,68 @@ export default function Hero() {
         </h3>
 
         <div className='my-4 flex items-center justify-evenly w-full '>
-          <div className=''>
 
+        <div className="flex rounded-lg overflow-hidden shadow-lg h-64 group transition-transform duration-300 hover:scale-105">
+          <div 
+            className="w-1/2 bg-cover bg-center"
+            style={{ backgroundImage: "url('/fight-club.jpg')" }}
+          ></div>
+
+          <div className="w-1/2 bg-white p-6 flex flex-col justify-center">
+            <span className="text-sm text-gray-500 uppercase tracking-widest mb-2">Branding / UI Design</span>
+            <h3 className="text-2xl font-semibold mb-2 text-gray-900">EcoBrew Identity</h3>
+            <p className="text-gray-700 text-sm mb-4">
+              Clean, sustainable visual identity for an eco-conscious coffee brand.
+            </p>
+            <div className="text-xs text-gray-400">7/2/2025</div>
           </div>
+        </div>
+
+
           <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group ">
             <img
               src="/zoe-kravitz.jpg"
               alt="Project Title"
-              className="w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-125"
+              className='w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-120 '
             />
 
-            <div className="relative z-10 h-full w-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
-              <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">Branding / UI Design</span>
-
-              <h3 className="text-xl font-semibold text-white">EcoBrew Identity</h3>
-
-              <p className="text-sm text-gray-200 mt-1 line-clamp-2">
-                Clean, sustainable visual identity for an eco-conscious coffee brand.
-              </p>
-
-              <div className="mt-3">
-                7/2/2025
+            <div className="relative z-10 h-full w-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-2 pb-0 ">
+              <div className="relative z-10 p-4 p-2 ">
+                <div className="absolute inset-0 bg-black opacity-40 z-0 rounded-md"></div>
+                <div className="relative z-10">
+                  <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">Branding / UI Design</span>
+                  <h3 className="text-xl font-semibold text-white">EcoBrew Identity</h3>
+                  <p className="text-sm text-white mt-1 line-clamp-2">
+                    Clean, sustainable visual identity for an eco-conscious coffee brand.
+                  </p>
+                  <div className="mt-3 text-xs text-slate-300">7/2/2025</div>
+                </div>
               </div>
             </div>
           </div>
 
+          <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group ">
+            <img
+              src="/zoe-kravitz.jpg"
+              alt="Project Title"
+              className='w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-120 '
+            />
 
-          <div>3</div>
+            <div className="relative z-10 h-full w-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-2 pb-0 ">
+              <div className="relative z-10 p-4 p-2 ">
+                <div className="absolute inset-0 bg-black opacity-40 z-0 rounded-md"></div>
+                <div className="relative z-10">
+                  <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">Branding / UI Design</span>
+                  <h3 className="text-xl font-semibold text-white">EcoBrew Identity</h3>
+                  <p className="text-sm text-white mt-1 line-clamp-2">
+                    Clean, sustainable visual identity for an eco-conscious coffee brand.
+                  </p>
+                  <div className="mt-3 text-xs text-slate-300">7/2/2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <Link
         className=' text-center ' 
