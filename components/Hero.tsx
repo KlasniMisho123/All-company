@@ -88,13 +88,37 @@ export default function Hero() {
       <WorkStages />
       {/* Bloglike -> Recent Projects */}
       <section className='flex flex-col items-center gap-6 my-6 bg-gradient-to-r from-slate-900 to-slate-800 p-8'>
-        <h3 className={`text-2xl font-semibold relative px-6 py-2 border-2 border-[var(--error-color)] rounded-t rounded-b-2xl inline-block ${urbanist.className}`}>
+        <h3 className={`text-2xl font-semibold relative px-6 py-2 border-2 rounded-t rounded-b-2xl inline-block ${urbanist.className}`}>
           <span className="relative z-10">Recent Projects</span>
         </h3>
 
         <div className='my-4 flex items-center justify-evenly w-full '>
-          <div>1</div>
-          <div>2</div>
+          <div className=''>
+
+          </div>
+          <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group ">
+            <img
+              src="/zoe-kravitz.jpg"
+              alt="Project Title"
+              className="w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-125"
+            />
+
+            <div className="relative z-10 h-full w-full flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
+              <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">Branding / UI Design</span>
+
+              <h3 className="text-xl font-semibold text-white">EcoBrew Identity</h3>
+
+              <p className="text-sm text-gray-200 mt-1 line-clamp-2">
+                Clean, sustainable visual identity for an eco-conscious coffee brand.
+              </p>
+
+              <div className="mt-3">
+                7/2/2025
+              </div>
+            </div>
+          </div>
+
+
           <div>3</div>
         </div>
         <Link
