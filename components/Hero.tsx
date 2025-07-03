@@ -104,7 +104,7 @@ export default function Hero() {
         />
 
         <RecentProjectsCard 
-          imgSrc={"/zoe-kravitz.jpg"}
+          imgSrc={"/nenesProject.jpg"}
           type={"Branding / UI Design"}
           title={"EcoBrew Identity"}
           desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
@@ -112,7 +112,7 @@ export default function Hero() {
         />
 
         <RecentProjectsCard 
-          imgSrc={"/fight-club.jpg"}
+          imgSrc={"/naturaleza.jpg"}
           type={"Branding / UI Design"}
           title={"EcoBrew Identity"}
           desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
