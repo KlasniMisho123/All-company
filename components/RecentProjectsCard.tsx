@@ -1,19 +1,18 @@
 import React from 'react'
 
 type RecentProjectsType = {
-    imgSrc: Blob,
-    type: String,
-    title: String,
-    desc: String,
-    date: String,
+    imgSrc: string,
+    type: string,
+    title: string,
+    desc: string,
+    date: string,
 }
 
 export default function RecentProjectsCard(props:RecentProjectsType) {
     const {imgSrc, type, title, desc, date} = props
     
-
   return (
-    <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group ">
+    <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group max-w-[31%] ">
         <img
             src={imgSrc}
             alt="Project Title"
@@ -24,12 +23,12 @@ export default function RecentProjectsCard(props:RecentProjectsType) {
             <div className="relative z-10 p-4 p-2 ">
             <div className="absolute inset-0 bg-black opacity-40 z-0 rounded-md"></div>
             <div className="relative z-10">
-                <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">Branding / UI Design</span>
-                <h3 className="text-xl font-semibold text-white">EcoBrew Identity</h3>
+                <span className="text-sm text-slate-200 uppercase tracking-widest mb-1">{type}</span>
+                <h3 className="text-xl font-semibold text-white">{title}</h3>
                 <p className="text-sm text-white mt-1 line-clamp-2">
-                Clean, sustainable visual identity for an eco-conscious coffee brand.
+                    {desc}
                 </p>
-                <div className="mt-3 text-xs text-slate-300">7/2/2025</div>
+                <div className="mt-3 text-xs text-slate-300">{date}</div>
             </div>
             </div>
         </div>

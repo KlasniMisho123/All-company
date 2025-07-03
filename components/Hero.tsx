@@ -95,29 +95,30 @@ export default function Hero() {
 
         <div className='my-4 flex items-center justify-evenly w-full '>
 
-        <RecentProjectsCard 
-          imgSrc={"/fight-club.jpg"}
-          type={"Branding / UI Design"}
-          title={"EcoBrew Identity"}
-          desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
-          date={`${7/2/2025}`}
-        />
+          <RecentProjectsCard 
+            imgSrc={"/fight-club.jpg"}
+            type={"Branding / UI Design"}
+            title={"EcoBrew Identity"}
+            desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
+            date="7/2/2025"
+          />
 
-        <RecentProjectsCard 
-          imgSrc={"/nenesProject.jpg"}
-          type={"Branding / UI Design"}
-          title={"EcoBrew Identity"}
-          desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
-          date={`${7/2/2025}`}
-        />
+          <RecentProjectsCard 
+            imgSrc={"/nenesProject.jpg"}
+            type={"Branding / UI Design"}
+            title={"ChildFood Packaging"}
+            desc={"Playful and safe packaging for a children's snack brand using vibrant pastel color schemes."}
+            date="7/2/2025"
+          />
 
-        <RecentProjectsCard 
-          imgSrc={"/naturaleza.jpg"}
-          type={"Branding / UI Design"}
-          title={"EcoBrew Identity"}
-          desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
-          date={`${7/2/2025}`}
-        />
+          <RecentProjectsCard 
+            imgSrc="/naturaleza.jpg"
+            type="Nature Campaign"
+            title="Naturaleza Posters"
+            desc="Minimalistic and earthy poster series to promote ecological awareness through design."
+            date="2025-07-03"
+          />
+          
         </div>
         <Link
         className=' text-center ' 
