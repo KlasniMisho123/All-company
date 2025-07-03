@@ -120,12 +120,11 @@ export default function Hero() {
           />
           
         </div>
-        <Link className="relative self-center flex justify-center border-2 border-white rounded-t-2xl rounded-b  overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white min-w-[140px] "
-          href={"/aboutus"}>
-          <div className=" absolute inset-0 bg-[var(--error-color)] "></div>
-          <span className="relative z-10 font-semibold ">
-            See All Projects
-          </span>
+        <Link
+          className='text-center transition-all duration-200 font-semibold hover:opacity-75' 
+          href={"/aboutus"}
+        >
+          See All Projects
         </Link>
       </section>
       <ClientCompanies />
