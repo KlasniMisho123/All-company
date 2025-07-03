@@ -95,21 +95,6 @@ export default function Hero() {
 
         <div className='my-4 flex items-center justify-evenly w-full '>
 
-        <div className="flex rounded-lg overflow-hidden shadow-lg h-64 group transition-transform duration-300 hover:scale-105">
-          <div 
-            className="w-1/2 bg-cover bg-center"
-            style={{ backgroundImage: "url('/fight-club.jpg')" }}
-          ></div>
-
-          <div className="w-1/2 bg-white p-6 flex flex-col justify-center">
-            <span className="text-sm text-gray-500 uppercase tracking-widest mb-2">Branding / UI Design</span>
-            <h3 className="text-2xl font-semibold mb-2 text-gray-900">EcoBrew Identity</h3>
-            <p className="text-gray-700 text-sm mb-4">
-              Clean, sustainable visual identity for an eco-conscious coffee brand.
-            </p>
-            <div className="text-xs text-gray-400">7/2/2025</div>
-          </div>
-        </div>
         <RecentProjectsCard 
           imgSrc={"/fight-club.jpg"}
           type={"Branding / UI Design"}
@@ -117,6 +102,15 @@ export default function Hero() {
           desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
           date={`${7/2/2025}`}
         />
+
+        <RecentProjectsCard 
+          imgSrc={"/zoe-kravitz.jpg"}
+          type={"Branding / UI Design"}
+          title={"EcoBrew Identity"}
+          desc={"Clean, sustainable visual identity for an eco-conscious coffee brand."}
+          date={`${7/2/2025}`}
+        />
+
         <RecentProjectsCard 
           imgSrc={"/fight-club.jpg"}
           type={"Branding / UI Design"}

@@ -1,11 +1,11 @@
 import React from 'react'
 
 type RecentProjectsType = {
-    imgSrc: String,
-    type: string,
-    title: string,
-    desc: string,
-    date: string,
+    imgSrc: Blob,
+    type: String,
+    title: String,
+    desc: String,
+    date: String,
 }
 
 export default function RecentProjectsCard(props:RecentProjectsType) {
@@ -15,7 +15,7 @@ export default function RecentProjectsCard(props:RecentProjectsType) {
   return (
     <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group ">
         <img
-            src="/zoe-kravitz.jpg"
+            src={imgSrc}
             alt="Project Title"
             className='w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-120 '
         />
