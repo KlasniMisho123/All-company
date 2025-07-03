@@ -89,9 +89,9 @@ export default function Hero() {
       <WorkStages />
       {/* Bloglike -> Recent Projects */}
       <section className='flex flex-col items-center gap-6 my-6 bg-gradient-to-r from-slate-900 to-slate-800 p-8'>
-        <h3 className={`text-2xl font-semibold relative px-6 py-2 border-2 rounded-t rounded-b-2xl inline-block ${urbanist.className}`}>
+        <div className={`text-2xl font-semibold relative px-6 py-2 border-2 rounded-t rounded-b-2xl inline-block ${urbanist.className}`}>
           <span className="relative z-10">Recent Projects</span>
-        </h3>
+        </div>
 
         <div className='my-4 flex items-center justify-evenly w-full '>
 
@@ -120,11 +120,12 @@ export default function Hero() {
           />
           
         </div>
-        <Link
-        className=' text-center ' 
-        href={"/aboutus"}
-        >
-        See All Projects
+        <Link className="relative self-center flex justify-center border-2 border-white rounded-t-2xl rounded-b  overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white min-w-[140px] "
+          href={"/aboutus"}>
+          <div className=" absolute inset-0 bg-[var(--error-color)] "></div>
+          <span className="relative z-10 font-semibold ">
+            See All Projects
+          </span>
         </Link>
       </section>
       <ClientCompanies />

@@ -10,6 +10,9 @@ type buttonProps = {
 
 export default function Button(props:buttonProps) {
   const {title, linkSrc } = props
+
+  // icon={<></>} to pass
+  // customClassName={""}
   return (
     <Link className="relative flex justify-center self-start border-2 border-red-500 rounded-full overflow-hidden cursor-pointer px-6 py-3 button-clipath bg-white min-w-[140px] "
     href={linkSrc}>
