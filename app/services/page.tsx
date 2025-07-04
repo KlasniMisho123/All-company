@@ -20,7 +20,7 @@ export default function page() {
       >
         
         <div className='flex flex-col text-6xl font-semibold custom-selection-bg text-center text-white select-none '>
-          <h2 className=''>Our Company</h2>
+          <h2 className=''>All Design</h2>
           <h2 className=''>Services</h2>
         </div>
 
