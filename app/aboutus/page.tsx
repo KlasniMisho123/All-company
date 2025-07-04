@@ -28,13 +28,22 @@ export default function aboutus() {
                 Our Story
               </h3>
 
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
-                What began as a small creative studio in a sunlit apartment has grown into a collective of passionate designers, developers, and storytellers. 
-                We didn’t start with big budgets or fancy titles — just an obsession with crafting beautiful, purposeful design.
-                Since then, we’ve partnered with startups and established brands alike — shaping visual identities, building digital experiences, 
-                and bringing stories to life. For us, great design is about more than just how things look; it’s about how they connect, 
-                communicate, and leave a lasting impression. That’s why we create with intention — and with people in mind.
-              </p>
+              <div className='flex flex-col gap-2'>
+                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                  What began as a small creative studio in a sunlit apartment has grown into a collective of passionate designers, developers, and storytellers. 
+                  We didn&apos;t start with big budgets or fancy titles — just an obsession with crafting beautiful, purposeful design.
+                </p>
+
+                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                  Over the years, we've collaborated with clients across industries — from local startups to global brands — helping them shape visual identities, 
+                  digital experiences, and products that speak to their audience. Every project is a new challenge, a new story waiting to be told.
+                </p>
+
+                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                  We believe great design isn&apos;t just about how things look — it's about how they make people feel. That&apos;s why we take the time to listen, explore, 
+                  and create with intention. It&apos;s more than work to us — it&apos;s what we love to do.
+                </p>
+              </div>
 
             </div>
             <div className='flex-1'>Story Visuals</div>
