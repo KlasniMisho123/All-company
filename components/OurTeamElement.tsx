@@ -57,17 +57,17 @@ export default function OurTeamElement() {
 
             {selectedPage == 0 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
                 <TeamMemberCard 
-                    imgSrc='teamMembers/member1.jpg'
+                    imgSrc='/teamMembers/member1.jpg'
                     name={"Ali"}
                     position={"Motion Graphics Artist"}
                 />
                 <TeamMemberCard 
-                    imgSrc='teamMembers/members2-3.jpg'
+                    imgSrc='/teamMembers/members2-3.jpg'
                     name={"John Doe"}
                     position={"Brand Identity Designer"}
                 />
                 <TeamMemberCard 
-                    imgSrc='teamMembers/member4.jpg'
+                    imgSrc='/teamMembers/member4.jpg'
                     name={"Ali"}
                     position={"Motion Graphics Artist"}
                 />
@@ -75,17 +75,17 @@ export default function OurTeamElement() {
             }
             {selectedPage == 1 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
                 <TeamMemberCard 
-                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t2.jpg'
+                    imgSrc='/teamMembers/member5.jpg'
                     name={"Elisabeth Green"}
                     position={"Senior Designer"}
                 />
                 <TeamMemberCard 
-                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t5.jpg'
+                    imgSrc='/teamMembers/member6.jpg'
                     name={"Lisa Browner"}
                     position={"Support Manager"}
                 />
                 <TeamMemberCard 
-                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t3.jpg'
+                    imgSrc='/teamMembers/member7.jpg'
                     name={"Mike Kingman"}
                     position={"Co Founder"}
                 />
@@ -93,17 +93,17 @@ export default function OurTeamElement() {
             }
             {selectedPage == 2 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
                 <TeamMemberCard 
-                    imgSrc='https://i.pinimg.com/736x/f6/61/ea/f661ea61616909838a9fbfeda0d2ea14.jpg'
+                    imgSrc='/teamMembers/member8.jpg'
                     name={"Fiona Pugh"}
                     position={"Creative Director"}
                 />
                 <TeamMemberCard 
-                    imgSrc='https://i.pinimg.com/736x/52/94/eb/5294eba5c7d674e4f14921309a36934a.jpg'
+                    imgSrc='/teamMembers/member9.jpg'
                     name={"Jake Smith"}
                     position={"Illustrator"}
                 />
                 <TeamMemberCard 
-                    imgSrc='https://i.pinimg.com/736x/b2/da/f9/b2daf9019c4b08fa3a90c7d28a08a059.jpg'
+                    imgSrc='/teamMembers/member10.jpg'
                     name={"Emilly Henderson"}
                     position={"Motion Graphics Intern"}
                 />
