@@ -30,17 +30,17 @@ export default function aboutus() {
               </h3>
 
               <div className='flex flex-col gap-2'>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
                   What began as a small creative studio in a sunlit apartment has grown into a collective of passionate designers, developers, and storytellers. 
                   We didn&apos;t start with big budgets or fancy titles — just an obsession with crafting beautiful, purposeful design.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
                   Over the years, we've collaborated with clients across industries — from local startups to global brands — helping them shape visual identities, 
                   digital experiences, and products that speak to their audience. Every project is a new challenge, a new story waiting to be told.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-prose">
+                <p className="text-gray-300 leading-relaxed text-base md:text-lgmax-w-prose">
                   We believe great design isn&apos;t just about how things look — it's about how they make people feel. That&apos;s why we take the time to listen, explore, 
                   and create with intention. It&apos;s more than work to us — it&apos;s what we love to do.
                 </p>
@@ -49,9 +49,9 @@ export default function aboutus() {
             </div>
             
             <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
-              <div className='relative flex-1 bg-cover bg-center '>
+              <div className='h-[50%]relative flex-1 bg-cover bg-center '>
                 <img
-                className='h-[90%] w-full object-cover rounded-2xl'
+                className='h-[80%] w-full object-cover rounded-2xl'
                 src={"https://i.pinimg.com/736x/71/45/85/7145858b0650bcacab83a58150c3268e.jpg"}
                 loading='lazy'
                 ></img>
@@ -63,16 +63,16 @@ export default function aboutus() {
                   statTitle={"Years of service"}
                 />
                 <StoryStatCard 
-                  stat={5}
-                  statTitle={"Years of service"}
+                  stat={120}
+                  statTitle={"YProjects Completed"}
+                />
+                <StoryStatCard 
+                  stat={15}
+                  statTitle={"Companies Served"}
                 />
                 <StoryStatCard 
                   stat={5}
-                  statTitle={"Years of service"}
-                />
-                <StoryStatCard 
-                  stat={5}
-                  statTitle={"Years of service"}
+                  statTitle={"Team Members"}
                 />
               </div>
 
