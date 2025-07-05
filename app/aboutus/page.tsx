@@ -31,17 +31,17 @@ export default function aboutus() {
           <div className='flex flex-col gap-4'>
             <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
               What began as a small creative studio in a sunlit apartment has grown into a collective of passionate designers, developers, and storytellers.
-              We didn't start with big budgets or fancy titles — just an obsession with crafting beautiful, purposeful design.
+              We didn&apos; start with big budgets or fancy titles — just an obsession with crafting beautiful, purposeful design.
             </p>
 
             <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
-              Over the years, we've collaborated with clients across industries — from local startups to global brands — helping them shape visual identities,
+              Over the years, we&apos;ve collaborated with clients across industries — from local startups to global brands — helping them shape visual identities,
               digital experiences, and products that speak to their audience. Every project is a new challenge, a new story waiting to be told.
             </p>
 
             <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
-              We believe great design isn't just about how things look — it's about how they make people feel. That's why we take the time to listen, explore,
-              and create with intention. It's more than work to us — it's what we love to do.
+              We believe great design isn&apos;t just about how things look — it&apos;s about how they make people feel. That&apos;s why we take the time to listen, explore,
+              and create with intention. It&apos;s more than work to us — it&apos;s what we love to do.
             </p>
           </div>
         </div>
@@ -82,12 +82,12 @@ export default function aboutus() {
             <div className='flex flex-col gap-2'>
               <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
                 As we grow, our goal is to scale without losing what makes us unique — our hands-on creative spirit and attention to detail.
-                We're expanding into new service areas and investing in tools that let our ideas reach farther and resonate deeper.
+                We&apos;re expanding into new service areas and investing in tools that let our ideas reach farther and resonate deeper.
               </p>
 
               <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
                 We envision a future where our studio continues to shape brands, products, and experiences that are not only visually stunning,
-                but also meaningful and human-centered. That’s the impact we aim for.
+                but also meaningful and human-centered. That&apos;s the impact we aim for.
               </p>
             </div>
           </div>
