@@ -57,10 +57,13 @@ export default function aboutus() {
               </div>
 
               <div className='flex-1 grid grid-cols-2 gap-4 shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6 '>
-                <div className='shadow-lg bg-slate-800 rounded-xl py-8 px-6'>
+                <div className='shadow bg-slate-700 rounded-lg py-4 px-6'>
+                  <h2 className='text-2xl font-bold'>5+ </h2>
+                  <h4>Years of service </h4>
+                </div>
+                <div className='shadow bg-slate-700 rounded-lg py-8 px-6'>
                   1
                 </div>
-                <div>1</div>
                 <div>1</div>
                 <div>1</div>
               </div>
