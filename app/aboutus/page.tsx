@@ -125,7 +125,8 @@ export default function aboutus() {
         </div>
 
         <OurTeamElement />
-        
+        {/* FAQ */}
+        {/* Projects Display */}
       </div>
     </div>
   )

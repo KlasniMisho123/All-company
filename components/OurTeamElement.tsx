@@ -1,5 +1,6 @@
 import { Urbanist } from 'next/font/google';
 import React from 'react'
+import TeamMemberCard from './TeamMemberCard';
 
 // https://dribbble.com/shots/23517715-Team-Section
 
@@ -18,7 +19,7 @@ export default function OurTeamElement() {
             Creative minds. Proven results.
         </p>
         </>
-        {/* 3-4 Card per page */}
+        {/* 3Card per page */}
         <div className='flex  justify-between items-center w-full gap-4 my-10 min-h-[300px] py-4'>
             <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '>
                 <i className="fa-solid fa-chevron-left text-2xl"></i>
@@ -26,22 +27,21 @@ export default function OurTeamElement() {
 
             <div className='flex w-full px-6 justify-evenly overflow-hidden'>
 
-            <div className="relative flex-1 rounded-2xl bg-slate-800 w-max max-h-[300px] max-w-[250px] overflow-hidden shadow-lg">
-                <img
-                    src={"teamMembers/member1.jpg"}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    alt="Team member"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-                    <div className="text-white font-semibold text-lg">Name Surname</div>
-                    <div className="text-gray-300 text-sm">Occupation</div>
-                    {/* Rest of card */}
-                </div>
-            </div>
-
-            
+            <TeamMemberCard 
+                imgSrc='teamMembers/member1.jpg'
+                name={"all"}
+                position={"Designer"}
+            />
+            <TeamMemberCard 
+                imgSrc='teamMembers/members2-3.jpg'
+                name={"all"}
+                position={"Designer"}
+            />
+            <TeamMemberCard 
+                imgSrc='teamMembers/member4.jpg'
+                name={"all"}
+                position={"Designer"}
+            />
 
             
             </div>
@@ -54,7 +54,6 @@ export default function OurTeamElement() {
 
         <div className='flex justify-center items-center gap-1 '>
             <div className='h-0.5 bg-white w-8 '></div>
-            <div className='h-0.5 bg-gray-400 w-8 '></div>
             <div className='h-0.5 bg-gray-400 w-8 '></div>
             <div className='h-0.5 bg-gray-400 w-8 '></div>
         </div>
