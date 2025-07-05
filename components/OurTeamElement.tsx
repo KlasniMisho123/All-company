@@ -18,7 +18,7 @@ export default function OurTeamElement() {
 
     function selectPage(dir:string) {
         if(dir == "right" ) {
-            if(selectedPage < 2) {
+            if(selectedPage < (pages.length-1) ) {
                 setSelectedPage(selectedPage + 1)
             }
         } else {
