@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default function StoryStatCard() {
+type StoryStatCard = {
+    stat: number,
+    statTitle: string
+}
+
+export default function StoryStatCard(props:StoryStatCard) {
+    const { stat, statTitle } = props
   return (
     <div className='shadow bg-slate-700 rounded-lg py-4 px-6'>
         <h2 className='text-2xl font-bold'>5+ </h2>
