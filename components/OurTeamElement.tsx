@@ -51,7 +51,7 @@ export default function OurTeamElement() {
                 <i className="fa-solid fa-chevron-left text-2xl"></i>
             </div>
 
-            <div className='flex w-full px-6 justify-evenly overflow-hidden'>
+            {selectedPage == 0 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
                 <TeamMemberCard 
                     imgSrc='teamMembers/member1.jpg'
                     name={"Ali"}
@@ -68,6 +68,43 @@ export default function OurTeamElement() {
                     position={"Motion Graphics Artist"}
                 />
             </div>
+            }
+            {selectedPage == 1 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
+                <TeamMemberCard 
+                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t2.jpg'
+                    name={"Elisabeth Green"}
+                    position={"Senior Designer"}
+                />
+                <TeamMemberCard 
+                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t5.jpg'
+                    name={"Lisa Browner"}
+                    position={"Support Manager"}
+                />
+                <TeamMemberCard 
+                    imgSrc='https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/t3.jpg'
+                    name={"Mike Kingman"}
+                    position={"Co Founder"}
+                />
+            </div>
+            }
+            {selectedPage == 2 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
+                <TeamMemberCard 
+                    imgSrc='teamMembers/member1.jpg'
+                    name={"Ali"}
+                    position={"Motion Graphics Artist"}
+                />
+                <TeamMemberCard 
+                    imgSrc='teamMembers/members2-3.jpg'
+                    name={"John Doe"}
+                    position={"Brand Identity Designer"}
+                />
+                <TeamMemberCard 
+                    imgSrc='teamMembers/member4.jpg'
+                    name={"Ali"}
+                    position={"Motion Graphics Artist"}
+                />
+            </div>
+            }
 
              <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
                 onClick={

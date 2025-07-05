@@ -9,7 +9,7 @@ type TeamMemberInfo = {
 export default function TeamMemberCard(props:TeamMemberInfo) {
     const {imgSrc, name, position} = props
   return (
-    <div className="relative flex-1 rounded-2xl bg-slate-800 w-max max-h-[300px] max-w-[250px] overflow-hidden shadow-lg">
+    <div className="relative flex-1 rounded-2xl bg-slate-800 w-max h-[300px] max-w-[250px] overflow-hidden shadow-lg">
         <img
             src={imgSrc}
             className="w-full h-full object-cover"
