@@ -26,24 +26,21 @@ export default function OurTeamElement() {
             </div>
 
             <div className='flex w-full px-6 justify-evenly overflow-hidden'>
-
-            <TeamMemberCard 
-                imgSrc='teamMembers/member1.jpg'
-                name={"all"}
-                position={"Designer"}
-            />
-            <TeamMemberCard 
-                imgSrc='teamMembers/members2-3.jpg'
-                name={"all"}
-                position={"Designer"}
-            />
-            <TeamMemberCard 
-                imgSrc='teamMembers/member4.jpg'
-                name={"all"}
-                position={"Designer"}
-            />
-
-            
+                <TeamMemberCard 
+                    imgSrc='teamMembers/member1.jpg'
+                    name={"Ali"}
+                    position={"Motion Graphics Artist"}
+                />
+                <TeamMemberCard 
+                    imgSrc='teamMembers/members2-3.jpg'
+                    name={"John Doe"}
+                    position={"Brand Identity Designer"}
+                />
+                <TeamMemberCard 
+                    imgSrc='teamMembers/member4.jpg'
+                    name={"Ali"}
+                    position={"Motion Graphics Artist"}
+                />
             </div>
 
              <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '>
