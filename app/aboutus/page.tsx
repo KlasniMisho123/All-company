@@ -109,7 +109,7 @@ export default function aboutus() {
               />
               <StoryStatCard 
                 stat={`50+`}
-                statTitle={"Brands We Aim to Launch"}
+                statTitle={"Brands to Launch"}
               />
               <StoryStatCard 
                 stat={`10+`}
@@ -117,7 +117,7 @@ export default function aboutus() {
               />
               <StoryStatCard 
                 stat={`3+`}
-                statTitle={"New Services to Explore"}
+                statTitle={"Services to Add"}
               />
             </div>
           </div>
