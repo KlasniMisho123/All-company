@@ -20,8 +20,8 @@ export default function Footer() {
       <div className='mx-18'>
         <section className='flex justify-between items-center gap-6 '>
           <div className='flex flex-1 w-max text-xl '><span className='ml-1 font-semibold bg-gradient-to-r from-[var(--error-color)] to-black px-1 text-2xl font-bold '> NEWSLETTER </span></div>
-          <div className="flex flex-1 border rounded-lg overflow-hidden p-2 w-full ">
-            <input type="text" className="flex-1 px-2 py-2 focus:outline-none " placeholder="Enter Email..." />
+          <div className="flex flex-1 border rounded-lg overflow-hidden p-2 py-1.5 w-full ">
+            <input type="text" className="flex-1 px-2  focus:outline-none " placeholder="Enter Email..." />
             <button className="px-8 py-2 bg-white shadow-lg font-semibold rounded text-[var(--error-color)] transition-all duration-200 cursor-pointer hover:text-white hover:bg-[var(--error-color)]">Submit</button>
           </div>
         </section>

@@ -16,8 +16,8 @@ export default function aboutus() {
         </div>
       </div>
       <div className='my-12 flex justify-center '>
-          <div className='flex p-6 px-8  w-[80%] shadow-lg bg-slate-900/50 rounded-2xl '>
-            <div className="flex flex-col flex-1 gap-6 max-w-3xl">
+          <div className='flex gap-6 w-[80%]  '>
+            <div className="flex flex-col flex-1 gap-6 max-w-3xl shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6 ">
               <h5 className="text-white bg-[var(--light-red)] w-max px-3 py-1 rounded-sm text-xs md:text-sm tracking-wide uppercase font-semibold">
                 How It Started
               </h5>
@@ -46,7 +46,26 @@ export default function aboutus() {
               </div>
 
             </div>
-            <div className='flex-1'>Story Visuals</div>
+            
+            <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
+              <div className='relative flex-1 bg-cover bg-center '>
+                <img
+                className='h-[90%] w-full object-cover rounded-2xl'
+                src={"https://i.pinimg.com/736x/71/45/85/7145858b0650bcacab83a58150c3268e.jpg"}
+                loading='lazy'
+                ></img>
+              </div>
+
+              <div className='flex-1 grid grid-cols-2 gap-4 shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6 '>
+                <div className='shadow-lg bg-slate-800 rounded-xl py-8 px-6'>
+                  1
+                </div>
+                <div>1</div>
+                <div>1</div>
+                <div>1</div>
+              </div>
+
+            </div>
           </div>
       </div>
     </div>
