@@ -20,10 +20,14 @@ export default function OurTeamElement() {
         if(dir == "right" ) {
             if(selectedPage < (pages.length-1) ) {
                 setSelectedPage(selectedPage + 1)
+            } else {
+                setSelectedPage(0)
             }
         } else {
             if(selectedPage != 0) {
                 setSelectedPage(selectedPage - 1)
+            } else {
+                setSelectedPage(pages.length - 1)
             }
         }
     }
@@ -89,19 +93,19 @@ export default function OurTeamElement() {
             }
             {selectedPage == 2 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
                 <TeamMemberCard 
-                    imgSrc='teamMembers/member1.jpg'
-                    name={"Ali"}
-                    position={"Motion Graphics Artist"}
+                    imgSrc='https://i.pinimg.com/736x/f6/61/ea/f661ea61616909838a9fbfeda0d2ea14.jpg'
+                    name={"Fiona Pugh"}
+                    position={"Creative Director"}
                 />
                 <TeamMemberCard 
-                    imgSrc='teamMembers/members2-3.jpg'
-                    name={"John Doe"}
-                    position={"Brand Identity Designer"}
+                    imgSrc='https://i.pinimg.com/736x/52/94/eb/5294eba5c7d674e4f14921309a36934a.jpg'
+                    name={"Jake Smith"}
+                    position={"Illustrator"}
                 />
                 <TeamMemberCard 
-                    imgSrc='teamMembers/member4.jpg'
-                    name={"Ali"}
-                    position={"Motion Graphics Artist"}
+                    imgSrc='https://i.pinimg.com/736x/b2/da/f9/b2daf9019c4b08fa3a90c7d28a08a059.jpg'
+                    name={"Emilly Henderson"}
+                    position={"Motion Graphics Intern"}
                 />
             </div>
             }
