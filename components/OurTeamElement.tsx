@@ -1,5 +1,6 @@
+'use client'
 import { Urbanist } from 'next/font/google';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TeamMemberCard from './TeamMemberCard';
 
 // https://dribbble.com/shots/23517715-Team-Section
@@ -7,6 +8,18 @@ import TeamMemberCard from './TeamMemberCard';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function OurTeamElement() {
+
+    const [selectedPage, setSelectedPage] = useState(0)
+    const pages = []
+
+    for(let i=0; i <3; i++ ) {
+        pages.push(i)
+    }
+
+    function selectPage() {
+        
+    }
+
   return (
     <div className='my-10 flex flex-col items-center w-[80%] '>
        <>
@@ -50,9 +63,9 @@ export default function OurTeamElement() {
         </div>
 
         <div className='flex justify-center items-center gap-1 '>
-            <div className='h-0.5 bg-white w-8 '></div>
-            <div className='h-0.5 bg-gray-400 w-8 '></div>
-            <div className='h-0.5 bg-gray-400 w-8 '></div>
+            {pages.map((index)=> {
+                 return (<div className={'h-0.5 w-8 transition-all duration-300 ' + (selectedPage == index? " bg-white " : " bg-gray-400 ")}></div>)
+            })}
         </div>
 
     </div>
