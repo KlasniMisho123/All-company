@@ -1,6 +1,6 @@
 'use client'
 import { Urbanist } from 'next/font/google';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import TeamMemberCard from './TeamMemberCard';
 
 // https://dribbble.com/shots/23517715-Team-Section

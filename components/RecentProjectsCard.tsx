@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 type RecentProjectsType = {
@@ -13,8 +14,10 @@ export default function RecentProjectsCard(props:RecentProjectsType) {
     
   return (
     <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group max-w-[31%] ">
-        <img
+        <Image
             src={imgSrc}
+            height={400}
+            width={400}
             alt="Project Title"
             className='w-full h-full object-cover absolute inset-0 z-0 transition-all duration-300 group-hover:scale-120 '
         />
