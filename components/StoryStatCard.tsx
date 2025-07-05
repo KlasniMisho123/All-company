@@ -1,7 +1,7 @@
 import React from 'react'
 
 type StoryStatCard = {
-    stat: number,
+    stat: number | string,
     statTitle: string
 }
 

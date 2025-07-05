@@ -16,7 +16,8 @@ export default function aboutus() {
           <h2 className={'z-20 ' + urbanist.className}>About Us</h2>
         </div>
       </div>
-      <div className='my-12 flex justify-center '>
+      <div className='my-12 flex flex-col items-center gap-6 '>
+        {/* Our Story */}
           <div className='flex gap-6 w-[80%]  '>
             <div className="flex flex-col flex-1 gap-6 max-w-3xl shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6 ">
               <h5 className="text-white bg-[var(--light-red)] w-max px-3 py-1 rounded-sm text-xs md:text-sm tracking-wide uppercase font-semibold">
@@ -51,7 +52,7 @@ export default function aboutus() {
             <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
               <div className='flex-1 bg-cover bg-center '>
                 <img
-                className='h-[95%] w-full object-cover rounded-2xl'
+                className='max-h-[450px]] w-full object-cover rounded-2xl'
                 src={"https://i.pinimg.com/736x/71/45/85/7145858b0650bcacab83a58150c3268e.jpg"}
                 loading='lazy'
                 ></img>
@@ -75,9 +76,69 @@ export default function aboutus() {
                   statTitle={"Team Members"}
                 />
               </div>
-
             </div>
           </div>
+
+          {/* Our Goals */}
+          <div className='flex flex-row gap-6 w-[80%] mt-20 mx-auto'>
+          {/* Left: Text Content */}
+          <div className="flex flex-col flex-1 gap-6 max-w-3xl shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6">
+            <h5 className="text-white bg-emerald-500 w-max px-3 py-1 rounded-sm text-xs md:text-sm tracking-wide uppercase font-semibold">
+              Looking Ahead
+            </h5>
+
+            <h3
+              className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-transparent bg-clip-text text-transparent ${urbanist.className}`}
+            >
+              Our Goals
+            </h3>
+
+            <div className='flex flex-col gap-3'>
+              <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
+                As we grow, our mission is clear — to continue delivering design that makes an impact. We aim to push creative boundaries, invest in meaningful partnerships, and expand the ways we help brands express who they are.
+              </p>
+
+              <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-prose">
+                Whether it’s a rebranding for a local startup or a product launch for a global campaign, we want our work to inspire, connect, and last. Our goal is not just to make things look beautiful — but to make them work beautifully.
+              </p>
+            </div>
+          </div>
+
+          {/* Right: Visual + Goals Stats */}
+          <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
+            {/* Image */}
+            <div className='flex-1 bg-cover bg-center'>
+              <img
+                className='max-h-[450px] w-full object-cover rounded-2xl'
+                src="https://i.pinimg.com/736x/5b/d6/22/5bd6223f3f8702ba3154ec8808bfad33.jpg"
+                loading='lazy'
+                alt="Future vision"
+              />
+            </div>
+
+            {/* Stats */}
+            <div className='flex-1 grid grid-cols-2 gap-4 shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6'>
+              <StoryStatCard 
+                stat={"100%"}
+                statTitle={"Client Satisfaction Goal"}
+              />
+              <StoryStatCard 
+                stat={50}
+                statTitle={"New Brands We Aim to Launch"}
+              />
+              <StoryStatCard 
+                stat={10}
+                statTitle={"Creative Events Planned"}
+              />
+              <StoryStatCard 
+                stat={3}
+                statTitle={"New Service Areas to Explore"}
+              />
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   )
