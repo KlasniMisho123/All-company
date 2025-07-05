@@ -49,9 +49,9 @@ export default function aboutus() {
             </div>
             
             <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
-              <div className='h-[50%]relative flex-1 bg-cover bg-center '>
+              <div className='flex-1 bg-cover bg-center '>
                 <img
-                className='h-[80%] w-full object-cover rounded-2xl'
+                className='h-[95%] w-full object-cover rounded-2xl'
                 src={"https://i.pinimg.com/736x/71/45/85/7145858b0650bcacab83a58150c3268e.jpg"}
                 loading='lazy'
                 ></img>
@@ -64,7 +64,7 @@ export default function aboutus() {
                 />
                 <StoryStatCard 
                   stat={120}
-                  statTitle={"YProjects Completed"}
+                  statTitle={"Projects Completed"}
                 />
                 <StoryStatCard 
                   stat={15}
