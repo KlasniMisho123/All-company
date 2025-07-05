@@ -1,6 +1,7 @@
 import React from 'react'
 import { Urbanist } from 'next/font/google';
 import StoryStatCard from '@/components/StoryStatCard';
+import OurTeamElement from '@/components/OurTeamElement';
 
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
@@ -123,8 +124,8 @@ export default function aboutus() {
           </div>
         </div>
 
-
-
+        <OurTeamElement />
+        
       </div>
     </div>
   )
