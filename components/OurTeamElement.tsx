@@ -16,8 +16,16 @@ export default function OurTeamElement() {
         pages.push(i)
     }
 
-    function selectPage() {
-        
+    function selectPage(dir:string) {
+        if(dir == "right" ) {
+            if(selectedPage < 2) {
+                setSelectedPage(selectedPage + 1)
+            }
+        } else {
+            if(selectedPage != 0) {
+                setSelectedPage(selectedPage - 1)
+            }
+        }
     }
 
   return (
@@ -34,7 +42,12 @@ export default function OurTeamElement() {
         </>
         {/* 3Card per page */}
         <div className='flex  justify-between items-center w-full gap-4 my-10 min-h-[300px] py-4'>
-            <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '>
+            <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
+            onClick={
+                    ()=>{
+                        selectPage("left")
+                    }}
+             >
                 <i className="fa-solid fa-chevron-left text-2xl"></i>
             </div>
 
@@ -56,7 +69,12 @@ export default function OurTeamElement() {
                 />
             </div>
 
-             <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '>
+             <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
+                onClick={
+                    ()=>{
+                        selectPage("right")
+                    }}
+             >
                 <i className="fa-solid fa-chevron-right text-2xl"></i>
             </div>
 
@@ -64,7 +82,7 @@ export default function OurTeamElement() {
 
         <div className='flex justify-center items-center gap-1 '>
             {pages.map((index)=> {
-                 return (<div className={'h-0.5 w-8 transition-all duration-300 ' + (selectedPage == index? " bg-white " : " bg-gray-400 ")}></div>)
+                 return (<div key={index} className={'h-0.5 w-10 transition-all duration-300 ' + (selectedPage == index? " bg-white " : " bg-gray-500 ")}></div>)
             })}
         </div>
 
