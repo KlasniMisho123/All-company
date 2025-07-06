@@ -126,8 +126,8 @@ export default function aboutus() {
 
         <OurTeamElement />
         {/* FAQ */}
-        <div>
-          <div >
+        <div className='self-start w-[80%] mx-auto '>
+          <div>
             <p><span className='text-red-500'>F</span>riquently</p>
             <p><span className='text-red-500'>A</span>ked</p>
             <p><span className='text-red-500'>Q</span>uestions</p>
