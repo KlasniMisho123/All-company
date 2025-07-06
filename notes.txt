@@ -49,3 +49,7 @@ Optional hover effect or "View Case" button
 // newsletter -> functionality 
 
 // Average Rateing Stat/ Input
+
+-- About us Page --
+Team Members
+// Loading/Scrolling Animation
