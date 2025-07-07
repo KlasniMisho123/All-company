@@ -7,6 +7,36 @@ import OurTeamElement from '@/components/OurTeamElement';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function aboutus() {
+
+  
+  // let result = 10 / 0
+
+  // console.log(result)
+
+class Animal {
+  speak() {
+    return "the animal makes a sound";
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    return "the dog barks";
+  }
+}
+
+const pet = new Dog();
+
+
+let a = {}
+let b = a
+a.x = 5;
+b.x = 10;
+
+console.log(a.x)
+
+
+
   return (
     <div>
       <div className='relative h-[50vh] -mt-1 bg-cover bg-center flex items-center justify-center'
