@@ -9,7 +9,7 @@ export default function FaqComponent() {
 
 
     const faqContent = [
-        ["question1 ?", "answer1 !"],
+        ["What services do you offer?", "All Services!"],
         ["question2 ?", "answer2 !"],
         ["question3 ?", "answer3 !"],
         ["question4 ?", "answer4 !"],
@@ -32,30 +32,35 @@ export default function FaqComponent() {
             {selectedQuestions}
         </div>
         <div className='grid grid-cols-2 mt-10 gap-6 '>
-            {/* {faqContent.map((element, index,)=>{
+            {faqContent.map((element, index,)=>{
                 return(
-                        <div key={index} >
-                           <span className='text-green-500'>  {faqContent[index][0]} </span>
-                           <span className='text-red-500'> {faqContent[index][1]} </span>
+                        // <div >
+                        //    <span className='text-green-500'>   </span>
+                        //    <span className='text-red-500'> </span>
+                        // </div>
+                        <div key={index}  className='border-2 border-white rounded-xl shadow-lg p-4 cursor-pointer overflow-hidden '>
+                            <div className='flex items-center gap-4 '
+                            onClick={()=>{
+                                selectQuestions(index)
+                            }}
+                            >
+                                <i className={"fa-solid fa-chevron-right -rotate-90 transition-all duration-300 " + (selectedQuestions.includes(index)? " rotate-90 ": " rotate-0 ")}></i>
+                                <span className='text-white'> {faqContent[index][0]} </span>
+                            </div>
+                            <div className='overflow-hidden transition-all duration-500 ease-in-out'
+                                style={{
+                                maxHeight: selectedQuestions.includes(index) ? '100px' : '0px',
+                                opacity: selectedQuestions.includes(index) ? 1 : 0
+                                }}>
+                            <div className="px-4 mt-4 text-red-500 ">
+                                {faqContent[index][1]} 
+                            </div>
+                            </div>
                         </div>
                 )
-            })} */}
-            <div className='border-2 border-white rounded-xl shadow-lg p-4 cursor-pointer overflow-hidden '>
-                <div className='flex items-center gap-4 '
-                onClick={()=>{
-                    selectQuestions(0)
-                }}
-                >
-                    <i className={"fa-solid fa-chevron-right -rotate-90 transition-all duration-300 " + (selectedQuestions.includes(0)? " rotate-90 ": " rotate-0 ")}></i>
-                    <span className='text-white'> What services do you offer? </span>
-                </div>
-                <span className={'text-red-500 transition-all duration-300 ' + (selectedQuestions.includes(0)? "visible" : "hidden") }> all </span>
-                {/* <span className={'text-red-500 transition-all duration-300 ' + (selectedQuestions.includes(0)? "visible" : "hidden") }> all </span> */}
-            </div>
-            <div >
-                <span className='text-green-500'> ss?  </span>
-                <span className='text-red-500'> ss1!</span>
-            </div>
+            })}
+            
+
         </div>
     </div>
   )
