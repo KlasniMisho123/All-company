@@ -40,7 +40,7 @@ export default function FaqComponent() {
                         </div>
                 )
             })} */}
-            <div className='border-2 border-white rounded-xl shadow-lg p-4 cursor-pointer '>
+            <div className='border-2 border-white rounded-xl shadow-lg p-4 cursor-pointer overflow-hidden '>
                 <div className='flex items-center gap-4 '
                 onClick={()=>{
                     selectQuestions(0)
@@ -49,7 +49,8 @@ export default function FaqComponent() {
                     <i className={"fa-solid fa-chevron-right -rotate-90 transition-all duration-300 " + (selectedQuestions.includes(0)? " rotate-90 ": " rotate-0 ")}></i>
                     <span className='text-white'> What services do you offer? </span>
                 </div>
-                <span className='text-red-500 hidden '> all </span>
+                <span className={'text-red-500 transition-all duration-300 ' + (selectedQuestions.includes(0)? "visible" : "hidden") }> all </span>
+                {/* <span className={'text-red-500 transition-all duration-300 ' + (selectedQuestions.includes(0)? "visible" : "hidden") }> all </span> */}
             </div>
             <div >
                 <span className='text-green-500'> ss?  </span>
