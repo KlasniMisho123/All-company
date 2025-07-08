@@ -38,7 +38,11 @@ export default function FaqComponent() {
                 )
             })} */}
             <div className='border-2 border-white rounded-xl shadow-lg p-4 '>
-                <div className='flex items-center gap-2 '>
+                <div className='flex items-center gap-2 '
+                onClick={()=>{
+                    selectQuestions(0)
+                }}
+                >
                     <i className="fa-solid fa-chevron-down -rotate-90 transition-all duration-300 hover:rotate-0"></i>
                     <span className='text-white'> What services do you offer? </span>
                 </div>
