@@ -17,7 +17,10 @@ export default function FaqComponent() {
     ];
 
     function selectQuestions(index:number) {
-        setSelectedQuestions(prev => [...prev, index])
+
+        setSelectedQuestions(prev => 
+            selectedQuestions.includes(index) ?  prev.filter(i => i !== index) : [...prev, index]
+        )
     }
 
   return (
@@ -37,13 +40,13 @@ export default function FaqComponent() {
                         </div>
                 )
             })} */}
-            <div className='border-2 border-white rounded-xl shadow-lg p-4 '>
-                <div className='flex items-center gap-2 '
+            <div className='border-2 border-white rounded-xl shadow-lg p-4 cursor-pointer '>
+                <div className='flex items-center gap-4 '
                 onClick={()=>{
                     selectQuestions(0)
                 }}
                 >
-                    <i className="fa-solid fa-chevron-down -rotate-90 transition-all duration-300 hover:rotate-0"></i>
+                    <i className={"fa-solid fa-chevron-right -rotate-90 transition-all duration-300 " + (selectedQuestions.includes(0)? " rotate-90 ": " rotate-0 ")}></i>
                     <span className='text-white'> What services do you offer? </span>
                 </div>
                 <span className='text-red-500 hidden '> all </span>
