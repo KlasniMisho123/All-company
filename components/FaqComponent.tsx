@@ -10,7 +10,6 @@ export default function FaqComponent() {
     const [selectedQuestions, setSelectedQuestions] = useState<number[]>([]);
 
     function selectQuestions(index:number) {
-
         setSelectedQuestions(prev => 
             selectedQuestions.includes(index) ?  prev.filter(i => i !== index) : [...prev, index]
         )
