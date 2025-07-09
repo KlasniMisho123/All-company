@@ -30,6 +30,20 @@ export default function ProjectsElement() {
             desc: "Minimalistic and earthy poster series to promote ecological awareness through design.",
             date: "2025-07-03",
         },
+        {
+            imgSrc: "/naturaleza.jpg",
+            type: "Nature Campaign",
+            title: "Naturaleza Posters",
+            desc: "Minimalistic and earthy poster series to promote ecological awareness through design.",
+            date: "2025-07-03",
+        },
+        {
+            imgSrc: "/naturaleza.jpg",
+            type: "Nature Campaign",
+            title: "Naturaleza Posters",
+            desc: "Minimalistic and earthy poster series to promote ecological awareness through design.",
+            date: "2025-07-03",
+        },
     ];
 
     function expandProjectDisplay() {
@@ -43,10 +57,9 @@ export default function ProjectsElement() {
         </div>
 
         <div className={'mt-4 w-full gap-6 grid grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ' + (isExpanded? "min-h-0 " : "min-h-[40vh] ")}>
-            {projects.map((project, index)=>{
+            {(isExpanded? projects: projects.slice(0,3)).map((project, index)=>{
                 return(
-                    <RecentProjectsCard 
-                        key={index}
+                    <RecentProjectsCard key={index}
                         imgSrc={project.imgSrc}
                         type={project.type}
                         title={project.title}
