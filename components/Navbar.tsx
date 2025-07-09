@@ -49,6 +49,17 @@ export default function Navbar(props:NavbarProps) {
         `}
       >
         <span>About us</span>
+      </Link>
+
+      <Link
+        href="/contactus"
+        onClick={() => handleSelectedNav("/contactus")}
+        className={`flex gap-2 items-center cursor-pointer rounded-full px-4 py-2 shadow-md transition-all duration-300 ease-in-out truncate
+          hover:scale-105 hover:bg-red-600 hover:text-white 
+          ${selectedNav === "/contactus" ? "bg-red-700 text-white ring-2 ring-red-500 " : "bg-white text-red-700"}
+        `}
+      >
+        <span>Contact us</span>
         <i className="fa-solid fa-feather-pointed"></i>
       </Link>
     </div>
