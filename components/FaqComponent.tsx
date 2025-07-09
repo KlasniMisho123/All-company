@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Playfair_Display } from 'next/font/google';
 import { faqContent } from '@/utils';
+import Link from "next/link";
 
 const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -21,9 +22,8 @@ export default function FaqComponent() {
             <p className={'text-xl ' + playfairDisplay.className} > <span className='text-red-500 font-semibold'>F</span>riquently</p>
             <p className={'text-xl ' + playfairDisplay.className} > <span className='text-red-500 font-semibold'>A</span>ked</p>
             <p className={'text-xl ' + playfairDisplay.className} > <span className='text-red-500 font-semibold'>Q</span>uestions</p>
-            {selectedQuestions}
         </div>
-        <div className='flex justify-between mt-10 gap-6 '>
+        <div className='flex justify-between mt-8 gap-6 '>
             <div className='flex-2 grid grid-cols-1 gap-4 '>
                 {faqContent.map((element, index,)=>{
                     return (
@@ -33,25 +33,31 @@ export default function FaqComponent() {
                             }}>
                             <div className='flex items-center gap-4' >
                                 <i className={"fa-solid fa-chevron-right -rotate-90 transition-all duration-300 " + (selectedQuestions.includes(index)? " rotate-90 ": " rotate-0 ")}></i>
-                                <span className='text-white'> {faqContent[index][0]} </span>
+                                <span className='text-white text-base '> {faqContent[index][0]} </span>
                             </div>
                             <div className='overflow-hidden transition-all duration-500 ease-in-out'
                                 style={{
                                 maxHeight: selectedQuestions.includes(index) ? '100px' : '0px',
                                 opacity: selectedQuestions.includes(index) ? 1 : 0
                                 }}>
-                            <div className="px-4 mt-4 text-red-500 ">
-                                {faqContent[index][1]} 
+                            <div className="mt-4 bg-slate-800 text-sm text-gray-200 leading-relaxed shadow-md p-4">
+                                {faqContent[index][1]}
                             </div>
+
                             </div>
                         </div>
                     )
                 })}
+                <Link className='w-max mx-auto py-3 px-4 bg-slate-700/50 rounded-full text-white mt-6 text-sm'
+                href={"/contactus"}
+                >Didn't find the answer you are looking for?
+                    <span className='relative ml-2 text-[var(--light-red)] group cursor-pointer'> 
+                        Contact us 
+                        <div className='absolute left-0 bottom-0 h-0.5 w-full bg-[var(--light-red)] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 '></div>
+                    </span> 
+                </Link>
             </div>
-            <div className='flex-1'> 
-                <img src={"/faqImg1.png"}>
-                </img>    
-             </div>
+            
         </div>
     </div>
   )

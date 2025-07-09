@@ -127,7 +127,6 @@ export default function aboutus() {
         </div>
 
         <OurTeamElement />
-        {/* FAQ */}
         <div className='self-start w-[80%] mx-auto '>
           <FaqComponent />
         </div>
