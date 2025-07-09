@@ -8,6 +8,7 @@ import Button from './Button';
 import Services from './Services';
 import ClientCompanies from './ClientCompanies';
 import ContactUsElement from './ContactUsElement';
+import ProjectsElement from './ProjectsElement';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -87,7 +88,7 @@ export default function Hero() {
       <ContactUsElement />
       <WorkStages />
       {/* Bloglike -> Recent Projects */}
-      
+      <ProjectsElement />
       <ClientCompanies />
       {/*Highlighted Cleint Cards, Reveal from bottom? */}
     </div>

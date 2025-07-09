@@ -1,6 +1,5 @@
 import { Urbanist } from 'next/font/google';
 import React from 'react'
-import Link from 'next/link';
 import RecentProjectsCard from './RecentProjectsCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
@@ -39,12 +38,11 @@ export default function ProjectsElement() {
           />
           
         </div>
-        <Link
+        <button
           className='text-center transition-all duration-200 font-semibold hover:opacity-75' 
-          href={"/aboutus"}
         >
           See All Projects
-        </Link>
+        </button>
       </section>
   )
 }
