@@ -13,7 +13,8 @@ export default function RecentProjectsCard(props:RecentProjectsType) {
     const {imgSrc, type, title, desc, date} = props
     
   return (
-    <div className="relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group max-w-[31%] ">
+    <div className="w-full h-64 relative rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg">
+    {/* <div className="flex-1 min-w-[30%] relative h-64 rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-105 shadow-lg group max-w-[31%] "> */}
         <Image
             src={imgSrc}
             height={400}

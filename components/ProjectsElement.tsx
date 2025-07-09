@@ -1,17 +1,24 @@
+'use client'
 import { Urbanist } from 'next/font/google';
-import React from 'react'
+import React, { useState } from 'react'
 import RecentProjectsCard from './RecentProjectsCard';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function ProjectsElement() {
+    const [isExpanded, setIsExpanded] = useState(false)
+
+    function expandProjectDisplay() {
+        setIsExpanded(prev => !prev)
+    }    
+
   return (
     <section className='flex flex-col items-center gap-6 my-6 bg-gradient-to-r from-slate-900 to-slate-800 p-8'>
         <div className={`text-2xl font-semibold relative px-6 py-2 border-2 rounded-t rounded-b-2xl inline-block ${urbanist.className}`}>
           <span className="relative z-10">Recent Projects</span>
         </div>
 
-        <div className='my-4 flex items-center justify-evenly w-full '>
+        <div className='my-4  w-full gap-6 rid grid-cols-3'>
 
           <RecentProjectsCard 
             imgSrc={"/fight-club.jpg"}
@@ -39,9 +46,10 @@ export default function ProjectsElement() {
           
         </div>
         <button
-          className='text-center transition-all duration-200 font-semibold hover:opacity-75' 
+          className='text-center transition-all duration-200 font-semibold hover:opacity-75 cursor-pointer ' 
+          onClick={expandProjectDisplay}
         >
-          See All Projects
+          {isExpanded? "See Less Projects" : "See More Projects"}
         </button>
       </section>
   )
