@@ -158,3 +158,35 @@ export const serviceCards:serviceProps[] = [
     linkSrc: "/services/merch",
   }
 ]
+
+export const faqContent = [
+  [
+    "What services do you offer?", 
+    "We offer a full range of creative services including brand identity design, logo creation, packaging and product visuals, motion graphics, and event branding. Whether you need a fresh brand image, promotional materials, or visually stunning digital content, we tailor each project to fit your unique goals and audience."
+  ],
+
+  [
+    "Do you work with small businesses or only large brands?", 
+    "We’re proud to support businesses of all sizes — from solo entrepreneurs launching their first product to global companies rebranding at scale. No matter your background or industry, we approach each project with the same level of creativity, strategy, and dedication."
+  ],
+
+  [
+    "How long does a project usually take?", 
+    "It depends on the complexity and scope of the project. Simple logo designs might take a few days, while full branding packages or motion design projects can take 2–4 weeks. We always provide an estimated timeline up front and keep you updated throughout the process."
+  ],
+
+  [
+    "Can I request revisions?", 
+    "Yes, of course. We want you to be 100% happy with the final result. Most of our packages include a set number of revisions, but we’re flexible and collaborative — your feedback is an essential part of our creative process."
+  ],
+
+  [
+    "How do I get started?", 
+    "Getting started is easy! Just send us a message through our contact form or email, and let us know a bit about your project. We’ll set up a quick chat to understand your needs, walk you through our process, and provide a custom quote with no obligations."
+  ],
+
+  [
+    "Can you help with social media visuals too?", 
+    "Absolutely. We create custom-designed visuals for platforms like Instagram, Facebook, LinkedIn, and TikTok — including post templates, motion content, and story formats — to help your brand stand out online and connect with your audience consistently."
+  ]
+];
