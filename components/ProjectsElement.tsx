@@ -7,6 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function ProjectsElement() {
     const [isExpanded, setIsExpanded] = useState(false)
+    const [projectsMounted, setProjectsMounted ] = useState(false)
 
     const projects = [
         {
@@ -83,6 +84,14 @@ export default function ProjectsElement() {
 
     function expandProjectDisplay() {
         setIsExpanded(prev => !prev)
+
+        if(isExpanded) {
+            setTimeout(() => {
+                setProjectsMounted(prev => !prev);
+            }, 1000);
+        } else {
+            setProjectsMounted(prev => !prev)
+        }
     }    
 
   return (
@@ -106,7 +115,7 @@ export default function ProjectsElement() {
 
         </div>
 
-        <div className={'w-full gap-6 grid grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ' + (isExpanded ? 'max-h-[2000px]' : 'max-h-[0px]') }>
+        {projectsMounted && (<div className={'w-full gap-6 grid grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ' + (isExpanded ? 'max-h-[2000px]' : 'max-h-[0px]') }>
            {projects.slice(3, projects.length).map((project, index)=>{
                 return(
                     <RecentProjectsCard key={index}
@@ -118,7 +127,7 @@ export default function ProjectsElement() {
                     />
                 )
             })}
-        </div>
+        </div>)}
 
         <button
           className='text-center transition-all duration-200 font-semibold hover:opacity-75 cursor-pointer ' 
