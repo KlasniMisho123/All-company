@@ -7,7 +7,7 @@ export default function page() {
       <section>
         Header
       </section>
-      {/* Contact us Page */}
+      {/* Contact us Form  - Questions etc*/}
       {/* Our Strong Sides */}
       {/* next Steps */}
     </div>
