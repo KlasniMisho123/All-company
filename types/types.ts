@@ -22,6 +22,7 @@ export type userFeedCardType = {
 
 export type StepProps = {
     title: string,
+    index: number,
     icon: string,
     p: string,
     color: ColorVariant

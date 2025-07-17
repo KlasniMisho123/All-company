@@ -49,14 +49,16 @@ export default function page() {
         <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4'> 
           <h3> WHAT HAPPENS AFTER SUBMIT a form </h3> 
           <ResponseStep 
-            title='2. Initial Response (Within 24 Hours)'
+            title='Initial Response (Within 24 Hours)'
+            index={1}
             icon='fa-solid fa-comments'
             p='Our team is reviewing your request. Expect a personalized response soon!'
-            color="red"
+            color="blue"
           />
 
           <ResponseStep 
-            title='2. Initial Response (Within 24 Hours)'
+            title='Initial Response (Within 24 Hours)'
+            index={2}
             icon='fa-solid fa-comments'
             p='Our team is reviewing your request. Expect a personalized response soon!'
             color="red"
