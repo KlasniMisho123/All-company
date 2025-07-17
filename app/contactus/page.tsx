@@ -47,10 +47,10 @@ export default function page() {
         {/* Sucess Message */}
         <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4'> 
           <h3> WHAT HAPPENS AFTER SUBMIT a form </h3> 
-          <div className='grid md:grid-cols-1 lg:grid-cols-2 w-full my-4 gap-4 '>
-              <div className='flex w-full gap-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors'>
+          <div className='grid md:grid-cols-1 lg:grid-cols-1 w-full my-4 gap-4 '>
+              <div className='flex w-full gap-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors border-l-4 border-blue-600'>
                 <div className='flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center'>
-                  <span className='text-blue-600 text-xl'>2</span>
+                  <span className='text-blue-500 text-xl'><i className="fa-solid fa-comments text-3xl"></i></span>
                 </div>
                 <div className='flex-1'>
                   <h3 className='font-medium text-gray-900 flex items-center gap-2'>
@@ -60,45 +60,8 @@ export default function page() {
                   <p className='text-gray-600 mt-1'>
                     Our team is reviewing your request. Expect a personalized response soon!
                   </p>
-                  <div className='mt-2 text-sm text-blue-600'>
-                    Next: We'll email you with timeline and pricing estimates
-                  </div>
                 </div>
               </div>
-              
-             <div className='flex w-full gap-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors border-l-4 border-purple-500'>
-              <div className='flex-shrink-0 w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center'>
-                <span className='text-purple-600 text-xl'>3</span>
-              </div>
-              <div className='flex-1'>
-                <h3 className='font-medium text-gray-900 flex items-center gap-2'>
-                  3. Schedule Discovery Meeting
-                  <span className='text-purple-500'>📅</span>
-                </h3>
-                <p className='text-gray-600 mt-1'>
-                  Let's discuss your vision! We'll explore ideas and align on project goals.
-                </p>
-                
-                {/* Active step CTA */}
-                <div className='mt-3 flex flex-wrap gap-2'>
-                  <a href="#schedule" className='px-4 py-2 bg-purple-600 text-white rounded-md text-sm hover:bg-purple-700 transition-colors'>
-                    Choose Time Slot
-                  </a>
-                  <a href="#contact" className='px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-200 transition-colors'>
-                    Need to reschedule?
-                  </a>
-                </div>
-                
-                {/* Help text */}
-                <p className='text-xs text-gray-500 mt-2'>
-                  <span className='font-medium'>Duration:</span> 30-45 mins | Video call or in-person
-                </p>
-              </div>
-            </div>
-              <div>Step3</div>
-              <div>Step4</div>
-              <div>Step5</div>
-              <div>Step6</div>
           </div>
         </div>
       </section>
