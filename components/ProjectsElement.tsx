@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function ProjectsElement() {
     const [isExpanded, setIsExpanded] = useState(false)
-    const [projectsMounted, setProjectsMounted ] = useState(false)
+    // const [projectsMounted, setProjectsMounted ] = useState(false)
 
     const projects = [
         {
@@ -59,13 +59,13 @@ export default function ProjectsElement() {
         setIsExpanded(prev => {
             const newExpanded = !prev;
             
-            if (!newExpanded) {
-            setTimeout(() => {
-                setProjectsMounted(false);
-            }, 1000);
-            } else {
-            setProjectsMounted(true);
-            }
+            // if (!newExpanded) {
+            // setTimeout(() => {
+            //     setProjectsMounted(false);
+            // }, 1000);
+            // } else {
+            // setProjectsMounted(true);
+            // }
 
             return newExpanded;
         })

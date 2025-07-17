@@ -49,7 +49,7 @@ export default function FaqComponent() {
                 })}
                 <Link className='w-max mx-auto py-3 px-4 bg-slate-700/50 rounded-full text-white mt-6 text-sm'
                 href={"/contactus"}
-                >Didn't find the answer you are looking for?
+                >Didn&apos;t find the answer you are looking for?
                     <span className='relative ml-2 text-red-500 group cursor-pointer'> 
                         Contact us 
                         <div className='absolute left-0 bottom-0 h-0.5 w-full bg-[var(--light-red)] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 '></div>

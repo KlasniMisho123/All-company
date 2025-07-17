@@ -8,10 +8,10 @@ export default function page() {
         <div className='flex flex-col items-center gap-8'>
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-bold">
-              It's Time to Design Something <span className="text-red-500">Exciting</span>
+              It&apos;s Time to Design Something <span className="text-red-500">Exciting</span>
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              Transform your ideas into visually compelling experiences. Let's create something extraordinary together.
+              Transform your ideas into visually compelling experiences. Let&apos;s create something extraordinary together.
             </p>
           </div>
         </div>
