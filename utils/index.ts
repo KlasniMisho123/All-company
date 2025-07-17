@@ -178,7 +178,7 @@ export const faqContent = [
 
   [
     "Do you work with small businesses or only large brands?", 
-    "We&apos;re proud to support businesses of all sizes — from solo entrepreneurs launching their first product to global companies rebranding at scale. No matter your background or industry, we approach each project with the same level of creativity, strategy, and dedication."
+    "We’re proud to support businesses of all sizes — from solo entrepreneurs launching their first product to global companies rebranding at scale. No matter your background or industry, we approach each project with the same level of creativity, strategy, and dedication."
   ],
 
   [
@@ -188,12 +188,12 @@ export const faqContent = [
 
   [
     "Can I request revisions?", 
-    "Yes, of course. We want you to be 100% happy with the final result. Most of our packages include a set number of revisions, but we&apos;re flexible and collaborative — your feedback is an essential part of our creative process."
+    "Yes, of course. We want you to be 100% happy with the final result. Most of our packages include a set number of revisions, but we’re flexible and collaborative — your feedback is an essential part of our creative process."
   ],
 
   [
     "How do I get started?", 
-    "Getting started is easy! Just send us a message through our contact form or email, and let us know a bit about your project. We&apos;ll set up a quick chat to understand your needs, walk you through our process, and provide a custom quote with no obligations."
+    "Getting started is easy! Just send us a message through our contact form or email, and let us know a bit about your project. We’ll set up a quick chat to understand your needs, walk you through our process, and provide a custom quote with no obligations."
   ],
 
   [
@@ -227,13 +227,19 @@ export const responseStepsContent = [
     "Final Handoff",
     "fa-solid fa-cloud-arrow-down",
     "All source files + style guide delivered",
+  ],
+  [
+    "Post-Launch Support",
+    "fa-solid fa-headset",
+    "We'll be available for any questions or minor tweaks after delivery",
   ]
 ];
 
-export const responseStepsColorContent: ColorVariant[] = [
+export const responseStepsColorContent:ColorVariant[] = [
   "blue",
   "purple",
   "red",
   "green",
-  "indigo"
+  "indigo",
+  "pink"
 ];

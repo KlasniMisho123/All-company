@@ -46,20 +46,26 @@ export default function page() {
           </form>
         </div>
         {/* Sucess Message */}
-        <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4'> 
-          <h3> WHAT HAPPENS AFTER SUBMIT a form </h3> 
-          {responseStepsContent.map((step, index) => {
-           return(
-                  <ResponseStep
-                    index={index+1}
-                    title={step[0]}
-                    icon={step[1]}
-                    p={step[2]}
-                    color={responseStepsColorContent[index]}
-                  />
-              )
-          })
-          }
+        <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4 py-6'> 
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-red-500 mb-4 uppercase tracking-wide">
+            What Happens After You Submit a Form
+          </h3>
+
+          <div className='grid md:grid-cols-1 lg:grid-cols-2 w-full my-4 gap-4 '>
+              {responseStepsContent.map((step, index) => {
+                return(
+                        <ResponseStep
+                          key={index}
+                          index={index+1}
+                          title={step[0]}
+                          icon={step[1]}
+                          p={step[2]}
+                          color={responseStepsColorContent[index]}
+                        />
+                    )
+                })
+                }
+          </div>
         </div>
       </section>
       {/* Our Strong Sides */}
