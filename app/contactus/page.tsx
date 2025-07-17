@@ -44,7 +44,7 @@ export default function page() {
             <input placeholder='input-5'/>
           </form>
         </div>
-        
+        {/* Sucess Message */}
         <div> WHAT HAPPENS AFTER SUBMIT a form </div>
       </section>
       {/* Our Strong Sides */}
