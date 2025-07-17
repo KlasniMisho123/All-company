@@ -1,6 +1,13 @@
 import React from 'react'
 
-export default function responseSteps() {
+type StepProps = {
+    title: string,
+    icon: string,
+    p: string
+}
+
+export default function responseStep(props:StepProps) {
+
   return (
     <div className='grid md:grid-cols-1 lg:grid-cols-1 w-full my-4 gap-4 '>
         <div className='flex w-full gap-4 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors border-l-4 border-blue-600'>

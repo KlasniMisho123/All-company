@@ -1,5 +1,5 @@
 import React from 'react'
-import responseSteps from '@/components/responseSteps'
+import ResponseStep from '@/components/responseStep'
 
 export default function page() {
   return (
@@ -48,7 +48,7 @@ export default function page() {
         {/* Sucess Message */}
         <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4'> 
           <h3> WHAT HAPPENS AFTER SUBMIT a form </h3> 
-          <responseSteps />
+          <ResponseStep />
         </div>
       </section>
       {/* Our Strong Sides */}
