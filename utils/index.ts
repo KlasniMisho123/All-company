@@ -3,6 +3,7 @@ import { serviceProps } from "@/types/types"
 export const colorClassMap = {
   indigo: {
     bg: 'bg-indigo-500',
+    bgLight:'bg-indigo-100',
     borderBase: 'border-indigo-500',
     border: 'hover:border-indigo-500',
     'hc-text': 'text-indigo-600',
@@ -12,6 +13,7 @@ export const colorClassMap = {
   },
   blue: {
     bg: 'bg-blue-500',
+    bgLight:'bg-blue-100',
     borderBase: 'border-blue-500',
     border: 'hover:border-blue-500',
     'hc-text': 'text-blue-600',
@@ -21,6 +23,7 @@ export const colorClassMap = {
   },
   red: {
     bg: 'bg-red-500',
+    bgLight:'bg-red-100',
     borderBase: 'border-red-500',
     border: 'hover:border-red-500',
     'hc-text': 'text-red-600',
@@ -30,6 +33,7 @@ export const colorClassMap = {
   },
   green: {
     bg: 'bg-green-500',
+    bgLight:'bg-green-100',
     borderBase: 'border-green-500',
     border: 'hover:border-green-500',
     'hc-text': 'text-green-600',
@@ -39,6 +43,7 @@ export const colorClassMap = {
   },
   yellow: {
     bg: 'bg-yellow-500',
+    bgLight:'bg-yellow-100',
     borderBase: 'border-yellow-500',
     border: 'hover:border-yellow-500',
     'hc-text': 'text-yellow-600',
@@ -48,6 +53,7 @@ export const colorClassMap = {
   },
   pink: {
     bg: 'bg-pink-500',
+    bgLight:'bg-pink-100',
     borderBase: 'border-pink-500',
     border: 'hover:border-pink-500',
     'hc-text': 'text-pink-600',
@@ -57,6 +63,7 @@ export const colorClassMap = {
   },
   purple: {
     bg: 'bg-purple-500',
+    bgLight:'bg-purple-100',
     borderBase: 'border-purple-500',
     border: 'hover:border-purple-500',
     'hc-text': 'text-purple-600',
@@ -65,6 +72,7 @@ export const colorClassMap = {
     decoration: 'decoration-purple-500',
   },sky: {
     bg: 'bg-sky-500',
+    bgLight:'bg-sky-100',
     borderBase: 'border-sky-500',
     border: 'hover:border-sky-500',
     'hc-text': 'text-sky-600',
@@ -74,6 +82,7 @@ export const colorClassMap = {
   },
   slate: {
     bg: 'bg-slate-700',
+    bgLight:'bg-slate-100',
     borderBase: 'border-slate-700',
     border: 'hover:border-slate-700',
     'hc-text': 'text-slate-800',
@@ -82,6 +91,7 @@ export const colorClassMap = {
     decoration: 'decoration-slate-700'
   },amber: {
   bg: 'bg-amber-500',
+  bgLight:'bg-amber-100',
   borderBase: 'border-amber-500',
   border: 'hover:border-amber-500',
   'hc-text': 'text-amber-600',
@@ -91,6 +101,7 @@ export const colorClassMap = {
 },
 violet: {
   bg: 'bg-violet-500',
+  bgLight:'bg-violet-100',
   borderBase: 'border-violet-500',
   border: 'hover:border-violet-500',
   'hc-text': 'text-violet-600',

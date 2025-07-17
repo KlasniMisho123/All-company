@@ -19,3 +19,10 @@ export type userFeedCardType = {
     p: string,
     linkHref: string
 }
+
+export type StepProps = {
+    title: string,
+    icon: string,
+    p: string,
+    color: ColorVariant
+}
