@@ -3,7 +3,7 @@ import { Urbanist } from 'next/font/google';
 import StoryStatCard from '@/components/StoryStatCard';
 import OurTeamElement from '@/components/OurTeamElement';
 import FaqComponent from '@/components/FaqComponent';
-
+import Image from  'next/image'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -12,7 +12,7 @@ export default function aboutus() {
   return (
     <div>
       <div className='relative h-[50vh] -mt-1 bg-cover bg-center flex items-center justify-center'
-      style={{backgroundImage: "url(https://images.pexels.com/photos/17046790/pexels-photo-17046790.jpeg)"}}
+      style={{backgroundImage: "url(/aboutus-bg.jpeg)"}}
       >
         <div className='absolute inset-0 w-full h-full z-10 bg-black opacity-35' />
           <div className='flex flex-col text-6xl font-semibold custom-selection-bg text-center text-white select-none '>
@@ -20,7 +20,6 @@ export default function aboutus() {
         </div>
       </div>
       <div className='my-12 flex flex-col items-center gap-6 '>
-        {/* Our Story */}
           <div className='flex gap-6 w-[80%] mx-auto '>
         <div className="flex flex-col flex-1 gap-6 max-w-3xl shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6">
           <h5 className="text-white bg-[var(--light-red)] w-max px-3 py-1 rounded-sm text-xs md:text-sm tracking-wide uppercase font-semibold">
@@ -51,11 +50,13 @@ export default function aboutus() {
 
         <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
           <div className='flex-1 bg-cover bg-center'>
-            <img
+            <Image
               className='max-h-[450px] w-full object-cover rounded-2xl'
-              src="https://i.pinimg.com/736x/71/45/85/7145858b0650bcacab83a58150c3268e.jpg"
+              src="/team-work-img.jpg"
               loading='lazy'
               alt="Team working in early days"
+              width={100}
+              height={100}
             />
           </div>
 
@@ -97,11 +98,13 @@ export default function aboutus() {
 
           <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
             <div className='flex-1 bg-cover bg-center'>
-              <img
+              <Image
                 className='max-h-[450px] w-full object-cover rounded-2xl'
-                src={"https://i.pinimg.com/736x/5b/d6/22/5bd6223f3f8702ba3154ec8808bfad33.jpg"}
+                src={"/goals-image.jpg"}
                 loading='lazy'
                 alt="Future vision concept"
+                width={100}
+                height={100}
               />
             </div>
 
