@@ -1,4 +1,4 @@
-import { serviceProps } from "@/types/types"
+import { ColorVariant, serviceProps } from "@/types/types"
 
 export const colorClassMap = {
   indigo: {
@@ -178,22 +178,22 @@ export const faqContent = [
 
   [
     "Do you work with small businesses or only large brands?", 
-    "We’re proud to support businesses of all sizes — from solo entrepreneurs launching their first product to global companies rebranding at scale. No matter your background or industry, we approach each project with the same level of creativity, strategy, and dedication."
+    "We&apos;re proud to support businesses of all sizes — from solo entrepreneurs launching their first product to global companies rebranding at scale. No matter your background or industry, we approach each project with the same level of creativity, strategy, and dedication."
   ],
 
   [
     "How long does a project usually take?", 
-    "It depends on the complexity and scope of the project. Simple logo designs might take a few days, while full branding packages or motion design projects can take 2–4 weeks. We always provide an estimated timeline up front and keep you updated throughout the process."
+    "It depends on the complexity and scope of the project. Simple logo designs might take a few days, while full branding packages or motion design projects can take 2-4 weeks. We always provide an estimated timeline up front and keep you updated throughout the process."
   ],
 
   [
     "Can I request revisions?", 
-    "Yes, of course. We want you to be 100% happy with the final result. Most of our packages include a set number of revisions, but we’re flexible and collaborative — your feedback is an essential part of our creative process."
+    "Yes, of course. We want you to be 100% happy with the final result. Most of our packages include a set number of revisions, but we&apos;re flexible and collaborative — your feedback is an essential part of our creative process."
   ],
 
   [
     "How do I get started?", 
-    "Getting started is easy! Just send us a message through our contact form or email, and let us know a bit about your project. We’ll set up a quick chat to understand your needs, walk you through our process, and provide a custom quote with no obligations."
+    "Getting started is easy! Just send us a message through our contact form or email, and let us know a bit about your project. We&apos;ll set up a quick chat to understand your needs, walk you through our process, and provide a custom quote with no obligations."
   ],
 
   [
@@ -207,30 +207,33 @@ export const responseStepsContent = [
     "Strategy Call Booking",
     "fa-solid fa-video",
     "Schedule a 30-min online meeting to discuss your vision",
-    "blue"
   ],
   [
     "Creative Alignment",
     "fa-solid fa-lightbulb",
     "We'll refine concepts based on our meeting notes",
-    "purple"
   ],
   [
     "Design Sprint",
     "fa-solid fa-pen-fancy",
     "Crafting your solutions (2-3 options)",
-    "orange"
   ],
   [
     "Revisions Round",
     "fa-solid fa-arrows-rotate",
     "Your feedback → our refinements (2 rounds included)",
-    "teal"
   ],
   [
     "Final Handoff",
     "fa-solid fa-cloud-arrow-down",
     "All source files + style guide delivered",
-    "indigo"
   ]
+];
+
+export const responseStepsColorContent: ColorVariant[] = [
+  "blue",
+  "purple",
+  "red",
+  "green",
+  "indigo"
 ];

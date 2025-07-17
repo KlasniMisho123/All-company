@@ -1,7 +1,6 @@
 import React from 'react'
 import ResponseStep from '@/components/ResponseStep'
-import { responseStepsContent } from '@/utils'
-
+import { responseStepsColorContent, responseStepsContent } from '@/utils'
 export default function page() {
   return (
     <div>
@@ -52,11 +51,11 @@ export default function page() {
           {responseStepsContent.map((step, index) => {
            return(
                   <ResponseStep
-                    key={index+1}
+                    index={index+1}
                     title={step[0]}
                     icon={step[1]}
                     p={step[2]}
-                    color={step[3]}
+                    color={responseStepsColorContent[index]}
                   />
               )
           })
