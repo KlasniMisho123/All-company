@@ -202,37 +202,32 @@ export const faqContent = [
   ]
 ];
 
-const responseStepsContent = [
+export const responseStepsContent = [
   [
-    1,
     "Strategy Call Booking",
     "fa-solid fa-video",
     "Schedule a 30-min online meeting to discuss your vision",
     "blue"
   ],
   [
-    2,
     "Creative Alignment",
     "fa-solid fa-lightbulb",
     "We'll refine concepts based on our meeting notes",
     "purple"
   ],
   [
-    3,
     "Design Sprint",
     "fa-solid fa-pen-fancy",
     "Crafting your solutions (2-3 options)",
     "orange"
   ],
   [
-    4,
     "Revisions Round",
     "fa-solid fa-arrows-rotate",
     "Your feedback → our refinements (2 rounds included)",
     "teal"
   ],
   [
-    5,
     "Final Handoff",
     "fa-solid fa-cloud-arrow-down",
     "All source files + style guide delivered",

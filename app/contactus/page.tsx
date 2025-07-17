@@ -1,5 +1,6 @@
 import React from 'react'
 import ResponseStep from '@/components/ResponseStep'
+import { responseStepsContent } from '@/utils'
 
 export default function page() {
   return (
@@ -48,21 +49,18 @@ export default function page() {
         {/* Sucess Message */}
         <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4'> 
           <h3> WHAT HAPPENS AFTER SUBMIT a form </h3> 
-          <ResponseStep 
-            title='Initial Response (Within 24 Hours)'
-            index={1}
-            icon='fa-solid fa-comments'
-            p='Our team is reviewing your request. Expect a personalized response soon!'
-            color="blue"
-          />
-
-          <ResponseStep 
-            title='Initial Response (Within 24 Hours)'
-            index={2}
-            icon='fa-solid fa-comments'
-            p='Our team is reviewing your request. Expect a personalized response soon!'
-            color="red"
-          />
+          {responseStepsContent.map((step, index) => {
+           return(
+                  <ResponseStep
+                    key={index+1}
+                    title={step[0]}
+                    icon={step[1]}
+                    p={step[2]}
+                    color={step[3]}
+                  />
+              )
+          })
+          }
         </div>
       </section>
       {/* Our Strong Sides */}
