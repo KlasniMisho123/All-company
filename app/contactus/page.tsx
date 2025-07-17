@@ -10,26 +10,44 @@ export default function page() {
             <h2 className="text-3xl font-bold">
               It's Time to Design Something <span className="text-red-500">Exciting</span>
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
+            <p className="text-gray-500 max-w-xl mx-auto">
               Transform your ideas into visually compelling experiences. Let's create something extraordinary together.
             </p>
           </div>
+        </div>
 
-
-          <div>
-            <h2>
-              It's Time to Design Something 
-              <span> Exciting </span> 
-            </h2>
-            <p>P text - Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <div className='flex w-[90%] justify-evenly my-12 '> 
+          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+            <i className="fa-solid fa-phone text-3xl transition-all duration-300 group-hover:text-emerald-500"></i>
+            <span className='text-xl'>Phone</span>
+            <span>+0-123-456-789</span>
+          </div>
+          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+            <i className="fa-solid fa-envelope text-4xl transition-all duration-300 group-hover:text-[var(--light-red)]"></i>
+            <span className='text-xl'>Email</span>
+            <span>Alldesigns@gmail.com </span>
+          </div>
+          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-6 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+            <i className="fa-brands fa-instagram text-5xl transition-all duration-300 group-hover:text-orange-500"></i>
+            <span className='text-xl'>Instagram</span>
+            <span> alldesign.ge</span>
           </div>
         </div>
-        <div>Contact Form</div>
-        <div> Contact Cards </div>
+
+        <div className='p-4 bg-slate-900/50 rounded-2xl w-[50%] '>
+          <div className='text-center'> Contact Form</div>
+          <form className='flex flex-col gap-4 rounded-xl'>
+            <input placeholder='input-1'/>
+            <input placeholder='input-2'/>
+            <input placeholder='input-3'/>
+            <input placeholder='input-4'/>
+            <input placeholder='input-5'/>
+          </form>
+        </div>
+        
+        <div> WHAT HAPPENS AFTER SUBMIT a form </div>
       </section>
-      {/* Contact us Form  - Questions etc*/}
       {/* Our Strong Sides */}
-      {/* next Steps */}
     </div>
   )
 }
