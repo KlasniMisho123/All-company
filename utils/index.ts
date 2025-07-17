@@ -219,27 +219,28 @@ export const responseStepsContent = [
     "Crafting your solutions (2-3 options)",
   ],
   [
+    "Prototype Presentation",
+    "fa-solid fa-display",
+    "We'll walk you through interactive mockups for feedback",
+  ],
+  [
     "Revisions Round",
     "fa-solid fa-arrows-rotate",
     "Your feedback → our refinements (2 rounds included)",
   ],
   [
     "Final Handoff",
-    "fa-solid fa-cloud-arrow-down",
+    "fa-solid fa-rocket",
     "All source files + style guide delivered",
-  ],
-  [
-    "Post-Launch Support",
-    "fa-solid fa-headset",
-    "We'll be available for any questions or minor tweaks after delivery",
   ]
 ];
 
+
 export const responseStepsColorContent:ColorVariant[] = [
   "blue",
+  "amber",
   "purple",
-  "red",
-  "green",
   "indigo",
-  "pink"
+  "pink",
+  "red",
 ];
