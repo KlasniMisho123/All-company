@@ -8,7 +8,6 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Services() {
   const [pageIndex, setPageIndex ] = useState(0)
-  const [renderOutPage, setRenderOutPage ] = useState(0)
   const [currentCards, setCurrentCards ] = useState([0,4])
   
     function handleServicesScroll(side:string) {
@@ -31,11 +30,6 @@ export default function Services() {
       useEffect(() => {
         
         setCurrentCards([pageIndex*4, pageIndex*4 + 4])
-        const timeout  = setTimeout(() => {
-          setRenderOutPage(pageIndex)
-        }, 2000);
-
-        return () => clearTimeout(timeout)
 
       },[pageIndex])
 
@@ -58,31 +52,32 @@ export default function Services() {
             }}
           ></button>
         </div> 
-        <div className='flex z-[100]'>
-          <div className={" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 0 ? "scroll-in-content": "scroll-out-left-content" )}>
-            {renderOutPage == 0 &&
-              (
-                <>
-                {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
-                  return(
-                    <ServicesCard
-                        key={index}
-                        color={card.color}
-                        icon={card.icon}
-                        title={card.title}
-                        paragraph={card.paragraph}
-                        linkSrc={card.linkSrc}
-                      />
-                    )
-                })}
-                </>
-              )} 
+        <div className="relative z-[100] w-full h-auto overflow-hidden min-h-[350px]">
+          <div className={
+              "absolute inset-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 " +
+              (pageIndex === 0 ? "scroll-in-left-content" : "scroll-out-left-content")
+            }>
+            <>
+              {serviceCards.slice(0, 4).map((card, index)=>{
+                return(
+                  <ServicesCard
+                      key={index}
+                      color={card.color}
+                      icon={card.icon}
+                      title={card.title}
+                      paragraph={card.paragraph}
+                      linkSrc={card.linkSrc}
+                    />
+                  )
+              })}
+            </>
           </div>
-          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 1 ? "scroll-in-content": "scroll-out-right-content " )}>
-           {renderOutPage == 1 &&
-            ( 
-              <>
-              {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
+          <div className={
+              "absolute inset-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 " +
+              (pageIndex === 1 ? "scroll-in-right-content" : "scroll-out-right-content")
+            }>
+            <>
+              {serviceCards.slice(4, 8).map((card, index)=>{
                 return (
                   <ServicesCard
                     key={index}
@@ -94,8 +89,7 @@ export default function Services() {
                   />
                 )
               })}
-              </>
-            )} 
+            </>
           </div>
         </div>  
 

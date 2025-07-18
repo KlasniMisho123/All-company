@@ -497,11 +497,11 @@ from{
 }
 
 .scroll-out-right-content {
-  animation: scroll-out-right-animation 1s forwards ease-in-out;
+  animation: scroll-out-right-animation 0.75s forwards ease-in-out;
 }
 
 .scroll-out-left-content {
-  animation: scroll-out-left-animation 1s forwards ease-in-out;
+  animation: scroll-out-left-animation 0.75s forwards ease-in-out;
 }
 
 @keyframes scroll-out-right-animation {
