@@ -10,6 +10,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 export default function OurTeamElement() {
 
     const [selectedPage, setSelectedPage] = useState(0)
+    const [selectedPrev, setSelectedPrev] = useState(false)
+
     const pages = []
 
     for(let i=0; i <3; i++ ) {
@@ -20,12 +22,14 @@ export default function OurTeamElement() {
         if(dir == "right" ) {
             if(selectedPage < (pages.length-1) ) {
                 setSelectedPage(selectedPage + 1)
+                setSelectedPrev(false)
             } else {
                 setSelectedPage(0)
             }
         } else {
             if(selectedPage != 0) {
                 setSelectedPage(selectedPage - 1)
+                setSelectedPrev(true)
             } else {
                 setSelectedPage(pages.length - 1)
             }
@@ -44,78 +48,80 @@ export default function OurTeamElement() {
             Creative minds. Proven results.
         </p>
         </>
-        {/* 3Card per page */}
         <div className='flex  justify-between items-center w-full gap-4 my-10 min-h-[300px] py-4'>
             <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
             onClick={
                     ()=>{
                         selectPage("left")
-                    }}
-             >
+                    }}>
                 <i className="fa-solid fa-chevron-left text-2xl"></i>
             </div>
 
-            {selectedPage == 0 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member1.jpg'
-                    name={"Ali"}
-                    position={"Motion Graphics Artist"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/members2-3.jpg'
-                    name={"John Doe"}
-                    position={"Brand Identity Designer"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member4.jpg'
-                    name={"Ali"}
-                    position={"Motion Graphics Artist"}
-                />
+            <div className='relative overflow-hidden flex w-full gap-4 min-h-[300px] '> 
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' + (selectedPage == 0? 
+                    (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
+
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member1.jpg'
+                        name={"Ali"}
+                        position={"Motion Graphics Artist"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/members2-3.jpg'
+                        name={"John Doe"}
+                        position={"Brand Identity Designer"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member4.jpg'
+                        name={"Ali"}
+                        position={"Motion Graphics Artist"}
+                    />
+                </div>
+
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden '  + (selectedPage == 0? 
+                    (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member5.jpg'
+                        name={"Elisabeth Green"}
+                        position={"Senior Designer"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member6.jpg'
+                        name={"Lisa Browner"}
+                        position={"Support Manager"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member7.jpg'
+                        name={"Mike Kingman"}
+                        position={"Co Founder"}
+                    />
+                </div>
+
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  + (selectedPage == 0? 
+                    (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member8.jpg'
+                        name={"Fiona Pugh"}
+                        position={"Creative Director"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member9.jpg'
+                        name={"Jake Smith"}
+                        position={"Illustrator"}
+                    />
+                    <TeamMemberCard 
+                        imgSrc='/teamMembers/member10.jpg'
+                        name={"Emilly Henderson"}
+                        position={"Motion Graphics Intern"}
+                    />
+                </div>
             </div>
-            }
-            {selectedPage == 1 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member5.jpg'
-                    name={"Elisabeth Green"}
-                    position={"Senior Designer"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member6.jpg'
-                    name={"Lisa Browner"}
-                    position={"Support Manager"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member7.jpg'
-                    name={"Mike Kingman"}
-                    position={"Co Founder"}
-                />
-            </div>
-            }
-            {selectedPage == 2 && <div className='flex w-full px-6 justify-evenly overflow-hidden'>
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member8.jpg'
-                    name={"Fiona Pugh"}
-                    position={"Creative Director"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member9.jpg'
-                    name={"Jake Smith"}
-                    position={"Illustrator"}
-                />
-                <TeamMemberCard 
-                    imgSrc='/teamMembers/member10.jpg'
-                    name={"Emilly Henderson"}
-                    position={"Motion Graphics Intern"}
-                />
-            </div>
-            }
 
              <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
                 onClick={
                     ()=>{
                         selectPage("right")
-                    }}
-             >
+                    }}>
                 <i className="fa-solid fa-chevron-right text-2xl"></i>
             </div>
 
