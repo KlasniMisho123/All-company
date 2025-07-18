@@ -78,7 +78,7 @@ export default function OurTeamElement() {
                     />
                 </div>
 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden '  + (selectedPage == 0? 
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden '  + (selectedPage == 1? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member5.jpg'
@@ -97,7 +97,7 @@ export default function OurTeamElement() {
                     />
                 </div>
 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  + (selectedPage == 0? 
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  + (selectedPage == 2? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member8.jpg'
