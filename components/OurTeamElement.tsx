@@ -9,9 +9,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function OurTeamElement() {
     const [selectedPage, setSelectedPage] = useState(0);
-    const [visiblePage, setVisiblePage] = useState(0);
     const [selectedPrev, setSelectedPrev] = useState(false);
-
+    const [swipeCooldown, setSwipeCooldown] = useState(false);
 
     const pages = []
 
@@ -20,6 +19,10 @@ export default function OurTeamElement() {
     }
 
     function selectPage(dir:string) {
+        if (swipeCooldown) return;
+
+        setSwipeCooldown(true);
+    
         if(dir == "right" ) {
             if(selectedPage < (pages.length-1) ) {
                 setSelectedPage(selectedPage + 1)
@@ -37,7 +40,11 @@ export default function OurTeamElement() {
                 setSelectedPrev(false)
             }
         }
+        setTimeout(() => {
+            setSwipeCooldown(false);
+        }, 1000);
     }
+
 
   return (
     <div className='my-10 flex flex-col items-center w-[80%] '>

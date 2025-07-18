@@ -1,3 +1,5 @@
 Login -> Theme/remove
 About us pics --> ++ hd  
 Reveal Animations 
+Form 
+About us Swipe -> after 1st swipe. pages are changeign content mid swipe??
