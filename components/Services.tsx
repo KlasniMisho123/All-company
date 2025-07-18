@@ -31,7 +31,7 @@ export default function Services() {
       },[pageIndex])
 
   return (
-    <section className='mx-30 my-10 rounded-xl  p-4 py-10 '> 
+    <section className='mx-30 my-10 rounded-xl  p-4 py-10 overflow-hidden '> 
         <h2 className={'text-center text-4xl font-bold ' + urbanist.className}> Our <span className='text-3xl bg-gradient-to-r from-[var(--error-color)] to-transparent tracking-widest font-semibold px-2 '> Services </span> </h2> 
         <p className={`text-center bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent font-medium text-lg md:text-xl max-w-2xl mx-auto ${urbanist.className}`}>
           We deliver innovative, client-focused services designed to solve real challenges and drive sustainable growth. </p> 
@@ -48,43 +48,48 @@ export default function Services() {
                 handleServicesScroll("right")
             }}
           ></button>
-        </div>        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-        {pageIndex == 0 &&
-          (
-          <>
-          {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
-            return(
-               <ServicesCard
-                  key={index}
-                  color={card.color}
-                  icon={card.icon}
-                  title={card.title}
-                  paragraph={card.paragraph}
-                  linkSrc={card.linkSrc}
-                />
-              )
-          })}
-          </>
-          )}
-        {pageIndex == 1 &&
-          (
-            <>
-            {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
-              return (
-                <ServicesCard
-                  key={index}
-                  color={card.color}
-                  icon={card.icon}
-                  title={card.title}
-                  paragraph={card.paragraph}
-                  linkSrc={card.linkSrc}
-                />
-              )
-            })}
-            </>
-          )}
-        </div>
+        </div> 
+        <div className='flex z-[100]'>
+          <div className={" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 0 ? "scroll-in-content": "scroll-out-content" )}>
+            {pageIndex == 0 &&
+              (
+                <>
+                {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
+                  return(
+                    <ServicesCard
+                        key={index}
+                        color={card.color}
+                        icon={card.icon}
+                        title={card.title}
+                        paragraph={card.paragraph}
+                        linkSrc={card.linkSrc}
+                      />
+                    )
+                })}
+                </>
+              )} 
+          </div>
+          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 1 ? "scroll-in-content": "scroll-out-content " )}>
+           {pageIndex == 1 &&
+            ( 
+              <>
+              {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
+                return (
+                  <ServicesCard
+                    key={index}
+                    color={card.color}
+                    icon={card.icon}
+                    title={card.title}
+                    paragraph={card.paragraph}
+                    linkSrc={card.linkSrc}
+                  />
+                )
+              })}
+              </>
+            )} 
+          </div>
+        </div>  
+
       </section>
   )
 }

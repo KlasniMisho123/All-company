@@ -471,3 +471,26 @@ from{
     scale: 0.3;
   }
 }
+
+.scroll-in-content {
+  animation: scroll-in-animation 1s forwards ease-in-out;
+}
+
+@keyframes scroll-in-animation {
+  from {
+    transform: translateX(-200%);
+  } to {
+    transform: translateX(0%);
+  }
+}
+.scroll-out-content {
+  animation: scroll-out-animation 1s forwards ease-in-out;
+}
+
+@keyframes scroll-out-animation {
+  from {
+    transform: translateX(0%);
+  } to {
+    transform: translateX(-200%);
+  }
+}
