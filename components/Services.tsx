@@ -8,6 +8,7 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Services() {
   const [pageIndex, setPageIndex ] = useState(0)
+  const [renderOutPage, setRenderOutPage ] = useState(0)
   const [currentCards, setCurrentCards ] = useState([0,4])
   
     function handleServicesScroll(side:string) {
@@ -26,8 +27,16 @@ export default function Services() {
             }
           }
         }
+
       useEffect(() => {
+        
         setCurrentCards([pageIndex*4, pageIndex*4 + 4])
+        const timeout  = setTimeout(() => {
+          setRenderOutPage(pageIndex)
+        }, 2000);
+
+        return () => clearTimeout(timeout)
+
       },[pageIndex])
 
   return (
@@ -50,8 +59,8 @@ export default function Services() {
           ></button>
         </div> 
         <div className='flex z-[100]'>
-          <div className={" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 0 ? "scroll-in-content": "scroll-out-content" )}>
-            {pageIndex == 0 &&
+          <div className={" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 0 ? "scroll-in-content": "scroll-out-left-content" )}>
+            {renderOutPage == 0 &&
               (
                 <>
                 {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{
@@ -69,8 +78,8 @@ export default function Services() {
                 </>
               )} 
           </div>
-          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 1 ? "scroll-in-content": "scroll-out-content " )}>
-           {pageIndex == 1 &&
+          <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 " + (pageIndex == 1 ? "scroll-in-content": "scroll-out-right-content " )}>
+           {renderOutPage == 1 &&
             ( 
               <>
               {serviceCards.slice(currentCards[0], currentCards[1]).map((card, index)=>{

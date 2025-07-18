@@ -472,22 +472,46 @@ from{
   }
 }
 
-.scroll-in-content {
-  animation: scroll-in-animation 1s forwards ease-in-out;
+.scroll-in-left-content {
+  animation: scroll-in-left-animation 1s forwards ease-in-out;
 }
 
-@keyframes scroll-in-animation {
+.scroll-in-right-content {
+  animation: scroll-in-right-animation 1s forwards ease-in-out;
+}
+
+@keyframes scroll-in-right-animation {
+  from {
+    transform: translateX(200%);
+  } to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-in-left-animation {
   from {
     transform: translateX(-200%);
   } to {
     transform: translateX(0%);
   }
 }
-.scroll-out-content {
-  animation: scroll-out-animation 1s forwards ease-in-out;
+
+.scroll-out-right-content {
+  animation: scroll-out-right-animation 1s forwards ease-in-out;
 }
 
-@keyframes scroll-out-animation {
+.scroll-out-left-content {
+  animation: scroll-out-left-animation 1s forwards ease-in-out;
+}
+
+@keyframes scroll-out-right-animation {
+  from {
+    transform: translateX(0%);
+  } to {
+    transform: translateX(200%);
+  }
+}
+@keyframes scroll-out-left-animation {
   from {
     transform: translateX(0%);
   } to {
