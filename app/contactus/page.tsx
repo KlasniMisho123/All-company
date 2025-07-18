@@ -17,6 +17,18 @@ export default function page() {
           </div>
         </div>
 
+        <div className='p-4 bg-slate-900/50 rounded-2xl w-[50%] '>
+          <div className='text-center'> Contact Form</div>
+          <form className='flex flex-col gap-4 rounded-xl'>
+            <input placeholder='input-1'/>
+            <input placeholder='input-2'/>
+            <input placeholder='input-3'/>
+            <input placeholder='input-4'/>
+            <input placeholder='input-5'/>
+          </form>
+        </div>
+        {/* Sucess Message */}
+
         <div className='flex w-[90%] justify-evenly my-12 '> 
           <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
             <i className="fa-solid fa-phone text-3xl transition-all duration-300 group-hover:text-emerald-500"></i>
@@ -34,20 +46,9 @@ export default function page() {
             <span> alldesign.ge</span>
           </div>
         </div>
-
-        <div className='p-4 bg-slate-900/50 rounded-2xl w-[50%] '>
-          <div className='text-center'> Contact Form</div>
-          <form className='flex flex-col gap-4 rounded-xl'>
-            <input placeholder='input-1'/>
-            <input placeholder='input-2'/>
-            <input placeholder='input-3'/>
-            <input placeholder='input-4'/>
-            <input placeholder='input-5'/>
-          </form>
-        </div>
-        {/* Sucess Message */}
+        
         <div className='my-12 shadow-xl bg-slate-900/50 rounded-lg p-4 py-6'> 
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-red-500 mb-4 uppercase tracking-wide">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-transparent bg-gradient-to-r from-red-400 to-red-700 bg-clip-text mb-4 uppercase tracking-wide">
             What Happens After You Submit a Form
           </h3>
 
