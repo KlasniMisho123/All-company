@@ -8,9 +8,10 @@ import TeamMemberCard from './TeamMemberCard';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function OurTeamElement() {
+    const [selectedPage, setSelectedPage] = useState(0);
+    const [visiblePage, setVisiblePage] = useState(0);
+    const [selectedPrev, setSelectedPrev] = useState(false);
 
-    const [selectedPage, setSelectedPage] = useState(0)
-    const [selectedPrev, setSelectedPrev] = useState(false)
 
     const pages = []
 
@@ -25,6 +26,7 @@ export default function OurTeamElement() {
                 setSelectedPrev(false)
             } else {
                 setSelectedPage(0)
+                setSelectedPrev(true)
             }
         } else {
             if(selectedPage != 0) {
@@ -32,6 +34,7 @@ export default function OurTeamElement() {
                 setSelectedPrev(true)
             } else {
                 setSelectedPage(pages.length - 1)
+                setSelectedPrev(false)
             }
         }
     }
@@ -97,8 +100,9 @@ export default function OurTeamElement() {
                     />
                 </div>
 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  + (selectedPage == 2? 
+                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  (selectedPage == 2? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
+
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member8.jpg'
                         name={"Fiona Pugh"}
