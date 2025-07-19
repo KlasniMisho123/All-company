@@ -13,11 +13,13 @@ export default function Header() {
   
   function handleSelectedNav(nav:string):void {
     setSelectedNav(nav);
+    setIsMenuActive(false);
   }
   
   function handleSelectedSideNav(nav:string):void {
     setSelectedNav(nav);
     handleSideNav();
+    setIsMenuActive(false);
   }
 
   function handleSideNav():void {
@@ -35,17 +37,18 @@ export default function Header() {
 
   return (
     <div className='relative w-full z-50 '>
-      <div className='relative flex items-center justify-between gap-2 p-2 sm:py-4 sm:px-6 z-100 bg-[#FAFAFA] text-[#D32F2F] rounded-b-lg w-full border-b-2 border-b-[#D32F2F] min-w-fit '> 
+      <div className='relative flex items-center justify-between gap-2 p-2 sm:py-4 sm:px-6 z-100 bg-[#FAFAFA] text-[var(--error-color)] rounded-b-lg w-full border-b-2 border-b-[var(--error-color)] min-w-fit '> 
         <Logo handleSelectedNav={handleSelectedNav} />
         <div className='hidden sm:flex'>
           <Navbar selectedNav={selectedNav} setSelectedNav={setSelectedNav} handleSelectedNav={handleSelectedNav} />
         </div>
 
         <div className='hidden sm:flex'>
-          <div className='flex items-center gap-2 cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '>
+          Theme Toggle
+          {/* <div className='flex items-center gap-2 cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '>
             <span> Login </span>
             < i className="fa-solid fa-right-to-bracket transition-all duration-300 group-hover:translate-x-1 "/>
-          </div>
+          </div> */}
         </div>
 
         <div className='flex items-center sm:hidden sm:items-start cursor-pointer p-2 '
@@ -62,18 +65,18 @@ export default function Header() {
 
       {isMenuActive && (
        <div className={`absolute  w-full top-full z-40  transition-all duration-2000 ease-in-out overflow-hidden bg-[#FFF5F5] 
-           border-b-2 border-b-[#D32F2F] rounded  ${isSideNavActive? ' drop-down-navbar -mt-2 ' : ' rev-drop-down-navbar ' }`}>
+           border-b-2 border-b-[var(--error-color)] rounded  ${isSideNavActive? ' drop-down-navbar -mt-2 ' : ' rev-drop-down-navbar ' }`}>
              <div className="flex flex-col p-4 pt-6 text-gray-700 font-medium space-y-1">
                 <Link
                   href="/"
                   onClick={() => handleSelectedSideNav('/')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3  ${
                     selectedNav === '/' 
-                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
-                      : 'hover:bg-blue-100  hover:text-[#D32F2F]'
+                      ? 'bg-red-100 text-[var(--error-color)] font-semibold' 
+                      : 'hover:bg-blue-100  hover:text-[var(--error-color)]'
                   }`}
                 >
-                  <i className="fa-solid fa-house text-[#D32F2F]"></i>
+                  <i className="fa-solid fa-house text-[var(--error-color)]"></i>
                   Home
                 </Link>
 
@@ -82,11 +85,11 @@ export default function Header() {
                   onClick={() => handleSelectedSideNav('/services')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 group hover:translate-x-3 ${
                     selectedNav === '/services' 
-                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
-                      : 'hover:bg-blue-100 hover:text-[#D32F2F]'
+                      ? 'bg-red-100 text-[var(--error-color)] font-semibold' 
+                      : 'hover:bg-blue-100 hover:text-[var(--error-color)]'
                   }`}
                 >
-                  <i className="fa-solid fa-gear text-[#D32F2F] transition-all duration-500 group-hover:rotate-270 "></i>
+                  <i className="fa-solid fa-gear text-[var(--error-color)] transition-all duration-500 group-hover:rotate-270 "></i>
                   Services
                 </Link>
 
@@ -95,17 +98,31 @@ export default function Header() {
                   onClick={() => handleSelectedSideNav('/aboutus')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3 ${
                     selectedNav === '/aboutus' 
-                      ? 'bg-red-100 text-[#D32F2F] font-semibold' 
-                      : 'hover:bg-blue-100  hover:text-[#D32F2F]'
+                      ? 'bg-red-100 text-[var(--error-color)] font-semibold' 
+                      : 'hover:bg-blue-100  hover:text-[var(--error-color)]'
                   }`}
                 >
-                  <i className="fa-solid fa-users text-[#D32F2F]"></i>
+                  <i className="fa-solid fa-users text-[var(--error-color)]"></i>
                   About Us
                 </Link>
 
-                <div className="flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:bg-blue-100 hover:text-[#D32F2F] cursor-pointer hover:translate-x-3">
-                  <i className="fa-solid fa-right-to-bracket text-[#D32F2F]  "></i>
-                  Login
+                <Link
+                  href="/contactus"
+                  onClick={() => handleSelectedSideNav('/aboutus')}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3 ${
+                    selectedNav === '/aboutus' 
+                      ? 'bg-red-100 text-[var(--error-color)] font-semibold' 
+                      : 'hover:bg-blue-100  hover:text-[var(--error-color)]'
+                  }`}
+                >
+                  <i className="fa-solid fa-feather-pointed text-[var(--error-color)]"></i>
+                  Contact Us
+                </Link>
+
+                <div className="flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:bg-blue-100 hover:text-[var(--error-color)] cursor-pointer hover:translate-x-3">
+                  {/* <i className="fa-solid fa-right-to-bracket text-[var(--error-color)]  "></i>
+                  Login */}
+                  Theme Toggle
                 </div>
               </div>
 

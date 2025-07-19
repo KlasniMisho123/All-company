@@ -117,7 +117,7 @@ from{
     max-height: 600px;
   } 
   95%{
-    border-bottom: solid #D32F2F 2px;
+    border-bottom: solid var(--error-color) 2px;
   }
   100% {
     max-height: 0;

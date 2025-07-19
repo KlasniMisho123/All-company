@@ -50,13 +50,13 @@ export default function aboutus() {
 
         <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
           <div className='relative flex-1 max-h-[500px] min-h-[400px] '>
-            <Image
-              className='max-h-[450px] w-full object-cover rounded-2xl'
-              src="/team-work-img.jpg"
-              loading='lazy'
-              alt="Team working in early days"
-              fill
-            />
+              <Image
+                src="/team-work-img.jpg"
+                alt="Future vision concept"
+                loading="lazy"
+                fill
+                className="object-cover rounded-2xl"
+              />
           </div>
 
           <div className='flex-1 grid grid-cols-2 gap-4 shadow-lg bg-slate-900/50 rounded-2xl py-8 px-6 mt-4'>
@@ -96,7 +96,7 @@ export default function aboutus() {
           </div>
 
           <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
-            <div className='relative flex-1 max-h-[450px]'>
+            <div className='relative flex-1 max-h-[500px] min-h-[350px] '>
               <Image
                 src="/goals-image.jpg"
                 alt="Future vision concept"
