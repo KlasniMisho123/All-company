@@ -49,14 +49,13 @@ export default function aboutus() {
         </div>
 
         <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
-          <div className='flex-1 bg-cover bg-center'>
+          <div className='relative flex-1 max-h-[500px] min-h-[400px] '>
             <Image
               className='max-h-[450px] w-full object-cover rounded-2xl'
               src="/team-work-img.jpg"
               loading='lazy'
               alt="Team working in early days"
-              width={100}
-              height={100}
+              fill
             />
           </div>
 
@@ -97,14 +96,13 @@ export default function aboutus() {
           </div>
 
           <div className='flex-1 flex flex-col overflow-hidden rounded-2xl'>
-            <div className='flex-1 bg-cover bg-center'>
+            <div className='relative flex-1 max-h-[450px]'>
               <Image
-                className='max-h-[450px] w-full object-cover rounded-2xl'
-                src={"/goals-image.jpg"}
-                loading='lazy'
+                src="/goals-image.jpg"
                 alt="Future vision concept"
-                width={100}
-                height={100}
+                loading="lazy"
+                fill
+                className="object-cover rounded-2xl"
               />
             </div>
 
