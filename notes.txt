@@ -1,7 +1,10 @@
-Login -> Theme/remove
+Theme Toggle/remove
 Sm Hamburger Bar Open Error->
+Services Animation fix. 
 
 Reveal Animations 
 Form 
 About us Swipe -> after 1st swipe. pages are changeign content mid swipe??
 About us Team Members Hover Info +-
+
+Responsive

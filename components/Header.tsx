@@ -37,6 +37,7 @@ export default function Header() {
 
   return (
     <div className='relative w-full z-50 '>
+      {/* bg-[#FAFAFA]  bg-black */}
       <div className='relative flex items-center justify-between gap-2 p-2 sm:py-4 sm:px-6 z-100 bg-[#FAFAFA] text-[var(--error-color)] rounded-b-lg w-full border-b-2 border-b-[var(--error-color)] min-w-fit '> 
         <Logo handleSelectedNav={handleSelectedNav} />
         <div className='hidden sm:flex'>
