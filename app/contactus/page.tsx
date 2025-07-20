@@ -60,6 +60,8 @@ export default function page() {
                 name="contactType"
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
+                value={contactTopic}
+                onChange={(e) => setContactTopic(e.target.value)}
               >
                 <option className='text-gray-500' value="" disabled>Reason for Contact</option>
                 <option value="project">Start a New Project</option>
@@ -83,6 +85,8 @@ export default function page() {
                 name="projectType"
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
+                value={projectType}
+                onChange={(e) => setProjectType(e.target.value)}
               >
                 <option className='text-gray-500' value="" disabled>Select Project Type</option>
                 <option value="wedding">Wedding Event</option>
