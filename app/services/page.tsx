@@ -12,7 +12,7 @@ import React from 'react'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
-export default function services() {
+export default function ServicesPage() {
   return (
     <div>
       <div className='h-[50vh] -mt-1 bg-cover bg-center flex items-center justify-center'

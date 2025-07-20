@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ResponseStep from '@/components/ResponseStep'
 import { responseStepsColorContent, responseStepsContent } from '@/utils'
 
-export default function contactus() {
+export default function ContactusPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactTopic, setContactTopic] = useState("");

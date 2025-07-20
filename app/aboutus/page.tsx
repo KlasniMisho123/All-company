@@ -7,7 +7,7 @@ import Image from  'next/image'
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
-export default function aboutus() {
+export default function AboutusPage() {
 
   return (
     <div>
