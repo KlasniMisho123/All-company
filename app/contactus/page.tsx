@@ -7,13 +7,17 @@ export default function page() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactTopic, setContactTopic] = useState("");
-  const [addProjectInfo, setAddProjectInfo] = useState("");
+  const [projectInfoActive, setProjectInfoActive] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [projectType, setProjectType] = useState("");
   const [projectDesc, setProjectDesc] = useState("");
 
   function handleSubmit() {
     console.log("ss")
+  }
+
+  function handleProjectSection(value:string) {
+    console.log("value: ", value)
   }
 
   return (
