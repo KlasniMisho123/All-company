@@ -32,9 +32,9 @@ export default function page() {
     }
 
     try {
-
+      // Send to Email
     } catch(err) {
-      console.log(err.message)
+      console.log(err)
     } finally {
       clearInputs()
     }
