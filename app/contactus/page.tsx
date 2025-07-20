@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ResponseStep from '@/components/ResponseStep'
 import { responseStepsColorContent, responseStepsContent } from '@/utils'
 
-export default function page() {
+export default function contactus() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactTopic, setContactTopic] = useState("");
@@ -33,6 +33,7 @@ export default function page() {
 
     try {
       // Send to Email
+      console.log(data)
     } catch(err) {
       console.log(err)
     } finally {
