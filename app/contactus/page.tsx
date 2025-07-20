@@ -41,7 +41,7 @@ export default function page() {
               <select
                 name="contactType"
                 defaultValue=""
-                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
+                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
               >
                 <option value="" disabled>Reason for Contact</option>
                 <option value="project">Start a New Project</option>
@@ -58,14 +58,21 @@ export default function page() {
             <div className="flex w-full gap-4 my-4 flex-col md:flex-row">
               <input
                 className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
-                placeholder="Full Name"
+                placeholder="Company Name"
                 type="text"
               />
-              <input
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
-                placeholder="Email Address"
-                type="email"
-              />
+              <select
+                name="projectType"
+                defaultValue=""
+                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
+              >
+                <option value="" disabled>Select Project Type</option>
+                <option value="wedding">Wedding Event</option>
+                <option value="logo">Logo Design</option>
+                <option value="product">Product Design</option>
+                <option value="other">Product Design</option>
+              </select>
+
             </div>
 
             <label className="block text-sm font-medium text-white ">
@@ -79,10 +86,12 @@ export default function page() {
             />
 
             <button className="relative flex items-center justify-center self-center px-6 py-1 bg-[var(--error-color)] text-white
-             rounded-lg hover:bg-gray-800 transition-all cursor-pointer shadow overflow-hidden group">
-              <p className='index-[100]'> Submit </p>
-              <i className="fa-regular fa-circle absolute index-10 group-hover:scale-200 transition-all duration-300 "></i>
+             rounded-lg transition-all cursor-pointer shadow overflow-hidden group">
+              <p className="z-[20] relative">Submit</p>
+              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-400 ease-out pointer-events-none"></i>
+              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-800 ease-out pointer-events-none"></i>
             </button>
+
 
           </form>
         </div>
