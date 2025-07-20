@@ -153,8 +153,8 @@ export default function page() {
               }}
             />
 
-            <button className="relative flex items-center justify-center self-center px-6 py-1 bg-[var(--error-color)] text-white
-             rounded-lg transition-all cursor-pointer shadow overflow-hidden group"
+            <button className="relative flex items-center justify-center self-center px-10 py-2 bg-[var(--error-color)] text-white
+             rounded-xl transition-all cursor-pointer shadow overflow-hidden group"
              onClick={()=>{
                 handleSubmit()
               }}
