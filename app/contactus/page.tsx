@@ -34,11 +34,19 @@ export default function page() {
               <input
                 className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
                 placeholder="Full Name"
+                value={name}
+                onChange={(e)=>{
+                  setName(e.target.value)
+                }}
                 type="text"
               />
               <input
                 className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
                 placeholder="Email Address"
+                value={email}
+                onChange={(e)=>{
+                  setEmail(e.target.value)
+                }}
                 type="email"
               />
             </div>
@@ -53,7 +61,7 @@ export default function page() {
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
               >
-                <option className='text-gray-500' value="" disabled>-- Reason for Contact</option>
+                <option className='text-gray-500' value="" disabled>Reason for Contact</option>
                 <option value="project">Start a New Project</option>
                 <option value="support">Get Support</option>
                 <option value="consultation">Book a Consultation</option>
@@ -76,7 +84,7 @@ export default function page() {
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
               >
-                <option className='text-gray-500' value="" disabled>-- Select Project Type</option>
+                <option className='text-gray-500' value="" disabled>Select Project Type</option>
                 <option value="wedding">Wedding Event</option>
                 <option value="logo">Logo Design</option>
                 <option value="product">Product Design</option>
@@ -98,8 +106,8 @@ export default function page() {
             <button className="relative flex items-center justify-center self-center px-6 py-1 bg-[var(--error-color)] text-white
              rounded-lg transition-all cursor-pointer shadow overflow-hidden group">
               <p className="z-[20] relative">Submit</p>
-              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-400 ease-out pointer-events-none"></i>
               <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-800 ease-out pointer-events-none"></i>
+              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-1400 ease-out pointer-events-none"></i>
             </button>
 
 
