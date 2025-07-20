@@ -1,7 +1,17 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import ResponseStep from '@/components/ResponseStep'
 import { responseStepsColorContent, responseStepsContent } from '@/utils'
+
 export default function page() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contactTopic, setContactTopic] = useState("");
+  const [addProjectInfo, setAddProjectInfo] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [projectType, setProjectType] = useState("");
+  const [projectDesc, setProjectDesc] = useState("");
+
   return (
     <div>
       {/* Header BAckground */}
@@ -43,7 +53,7 @@ export default function page() {
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
               >
-                <option value="" disabled>Reason for Contact</option>
+                <option className='text-gray-500' value="" disabled>-- Reason for Contact</option>
                 <option value="project">Start a New Project</option>
                 <option value="support">Get Support</option>
                 <option value="consultation">Book a Consultation</option>
@@ -66,7 +76,7 @@ export default function page() {
                 defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
               >
-                <option value="" disabled>Select Project Type</option>
+                <option className='text-gray-500' value="" disabled>-- Select Project Type</option>
                 <option value="wedding">Wedding Event</option>
                 <option value="logo">Logo Design</option>
                 <option value="product">Product Design</option>
