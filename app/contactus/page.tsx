@@ -17,14 +17,73 @@ export default function page() {
           </div>
         </div>
 
-        <div className='p-4 bg-slate-900/50 rounded-2xl w-[50%] '>
+        <div className='p-4 bg-slate-900/50 rounded-2xl w-[50%] mt-12 '>
           <div className='text-center'> Contact Form</div>
           <form className='flex flex-col gap-4 rounded-xl'>
-            <input placeholder='input-1'/>
-            <input placeholder='input-2'/>
-            <input placeholder='input-3'/>
-            <input placeholder='input-4'/>
-            <input placeholder='input-5'/>
+            <div className="flex w-full gap-4 my-4 flex-col md:flex-row">
+              <input
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
+                placeholder="Full Name"
+                type="text"
+              />
+              <input
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
+                placeholder="Email Address"
+                type="email"
+              />
+            </div>
+
+            <h5 className="text-lg font-semibold mb-1 flex items-center gap-2 text-gray-900">
+              <i className="fa-solid fa-diagram-project text-base text-blue-800/80 "></i>
+              <p className='text-white'> Project Inquiry </p>
+            </h5>
+            <div className="relative w-full">
+              <select
+                name="contactType"
+                defaultValue=""
+                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
+              >
+                <option value="" disabled>Reason for Contact</option>
+                <option value="project">Start a New Project</option>
+                <option value="support">Get Support</option>
+                <option value="consultation">Book a Consultation</option>
+                <option value="quote">Request a Quote</option>
+                <option value="other">Other</option>
+              </select>
+              <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-700">
+                <i className="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <div className="flex w-full gap-4 my-4 flex-col md:flex-row">
+              <input
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
+                placeholder="Full Name"
+                type="text"
+              />
+              <input
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
+                placeholder="Email Address"
+                type="email"
+              />
+            </div>
+
+            <label className="block text-sm font-medium text-white ">
+              More Details
+            </label>
+            <textarea
+              id="details"
+              name="details"
+              className="px-4 py-3 rounded-lg border border-gray-300 focus:border-gray-100 placeholder:text-gray-300 max-h-[600px]"
+              placeholder="Please provide more information about your request..."
+            />
+
+            <button className="relative flex items-center justify-center self-center px-6 py-1 bg-[var(--error-color)] text-white
+             rounded-lg hover:bg-gray-800 transition-all cursor-pointer shadow overflow-hidden group">
+              <p className='index-[100]'> Submit </p>
+              <i className="fa-regular fa-circle absolute index-10 group-hover:scale-200 transition-all duration-300 "></i>
+            </button>
+
           </form>
         </div>
         {/* Sucess Message */}
@@ -73,3 +132,14 @@ export default function page() {
     </div>
   )
 }
+
+// 🏷️ Option Descriptions (for tooltips or labels, if needed):
+// Start a New Project – You're ready to begin a design project with us.
+
+// Get Support – You need help with something we've already delivered.
+
+// Book a Consultation – You want expert guidance or strategic input.
+
+// Request a Quote – You’re curious about pricing before starting.
+
+// Other – Anything else you'd like to talk about.
