@@ -56,7 +56,6 @@ export default function ContactusPage() {
                 type="text"
               />
               <select
-                name="projectType"
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
                 value={projectType}
                 onChange={(e) => setProjectType(e.target.value)}
@@ -134,7 +133,6 @@ export default function ContactusPage() {
             </h5>
             <div className="relative w-full">
               <select
-                name="contactType"
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
                 value={contactTopic}
                 onChange={(e) => setContactTopic(e.target.value)}
@@ -157,8 +155,6 @@ export default function ContactusPage() {
               More Details
             </label>
             <textarea
-              id="details"
-              name="details"
               className="px-4 py-3 rounded-lg border border-gray-300 focus:border-gray-100 placeholder:text-gray-500 max-h-[400px]"
               placeholder="Please provide more information about your request..."
               value={projectDesc}
@@ -177,7 +173,6 @@ export default function ContactusPage() {
               <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[12] transition-transform duration-800 ease-out pointer-events-none"></i>
               <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[12] transition-transform duration-1400 ease-out pointer-events-none"></i>
             </button>
-
 
           </form>
         </div>
