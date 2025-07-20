@@ -34,14 +34,6 @@ export default function Hero() {
               icon={<></>}
               customClassName={""}
               />
-            
-            <div className="text-gray-300 mt-2">
-              Already have an account?&nbsp;
-              <span className="relative group font-bold cursor-pointer inline-block">
-                <span className="transition-all duration-500 group-hover:text-[var(--error-color)]">Log In</span>
-                <span className="absolute left-0 -bottom-0.5 h-[2px] w-full origin-left scale-x-0 bg-[var(--error-color)] transition-transform duration-500 group-hover:scale-x-100"></span>
-              </span>
-          </div>
         </div>
         <HeroGrid />
       </section>
