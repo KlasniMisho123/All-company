@@ -11,20 +11,33 @@ export default function page() {
   const [projectType, setProjectType] = useState("");
   const [projectDesc, setProjectDesc] = useState("");
 
-  function handleSubmit() {
-    console.log("ss")
+  function clearInputs() {
+    setName("")
+    setEmail("")
+    setContactTopic("")
+    setCompanyName("")
+    setCompanyName("")
+    setProjectDesc("")
   }
 
-  function handleProjectSection(value:string) {
-    console.log("value: ", value)
-    switch(value) {
+  function handleSubmit() {
 
+    const data = {
+      name: name,
+      email: email,
+      contactTopic: contactTopic,
+      companyName: companyName,
+      projectType: projectType,
+      projectDesc: projectDesc
     }
-      // project
-      // support
-      // consultation
-      // quote
-      // other
+
+    try {
+
+    } catch(err) {
+      console.log(err.message)
+    } finally {
+      clearInputs()
+    }
   }
 
   function renderAdditionalFields() {
@@ -74,6 +87,7 @@ export default function page() {
         return null;
       }
   }
+
   return (
     <div>
       {/* Header BAckground */}
@@ -122,7 +136,6 @@ export default function page() {
                 name="contactType"
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
                 value={contactTopic}
-                // onChange={(e) => handleProjectSection(e.target.value)}
                 onChange={(e) => setContactTopic(e.target.value)}
               >
                 <option className='text-gray-500' value="" disabled>Reason for Contact</option>
@@ -145,7 +158,7 @@ export default function page() {
             <textarea
               id="details"
               name="details"
-              className="px-4 py-3 rounded-lg border border-gray-300 focus:border-gray-100 placeholder:text-gray-300 max-h-[600px]"
+              className="px-4 py-3 rounded-lg border border-gray-300 focus:border-gray-100 placeholder:text-gray-500 max-h-[400px]"
               placeholder="Please provide more information about your request..."
               value={projectDesc}
               onChange={(e)=>{
@@ -160,8 +173,8 @@ export default function page() {
               }}
              >
               <p className="z-[20] relative">Submit</p>
-              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-800 ease-out pointer-events-none"></i>
-              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-1400 ease-out pointer-events-none"></i>
+              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[12] transition-transform duration-800 ease-out pointer-events-none"></i>
+              <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[12] transition-transform duration-1400 ease-out pointer-events-none"></i>
             </button>
 
 
