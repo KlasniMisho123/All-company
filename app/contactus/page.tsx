@@ -7,7 +7,6 @@ export default function page() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contactTopic, setContactTopic] = useState("");
-  const [projectInfoActive, setProjectInfoActive] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [projectType, setProjectType] = useState("");
   const [projectDesc, setProjectDesc] = useState("");
@@ -18,8 +17,63 @@ export default function page() {
 
   function handleProjectSection(value:string) {
     console.log("value: ", value)
+    switch(value) {
+
+    }
+      // project
+      // support
+      // consultation
+      // quote
+      // other
   }
 
+  function renderAdditionalFields() {
+    switch (contactTopic) {
+      case 'project':
+        return (
+          <div className="flex w-full gap-4 my-4 flex-col md:flex-row">
+              <input
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
+                placeholder="Company Name"
+                value={companyName}
+                onChange={(e)=>{
+                  setCompanyName(e.target.value)
+                }}
+                type="text"
+              />
+              <select
+                name="projectType"
+                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
+                value={projectType}
+                onChange={(e) => setProjectType(e.target.value)}
+              >
+                <option className='text-gray-500' value="" disabled>Select Project Type</option>
+                <option value="wedding">Wedding Event</option>
+                <option value="logo">Logo Design</option>
+                <option value="product">Product Design</option>
+                <option value="other">Product Design</option>
+              </select>
+          </div>
+        );
+      case 'support':
+        return ("");
+      case 'consultation':
+        return ("");;
+      case 'quote':
+        return (
+          <>
+            <input type="text" placeholder="Service Needed" 
+            className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 " />
+            <input type="text" placeholder="Estimated Budget" 
+            className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 " />
+          </>
+        );
+      case 'other':
+        return ("");
+      default:
+        return null;
+      }
+  }
   return (
     <div>
       {/* Header BAckground */}
@@ -68,6 +122,7 @@ export default function page() {
                 name="contactType"
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
                 value={contactTopic}
+                // onChange={(e) => handleProjectSection(e.target.value)}
                 onChange={(e) => setContactTopic(e.target.value)}
               >
                 <option className='text-gray-500' value="" disabled>Reason for Contact</option>
@@ -82,30 +137,7 @@ export default function page() {
               </div>
             </div>
 
-            <div className="flex w-full gap-4 my-4 flex-col md:flex-row">
-              <input
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
-                placeholder="Company Name"
-                value={companyName}
-                onChange={(e)=>{
-                  setCompanyName(e.target.value)
-                }}
-                type="text"
-              />
-              <select
-                name="projectType"
-                className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
-                value={projectType}
-                onChange={(e) => setProjectType(e.target.value)}
-              >
-                <option className='text-gray-500' value="" disabled>Select Project Type</option>
-                <option value="wedding">Wedding Event</option>
-                <option value="logo">Logo Design</option>
-                <option value="product">Product Design</option>
-                <option value="other">Product Design</option>
-              </select>
-
-            </div>
+            {renderAdditionalFields()}
 
             <label className="block text-sm font-medium text-white ">
               More Details
