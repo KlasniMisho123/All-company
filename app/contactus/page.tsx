@@ -12,6 +12,10 @@ export default function page() {
   const [projectType, setProjectType] = useState("");
   const [projectDesc, setProjectDesc] = useState("");
 
+  function handleSubmit() {
+    console.log("ss")
+  }
+
   return (
     <div>
       {/* Header BAckground */}
@@ -58,7 +62,6 @@ export default function page() {
             <div className="relative w-full">
               <select
                 name="contactType"
-                defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all pr-10"
                 value={contactTopic}
                 onChange={(e) => setContactTopic(e.target.value)}
@@ -79,11 +82,14 @@ export default function page() {
               <input
                 className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[var(--error-color)] transition-all placeholder:text-gray-500 transition-all duration-300 "
                 placeholder="Company Name"
+                value={companyName}
+                onChange={(e)=>{
+                  setCompanyName(e.target.value)
+                }}
                 type="text"
               />
               <select
                 name="projectType"
-                defaultValue=""
                 className="w-full appearance-none px-4 py-3 rounded-lg border border-gray-300 bg-slate-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-black transition-all "
                 value={projectType}
                 onChange={(e) => setProjectType(e.target.value)}
@@ -105,10 +111,18 @@ export default function page() {
               name="details"
               className="px-4 py-3 rounded-lg border border-gray-300 focus:border-gray-100 placeholder:text-gray-300 max-h-[600px]"
               placeholder="Please provide more information about your request..."
+              value={projectDesc}
+              onChange={(e)=>{
+                setProjectDesc(e.target.value)
+              }}
             />
 
             <button className="relative flex items-center justify-center self-center px-6 py-1 bg-[var(--error-color)] text-white
-             rounded-lg transition-all cursor-pointer shadow overflow-hidden group">
+             rounded-lg transition-all cursor-pointer shadow overflow-hidden group"
+             onClick={()=>{
+                handleSubmit()
+              }}
+             >
               <p className="z-[20] relative">Submit</p>
               <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-800 ease-out pointer-events-none"></i>
               <i className="fa-regular fa-circle absolute z-10 opacity-50 scale-0 group-hover:scale-[10] transition-transform duration-1400 ease-out pointer-events-none"></i>
