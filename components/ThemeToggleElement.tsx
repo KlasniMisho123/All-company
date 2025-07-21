@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 
 export default function ThemeToggleElement() {
@@ -5,7 +6,9 @@ export default function ThemeToggleElement() {
 
     function handleThemeToggle() {
         setIsDay((prev)=>(!prev))
+        localStorage.setItem("theme": isDay)
     }
+
 
   return (
         <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
