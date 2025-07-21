@@ -24,7 +24,6 @@ export default function ThemeToggleElement() {
   }, []);
 
   return (
-    <>
         <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
             transition-all duration-300 overflow-hidden ` + (isDay ? 'bg-blue-100 border-blue-300' : 'bg-purple-100 border-purple-300')}
             onClick={()=>{
@@ -40,6 +39,5 @@ export default function ThemeToggleElement() {
             <i className={"fa-solid fa-moon text-2xl text-gray-600/80 transition-all duration-300 shadow-[0_0_10px_2px_rgba(156,163,175,0.4)] rounded-full bg-purple-200 " + 
                 (isDay? "translate-x-[150%] translate-y-[150%] rotate-90 hidden" : "translate-x-2 translate-y-0 rotate-0" )}></i>
         </div>
-    </>
   )
 }
