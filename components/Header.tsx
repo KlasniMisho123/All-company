@@ -4,6 +4,7 @@ import Logo from './Logo'
 import Navbar from './Navbar'
 import Link from 'next/link'
 import ThemeToggleElement from './ThemeToggleElement'
+import NavbarThemeToggle from './NavbarThemeToggle'
 
 export default function Header() {
   const [selectedNav, setSelectedNav ] = useState("")
@@ -115,17 +116,10 @@ export default function Header() {
                   Contact Us
                 </Link>
 
-                <div className="flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:bg-blue-100 hover:text-[var(--error-color)] cursor-pointer hover:translate-x-3">
-                  {/* <i className="fa-solid fa-right-to-bracket text-[var(--error-color)]  "></i>
-                  Login */}
-                  Theme Toggle
-                </div>
+                <NavbarThemeToggle />
               </div>
-
         </div>
-
        )}
-
     </div>
   )
 }

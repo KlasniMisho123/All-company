@@ -1,4 +1,4 @@
-Theme Toggle/remove
+Theme Toggle --> function
 Sm Hamburger Bar Open Error->
 
 Reveal Animations 

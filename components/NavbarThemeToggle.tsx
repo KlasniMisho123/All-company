@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
-export default function ThemeToggleElement() {
+export default function NavbarThemeToggle() {
     const [isDay, setIsDay] = useState(true);
 
      function handleThemeToggle() {
@@ -24,7 +24,7 @@ export default function ThemeToggleElement() {
   }, []);
 
   return (
-        <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
+        <div className={`relative flex sm:hidden items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
             transition-all duration-300 overflow-hidden ` + (isDay ? 'bg-blue-100 border-blue-300' : 'bg-purple-100 border-purple-300')}
             onClick={()=>{
                 handleThemeToggle()
