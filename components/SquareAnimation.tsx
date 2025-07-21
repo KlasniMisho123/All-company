@@ -39,7 +39,7 @@ export default function SquareAnimation() {
                 <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
                 <div className='p-1.5 bg-black h-0.5 rounded-full '></div>
             </div>
-            </div>
+        </div>
 
         <div className='flex-1 flex self-end bot-square'>
             <div>

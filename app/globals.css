@@ -432,9 +432,9 @@ from{
   0% {
     transform: translateX(0%) translateY(0%);
   } 25% {
-    transform: translateX(256%) translateY(0%);
+    transform: translateX(200%) translateY(0%);
   } 50% {
-    transform: translateX(256%) translateY(113%);
+    transform: translateX(200%) translateY(113%);
   } 75% {
     transform: translateX(0%) translateY(113%);
   } 100% {
@@ -451,9 +451,9 @@ from{
   0% {
     transform: translateX(0%) translateY(0%);
   } 25% {
-    transform: translateX(-256%) translateY(0%);
+    transform: translateX(-200%) translateY(0%);
   } 50% {
-    transform: translateX(-256%) translateY(-113%);
+    transform: translateX(-200%) translateY(-113%);
   } 75% {
     transform: translateX(0%) translateY(-113%);
   } 100% {
