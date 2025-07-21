@@ -61,7 +61,7 @@ export default function Header() {
       </div>
 
       {isMenuActive && (
-       <div className={`absolute  w-full top-full z-40  transition-all duration-2000 ease-in-out overflow-hidden bg-[#FFF5F5] 
+       <div className={`absolute  w-full  sm:hidden  top-full z-40  transition-all duration-2000 ease-in-out overflow-hidden bg-[#FFF5F5] 
            border-b-2 border-b-[var(--error-color)] rounded  ${isSideNavActive? ' drop-down-navbar -mt-2 ' : ' rev-drop-down-navbar ' }`}>
              <div className="flex flex-col p-4 pt-6 text-gray-700 font-medium space-y-1">
                 <Link
