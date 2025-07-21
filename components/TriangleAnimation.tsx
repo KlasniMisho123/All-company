@@ -29,17 +29,11 @@ export default function TriangleAnimation() {
             Math.floor(Math.random() * 20 ),
             Math.floor(Math.random() * 20 ),
         ]
-        console.log("randomNum: ", randomNum)
         return(randomNum)
     }
 
 
     useEffect(() => {
-        // topRandomNumbers = generateRandNumber()
-        // botRandomNumbers = generateRandNumber()
-        // console.log("topRandomNumbers: ",topRandomNumbers)
-        // console.log("botRandomNumbers: ",botRandomNumbers)
-
         setTopRandomNumbers(generateRandNumber)
         setBotRandomNumbers(generateRandNumber)
         const interval = setInterval(()=>{

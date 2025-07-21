@@ -1,14 +1,22 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function ThemeToggleElement() {
     const [isDay,setIsDay] = useState(true)
 
     function handleThemeToggle() {
-        setIsDay((prev)=>(!prev))
-        localStorage.setItem("theme": isDay)
-    }
+        setIsDay((prev)=>{
+            const newValue = !prev
+            localStorage.setItem("theme", String(newValue));
+            return newValue
+        })
+    }   
 
+    useEffect(()=>{
+        const currentTheme = localStorage.getItem("theme")
+        console.log("currentTheme: " , currentTheme)
+        // setIsDay()
+    },[])
 
   return (
         <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
