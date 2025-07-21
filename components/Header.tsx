@@ -4,7 +4,6 @@ import Logo from './Logo'
 import Navbar from './Navbar'
 import Link from 'next/link'
 import ThemeToggleElement from './ThemeToggleElement'
-import NavbarThemeToggle from './NavbarThemeToggle'
 
 export default function Header() {
   const [selectedNav, setSelectedNav ] = useState("")
