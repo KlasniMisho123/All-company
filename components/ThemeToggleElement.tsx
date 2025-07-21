@@ -2,28 +2,29 @@
 import React, { useEffect, useState } from 'react'
 
 export default function ThemeToggleElement() {
-    const [isDay,setIsDay] = useState(true)
+    const [isDay, setIsDay] = useState(true);
 
-    // const [isDay,setIsDay] = useState(
-    //     Boolean(localStorage.getItem("theme"))
-    // )
+     function handleThemeToggle() {
+    setIsDay(prev => {
+      const newValue = !prev;
+      if (typeof window !== 'undefined') {
+        localStorage.setItem("theme", String(newValue));
+      }
+      return newValue;
+    });
+  }  
 
-    function handleThemeToggle() {
-        setIsDay((prev)=>{
-            const newValue = !prev
-            localStorage.setItem("theme", String(newValue));
-            return newValue
-        })
-    }   
-
-    useEffect(()=>{
-        const currentTheme = localStorage.getItem("theme")
-        setIsDay(Boolean(currentTheme))
-    },[])
+    useEffect(() => {
+    if (typeof window !== 'undefined') { 
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme !== null) {
+        setIsDay(savedTheme === "true");
+      } 
+    }
+  }, []);
 
   return (
     <>
-      <p> {isDay? "Day" :"Night"} </p>
         <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
             transition-all duration-300 overflow-hidden ` + (isDay ? 'bg-blue-100 border-blue-300' : 'bg-purple-100 border-purple-300')}
             onClick={()=>{
