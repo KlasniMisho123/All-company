@@ -117,7 +117,7 @@ export default function Header() {
                   <i className="fa-solid fa-feather-pointed text-[var(--error-color)]"></i>
                   Contact Us
                 </Link>
-                <NavbarThemeToggle />
+                <ThemeToggleElement full={false} />
               </div>
         </div>
        )}

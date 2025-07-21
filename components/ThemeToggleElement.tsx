@@ -28,8 +28,8 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
   }, []);
 
   return (
-        <div className={`relative hidden sm:flex items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
-            transition-all duration-300 overflow-hidden ` + (isDay ? 'bg-blue-100 border-blue-300' : 'bg-purple-100 border-purple-300')}
+        <div className={`relative items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
+            transition-all duration-300 overflow-hidden ` + (full? " hidden sm:flex " : " flex sm:hidden self-end " ) + (isDay ? ' bg-blue-100 border-blue-300 ' : ' bg-purple-100 border-purple-300 ')}
             onClick={()=>{
                 handleThemeToggle()
             }}>

@@ -24,7 +24,7 @@ export default function NavbarThemeToggle() {
   }, []);
 
   return (
-        <div className={`relative flex self-end sm:hidden items-center border-2 border-[var(--error-color)] gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
+        <div className={`relative flex  items-center border-2 border-[var(--error-color)] gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
             transition-all duration-300 overflow-hidden ` + (isDay ? 'bg-blue-100 border-blue-300' : 'bg-purple-100 border-purple-300')}
             onClick={()=>{
                 handleThemeToggle()
