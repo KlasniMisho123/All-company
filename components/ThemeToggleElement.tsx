@@ -1,8 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+interface ThemeToggleProps {
+  full?: boolean; 
+}
 
-export default function ThemeToggleElement(full:boolean) {
-    
+export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
+
     const [isDay, setIsDay] = useState(true);
 
      function handleThemeToggle() {
