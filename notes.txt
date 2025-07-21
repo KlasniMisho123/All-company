@@ -1,6 +1,5 @@
 Theme Toggle/remove
 Sm Hamburger Bar Open Error->
-Services Animation fix. 
 
 Reveal Animations 
 About us Swipe -> after 1st swipe. pages are changeign content mid swipe??

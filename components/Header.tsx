@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Logo from './Logo'
 import Navbar from './Navbar'
 import Link from 'next/link'
+import ThemeToggleElement from './ThemeToggleElement'
 
 export default function Header() {
   const [selectedNav, setSelectedNav ] = useState("")
@@ -44,13 +45,7 @@ export default function Header() {
           <Navbar selectedNav={selectedNav} setSelectedNav={setSelectedNav} handleSelectedNav={handleSelectedNav} />
         </div>
 
-        <div className='hidden sm:flex'>
-          Theme Toggle
-          {/* <div className='flex items-center gap-2 cursor-pointer transition-all duration-300 hover:backdrop-blur-3xl font-semibold group tuncate '>
-            <span> Login </span>
-            < i className="fa-solid fa-right-to-bracket transition-all duration-300 group-hover:translate-x-1 "/>
-          </div> */}
-        </div>
+        <ThemeToggleElement/>
 
         <div className='flex items-center sm:hidden sm:items-start cursor-pointer p-2 '
         onClick={handleSideNav}
