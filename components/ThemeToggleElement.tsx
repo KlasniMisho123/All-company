@@ -8,15 +8,28 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
 
     const [isDay, setIsDay] = useState(true);
 
-     function handleThemeToggle() {
-        setIsDay(prev => {
-          const newValue = !prev;
-          if (typeof window !== 'undefined') {
-            localStorage.setItem("theme", String(newValue));
-          }
-          return newValue;
-        });
-      }  
+    function initTheme() {
+      const savedTheme = localStorage.getItem("theme");
+      const sysPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+
+      if(savedTheme === "false" || !savedTheme && sysPrefersDark) {
+        document.documentElement.classList.add("dark")
+        document.documentElement.classList.remove("light")
+      } else {
+        document.documentElement.classList.add("light")
+        document.documentElement.classList.remove("dark")
+      }
+    }
+
+    function handleThemeToggle() {
+      setIsDay(prev => {
+        const newValue = !prev;
+        if (typeof window !== 'undefined') {
+          localStorage.setItem("theme", String(newValue));
+        }
+        return newValue;
+      });
+    }  
 
     useEffect(() => {
     if (typeof window !== 'undefined') { 
