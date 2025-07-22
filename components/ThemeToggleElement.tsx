@@ -9,14 +9,14 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
     const [isDay, setIsDay] = useState(true);
 
      function handleThemeToggle() {
-    setIsDay(prev => {
-      const newValue = !prev;
-      if (typeof window !== 'undefined') {
-        localStorage.setItem("theme", String(newValue));
-      }
-      return newValue;
-    });
-  }  
+        setIsDay(prev => {
+          const newValue = !prev;
+          if (typeof window !== 'undefined') {
+            localStorage.setItem("theme", String(newValue));
+          }
+          return newValue;
+        });
+      }  
 
     useEffect(() => {
     if (typeof window !== 'undefined') { 
