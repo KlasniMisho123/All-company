@@ -4,41 +4,53 @@ interface ThemeToggleProps {
   full?: boolean; 
 }
 
-export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
+export default function ThemeToggleElement({ full = true }: ThemeToggleProps) {
+  const [isDay, setIsDay] = useState(true);
 
-    const [isDay, setIsDay] = useState(true);
+  function initTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    const sysPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    function initTheme() {
-      const savedTheme = localStorage.getItem("theme");
-      const sysPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    // Determine initial theme
+    const shouldUseDark = savedTheme === "dark" || (!savedTheme && sysPrefersDark);
 
-      if(savedTheme === "false" || !savedTheme && sysPrefersDark) {
-        document.documentElement.classList.add("dark")
-        document.documentElement.classList.remove("light")
-      } else {
-        document.documentElement.classList.add("light")
-        document.documentElement.classList.remove("dark")
-      }
+    if (shouldUseDark) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      setIsDay(false);
+    } else {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      setIsDay(true);
     }
+  }
 
-    function handleThemeToggle() {
-      setIsDay(prev => {
-        const newValue = !prev;
-        if (typeof window !== 'undefined') {
-          localStorage.setItem("theme", String(newValue));
-        }
-        return newValue;
-      });
-    }  
+  function handleThemeToggle() {
+    const isDark = document.documentElement.classList.contains("dark");
+    const newTheme = isDark ? "light" : "dark";
 
-    useEffect(() => {
-    if (typeof window !== 'undefined') { 
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme !== null) {
-        setIsDay(savedTheme === "true");
-      } 
+    // Update DOM
+    document.documentElement.classList.toggle("dark", !isDark);
+    document.documentElement.classList.toggle("light", isDark);
+
+    // Update state & localStorage
+    setIsDay(!isDark);
+    localStorage.setItem("theme", newTheme);
+  }
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      initTheme();
+
+      // Sync with OS preference changes
+      const sysPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+      const listener = () => initTheme();
+      sysPrefersDark.addEventListener("change", listener);
+
+      return () => sysPrefersDark.removeEventListener("change", listener);
     }
   }, []);
+
 
   return (
         <div className={`relative items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 
