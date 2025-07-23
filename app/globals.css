@@ -49,12 +49,12 @@ img::selection {
 
 .light {
   --primary-color: #FFFFFF;
-  --primary-dark: #111827;
+  --primary-dark: var(--deep-lightpurple);
 }
 
 .dark {
+  --primary-dark: #111827;
   --primary-color: #FAFAFA;
-  --primary-dark: var(--deep-lightpurple);
 }
 
 .menu-line-1 { 

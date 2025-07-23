@@ -8,8 +8,8 @@ interface Props {
 
 export const RevealSlide = ({ children, width = "fit-content"}:Props) => {
     return(
-        <>
-            {children}
-        </>
-    )
-}
+        <div style={{ position: "relative", width, overflow:"hidden" }}>
+            <div>{children}</div>
+        </div>
+    );
+};
