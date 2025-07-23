@@ -32,7 +32,7 @@ export const RevealSlide = ({ children, width = "fit-content"}:Props) => {
             >
                 {children}
             </motion.div>
-            <motion.div
+            {/* <motion.div
                 variants={{
                     hidden: {left:0},
                     visible: {left:"100%"},
@@ -42,7 +42,7 @@ export const RevealSlide = ({ children, width = "fit-content"}:Props) => {
                 transition={{ duration: 0.5, delay:0.25 }}
             >
                 {children}
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
