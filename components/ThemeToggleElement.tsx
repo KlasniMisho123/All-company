@@ -9,16 +9,29 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
     const [isDay, setIsDay] = useState(true);
 
      function handleThemeToggle() {
-        const isDark = document.documentElement.classList.contains("dark");
-        const newTheme = isDark ? "light" : "dark";
+        // const prefersDark  = document.documentElement.classList.contains("(prefers-color-scheme: dark)");
         
-      setIsDay(prev => {
-        const newValue = !prev;
-        if (typeof window !== 'undefined') {
-          localStorage.setItem("theme", String(newValue));
+        // if(prefersDark){
+        //   console.log("Prefers Dark")
+        // } else {
+        //   console.log("Prefers Light")
+        // }
+
+        if(!isDay) {
+          document.documentElement.classList.add("dark")
+          document.documentElement.classList.remove("light")
+        } else {
+          document.documentElement.classList.remove("dark")
+          document.documentElement.classList.add("light")
         }
-        return newValue;
-      });
+        
+        setIsDay(prev => {
+          const newValue = !prev;
+          if (typeof window !== 'undefined') {
+            localStorage.setItem("theme", String(newValue));
+          }
+          return newValue;
+        });
     }  
 
     useEffect(() => {
