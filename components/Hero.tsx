@@ -9,6 +9,7 @@ import Services from './Services';
 import ClientCompanies from './ClientCompanies';
 import ContactUsElement from './ContactUsElement';
 import ProjectsElement from './ProjectsElement';
+import { RevealSlide } from './animations/RevealSlide';
 
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -77,8 +78,12 @@ export default function Hero() {
       </section>
 
       <Services />
-      <ContactUsElement />
-      <WorkStages />
+      <RevealSlide width='100%' direction='left'>
+        <ContactUsElement />
+      </RevealSlide>
+      <RevealSlide width='100%' direction='right'>
+        <WorkStages />
+      </RevealSlide>
       {/* Bloglike -> Recent Projects */}
       <ProjectsElement />
       <ClientCompanies />

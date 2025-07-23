@@ -35,7 +35,7 @@ export default function Services() {
       },[pageIndex])
 
   return (
-    <RevealSlide width="100%">
+    <RevealSlide width="100%" direction='up'>
       <section className='mx-30 my-10 rounded-xl  p-4 py-10 overflow-hidden '> 
           <h2 className={'text-center text-4xl font-bold ' + urbanist.className}> Our <span className='text-3xl bg-gradient-to-r from-[var(--error-color)] to-transparent tracking-widest font-semibold px-2 '> Services </span> </h2> 
           <p className={`text-center bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent font-medium text-lg md:text-xl max-w-2xl mx-auto ${urbanist.className}`}>
