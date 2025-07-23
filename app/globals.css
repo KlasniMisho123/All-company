@@ -19,7 +19,6 @@ img::selection {
 /* Dark Theme/ White Theme ? */
 
 :root {
-  /* Common/shared values */
   --error-color: #D32F2F;
   --dark-red-color: #e94343;
   --light-red: #e41638;
@@ -30,7 +29,6 @@ img::selection {
   --border-color: #e0e0e0;
   --text-secondary: #4B5563;
 
-  /* Default to light theme */
   --primary-color: #FFFFFF;
   --primary-dark: #111827;
 }
@@ -49,6 +47,15 @@ img::selection {
   }
 }
 
+.light {
+  --primary-color: #FFFFFF;
+  --primary-dark: #111827;
+}
+
+.dark {
+  --primary-color: #FAFAFA;
+  --primary-dark: var(--deep-lightpurple);
+}
 
 .menu-line-1 { 
   animation: menu-line-1-animation 1s forwards ease-in-out;

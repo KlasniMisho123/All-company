@@ -40,6 +40,13 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
       if (savedTheme !== null) {
         setIsDay(savedTheme === "true");
       } 
+      if(savedTheme == "true" ) {
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.add("light")
+      } else if(savedTheme == "false") {
+        document.documentElement.classList.add("dark")
+        document.documentElement.classList.remove("light")
+      }
     }
   }, []);
 
