@@ -19,34 +19,36 @@ img::selection {
 /* Dark Theme/ White Theme ? */
 
 :root {
-  --primary-color: #FFFFFF;
-  --primary-dark: #111827;
-
+  /* Common/shared values */
   --error-color: #D32F2F;
   --dark-red-color: #e94343;
   --light-red: #e41638;
-
   --light-yellow: #c99700;
   --shiny-yellow: #ffc50c;
   --deep-lightpurple: #a45de3;
-
   --neutral-light: #f5f5f5;
   --border-color: #e0e0e0;
   --text-secondary: #4B5563;
+
+  /* Default to light theme */
+  --primary-color: #FFFFFF;
+  --primary-dark: #111827;
 }
 
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --primary-color: #FAFAFA;
-    --primary-dark: #1F2937;
-    --error-color: #D32F2F;
-    --dark-red-color: #e94343;
-    --light-red: #e41638;
-    --light-yellow: #c99700;
-    --shiny-yellow: #ffc50c;
-    --deep-lightpurple: #a45de3;
-  } 
+    --primary-dark: var(--deep-lightpurple);
+  }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #FFFFFF;
+    --primary-dark: #111827;
+  }
+}
+
 
 .menu-line-1 { 
   animation: menu-line-1-animation 1s forwards ease-in-out;
