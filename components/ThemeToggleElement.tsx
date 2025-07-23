@@ -9,14 +9,6 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
     const [isDay, setIsDay] = useState(true);
 
      function handleThemeToggle() {
-        // const prefersDark  = document.documentElement.classList.contains("(prefers-color-scheme: dark)");
-        
-        // if(prefersDark){
-        //   console.log("Prefers Dark")
-        // } else {
-        //   console.log("Prefers Light")
-        // }
-
         if(!isDay) {
           document.documentElement.classList.add("dark")
           document.documentElement.classList.remove("light")
@@ -35,20 +27,25 @@ export default function ThemeToggleElement({ full = true }:ThemeToggleProps) {
     }  
 
     useEffect(() => {
-    if (typeof window !== 'undefined') { 
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme !== null) {
-        setIsDay(savedTheme === "true");
-      } 
-      if(savedTheme == "true" ) {
-        document.documentElement.classList.remove("dark")
-        document.documentElement.classList.add("light")
-      } else if(savedTheme == "false") {
-        document.documentElement.classList.add("dark")
-        document.documentElement.classList.remove("light")
+      if (typeof window !== 'undefined') { 
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme !== null) {
+          setIsDay(savedTheme === "true");
+        } 
+
       }
-    }
-  }, []);
+    }, []);
+
+    useEffect(() => {
+      if(isDay == true) {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+      } else if(isDay == false) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+      }
+    },[isDay])
 
   return (
         <div className={`relative items-center border-2 border-[var(--error-color)]  gap-8 justify-between py-2 px-4 rounded-full cursor-pointer 

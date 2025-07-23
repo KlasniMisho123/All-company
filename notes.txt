@@ -1,4 +1,4 @@
-Theme Toggle --> function
+Theme Toggle --> Light/Dark Theme Colors ...(useEffectDelay?)
 Sm Hamburger Bar Open Error->
 
 Reveal Animations 
