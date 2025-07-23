@@ -1,3 +1,4 @@
+'use client'
 import React, {useEffect, useRef} from 'react';
 import {motion, useInView, useAnimation} from "framer-motion";
 
@@ -12,7 +13,6 @@ export const RevealSlide = ({ children, width = "fit-content", direction = "up"}
    const inView = useInView(ref, {once:true});
 
    const mainControls = useAnimation();
-//    const slideControls = useAnimation();
 
    useEffect(() => {
     if(inView) {
@@ -28,7 +28,7 @@ export const RevealSlide = ({ children, width = "fit-content", direction = "up"}
                     visible: {opacity:1, x:0, y:0},
                     hiddenLeft: {opacity:0, x:"100%"},
                     visibleCenter: {opacity:1, x:0, y:0},
-                    hiddenRight: {opacity:0, x:"100%"},
+                    hiddenRight: {opacity:0, x:"-100%"},
                 }}
                 initial={direction=="up"? "hidden": (direction == "left"? "hiddenLeft":(direction == "right"? "hiddenRight":""))}
                 animate={mainControls}
@@ -36,17 +36,6 @@ export const RevealSlide = ({ children, width = "fit-content", direction = "up"}
             >
                 {children}
             </motion.div>
-            {/* <motion.div
-                variants={{
-                    hidden: {left:0},
-                    visible: {left:"100%"},
-                }}
-                initial="hidden"
-                animate={slideControls}
-                transition={{ duration: 0.5, delay:0.25 }}
-            >
-                {children}
-            </motion.div> */}
         </div>
     );
 };
