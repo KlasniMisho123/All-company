@@ -11,13 +11,13 @@ export const RevealSlide = ({ children, width = "fit-content"}:Props) => {
    const inView = useInView(ref, {once:true});
 
    const mainControls = useAnimation();
-   const slideControls = useAnimation();
+//    const slideControls = useAnimation();
 
    useEffect(() => {
     if(inView) {
         mainControls.start("visible")
     }
-   }, [inView])
+   }, [inView, mainControls])
 
     return(
         <div ref={ref} style={{ position: "relative", width, overflow:"hidden" }}>
