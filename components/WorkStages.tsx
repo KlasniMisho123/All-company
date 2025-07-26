@@ -60,11 +60,11 @@ export default function WorkStages() {
               hover:border-yellow-700 group overflow-hidden'>
               <div className='relative pt-8'>
                 <i className="fa-solid fa-lightbulb fa-bounce text-8xl opacity-60 text-yellow-500 absolute top-0 left-0 z-0"></i>
-                <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>01. IDEA</h1> 
+                <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>01. Discover & Define</h1> 
               </div>
               <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-yellow-500 transition-all duration-300'>
-                <span className='text-yellow-500 text-base '> Define Your Goals </span> We begin by understanding the client&apos;s vision, exploring possibilities, 
-                and generating innovative ideas that align with their goals.
+                <span className='text-yellow-500 text-base '> We start by listening. </span> Our team collaborates closely with you to understand your business, goals, and users.
+                 Through research and strategic planning, we define a clear vision and creative direction for your project.
               </p>
             </div>
           </RevealSlide>
@@ -74,11 +74,12 @@ export default function WorkStages() {
               hover:border-purple-700 group overflow-hidden'>
               <div className='relative pt-8'> 
                 <i className="fa-solid fa-cubes text-8xl opacity-60 text-purple-500 absolute absolute top-0 left-0 z-0"></i>
-                <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>03. DEMO & TESTING</h1> 
+                <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>03. Develop & Test</h1> 
               </div>
               <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
-                <span className='text-purple-500 text-base '> Assign Stakeholders </span> Through interactive demos and rigorous testing, we ensure functionality, 
-                  performance, and usability across all major platforms and devices.
+                <span className='text-purple-500 text-base '> Our developers bring the designs to life </span> using modern,
+                 scalable technologies. Each feature undergoes thorough testing to ensure performance, security,
+                 and seamless functionality across all platforms and devices.
               </p>
             </div>
           </RevealSlide>
@@ -90,11 +91,11 @@ export default function WorkStages() {
                 hover:border-blue-700 group overflow-hidden'>
                   <div className='relative pt-8'> 
                     <i className="fa-solid fa-compass-drafting text-8xl opacity-60 text-blue-500 absolute absolute top-0 left-0 z-0"></i>
-                    <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>02. WEB DESIGN</h1> 
+                    <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>02. Design & Prototype</h1> 
                   </div>
                   <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-blue-500 transition-all duration-300'>
-                    <span className='text-blue-500 text-base '> Plan Your Process </span> We translate concepts into clean, responsive, and visually engaging 
-                    designs that reflect the brand&apos;s identity and enhance user experience.
+                    <span className='text-blue-500 text-base '> Ideas become visuals. </span>We craft user-centered designs that are responsive, intuitive, and aligned with your brand. 
+                    Wireframes and interactive prototypes help you visualize the experience before development begins.
                   </p>
                 </div>
               </RevealSlide>
@@ -104,11 +105,11 @@ export default function WorkStages() {
                 hover:border-red-700 group overflow-hidden group'>
                   <div className='relative pt-8'> 
                     <i className="fa-solid fa-bullseye text-8xl opacity-60 text-red-500 absolute absolute top-0 left-0 z-0"></i>
-                    <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. LAUNCH </h1> 
+                    <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. Launch & Support </h1> 
                   </div>
                   <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
-                    <span className='text-red-500 text-base '>Go Live </span> We deliver the final product, configure hosting, and ensure a smooth 
-                    launch with ongoing support for your continued success.
+                    <span className='text-red-500 text-base '>With everything in place</span>, we deploy your product and monitor it during launch. 
+                    Post-launch, we offer maintenance, analytics, and ongoing support to ensure long-term success and continuous improvement.
                   </p>
                 </div>
               </RevealSlide>
