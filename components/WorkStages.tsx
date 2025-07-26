@@ -21,29 +21,29 @@ export default function WorkStages() {
         </RevealSlide>
         <div className='flex flex-col my-4 text-white gap-4 '>
           <RevealSlide width='100%' direction='right'>
-            <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-600/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
-              <i className="fa-solid fa-feather text-xl text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
+            <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
+              <i className="fa-solid fa-feather text-lg text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
               <h4> Creative concept development and strategic direction. </h4> 
             </div>
           </RevealSlide>
 
           <RevealSlide width='100%' direction='right'>
             <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
-              <i className="fa-solid fa-feather text-xl text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5"></i>
+              <i className="fa-solid fa-feather text-lg text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5"></i>
               <h4> Visual design creation and interactive prototyping. </h4> 
             </div>
           </RevealSlide>
 
           <RevealSlide width='100%' direction='right'>
             <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
-              <i className="fa-solid fa-feather text-xl text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
+              <i className="fa-solid fa-feather text-lg text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
               <h4> Feature implementation, testing, and refinement. </h4>
             </div>
           </RevealSlide>
 
           <RevealSlide width='100%' direction='right'>
             <div className='flex items-center gap-4 transition-all transition-duration-300 bg-gray-700/50 p-3 rounded-lg shadow-md hover:shadow-none hover:bg-gray-600 group '>
-              <i className="fa-solid fa-feather text-xl text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
+              <i className="fa-solid fa-feather text-lg text-red-400/80 group-hover:bg-[var(--error-color)] transition-all transition-duration-300 group-hover:text-gray-300 rounded-full px-1.5 py-1.5 "></i>
               <h4> Final deployment, monitoring, and ongoing support. </h4> 
             </div>
           </RevealSlide>
