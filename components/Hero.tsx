@@ -53,10 +53,10 @@ export default function Hero() {
       </section>
       <StrongSidesScroll />
       <RevealSlide width='100%' direction='right'>
-        <section className='mx-30 px-20 py-10 w-[80%] h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
+        <section className='mx-30 px-20 py-10 w-[80%] h-content lg:h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
           <div className=''>
             <div className="relative inline-block group mt-2 ">
-              <h1 className="text-3xl md:text-4xl font-bold ">
+              <h1 className="text-xl md:text-2xl lg:text-4xl font-bold truncate ">
                 All Design
                 <div className="h-1 w-0 bg-[var(--error-color)] transition-all duration-500 group-hover:w-full"></div>
               </h1>
