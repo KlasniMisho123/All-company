@@ -17,8 +17,8 @@ export default function Hero() {
   return (
     <div className=''>
       <section
-      
-        className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
+        // className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
+        className="relative px-8 py-24 md:py-32 flex flex-col md:flex-row items-center gap-1 lg:gap-8  w-full h-screen min-h-[600px] bg-center overflow-hidden"
         style={{ backgroundImage: "url(projects-bg.avif)" }}
       >
         <div className="flex-1 flex flex-col gap-4">
