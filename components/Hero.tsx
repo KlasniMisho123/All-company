@@ -56,7 +56,6 @@ export default function Hero() {
         <section className="mx-auto px-6 md:px-20 py-10 w-[90%] lg:w-[80%] h-auto lg:h-[400px] shadow-sm rounded-lg 
         bg-gradient-to-r from-slate-900 to-slate-800 flex flex-col lg:flex-row justify-between gap-8 transition-all duration-500">
 
-        {/* Left Side */}
         <div className="flex-1">
           <div className="relative inline-block group mt-2">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold truncate text-white">
@@ -74,7 +73,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 group">
               <i className="fa-solid fa-lightbulb text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent 
                 rounded-full group-hover:border-yellow-400 group-hover:bg-white group-hover:text-yellow-400 shadow-sm"></i>
-              <span className="text-yellow-400">Client’s Vision</span>
+              <span className="text-yellow-400">Client&apos;s Vision</span>
             </div>
 
             <div className="flex items-center gap-3 group">
