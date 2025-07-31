@@ -16,7 +16,7 @@ export default function HeroGrid() {
   }, []);
 
   return (
-    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px] ">
+    <div className="flex-1 grid grid-cols-3 grid-rows-3 gap-4 p-4 h-[600px] min-w-[400px] ">
         <div
         className={`bg-cover relative w-full h-full bg-blue-300 rounded-3xl cursor-pointer ${animated ? 'rb-circle' : ' rb-circle-start'}`}
         style={{ backgroundImage: "url('/nenesProject.jpg')" }}

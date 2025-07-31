@@ -17,25 +17,38 @@ export default function Hero() {
   return (
     <div className=''>
       <section
-        // className="relative px-8 px-30 py-24 md:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full h-screen min-h-[600px] bg-center overflow-hidden "
-        className="relative px-8 py-24 md:py-32 flex flex-col md:flex-row items-center gap-1 lg:gap-8  w-full h-screen min-h-[600px] bg-center overflow-hidden"
+        className="relative px-8 py-10 md:py-24 md:py-32 flex flex-col md:flex-row items-center gap-1 lg:gap-8 w-full min-h-screnn md:h-screen min-h-[600px] bg-center overflow-hidden"
         style={{ backgroundImage: "url(projects-bg.avif)" }}
       >
         <div className="flex-1 flex flex-col gap-4">
-          <h4 className="text-lg font-semibold ">Designs That Speak for You</h4>
-          <h2 className={"text-6xl max-w-[600px] font-semibold leading-tight "  + urbanist.className}>
-          <span className={"pl-1 pr-4 border-2 border-[var(--error-color)] text-[var(--error-color)] rounded-r-full rounded-l-none mb-4 truncate "}> Get Custom Visuals </span><br/>
-            for Social Media,
-            Branding, Events, and More
+          <h4 className="text-base md:text-lg font-semibold">
+            Designs That Speak for You
+          </h4>
+
+          <h2 className={
+            "text-2xl sm:text-3xl md:text-4xl lg:text-6xl max-w-[700px] font-semibold leading-tight " + 
+            urbanist.className
+          }>
+            <span className="inline-block pl-2 pr-4 border-2 border-[var(--error-color)] text-[var(--error-color)] rounded-r-full rounded-l-none mb-2 lg:mb-4 truncate text-5xl sm:text-5xl md:text-4xl lg:text-5xl">
+              Get Custom Visuals
+            </span>
+            <br />
+            for Social Media, Branding, Events, and More
           </h2>
-          <h4 className="text-lg font-semibold "> <i className="fa-solid fa-hammer text-[var(--error-color)] forging "></i> Crafted <span className="text-[var(--error-color)] "> Uniquely </span> . Designed Just for You.</h4>
-            <Button
-              title={"Order Design"}
-              linkSrc={"/contactus"}
-              icon={<></>}
-              customClassName={""}
-              />
+
+          <h4 className="text-base sm:text-lg font-semibold">
+            <i className="fa-solid fa-hammer text-[var(--error-color)] forging mr-1"></i>
+            Crafted <span className="text-[var(--error-color)]">Uniquely</span>. Designed Just for You.
+          </h4>
+
+          <Button
+            title="Order Design"
+            linkSrc="/contactus"
+            icon={<></>}
+            customClassName=""
+          />
         </div>
+
         <HeroGrid />
       </section>
       <StrongSidesScroll />
