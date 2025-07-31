@@ -42,14 +42,14 @@ img::selection {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-dark: var(--deep-lightpurple);
+    --primary-dark: #374151;
     --primary-color: #FFFFFF;
   }
 }
 
 .light {
   --primary-color: #FFFFFF;
-  --primary-dark: var(--deep-lightpurple);
+  --primary-dark: #374151;
 }
 
 .dark {

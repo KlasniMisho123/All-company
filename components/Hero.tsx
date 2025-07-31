@@ -53,43 +53,57 @@ export default function Hero() {
       </section>
       <StrongSidesScroll />
       <RevealSlide width='100%' direction='right'>
-        <section className='mx-30 px-20 py-10 w-[80%] h-content lg:h-[400px] shadow-sm rounded-lg bg-gradient-to-r from-slate-900 to-slate-800 flex justify-between '>
-          <div className=''>
-            <div className="relative inline-block group mt-2 ">
-              <h1 className="text-xl md:text-2xl lg:text-4xl font-bold truncate ">
-                All Design
-                <div className="h-1 w-0 bg-[var(--error-color)] transition-all duration-500 group-hover:w-full"></div>
-              </h1>
+        <section className="mx-auto px-6 md:px-20 py-10 w-[90%] lg:w-[80%] h-auto lg:h-[400px] shadow-sm rounded-lg 
+        bg-gradient-to-r from-slate-900 to-slate-800 flex flex-col lg:flex-row justify-between gap-8 transition-all duration-500">
+
+        {/* Left Side */}
+        <div className="flex-1">
+          <div className="relative inline-block group mt-2">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold truncate text-white">
+              All Design
+              <div className="h-1 w-0 bg-[var(--error-color)] transition-all duration-500 group-hover:w-full"></div>
+            </h1>
+          </div>
+
+          <p className="text-gray-200 max-w-2xl text-center lg:text-left text-base md:text-lg leading-relaxed mt-4">
+            Where creativity meets strategy—explore our comprehensive design solutions. <br />
+            See how we transform visions into brands.
+          </p>
+
+          <div className="flex flex-col gap-2 mt-6">
+            <div className="flex items-center gap-3 group">
+              <i className="fa-solid fa-lightbulb text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent 
+                rounded-full group-hover:border-yellow-400 group-hover:bg-white group-hover:text-yellow-400 shadow-sm"></i>
+              <span className="text-yellow-400">Client’s Vision</span>
             </div>
-            <p className="text-gray-200 max-w-2xl text-center md:text-left text-lg leading-relaxed mt-4">
-              Where creativity meets strategy—explore our comprehensive design solutions. <br />
-              See how we transform visions into brands
-            </p>
-            <div className='flex flex-col gap-2 mt-6'>
-              <div className='flex items-center gap-2 group '>
-                <i className='fa-solid fa-lightbulb text-2xl p-2 px-3 transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-yellow-400  group-hover:bg-white group-hover:text-yellow-400 shadow-sm '></i>
-                <span className='text-yellow-400' >Client&apos;s Vision</span>
-              </div>
-              <div className='flex items-center gap-2 group'>
-                <i className='fa-solid fa-cubes text-2xl text-2xl p-2  transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-teal-500  group-hover:bg-white group-hover:text-teal-500 shadow-sm '></i>
-                <span className='text-teal-500' >Quality Product</span>
-              </div>
-              <div className='flex items-center gap-2 group'>
-                <i className='fa-solid fa-handshake text-2xl text-2xl p-2 px-1.5 transition-all duration-500 border-2 border-transparent rounded-full group-hover:border-blue-500 group-hover:bg-white group-hover:text-blue-500 shadow-sm '></i>
-                <span className='text-blue-500 ' >Trusted Partnership</span>
-              </div>
+
+            <div className="flex items-center gap-3 group">
+              <i className="fa-solid fa-cubes text-2xl p-2 transition-all duration-500 border-2 border-transparent 
+                rounded-full group-hover:border-teal-500 group-hover:bg-white group-hover:text-teal-500 shadow-sm"></i>
+              <span className="text-teal-500">Quality Product</span>
+            </div>
+
+            <div className="flex items-center gap-3 group">
+              <i className="fa-solid fa-handshake text-2xl p-2 px-2 transition-all duration-500 border-2 border-transparent 
+                rounded-full group-hover:border-blue-500 group-hover:bg-white group-hover:text-blue-500 shadow-sm"></i>
+              <span className="text-blue-500">Trusted Partnership</span>
             </div>
           </div>
-          <div className='self-center '>
-            <Link
-            className="flex items-center gap-2 text-xl text-white bg-[var(--error-color,_#D32F2F)] border-2 border-[var(--error-color,_#D32F2F)] truncate
-            font-semibold cursor-pointer rounded-full px-8 py-3 hover:bg-white hover:text-[var(--error-color,_#D32F2F)] transition-all duration-300 shadow-sm overflow-hidden plane-flight  "
-            href={'/aboutus'}
-            >
-              About Us <i className="fa-solid fa-paper-plane "></i>
-            </Link>
-          </div>
-        </section>
+        </div>
+
+        {/* Right Side */}
+        <div className="self-center">
+          <Link
+            href="/aboutus"
+            className="flex items-center gap-2 text-lg md:text-xl text-white bg-[var(--error-color)] 
+            border-2 border-[var(--error-color)] font-semibold cursor-pointer rounded-full px-6 py-2.5 
+            hover:bg-white hover:text-[var(--error-color)] transition-all duration-300 shadow-sm overflow-hidden plane-flight"
+          >
+            About Us <i className="fa-solid fa-paper-plane"></i>
+          </Link>
+        </div>
+      </section>
+
       </RevealSlide>
 
       <Services />
