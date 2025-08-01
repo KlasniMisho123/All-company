@@ -77,8 +77,9 @@ export default function WorkStages() {
                 <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>03. Design Production </h1> 
               </div>
               <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
-                <span className='text-purple-500 text-base '> Assign Stakeholders </span> Through interactive demos and rigorous testing, we ensure functionality, 
-                  performance, and usability across all major platforms and devices.
+                <span className='text-purple-500 text-base '> ABring Ideas to Life </span> We develop high-quality design assets tailored to your needs—logos,
+                 layouts, illustrations, and more. Your feedback fuels refinements to get everything just right.
+
               </p>
             </div>
           </RevealSlide>
@@ -108,8 +109,8 @@ export default function WorkStages() {
                     <h1 className={'relative z-10 font-bold text-2xl ml-2 ' + urbanist.className}>04. Delivery </h1> 
                   </div>
                   <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-red-500 transition-all duration-300'>
-                    <span className='text-red-500 text-base '>Go Live </span> We deliver the final product, configure hosting, and ensure a smooth 
-                    launch with ongoing support for your continued success.
+                    <span className='text-red-500 text-base '>Make It Real </span> Once approved, we deliver all final files in the formats you need.
+                     We also support you with guidelines or assets for launching your visuals across platforms.
                   </p>
                 </div>
               </RevealSlide>
