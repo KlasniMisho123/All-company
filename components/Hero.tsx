@@ -89,8 +89,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
-        {/* Right Side */}
+        
         <div className="self-center">
           <Link
             href="/aboutus"
