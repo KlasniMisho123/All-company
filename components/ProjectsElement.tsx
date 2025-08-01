@@ -32,40 +32,31 @@ export default function ProjectsElement() {
             date: "2025-07-03",
         },
         {
-            imgSrc: "/naturaleza.jpg",
-            type: "Nature Campaign",
-            title: "Naturaleza Posters",
-            desc: "Minimalistic and earthy poster series to promote ecological awareness through design.",
+            imgSrc: "/shawrma.jpg",
+            type: "Food Branding",
+            title: "Shawarma Station",
+            desc: "Bold and flavorful brand visuals crafted for a fast-casual shawarma spot.",
             date: "2025-07-03",
         },
         {
-            imgSrc: "/naturaleza.jpg",
-            type: "Nature Campaign",
-            title: "Naturaleza Posters",
-            desc: "Minimalistic and earthy poster series to promote ecological awareness through design.",
+            imgSrc: "/CoffeeLogo.jpg",
+            type: "Logo & Packaging",
+            title: "Brew & Bloom",
+            desc: "Elegant coffee logo design focusing on artisan aesthetics and organic feel.",
             date: "2025-07-03",
         },
         {
-            imgSrc: "/fight-club.jpg",
-            type: "Branding / UI Design",
-            title: "EcoBrew Identity",
-            desc: "Clean, sustainable visual identity for an eco-conscious coffee brand.",
-            date: "7/2/2025",
-        },
-      
+            imgSrc: "/t-shirts.jpg",
+            type: "Merch Design",
+            title: "Wear Your Brand",
+            desc: "Stylish T-shirt mockups designed for modern brands with strong identity.",
+            date: "2025-07-02",
+        } 
     ];
 
     function expandProjectDisplay() {
         setIsExpanded(prev => {
-            const newExpanded = !prev;
-            
-            // if (!newExpanded) {
-            // setTimeout(() => {
-            //     setProjectsMounted(false);
-            // }, 1000);
-            // } else {
-            // setProjectsMounted(true);
-            // }
+            const newExpanded = !prev;     
 
             return newExpanded;
         })
