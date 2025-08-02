@@ -34,9 +34,9 @@ export default function ServicesPage() {
             usually consisting of buildings and machinery </p>
         </div>
 
-        <div className='flex gap-10 w-[65%] '>
+        <div className='flex-col md:flex gap-10 w-[65%] '>
           <RevealSlide width='100%' direction='up'>
-            <div className={'mt-8 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-lg shadow-2xl text-white overflow-hidden bg-cover bg-center ' + urbanist.className}
+            <div className={'mt-8 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-lg shadow-2xl text-white overflow-hidden bg-cover bg-center min-w-[170px] ' + urbanist.className}
             style={{backgroundImage: "url(/logo-service.jpg)"}}>
               <div className="absolute inset-0 bg-black/30"></div>
               <div className='relative z-10 flex flex-col gap-3 w-full p-4 bg-black/60 rounded-xl'>
@@ -59,7 +59,7 @@ export default function ServicesPage() {
             </div>
           </RevealSlide>
           <RevealSlide width='100%' direction='up'>
-            <div className={'mt-0 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-xl shadow-2xl text-white overflow-hidden bg-cover bg-center ' + urbanist.className} style={{ backgroundImage: "url(/wedding-service.jpg)" }}>
+            <div className={'mt-4 md:mt-0 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-xl shadow-2xl text-white overflow-hidden bg-cover bg-center min-w-[170px] ' + urbanist.className} style={{ backgroundImage: "url(/wedding-service.jpg)" }}>
               <div className="absolute inset-0 bg-black/5"></div>
               <div className='relative h-full z-10 flex flex-col gap-3 w-full p-4 bg-black/15 rounded-xl'>
                 <h5 className='text-2xl font-bold'>Wedding Decor</h5>
@@ -85,7 +85,7 @@ export default function ServicesPage() {
 
           <RevealSlide width='100%' direction='up'>
             <>
-              <div className={'mt-4 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-lg shadow-2xl text-white overflow-hidden bg-cover bg-center ' + urbanist.className}
+              <div className={'mt-4 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-lg shadow-2xl text-white overflow-hidden bg-cover bg-center min-w-[170px] ' + urbanist.className}
                 style={{ backgroundImage: "url(product-service.jpg)" }}>
 
                 <div className="absolute inset-0 bg-black/40"></div>
