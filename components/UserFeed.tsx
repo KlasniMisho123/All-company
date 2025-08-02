@@ -45,7 +45,7 @@ export default function UserFeed() {
 
     return (
     <div className='flex flex-col w-[80%] mx-auto bg-gradient-to-l from-slate-800/60 to-slate-900 gap-8 rounded-xl shadow-lg py-4 px-2 '>
-        <div className='flex justify-evenly gap-2 '>
+        <div className='flex flex-col md:flex-row justify-evenly gap-2 '>
            <UserFeedbackCard 
                 userImage={"/zoe-kravitz.jpg"}
                 user={"zoe@gmail.com"}
@@ -70,7 +70,7 @@ export default function UserFeed() {
             />   
         </div>
         {/*Dummy Stats */}
-       <div className='grid grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>
+       <div className='flex flex-col md:grid md:grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>
             <UserFeedCard
                 stats={totalYears}
                 icon={"fa-solid fa-clock"}

@@ -51,7 +51,7 @@ export default function WorkStages() {
 
         
       </div>
-      <div className='flex flex-col items-center h-full gap-4 justify-start py-8 px-0 xl:px-8 md:justify-center md:gap-8 sm:flex-row sm:items-start text-black '>
+      <div className='flex flex-col items-center h-full gap-4 justify-start py-8 px-0 xl:px-8 md:justify-center md:gap-8 sm:flex-row md:items-start text-black '>
 
         <div className='flex flex-col gap-4 sm:gap-8'>
           <RevealSlide width='100%' direction='right'>
@@ -69,7 +69,7 @@ export default function WorkStages() {
             </div>
           </RevealSlide>
           <RevealSlide width='100%' direction='right'>
-            <div className='relative translate-y-[360px] sm:translate-y-0 flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300 
+            <div className='relative sm:translate-y-[360px] flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300 
               border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)]
               hover:border-purple-700 group overflow-hidden'>
               <div className='relative pt-8'> 
@@ -86,7 +86,7 @@ export default function WorkStages() {
         </div>
           <div className='flex flex-col gap-4 sm:gap-8 mt-8'>
             <RevealSlide width='100%' direction='left'>
-              <div className='relative translate-y-[-360px] sm:translate-y-0 flex flex-col  p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
+              <div className='relative sm:translate-y-[360px] flex flex-col  p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
                 border-2 border-transparent shadow-[0_4px_12px_rgba(59,130,246,0.4)]
                 hover:border-blue-700 group overflow-hidden'>
                   <div className='relative pt-8'> 

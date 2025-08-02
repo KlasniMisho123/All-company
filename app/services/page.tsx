@@ -118,8 +118,6 @@ export default function ServicesPage() {
           </RevealSlide>
         </div>
       </section>
-      {/* Contact us Link element? */}
-      {/* Customer Qoute Rateing Element*/}
       <TechUIElement/>
       <ContactUsElement/>
       <UserFeed />
