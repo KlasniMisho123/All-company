@@ -9,16 +9,16 @@ export default function TechUIElement() {
     <section className='flex flex-col gap-8 mx-auto w-[80%] p-4 bg-gradient-to-b from-transparent to-slate-900 mt-20 mb-12 rounded-xl shadow-lg  '>
           <div className={'flex item-center gap-2 justify-center text-xl ' + urbanist.className} > 
             <i className="fa-solid fa-lightbulb text-[var(--shiny-yellow)] animate-bounce text-3xl"></i>
-            <p>
+            <p className='text-sm sm:text-base '>
               We combine industry-leading tools with a human-centered approach to design that inspires and connects:
             </p>
           </div>
-         <ul className='flex flex-col p-4 space-y-2 w-[100%] md:w-[60%]'>
+         <ul className='flex flex-col p-4 space-y-2 w-[100%] lg:w-[70%] lg:self-center '>
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-yellow-400 hover:translate-x-3 overflow-hidden '>
             <div className='flex items-center gap-3'>
               <i className='fas fa-paint-brush text-yellow-400'></i>
-              <span className={'text-lg font-semibold group-hover:text-yellow-400 ' + urbanist.className}>Adobe Photoshop</span>
-              <span className='text-slate-300 line-clamp-2 '> Image editing & retouching</span>
+              <span className={'text-base md:text-base md:text-lg font-semibold group-hover:text-yellow-400 ' + urbanist.className}>Adobe Photoshop</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2 '> Image editing & retouching</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
@@ -29,8 +29,8 @@ export default function TechUIElement() {
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-red-600 hover:translate-x-3 overflow-hidden'>
             <div className='flex items-center gap-3'>
               <i className='fas fa-vector-square text-red-600'></i>
-              <span className={'text-lg font-semibold group-hover:text-red-600 ' + urbanist.className}>Adobe Illustrator</span>
-              <span className='text-slate-300 line-clamp-2'> Vector graphics & logo design</span>
+              <span className={'text-base md:text-lg font-semibold group-hover:text-red-600 ' + urbanist.className}>Adobe Illustrator</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2'> Vector graphics & logo design</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
@@ -41,8 +41,8 @@ export default function TechUIElement() {
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-pink-600 hover:translate-x-3 overflow-hidden'>
             <div className='flex items-center gap-3'>
               <i className='fas fa-cubes text-pink-500'></i>
-              <span className={'text-lg font-semibold group-hover:text-pink-500 '  + urbanist.className}>Figma</span>
-              <span className='text-slate-300 line-clamp-2'> Collaborative UI/UX design</span>
+              <span className={'text-base md:text-lg font-semibold group-hover:text-pink-500 '  + urbanist.className}>Figma</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2'> Collaborative UI/UX design</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
@@ -53,8 +53,8 @@ export default function TechUIElement() {
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-purple-600 hover:translate-x-3 overflow-hidden'>
             <div className='flex items-center gap-3'>
               <i className='fas fa-film text-purple-600'></i>
-              <span className={'text-lg font-semibold group-hover:text-purple-600 ' +  urbanist.className}>After Effects</span>
-              <span className='text-slate-300 line-clamp-2'> Motion graphics & animation</span>
+              <span className={'text-base md:text-lg font-semibold group-hover:text-purple-600 ' +  urbanist.className}>After Effects</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2'> Motion graphics & animation</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
@@ -65,8 +65,8 @@ export default function TechUIElement() {
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-teal-600 hover:translate-x-3 overflow-hidden'>
             <div className='flex items-center gap-3'>
               <i className='fas fa-camera-retro text-teal-500'></i>
-              <span className={'text-lg font-semibold group-hover:text-teal-500 ' +  urbanist.className}>Lightroom</span>
-              <span className='text-slate-300 line-clamp-2'> Photo color correction & enhancement</span>
+              <span className={'text-base md:text-lg font-semibold group-hover:text-teal-500 ' +  urbanist.className}>Lightroom</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2'> Photo color correction & enhancement</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
@@ -77,8 +77,8 @@ export default function TechUIElement() {
           <li className='flex items-center justify-between py-2 px-6 border-2 w-full rounded-xl border-transparent bg-slate-700/40 shadow-lg translate-all duration-300 group hover:border-blue-600 hover:translate-x-3 overflow-hidden'>
             <div className='flex items-center gap-3'>
               <i className='fas fa-fingerprint text-blue-600'></i>
-              <span className={'text-lg font-semibold group-hover:text-blue-600 ' +  urbanist.className}>Blender</span>
-              <span className='text-slate-300 line-clamp-2'> 3D modeling & product visualization</span>
+              <span className={'text-base md:text-lg font-semiboldgroup-hover:text-blue-600 ' +  urbanist.className}>Blender</span>
+              <span className='text-slate-300 text-sm md:text-base line-clamp-2'> 3D modeling & product visualization</span>
             </div>
             <Link 
               className='text-gray-500 transition-all duration-300 hover:text-white'
