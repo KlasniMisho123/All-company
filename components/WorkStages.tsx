@@ -69,7 +69,7 @@ export default function WorkStages() {
             </div>
           </RevealSlide>
           <RevealSlide width='100%' direction='right'>
-            <div className='relative sm:translate-y-[360px] flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300 
+            <div className='relative  flex flex-col p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300 
               border-2 border-transparent shadow-[0_4px_12px_rgba(168,85,247,0.4)]
               hover:border-purple-700 group overflow-hidden'>
               <div className='relative pt-8'> 
@@ -79,14 +79,13 @@ export default function WorkStages() {
               <p className='text-gray-600 tracking-wide text-sm mt-4 leading-relaxed group-hover:text-purple-500 transition-all duration-300'>
                 <span className='text-purple-500 text-base '> Bring Ideas to Life </span> We develop high-quality design assets tailored to your needs—logos,
                  layouts, illustrations, and more. Your feedback fuels refinements to get everything just right.
-
               </p>
             </div>
           </RevealSlide>
         </div>
           <div className='flex flex-col gap-4 sm:gap-8 mt-8'>
             <RevealSlide width='100%' direction='left'>
-              <div className='relative sm:translate-y-[360px] flex flex-col  p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
+              <div className='relative flex flex-col  p-4 py-12 bg-white gap-12 min-h-[325px] w-[350px] sm:w-[300px] rounded-md transition-all duration-300
                 border-2 border-transparent shadow-[0_4px_12px_rgba(59,130,246,0.4)]
                 hover:border-blue-700 group overflow-hidden'>
                   <div className='relative pt-8'> 
