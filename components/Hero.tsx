@@ -26,7 +26,7 @@ export default function Hero() {
           </h4>
 
           <h2 className={
-            "text-2xl sm:text-3xl md:text-4xl lg:text-6xl max-w-[700px] font-semibold leading-tight " + 
+            "text-lg sm:text-xl text-center md:text-start md:text-2xl sm:text-3xl md:text-4xl lg:text-6xl max-w-[700px] font-semibold leading-tight " + 
             urbanist.className
           }>
             <span className="inline-block pl-2 pr-4 border-2 border-[var(--error-color)] text-[var(--error-color)] rounded-r-full rounded-l-none mb-2 lg:mb-4 truncate text-5xl sm:text-5xl md:text-4xl lg:text-5xl">
@@ -36,8 +36,8 @@ export default function Hero() {
             for Social Media, Branding, Events, and More
           </h2>
 
-          <h4 className="text-base sm:text-lg font-semibold">
-            <i className="fa-solid fa-hammer text-[var(--error-color)] forging mr-1"></i>
+          <h4 className="text-base sm:text-lg font-semibold text-center md:text-start ">
+            <i className="fa-solid fa-hammer text-[var(--error-color)] forging mr-1 "></i>
             Crafted <span className="text-[var(--error-color)]">Uniquely</span>. Designed Just for You.
           </h4>
 
