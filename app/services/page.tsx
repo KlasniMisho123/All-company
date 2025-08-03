@@ -34,7 +34,7 @@ export default function ServicesPage() {
             usually consisting of buildings and machinery </p>
         </div>
 
-        <div className='flex-col md:flex gap-10 w-[65%] '>
+       <div className='flex flex-col md:flex-row md:gap-2 lg:gap-10 w-[65%]'>
           <RevealSlide width='100%' direction='up'>
             <div className={'mt-8 flex-1 relative flex flex-col items-center gap-4 p-4 rounded-lg shadow-2xl text-white overflow-hidden bg-cover bg-center min-w-[170px] ' + urbanist.className}
             style={{backgroundImage: "url(/logo-service.jpg)"}}>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 <div className='h-[50%] w-full overflow-hidden border-2 border-slate-400 rounded-xl bg-gradient-to-r from-[var(--light-yellow)] to-transparent hover:bg-transparent shadow-lg'>
                   <SquareAnimation />
                 </div>
-                <p className="text-sm leading-relaxed">
+                <p className="text-sm md:text-xs lg:text-sm leading-relaxed line-clamp-6 ">
                   Crafting impactful and memorable logo designs that capture your brand&apos;s identity and leave a lasting impression.
                 </p>
                 <p className="text-sm leading-relaxed text-[var(--error-color)] font-semibold">Pricing</p>
@@ -68,7 +68,7 @@ export default function ServicesPage() {
                     <SquareAnimation />
                   </div>
                 </div>
-                <p className="text-sm leading-relaxed">
+                <p className="text-sm md:text-xs lg:text-sm leading-relaxed line-clamp-6 ">
                   Elegant, personalized designs that bring your wedding vision to life — from florals to lighting and beyond.
                 </p>
                 <p className="text-sm leading-relaxed text-[var(--error-color)] font-semibold">Pricing</p>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
                       <TriangleAnimation />
                     </div>
 
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-sm md:text-xs lg:text-sm leading-relaxed line-clamp-6">
                       Your product&apos;s look and feel matters — we craft designs that reflect your brand and connect with customers.
                     </p>
 
