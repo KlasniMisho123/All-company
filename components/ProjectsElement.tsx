@@ -68,7 +68,7 @@ export default function ProjectsElement() {
           <span className="relative z-10">Recent Projects</span>
         </div>
         <div>
-            <div className={'my-6 w-full gap-6 grid grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ' + (isExpanded ? 'max-h-[2000px]' : 'max-h-[500px]') }>
+            <div className={'my-6 w-full gap-6 grid grid-cols-1 sm:grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out ' + (isExpanded ? 'max-h-[2000px]' : 'max-h-[500px]') }>
                 {projects.slice(0,3).map((project, index)=>{
                     return(
                         <RecentProjectsCard key={index} {...project} />
@@ -78,7 +78,7 @@ export default function ProjectsElement() {
             </div>
 
             <div
-                className={`w-full gap-6 grid grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out
+                className={`w-full gap-6 grid grid-cols-1 sm:grid-cols-3 overflow-hidden transition-all duration-500 ease-in-out
                 ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-90 pointer-events-none'}
                 `}
             >
