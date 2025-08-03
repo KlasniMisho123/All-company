@@ -70,7 +70,7 @@ export default function UserFeed() {
             />   
         </div>
         {/*Dummy Stats */}
-       <div className='flex flex-col md:grid md:grid-cols-3 justify-evenly gap-4 border-t-2 p-4 '>
+       <div className='flex flex-col md:grid md:grid-cols-3 justify-evenly gap-4 border-t-2 p-1 pt-4 sm:mt-0 sm:p-4 '>
             <UserFeedCard
                 stats={totalYears}
                 icon={"fa-solid fa-clock"}
