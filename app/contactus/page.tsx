@@ -176,23 +176,24 @@ export default function ContactusPage() {
 
           </form>
         </div>
-        {/* Sucess Message */}
 
-        <div className='flex w-[90%] justify-evenly my-12 '> 
-          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-evenly w-full max-w-screen-lg mx-auto my-12 px-4">
+          <div className="flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-full sm:w-[80%] md:w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2">
             <i className="fa-solid fa-phone text-3xl transition-all duration-300 group-hover:text-emerald-500"></i>
-            <span className='text-xl'>Phone</span>
+            <span className="text-xl">Phone</span>
             <span>+0-123-456-789</span>
           </div>
-          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+
+          <div className="flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-full sm:w-[80%] md:w-[30%] px-4 py-8 shadow-lg group transition-all duration-300 hover:-translate-y-2">
             <i className="fa-solid fa-envelope text-4xl transition-all duration-300 group-hover:text-[var(--light-red)]"></i>
-            <span className='text-xl'>Email</span>
-            <span>Alldesigns@gmail.com </span>
+            <span className="text-xl">Email</span>
+            <span>Alldesigns@gmail.com</span>
           </div>
-          <div className='flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-[30%] px-4 py-6 shadow-lg group transition-all duration-300 hover:-translate-y-2'>
+
+          <div className="flex flex-col items-center gap-4 bg-slate-900/50 rounded-2xl w-full sm:w-[80%] md:w-[30%] px-4 py-6 shadow-lg group transition-all duration-300 hover:-translate-y-2">
             <i className="fa-brands fa-instagram text-5xl transition-all duration-300 group-hover:text-orange-500"></i>
-            <span className='text-xl'>Instagram</span>
-            <span> alldesign.ge</span>
+            <span className="text-xl">Instagram</span>
+            <span>alldesign.ge</span>
           </div>
         </div>
         
