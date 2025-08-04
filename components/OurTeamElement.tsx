@@ -58,7 +58,7 @@ export default function OurTeamElement() {
             Creative minds. Proven results.
         </p>
         </>
-        <div className='flex  justify-between items-center w-full gap-4 my-10 min-h-[300px] py-4'>
+        <div className='flex justify-between items-center w-full gap-4 my-10 min-h-[300px] py-4'>
             <div className='flex justify-center items-center px-3 py-2 border-2 border-white rounded-full cursor-pointer '
             onClick={
                     ()=>{
@@ -68,7 +68,7 @@ export default function OurTeamElement() {
             </div>
 
             <div className='relative overflow-hidden flex w-full gap-4 min-h-[300px] '> 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' + (selectedPage == 0? 
+                <div className={'absolute inset-0 flex flex-col sm:flex-row items-center gap-6 sm:items-start sm:gap-2 w-full px-6 justify-evenly overflow-hidden ' + (selectedPage == 0? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
 
                     <TeamMemberCard 
@@ -88,7 +88,7 @@ export default function OurTeamElement() {
                     />
                 </div>
 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden '  + (selectedPage == 1? 
+                <div className={'absolute inset-0 flex flex-col sm:flex-row items-center gap-6 sm:items-start sm:gap-2 w-full px-6 justify-evenly overflow-hidden '  + (selectedPage == 1? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member5.jpg'
@@ -107,7 +107,7 @@ export default function OurTeamElement() {
                     />
                 </div>
 
-                <div className={'absolute inset-0 flex w-full px-6 justify-evenly overflow-hidden ' +  (selectedPage == 2? 
+                <div className={'absolute inset-0 flex flex-col sm:flex-row items-center gap-6 sm:items-start sm:gap-2 w-full px-6 justify-evenly overflow-hidden ' +  (selectedPage == 2? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
 
                     <TeamMemberCard 
