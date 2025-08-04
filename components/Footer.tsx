@@ -17,8 +17,8 @@ export default function Footer() {
 
   return (
     <div className='px-2 pt-6 pb-2 border-t-1 rounded-t-lg bg-black text-white border-[var(--error-color)] '>
-      <div className='mx-18'>
-        <section className='flex justify-between items-center gap-6 '>
+      <div className='mx-2 sm:mx-6 md:mx-18'>
+        <section className='flex flex-wrap sm:flex-nowrap justify-between items-center gap-6 '>
           <div className='flex flex-1 w-max text-xl '><span className='ml-1 font-semibold bg-gradient-to-r from-[var(--error-color)] to-black px-1 text-2xl font-bold '> NEWSLETTER </span></div>
           <div className="flex flex-1 border rounded-lg overflow-hidden p-2 py-1.5 w-full ">
             <input type="text" className="flex-1 px-2  focus:outline-none " placeholder="Enter Email..." />
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </section>
         <div className='border-b-1 border-gray-400 pb-4 '></div>
-       <div className="flex justify-between gap-6 text-lg font-medium text-gray-400 pt-4">
+       <div className="flex flex-wrap sm:flex-nowrap justify-between gap-6 text-lg font-medium text-gray-400 pt-4">
           <Link className={"cursor-pointer transition-colors duration-300 hover:text-white " + exo2.className}
             href={'/aboutus'}
           > About</Link>
