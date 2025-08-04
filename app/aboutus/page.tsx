@@ -131,7 +131,6 @@ export default function AboutusPage() {
         <div className='self-start w-[80%] mx-auto '>
           <FaqComponent />
         </div>
-        {/* Projects Display */}
       </div>
     </div>
   )

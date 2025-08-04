@@ -47,14 +47,13 @@ export default function FaqComponent() {
                         </div>
                     )
                 })}
-                <Link className='w-max mx-auto py-3 px-4 bg-slate-700/50 rounded-full text-white mt-6 text-sm'
-                href={"/contactus"}
-                >Didn&apos;t find the answer you are looking for?
-                    <span className='relative ml-2 text-red-500 group cursor-pointer'> 
-                        Contact us 
-                        <div className='absolute left-0 bottom-0 h-0.5 w-full bg-[var(--light-red)] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 '></div>
-                    </span> 
-                </Link>
+                <div className="w-max max-w-full mx-auto py-2 px-2 sm:py-3 sm:px-6 md:px-8 bg-slate-700/50 rounded-full text-white mt-6 text-xs text-center sm:text-sm md:text-base ">
+                    Didn&apos;t find the answer you are looking for?
+                    <span className="relative ml-2 text-red-500 group cursor-pointer inline-block">
+                        <Link href="/contactus">Contact us</Link>
+                        <div className="absolute left-0 bottom-0 h-0.5 w-full bg-[var(--light-red)] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                    </span>
+                </div>
             </div>
             
         </div>
