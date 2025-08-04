@@ -106,9 +106,9 @@ export default function Header() {
 
                 <Link
                   href="/contactus"
-                  onClick={() => handleSelectedSideNav('/aboutus')}
+                  onClick={() => handleSelectedSideNav('/contactus')}
                   className={`flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-500 hover:translate-x-3 ${
-                    selectedNav === '/aboutus' 
+                    selectedNav === '/contactus' 
                       ? 'bg-red-100 text-[var(--error-color)] font-semibold' 
                       : 'hover:bg-blue-100  hover:text-[var(--error-color)]'
                     }`}
