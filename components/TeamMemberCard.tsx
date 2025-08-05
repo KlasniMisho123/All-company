@@ -20,20 +20,14 @@ export default function TeamMemberCard(props:TeamMemberInfo) {
             alt="Team member"
         />
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-end p-4 pointer-events-none transition-opacity duration-500 group-hover:opacity-0">
-    <div className="text-white font-semibold text-lg">{name}</div>
-    <div className="text-gray-300 text-sm">{position}</div>
-  </div>
-
-  {/* ⬆️ Sliding red overlay that brings text + PIPE */}
-  <div className="absolute left-0 right-0 bottom-0 h-full bg-red-600 z-20 
-      translate-y-full group-hover:translate-y-0 transition-transform duration-500
-      flex flex-col justify-end p-4 text-white">
-    
-    <div className="font-semibold text-lg">{name}</div>
-    <div className="text-sm text-gray-200">{position}</div>
-    <div className="text-xl font-bold mt-2">PIPE</div>
-  </div>
+        <div className="absolute left-0 right-0 bottom-0 h-full bg-red-600 z-20 
+            translate-y-full group-hover:translate-y-0 transition-transform duration-500
+            flex flex-col justify-end p-4 text-white">
+            
+            <div className="font-semibold text-lg">{name}</div>
+            <div className="text-sm text-gray-200">{position}</div>
+            <div className="text-xl font-bold mt-2 h-0 group-hover:h-full duration-1000 transition-all ">PIPE</div>
+        </div>
     </div>
   )
 }
