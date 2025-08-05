@@ -10,7 +10,7 @@ type TeamMemberInfo = {
 export default function TeamMemberCard(props:TeamMemberInfo) {
     const {imgSrc, name, position} = props
   return (
-    <div className="relative flex-1 rounded-2xl bg-slate-800 w-max h-[300px] max-w-[250px] overflow-hidden shadow-lg">
+    <div className="relative flex-1 rounded-2xl bg-slate-800 w-max h-[300px] max-w-[250px] overflow-hidden shadow-lg group ">
         <Image
             height={400}
             width={400}
@@ -24,6 +24,9 @@ export default function TeamMemberCard(props:TeamMemberInfo) {
             <div className="text-white font-semibold text-lg">{name}</div>
             <div className="text-gray-300 text-sm">{position}</div>
             {/* Rest of card */}
+        </div>
+        <div className='absolute inset-0 bg-red-500 max-h-0 transition-all duration-300 group-hover:h-full '> 
+            PIPE
         </div>
     </div>
   )
