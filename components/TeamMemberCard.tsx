@@ -23,14 +23,18 @@ export default function TeamMemberCard(props:TeamMemberInfo) {
 
         <div className='absolute inset-0 bg-slate-800/50 h-[70px] transition-all duration-700 self-end group-hover:h-full '>
             <div className="absolute inset-0 z-20 flex flex-col-reverse justify-start">
-                <div className="text-white text-xl font-bold flex px-4
+                <div className="text-white text-xs md:text-sm lg:text-base  flex px-4
                 h-0 group-hover:h-[100%] transition-all duration-600 ease-in-out">
-                    PIPE
+                    {desc}
                 </div>
 
                 <div className="flex flex-col justify-end p-4 text-white font-semibold text-lg">
-                    <div>{name}</div>
-                    <div className="text-sm text-gray-200">{position}</div>
+                    <div className="text-white font-semibold text-base sm:text-lg md:text-xl">
+                        {name}
+                    </div>
+                    <div className="text-gray-200 text-xs sm:text-sm md:text-base mt-1">
+                        {position}
+                    </div>
                 </div>
             </div>
         </div>
