@@ -115,21 +115,23 @@ export default function OurTeamElement() {
 
                 <div className={'absolute inset-0 flex flex-col sm:flex-row items-center gap-6 sm:items-start sm:gap-2 w-full px-6 justify-evenly overflow-hidden ' +  (selectedPage == 2? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
-
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member8.jpg'
-                        name={"Fiona Pugh"}
-                        position={"Creative Director"}
+                        name="Fiona Pugh"
+                        position="Creative Director"
+                        desc="Drives the overall creative vision of projects, ensuring innovative concepts and cohesive design strategies that align with brand goals."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member9.jpg'
-                        name={"Jake Smith"}
-                        position={"Illustrator"}
+                        name="Jake Smith"
+                        position="Illustrator"
+                        desc="Produces original artwork and illustrations for digital and print media, bringing ideas to life with visual storytelling."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member10.jpg'
-                        name={"Emilly Henderson"}
-                        position={"Motion Graphics Intern"}
+                        name="Emilly Henderson"
+                        position="Motion Graphics Intern"
+                        desc="Supports the motion graphics team by assisting in creating animations and visual effects while learning industry tools and techniques."
                     />
                 </div>
             </div>
