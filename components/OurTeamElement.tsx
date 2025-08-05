@@ -71,20 +71,23 @@ export default function OurTeamElement() {
                 <div className={'absolute inset-0 flex flex-col sm:flex-row items-center gap-6 sm:items-start sm:gap-2 w-full px-6 justify-evenly overflow-hidden ' + (selectedPage == 0? 
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
 
-                    <TeamMemberCard 
+                   <TeamMemberCard 
                         imgSrc='/teamMembers/member1.jpg'
-                        name={"Ali"}
-                        position={"Motion Graphics Artist"}
+                        name="Ali"
+                        position="Motion Graphics Artist"
+                        desc="Creates animated visuals and graphic elements for videos, films, and digital media to enhance storytelling and visual appeal."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/members2-3.jpg'
-                        name={"John Doe"}
-                        position={"Brand Identity Designer"}
+                        name="John Doe"
+                        position="Brand Identity Designer"
+                        desc="Develops cohesive visual branding systems including logos, color schemes, and typography that define a company’s identity and resonate with its audience."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member4.jpg'
-                        name={"Ali"}
-                        position={"Motion Graphics Artist"}
+                        name="Ali"
+                        position="Motion Graphics Artist"
+                        desc="Creates animated visuals and graphic elements for videos, films, and digital media to enhance storytelling and visual appeal."
                     />
                 </div>
 
@@ -92,18 +95,21 @@ export default function OurTeamElement() {
                     (selectedPrev? " scroll-in-left-content" : "scroll-in-right-content") : (selectedPrev? "scroll-out-right-content": "scroll-out-left-content") )}>
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member5.jpg'
-                        name={"Elisabeth Green"}
-                        position={"Senior Designer"}
+                        name="Elisabeth Green"
+                        position="Senior Designer"
+                        desc="Leads design projects by creating high-quality visuals and mentoring junior designers to ensure consistent brand and creative standards."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member6.jpg'
-                        name={"Lisa Browner"}
-                        position={"Support Manager"}
+                        name="Lisa Browner"
+                        position="Support Manager"
+                        desc="Oversees customer support teams, ensuring timely and effective assistance while improving customer satisfaction and retention."
                     />
                     <TeamMemberCard 
                         imgSrc='/teamMembers/member7.jpg'
-                        name={"Mike Kingman"}
-                        position={"Co Founder"}
+                        name="Mike Kingman"
+                        position="Co Founder"
+                        desc="Responsible for strategic vision and leadership, guiding company growth and fostering innovation across teams and projects."
                     />
                 </div>
 

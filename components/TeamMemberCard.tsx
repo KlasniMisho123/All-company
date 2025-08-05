@@ -5,10 +5,11 @@ type TeamMemberInfo = {
     imgSrc: string,
     name: string,
     position: string,
+    desc: string,
 }
 
 export default function TeamMemberCard(props:TeamMemberInfo) {
-    const {imgSrc, name, position} = props
+    const {imgSrc, name, position, desc} = props
   return (
     <div className="relative flex-1 rounded-2xl bg-slate-800 w-max h-[300px] max-w-[250px] overflow-hidden shadow-lg group">
         <Image
