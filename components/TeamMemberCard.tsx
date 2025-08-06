@@ -21,8 +21,8 @@ export default function TeamMemberCard(props:TeamMemberInfo) {
             alt="Team member"
         />
 
-        <div className='relatuve absolute inset-0 bg-slate-800/50 h-[70px] transition-all duration-700 self-end group-hover:h-full '>
-        <div className='absolute inset-0 h-0 transition-all duration-600 group-hover:w-full bg-center bg-cover ' style={{backgroundImage:"url('https://i.pinimg.com/736x/a4/be/12/a4be122848eb20671fb3d14eb7ab1ba9.jpg')"}}></div>
+        <div className='relatuve absolute inset-0 bg-slate-800/50 h-[25%] transition-all duration-700 self-end group-hover:h-full '>
+            
             <div className="absolute inset-0 z-20 flex flex-col-reverse justify-start">
                 <div className="text-white text-xs md:text-sm lg:text-base  flex px-4
                 h-0 group-hover:h-[100%] transition-all duration-600 ease-in-out">
@@ -37,6 +37,10 @@ export default function TeamMemberCard(props:TeamMemberInfo) {
                         {position}
                     </div>
                 </div>
+            </div>
+            <div className="absolute inset-0 group-hover:h-full transition-all duration-600 bg-center bg-fit z-0 opacity-30 "
+                style={{ backgroundImage: "url(/bg-red-grid.jpg)" }}>
+                <div className="absolute inset-0 bg-black/40"></div>
             </div>
         </div>
 
